@@ -26,5 +26,9 @@
     "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
     "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.5",
+    "typescript": "5.5.4"
   }
 }
