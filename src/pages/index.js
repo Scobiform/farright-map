@@ -12,7 +12,7 @@ import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_upd
 const DEFAULT_CENTER = [53.312339, 13.868030]
 
 // Function to generate custom icon based on party
-// CSS classes are in global
+// CSS classes are in global.scss
 const getIcon = (party) => {
   return new L.DivIcon({
     className: `marker-${party}`,
@@ -29,8 +29,6 @@ const jitterPosition = (lat, lon, index) => {
 };
 
 export default function Home() {
-
-  // View
   return (
     <Layout>
       <Head>
@@ -38,13 +36,8 @@ export default function Home() {
         <meta name="description" content="Easy overview to see every politician and the corrosponding electoral district. Overview of social media metrics and follower graph." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Section>
         <Container>
-          <h1 className={styles.title}>
-              Landesliste Brandenburg 2024 - FarRight politicians only
-          </h1>
-
           <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={8}>
             {({ TileLayer, Marker, Popup }) => (
               <>
@@ -53,13 +46,11 @@ export default function Home() {
                   attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
                 />
 
-                {/* Loop through rechtelandeslistebrandenburg data */}
+                {/* Loop through data */}
                 {Object.keys(rechtelandeslistebrandenburg).map((party) =>
                   rechtelandeslistebrandenburg[party].map((person, index) => {
                     // Apply jitter to positions that are in the same spot
                     const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
-
-
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
