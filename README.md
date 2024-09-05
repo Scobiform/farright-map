@@ -10,7 +10,7 @@
 ### Quick Start
 
 ```
-npx create-next-app -e https://github.com/Scobiform/nazi-map
+npx create-next-app -e https://github.com/Scobiform/farright-map
 ```
 
 ### Running the Project
