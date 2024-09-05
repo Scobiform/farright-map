@@ -67,6 +67,8 @@ export default function Home() {
                           {person.birth_year}
                           <br />
                           {person.birthplace}
+                          <br />
+                          {person.profession}
                         </Popup>
                       </Marker>
                     );
