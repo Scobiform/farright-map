@@ -12,6 +12,7 @@ import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_upd
 const DEFAULT_CENTER = [53.312339, 13.868030]
 
 // Function to generate custom icon based on party
+// CSS classes are in global
 const getIcon = (party) => {
   return new L.DivIcon({
     className: `marker-${party}`,
@@ -22,6 +23,8 @@ const getIcon = (party) => {
 };
 
 export default function Home() {
+
+  // View
   return (
     <Layout>
       <Head>
@@ -57,7 +60,6 @@ export default function Home() {
                     </Marker>
                   ))
                 ))}
-      
               </>
             )}
           </Map>
