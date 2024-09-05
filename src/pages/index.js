@@ -22,6 +22,12 @@ const getIcon = (party) => {
   });
 };
 
+// Function to apply jitter if multiple markers are in the same spot
+const jitterPosition = (lat, lon, index) => {
+  const jitterAmount = 0.0002; 
+  return [lat + jitterAmount * (index % 2 === 0 ? 1 : -1), lon + jitterAmount * (index % 2 === 0 ? 1 : -1)];
+};
+
 export default function Home() {
 
   // View
@@ -48,18 +54,21 @@ export default function Home() {
                 />
 
                 {/* Loop through rechtelandeslistebrandenburg data */}
-                {Object.keys(rechtelandeslistebrandenburg).map((party) => (
-                  rechtelandeslistebrandenburg[party].map((person, index) => (
-                    <Marker key={index} 
-                            position={[person.lat, person.lon]}
-                            icon={getIcon(party.toLowerCase())}
-                    >
-                      <Popup>
-                        {person.name} <br /> {person.residence} <br /> ({party})
-                      </Popup>
-                    </Marker>
-                  ))
-                ))}
+                {Object.keys(rechtelandeslistebrandenburg).map((party) =>
+                  rechtelandeslistebrandenburg[party].map((person, index) => {
+                    // Apply jitter to positions that are in the same spot
+                    const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
+
+
+                    return (
+                      <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
+                        <Popup>
+                          {person.name} <br /> {person.residence} <br /> ({party})
+                        </Popup>
+                      </Marker>
+                    );
+                  })
+                )}
               </>
             )}
           </Map>
