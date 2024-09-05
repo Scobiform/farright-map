@@ -384,6 +384,193 @@
             "electoral_district": null,
             "lat": "52.4009309",
             "lon": "13.0591397"
+        },
+        {
+            "position": 2,
+            "name": "Jean-René Adam",
+            "profession": "Instandhaltungsmechaniker",
+            "birth_year": 1964,
+            "birthplace": "Weida",
+            "residence": "Karstädt OT Blüthen",
+            "electoral_district": null,
+            "lat": "53.2883824",
+            "lon": "11.4893222"
+        },
+        {
+            "position": 2,
+            "name": "Torsten Arndt",
+            "profession": "selbstständig",
+            "birth_year": 1962,
+            "birthplace": "Berlin-Buch",
+            "residence": "Wittstock/Dosse",
+            "electoral_district": null,
+            "lat": "53.162999",
+            "lon": "12.4868962"
+        },
+        {
+            "position": 2,
+            "name": "Kai Berger",
+            "profession": "Unternehmer",
+            "birth_year": 1971,
+            "birthplace": "Rathenow",
+            "residence": "Premnitz",
+            "electoral_district": null,
+            "lat": "52.528092",
+            "lon": "12.3394514"
+        },
+        {
+            "position": 2,
+            "name": "Roman Kuffert",
+            "profession": "Flugzeugmechaniker",
+            "birth_year": 1959,
+            "birthplace": "Berlin",
+            "residence": "Eberswalde",
+            "electoral_district": null,
+            "lat": "52.8350807",
+            "lon": "13.7996542"
+        },
+        {
+            "position": 2,
+            "name": "Steffen John",
+            "profession": "Fachwirt im Finanz und Rechnungswesen, Mitglied des Landtages",
+            "birth_year": 1964,
+            "birthplace": "Berlin",
+            "residence": "Panketal",
+            "electoral_district": null,
+            "lat": "52.6480137",
+            "lon": "13.5412361"
+        },
+        {
+            "position": 2,
+            "name": "Jan Schenk",
+            "profession": "selbstständig",
+            "birth_year": 1984,
+            "birthplace": "Königs Wusterhausen",
+            "residence": "Königs Wusterhausen",
+            "electoral_district": null,
+            "lat": "52.2994511",
+            "lon": "13.6244389"
+        },
+        {
+            "position": 2,
+            "name": "Kathleen Muxel",
+            "profession": "Mitglied des Landtages",
+            "birth_year": 1971,
+            "birthplace": "Berlin",
+            "residence": "Grünheide (Mark)",
+            "electoral_district": null,
+            "lat": "52.4262298",
+            "lon": "13.8226458"
+        },
+        {
+            "position": 2,
+            "name": "Rainer Galla",
+            "profession": "Volljurist",
+            "birth_year": 1961,
+            "birthplace": "Gelsenkirchen",
+            "residence": "Grünheide (Mark) OT Spreetal",
+            "electoral_district": null,
+            "lat": "52.4262298",
+            "lon": "13.8226458"
+        },
+        {
+            "position": 2,
+            "name": "Axel Brösicke",
+            "profession": "Industriemechaniker",
+            "birth_year": 1976,
+            "birthplace": "Brandenburg (Havel)",
+            "residence": "Brandenburg an der Havel",
+            "electoral_district": null,
+            "lat": "52.4108261",
+            "lon": "12.5497933"
+        },
+        {
+            "position": 2,
+            "name": "Peer Dorow",
+            "profession": "IT Engineer",
+            "birth_year": 1973,
+            "birthplace": "Demmin",
+            "residence": "Michendorf",
+            "electoral_district": null,
+            "lat": "52.3165197",
+            "lon": "13.0316383"
+        },
+        {
+            "position": 2,
+            "name": "Tim Krause",
+            "profession": "Unternehmer",
+            "birth_year": 1971,
+            "birthplace": "Nürnberg",
+            "residence": "Potsdam OT Neu Fahrland",
+            "electoral_district": null,
+            "lat": "52.4009309",
+            "lon": "13.0591397"
+        },
+        {
+            "position": 2,
+            "name": "Lars Günther",
+            "profession": "Mitglied des Landtages, Immobilienkaufmann",
+            "birth_year": 1976,
+            "birthplace": "Wriezen",
+            "residence": "Bad Freienwalde (Oder)",
+            "electoral_district": null,
+            "lat": "52.787521",
+            "lon": "14.0300689"
+        },
+        {
+            "position": 2,
+            "name": "Falk Gerd Janke",
+            "profession": "Bilanzbuchhalter",
+            "birth_year": 1963,
+            "birthplace": "Meiningen",
+            "residence": "Seelow",
+            "electoral_district": null,
+            "lat": "52.5318238",
+            "lon": "14.380704"
+        },
+        {
+            "position": 2,
+            "name": "Peter Drenske",
+            "profession": "Mitglied des Landtages",
+            "birth_year": 1960,
+            "birthplace": "Finsterwalde",
+            "residence": "Lichterfeld-Schacksdorf",
+            "electoral_district": null,
+            "lat": "51.59626775",
+            "lon": "13.774534402601546"
+        },
+        {
+            "position": 2,
+            "name": "Volker Nothing",
+            "profession": "Mitglied des Landtages",
+            "birth_year": 1965,
+            "birthplace": "Elsterwerda",
+            "residence": "Elsterwerda",
+            "electoral_district": null,
+            "lat": "51.4614993",
+            "lon": "13.5204883"
+        },
+        {
+            "position": 2,
+            "name": "Birgit Bessin",
+            "profession": "Mitglied des Landtages",
+            "birth_year": 1978,
+            "birthplace": "Worms",
+            "residence": "Trebbin",
+            "electoral_district": null,
+            "lat": "52.2150361",
+            "lon": "13.2140282"
+        },
+        {
+            "position": 2,
+            "name": "Fabian Jank",
+            "profession": "Angestellter",
+            "birth_year": 1996,
+            "birthplace": "Luckau",
+            "residence": "Luckaitztal",
+            "electoral_district": null,
+            "lat": "51.6773336",
+            "lon": "13.986490863659187"
         }
     ],
     "III_Weg": [
