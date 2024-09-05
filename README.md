@@ -1,4 +1,4 @@
-# 🍃 Next.js Leaflet Nazi Map
+# 🍃 Next.js Leaflet FarRight Map
 
 ![nazi-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "nazi-map screenshot")
 
