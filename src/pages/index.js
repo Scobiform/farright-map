@@ -7,7 +7,7 @@ import Map from '@components/Map';
 import Button from '@components/Button';
 
 import styles from '@styles/Home.module.scss';
-import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_updated.json'
+import rechtelandeslistebrandenburg from '@data/data.json'
 
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
@@ -58,7 +58,15 @@ export default function Home() {
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
-                          {person.name} <br /> {person.residence} <br /> ({party})
+                          {person.name} 
+                          <br /> 
+                          {person.residence} 
+                          <br /> 
+                          ({party})
+                          <br />
+                          {person.birth_year}
+                          <br />
+                          {person.birthplace}
                         </Popup>
                       </Marker>
                     );
