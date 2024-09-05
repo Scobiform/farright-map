@@ -11,6 +11,16 @@ import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_upd
 
 const DEFAULT_CENTER = [53.312339, 13.868030]
 
+// Function to generate custom icon based on party
+const getIcon = (party) => {
+  return new L.DivIcon({
+    className: `marker-${party}`,
+    iconSize: [21, 21],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+  });
+};
+
 export default function Home() {
   return (
     <Layout>
@@ -37,7 +47,10 @@ export default function Home() {
                 {/* Loop through rechtelandeslistebrandenburg data */}
                 {Object.keys(rechtelandeslistebrandenburg).map((party) => (
                   rechtelandeslistebrandenburg[party].map((person, index) => (
-                    <Marker key={index} position={[person.lat, person.lon]}>
+                    <Marker key={index} 
+                            position={[person.lat, person.lon]}
+                            icon={getIcon(party.toLowerCase())}
+                    >
                       <Popup>
                         {person.name} <br /> {person.residence} <br /> ({party})
                       </Popup>

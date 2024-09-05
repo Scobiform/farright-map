@@ -19,3 +19,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* marker classes */
+.marker-afd{
+  width: 25px;
+  height: 41px;
+  background-color: #009ee0; 
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker-iii_weg{
+  width: 25px;
+  height: 41px;
+  background-color: #224e2a; 
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker-wu{
+  width: 25px;
+  height: 41px;
+  background-color: #013B5B; 
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
