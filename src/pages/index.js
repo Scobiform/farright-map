@@ -9,6 +9,9 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_updated.json'
 
+
+const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
+
 // BERLIN BERLIN 52.521429561594175, 13.413687786049813
 const DEFAULT_CENTER = [52.5214295, 13.4136877]
 
@@ -33,7 +36,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Landesliste Brandenburg 2024 - FarRight politicians only</title>
+        <title>{appTitle}</title>
         <meta name="description" content="Easy overview to see every politician and the corrosponding electoral district. Overview of social media metrics and follower graph." />
         <link rel="icon" href="/favicon.ico" />
       </Head>

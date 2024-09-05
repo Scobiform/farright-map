@@ -5,13 +5,15 @@ import Container from '@components/Container';
 
 import styles from './Header.module.scss';
 
+const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
+
 const Header = () => {
   return (
     <header className={styles.header}>
       <Container className={styles.headerContainer}>
         <p className={styles.headerTitle}>
           <Link href="/">
-          Landesliste Brandenburg 2024 - FarRight politicians only
+            {appTitle}
           </Link>
         </p>
         <ul className={styles.headerLinks}>
