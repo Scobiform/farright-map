@@ -9,7 +9,8 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import rechtelandeslistebrandenburg from '@data/rechtelandeslistebrandenburg_updated.json'
 
-const DEFAULT_CENTER = [53.312339, 13.868030]
+// BERLIN BERLIN 52.521429561594175, 13.413687786049813
+const DEFAULT_CENTER = [52.5214295, 13.4136877]
 
 // Function to generate custom icon based on party
 // CSS classes are in global.scss
