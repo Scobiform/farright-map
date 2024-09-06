@@ -57,19 +57,21 @@ export default function Home() {
                   rechtelandeslistebrandenburg[party].map((person, index) => {
                     // Apply jitter to positions that are in the same spot
                     const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
-                    // Regex residence name
-                    var match = person.residence.match(/^(.*?)\sOT/);
-                    if (match === null)
-                      {
-                        //console.log(person.residence)
-                        match = person.residence;
-                      }
+                    // Regex to capture the part before 'OT'
+                    var match = person.residence.match(/^(.*?)\s+OT\b/);
+
+                    if (match !== null) {
+                      console.log("Matched part before OT: ", match[1]);
+                    } else {
+                      // Fallback
+                      match = [person.residence];
+                    }
 
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
                           <a 
-                            href={`https://www.northdata.de/${(person.name)}, ${(match)}`} 
+                            href={`https://www.northdata.de/${(person.name)}, ${match[1]}`} 
                             target="_blank" 
                             rel="noopener noreferrer">
                             {person.name}
