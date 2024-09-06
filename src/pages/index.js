@@ -15,6 +15,8 @@ const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 // BERLIN BERLIN 52.521429561594175, 13.413687786049813
 const DEFAULT_CENTER = [52.5214295, 13.4136877]
 
+
+
 // Function to generate custom icon based on party
 // CSS classes are in global.scss
 const getIcon = (party) => {
@@ -55,10 +57,26 @@ export default function Home() {
                   rechtelandeslistebrandenburg[party].map((person, index) => {
                     // Apply jitter to positions that are in the same spot
                     const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
+                    // Regex residence name
+                    var match = person.residence.match(/(.*?)\sOT/);
+                    if (match !== null)
+                      {
+                        console.log(match);
+                      }
+                    else
+                    {
+                      match = person.residence;
+                    }
+
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
-                          {person.name} 
+                          <a 
+                            href={`https://www.northdata.de/${(person.name)}, ${(match)}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            {person.name}
+                          </a>
                           <br /> 
                           {person.residence} 
                           <br /> 
