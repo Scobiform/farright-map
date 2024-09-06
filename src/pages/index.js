@@ -74,7 +74,7 @@ export default function Home() {
           <div className={styles.partyControls}>
             {Object.keys(visibleParties).map((party) => (
               <Button key={party} onClick={() => toggleParty(party)}>
-                {visibleParties[party] ? `Hide ${party}` : `Show ${party}`}
+                {visibleParties[party] ? `${party}` : `${party}`}
               </Button>
             ))}
           </div>
