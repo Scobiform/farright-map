@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
 
 import Layout from '@components/Layout';
@@ -35,6 +36,30 @@ const jitterPosition = (lat, lon, index) => {
 };
 
 export default function Home() {
+
+  const mapRef = useRef(null); // Ref to store the map instance
+  const [isMapReady, setIsMapReady] = useState(true); // Track if the map is initialized
+
+  const [visibleParties, setVisibleParties] = useState({
+    AfD: true,
+    III_Weg: true,
+    WU: true,
+  });
+
+  // Function to toggle party visibility
+  const toggleParty = (party) => {
+    setVisibleParties((prevState) => ({
+      ...prevState,
+      [party]: !prevState[party],
+    }));
+  };
+
+  
+  // HandleClick function to handle button clicks for candidates
+  const handleClick = (lat, lon) => {
+    console.log(lat, lon);
+  };
+
   return (
     <Layout>
       <Head>
@@ -44,59 +69,134 @@ export default function Home() {
       </Head>
       <Section>
         <Container>
-          <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={8}>
+
+          {/* Buttons to toggle visibility of parties */}
+          <div className={styles.partyControls}>
+            {Object.keys(visibleParties).map((party) => (
+              <Button key={party} onClick={() => toggleParty(party)}>
+                {visibleParties[party] ? `Hide ${party}` : `Show ${party}`}
+              </Button>
+            ))}
+          </div>
+
+          {/* Candidate List with onClick handlers */}
+          <div className={styles.candidateList}>
+            <h3>Candidate List</h3>
+            <ul>
+              {Object.keys(rechtelandeslistebrandenburg).map((party) =>
+                rechtelandeslistebrandenburg[party].map((person, index) => (
+                  <li key={index}>
+                    <button
+                      type="button"
+                      onClick={() => handleClick(parseFloat(person.lat), parseFloat(person.lon))}
+                      disabled={!isMapReady}
+                    >
+                      {person.name} - {party}
+                    </button>
+                  </li>
+                ))
+              )}
+            </ul>
+          </div>
+
+
+          <Map className={styles.homeMap} 
+               center={DEFAULT_CENTER} 
+               zoom={8}
+               whenCreated={(mapInstance) => {
+                mapRef.current = mapInstance; 
+                console.log("Map instance created:", mapInstance);
+                setIsMapReady(true); 
+              }}
+              >
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
-                  url="https://tile.openstreetmap.de/{z}/{x}/{y}.png'"
+                  url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
                   attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
                 />
 
-                {/* Loop through data */}
+                {/* Loop through parties and candidates */}
                 {Object.keys(rechtelandeslistebrandenburg).map((party) =>
-                  rechtelandeslistebrandenburg[party].map((person, index) => {
-                    // Apply jitter to positions that are in the same spot
-                    const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
-                    // Regex to capture the part before 'OT'
-                    var match = person.residence.match(/^(.*?)\s+OT\b/);
+                  visibleParties[party]
+                    ? rechtelandeslistebrandenburg[party].map((person, index) => {
+                        // Apply jitter to positions that are in the same spot
+                        const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
+                        // Regex to capture the part before 'OT'
+                        var match = person.residence.match(/^(.*?)\s+OT\b/);
 
-                    if (match !== null) {
-                      console.log("Matched part before OT: ", match);
-                    } else {
-                      // Fallback
-                      match = [person.residence];
-                    }
+                        if (!match || !match[1]) {
+                          match = [person.residence];
+                        }
+                        else
+                        {
+                          match = match[1];
+                        }
 
-                    return (
-                      <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
-                        <Popup>
-                          <a 
-                            href={`https://www.northdata.de/${(person.name)} ${match}`}
-                            target="_blank" 
-                            rel="noopener noreferrer">
-                            {person.name}
-                          </a>
-                          <br /> 
-                          {person.residence} 
-                          <br /> 
-                          ({party})
-                          <br />
-                          {person.birth_year}
-                          <br />
-                          {person.birthplace}
-                          <br />
-                          {person.profession}
-                          <hr />
-                          <a href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${(person.name)}`}
-                            target="_blank" 
-                            rel="noopener noreferrer">
-                            abgeordnetenwatch
-                          </a>
+                        
 
-                        </Popup>
-                      </Marker>
-                    );
-                  })
+                        return (
+                          <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
+                            <Popup>
+                              <a
+                                href={`https://www.northdata.de/${(person.name)} ${(match)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {person.name}
+                              </a>
+                              <br />
+                              {person.residence} <br /> ({party})
+                              <br />
+                              {person.birth_year}
+                              <br />
+                              {person.birthplace}
+                              <br />
+                              {person.profession}
+                              <hr />
+                              <ul>
+                                <li>
+                                <a
+                                  href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${(person.name)}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  abgeordnetenwatch
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href={`https://www.google.com/search?q=${(person.name)} ${(party)} `}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                google.com search
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href={`https://yandex.ru/search/?text=${(person.name)} ${(party)}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                yandex.ru search
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href={`https://www.bing.com/search?q=${(person.name)} ${(party)}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                bing.com search
+                                </a>
+                              </li>   
+                              </ul>
+                            </Popup>
+                          </Marker>
+                        );
+                      })
+                    : null
                 )}
               </>
             )}
