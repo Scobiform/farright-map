@@ -61,7 +61,7 @@ export default function Home() {
                     var match = person.residence.match(/^(.*?)\sOT/);
                     if (match === null)
                       {
-                        console.log(person.residence)
+                        //console.log(person.residence)
                         match = person.residence;
                       }
 
