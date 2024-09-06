@@ -71,7 +71,7 @@ export default function Home() {
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
                           <a 
-                            href={`https://www.northdata.de/${(person.name)}, ${match}`} 
+                            href={`https://www.northdata.de/${(person.name)} ${match}`}
                             target="_blank" 
                             rel="noopener noreferrer">
                             {person.name}
@@ -86,6 +86,13 @@ export default function Home() {
                           {person.birthplace}
                           <br />
                           {person.profession}
+                          <hr />
+                          <a href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${(person.name)}`}
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            abgeordnetenwatch
+                          </a>
+
                         </Popup>
                       </Marker>
                     );
