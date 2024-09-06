@@ -61,7 +61,7 @@ export default function Home() {
                     var match = person.residence.match(/^(.*?)\s+OT\b/);
 
                     if (match !== null) {
-                      console.log("Matched part before OT: ", match[1]);
+                      console.log("Matched part before OT: ", match);
                     } else {
                       // Fallback
                       match = [person.residence];
@@ -71,7 +71,7 @@ export default function Home() {
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Popup>
                           <a 
-                            href={`https://www.northdata.de/${(person.name)}, ${match[1]}`} 
+                            href={`https://www.northdata.de/${(person.name)}, ${match}`} 
                             target="_blank" 
                             rel="noopener noreferrer">
                             {person.name}
