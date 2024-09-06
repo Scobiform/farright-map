@@ -58,15 +58,12 @@ export default function Home() {
                     // Apply jitter to positions that are in the same spot
                     const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
                     // Regex residence name
-                    var match = person.residence.match(/(.*?)\sOT/);
-                    if (match !== null)
+                    var match = person.residence.match(/^(.*?)\sOT/);
+                    if (match === null)
                       {
-                        console.log(match);
+                        console.log(person.residence)
+                        match = person.residence;
                       }
-                    else
-                    {
-                      match = person.residence;
-                    }
 
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
