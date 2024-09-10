@@ -9,7 +9,17 @@
             "residence": "Golßen OT Sagritz",
             "electoral_district": 28,
             "lat": "51.9709352",
-            "lon": "13.6045078"
+            "lon": "13.6045078",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/HCBerndt/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/hc_berndt/",
+                    "tiktok": "https://www.tiktok.com/@dr._christoph_berndt",
+                    "x.com": "https://twitter.com/hcberndt?lang=de",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/watch?v=Ke7lWyD7u1k"
+                }
+            ]
         },
         {
             "position": 2,
@@ -20,7 +30,17 @@
             "residence": "Potsdam",
             "electoral_district": 29,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Dennis.Hohloch.AfD/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/dennis.hohloch/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/dennis-hohloch",
+                    "x.com": "https://twitter.com/Dennis_Hohloch/status/1833195160886513874",
+                    "telegram": "https://t.me/s/dennis_hohloch?before=553",
+                    "youtube": "https://www.youtube.com/channel/UCWHYQMcwcAsDiGK02TL7IIQ"
+                }
+            ]
         },
         {
             "position": 3,
@@ -31,7 +51,17 @@
             "residence": "Prenzlau OT Güstow",
             "electoral_district": 11,
             "lat": "53.3167",
-            "lon": "13.866575"
+            "lon": "13.866575",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/p/Felix-Teichner-100064050720103/",
+                    "instagram": "https://www.instagram.com/afduckermark/p/C_dtNYpthlM/?locale=%E6%80%8E%E4%B9%88%E5%88%B6%E4%BD%9C%E5%A5%A5%E5%9C%B0%E5%88%A9ID%E8%BA%AB%E4%BB%BD%E5%8D%A1%E8%81%94%E7%B3%BB%7B%E5%A8%81%E4%BF%A1%2BTG%2F%E9%A3%9E%E6%9C%BA%3A%40buth2788%7DSjK0O%3F%3F%3F%3F%3F%3F%D1%A7%3F%3F%C6%BEa4Y2W&hl=en",
+                    "tiktok": "https://www.tiktok.com/discover/felix-teichner-afd",
+                    "x.com": "https://twitter.com/Uckermarkkurier/status/1443564941680726023",
+                    "telegram": "https://t.me/s/afdfraktionBB?before=729",
+                    "youtube": "https://www.youtube.com/watch?v=cgq9pJp8SEU"
+                }
+            ]
         },
         {
             "position": 4,
@@ -42,7 +72,17 @@
             "residence": "Blankenfelde-Mahlow",
             "electoral_district": 25,
             "lat": "52.3479238",
-            "lon": "13.4119554"
+            "lon": "13.4119554",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/daniel-freiherr-von-l%C3%BCtzow-1428591354092550",
+                    "instagram": "https://www.instagram.com/p/C-r-Tn3MHiu/?locale=%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%A1%E5%A1%94%E5%B0%94%E8%81%8C%E4%B8%9A%E8%AF%81%E4%B9%A6%E3%80%96%E5%A8%81%E4%BF%A1%2BTG%2F%E9%A3%9E%E6%9C%BA%3A%40buth2788%E3%80%97PiMgK&hl=ar",
+                    "tiktok": "https://www.tiktok.com/find/daniel-freiherr-von-l%C3%BCtzow",
+                    "x.com": "https://twitter.com/von_lutzow?lang=de",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/playlist?list=PLRFUbpIzMFQ1uJBsu4WcE3s-qUTJknJae"
+                }
+            ]
         },
         {
             "position": 5,
@@ -53,7 +93,17 @@
             "residence": "Turnow-Preilack",
             "electoral_district": 41,
             "lat": "51.896268649999996",
-            "lon": "14.388927317479588"
+            "lon": "14.388927317479588",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/afd.steffen.kubitzki/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/p/C_movBLMu-O/?locale=English",
+                    "tiktok": "https://www.tiktok.com/@steffenkotre/video/7225636739531115781",
+                    "x.com": "https://twitter.com/s_kubitzki",
+                    "telegram": "https://t.me/steffenkubitzki",
+                    "youtube": "https://www.youtube.com/watch?v=Ux1YBe7qALk"
+                }
+            ]
         },
         {
             "position": 6,
@@ -64,7 +114,17 @@
             "residence": "Dallgow-Döberitz OT Seeburg",
             "electoral_district": 5,
             "lat": "52.5406496",
-            "lon": "13.0602956"
+            "lon": "13.0602956",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/dominikkaufner/",
+                    "instagram": "https://www.instagram.com/dominik.kaufner/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/dominik-kaufner-afd",
+                    "x.com": "https://twitter.com/dkaufner",
+                    "telegram": "https://t.me/s/AfD_Havelland?before=80",
+                    "youtube": "https://www.youtube.com/watch?v=7VbMtXfLU38"
+                }
+            ]
         },
         {
             "position": 7,
@@ -75,7 +135,17 @@
             "residence": "Borkwalde",
             "electoral_district": 16,
             "lat": "52.2545728",
-            "lon": "12.8343424"
+            "lon": "12.8343424",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Larshuenich/",
+                    "instagram": "https://www.instagram.com/lars.huenich/",
+                    "tiktok": "https://www.tiktok.com/discover/lars-h%C3%BCnich-parteistaat",
+                    "x.com": "https://twitter.com/maz_online/status/1753357668511633741",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/watch?v=UyoIl_f4uiI"
+                }
+            ]
         },
         {
             "position": 8,
@@ -86,7 +156,17 @@
             "residence": "Schwerin",
             "electoral_district": 27,
             "lat": "52.1531295",
-            "lon": "13.6344606"
+            "lon": "13.6344606",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/p/Benjamin-Filter-100093408734132/",
+                    "instagram": "https://www.instagram.com/benfilter/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@benfilter",
+                    "x.com": "https://twitter.com/BenFilter/status/1799105495388815766",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=xuW0DzEp3d8"
+                }
+            ]
         },
         {
             "position": 9,
@@ -97,7 +177,17 @@
             "residence": "Cottbus",
             "electoral_district": 43,
             "lat": "51.7567447",
-            "lon": "14.3357307"
+            "lon": "14.3357307",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/JeanPascal.Hohm/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/jp_hohm/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@jeanpascal.hohm",
+                    "x.com": "https://twitter.com/JeanPascal_Hohm/status/1819629781631000952",
+                    "telegram": "https://t.me/s/jeanpascal_hohm?before=633",
+                    "youtube": "https://www.youtube.com/watch?v=WVxyoETfaAM"
+                }
+            ]
         },
         {
             "position": 10,
@@ -108,7 +198,17 @@
             "residence": "Dallgow-Döberitz",
             "electoral_district": 15,
             "lat": "52.5406496",
-            "lon": "13.0602956"
+            "lon": "13.0602956",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Kotre.Lena/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/lena_kotre_afd/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/lena-kotre-afd",
+                    "x.com": "https://twitter.com/KotreLena/status/1831388695112626373",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/channel/UCAccZJsk-VYNP-iA9rM2zzw"
+                }
+            ]
         },
         {
             "position": 11,
@@ -119,7 +219,17 @@
             "residence": "Birkenwerder",
             "electoral_district": null,
             "lat": "52.6884408",
-            "lon": "13.2831336"
+            "lon": "13.2831336",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/profile.php?id=100064883372681&locale=fo_FO",
+                    "instagram": "https://www.instagram.com/p/CGEZaGHBMFc/?img_index=missritadaniela",
+                    "tiktok": "https://www.tiktok.com/@dr.danielaoeynhausen/video/7254573086329146650",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 12,
@@ -130,7 +240,17 @@
             "residence": "Werder (Havel)",
             "electoral_district": 19,
             "lat": "52.3715809",
-            "lon": "12.9329125"
+            "lon": "12.9329125",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/marlon.deter.73/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/marlon_deter/",
+                    "tiktok": "https://www.tiktok.com/@marlondeter",
+                    "x.com": "https://twitter.com/BrandenburgAfD/status/1828349356266668106",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=Otds-iEwYGQ"
+                }
+            ]
         },
         {
             "position": 13,
@@ -141,7 +261,17 @@
             "residence": "Guben",
             "electoral_district": 40,
             "lat": "51.9503235",
-            "lon": "14.7153567"
+            "lon": "14.7153567",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Muenschke.Daniel/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/daniel_muenschke/",
+                    "tiktok": "https://www.tiktok.com/@danielmuenschke",
+                    "x.com": "https://twitter.com/danielmuenschke?lang=de",
+                    "telegram": "https://t.me/s/daniel_muenschke?q=%23Politik&before=223",
+                    "youtube": "https://www.youtube.com/channel/UCtbktK4NRkEu6WQvrgKE-0w"
+                }
+            ]
         },
         {
             "position": 14,
@@ -152,7 +282,17 @@
             "residence": "Hennigsdorf",
             "electoral_district": 10,
             "lat": "52.6375777",
-            "lon": "13.2057511"
+            "lon": "13.2057511",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/galaumdl/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/ignazio_salvini/reel/C-IyykCNI1s/",
+                    "tiktok": "https://www.tiktok.com/discover/andreas-galau-afd",
+                    "x.com": "https://twitter.com/galau_mdl",
+                    "telegram": "https://t.me/andreasgalau",
+                    "youtube": "https://m.youtube.com/post/Ugkx7XtI60U3P3YxpQbaUKSMIqRoCGkLBiZf"
+                }
+            ]
         },
         {
             "position": 15,
@@ -163,7 +303,17 @@
             "residence": "Cottbus",
             "electoral_district": 44,
             "lat": "51.7567447",
-            "lon": "14.3357307"
+            "lon": "14.3357307",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/lars.schieske/",
+                    "instagram": "https://www.instagram.com/larsschieske/",
+                    "tiktok": "https://www.tiktok.com/@larsschieske",
+                    "x.com": "https://twitter.com/IbDoku/status/1791149694480986151",
+                    "telegram": "https://t.me/s/larsschieske?q=%23SPD&before=1899",
+                    "youtube": "https://www.youtube.com/watch?v=E-U5nkuh7X4"
+                }
+            ]
         },
         {
             "position": 16,
@@ -174,7 +324,17 @@
             "residence": "Frankfurt (Oder)",
             "electoral_district": 35,
             "lat": "52.3412273",
-            "lon": "14.549452"
+            "lon": "14.549452",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/WilkoMoellerMdL/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/mollerwilko/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@wilko_moeller",
+                    "x.com": "https://twitter.com/wilko_moeller",
+                    "telegram": "https://t.me/s/afdfraktionBB?before=729",
+                    "youtube": "https://www.youtube.com/watch?v=yxUXIhYpV18&vl=de"
+                }
+            ]
         },
         {
             "position": 17,
@@ -185,7 +345,17 @@
             "residence": "Velten",
             "electoral_district": 7,
             "lat": "52.6882194",
-            "lon": "13.1775867"
+            "lon": "13.1775867",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/MAZOberhavel/posts/der-veltener-afd-stadtverordnete-heiko-gehring-soll-janina-gumprecht-leiterin-de/2680818538639576/?locale=ar_AR",
+                    "instagram": "https://www.instagram.com/p/C_iOii4qX8x/",
+                    "tiktok": "https://www.tiktok.com/discover/heiko-gehring-afd",
+                    "x.com": "https://twitter.com/BrandenburgAfD/status/1830886085884322132",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=47uexgTf0_I"
+                }
+            ]
         },
         {
             "position": 18,
@@ -196,7 +366,17 @@
             "residence": "Schöneiche bei Berlin",
             "electoral_district": 20,
             "lat": "52.4676414",
-            "lon": "13.6928287"
+            "lon": "13.6928287",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/philipzeschmann/",
+                    "instagram": "https://www.instagram.com/philipzeschmann/",
+                    "tiktok": "https://www.tiktok.com/tag/zeschmann",
+                    "x.com": "https://twitter.com/BrandenburgAfD/status/1828349356266668106",
+                    "telegram": "https://t.me/s/afdfraktionBB?before=1192",
+                    "youtube": "https://www.youtube.com/watch?v=LBO9988Jsoc"
+                }
+            ]
         },
         {
             "position": 19,
@@ -207,7 +387,17 @@
             "residence": "Ahrensfelde OT Lindenberg",
             "electoral_district": null,
             "lat": "52.6011365",
-            "lon": "13.5458815"
+            "lon": "13.5458815",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/p/Marko-Langer-100016476017006/?locale=pt_BR",
+                    "instagram": "https://www.instagram.com/marco.langer.737/p/C7_NOsDNYRT/",
+                    "tiktok": "https://www.tiktok.com/@hneumannmep/video/7365541899899292961",
+                    "x.com": "https://twitter.com/wanderwitz/status/1771497182568354183",
+                    "telegram": "https://t.me/s/afd_thl?after=2663",
+                    "youtube": "https://www.youtube.com/watch?v=xuW0DzEp3d8"
+                }
+            ]
         },
         {
             "position": 20,
@@ -218,7 +408,17 @@
             "residence": "Mühlenbecker Land OT Zühlsdorf",
             "electoral_district": 8,
             "lat": "52.6841309",
-            "lon": "13.375854377162955"
+            "lon": "13.375854377162955",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/yvonne.prause.10/",
+                    "instagram": "https://www.instagram.com/die.insider/p/C94PqaBtsUB/?locale=gb&hl=am-et",
+                    "tiktok": "https://www.tiktok.com/discover/yvonne-prause-afd",
+                    "x.com": "https://twitter.com/AfdHannover/status/1807386794356269284",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 21,
@@ -229,7 +429,17 @@
             "residence": "Potsdam",
             "electoral_district": null,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/helmar.wobeto.1/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/afd_potsdam/p/C6tlTn1KhpT/?__d=11",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=zrSuXHBO4Og"
+                }
+            ]
         },
         {
             "position": 22,
@@ -240,7 +450,17 @@
             "residence": "Falkensee",
             "electoral_district": 6,
             "lat": "52.5678244",
-            "lon": "13.0855621"
+            "lon": "13.0855621",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/photo.php?fbid=885631490265459&id=100064558487711&set=a.626580266170584",
+                    "instagram": "https://www.instagram.com/havelland.afd/?hl=af",
+                    "tiktok": "https://www.tiktok.com/discover/compact-verboten-falkensee",
+                    "x.com": "https://twitter.com/wurzer_julian/status/1818588476482163129",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 23,
@@ -251,7 +471,17 @@
             "residence": "Schwedt/Oder",
             "electoral_district": 12,
             "lat": "53.0563710",
-            "lon": "14.2501396"
+            "lon": "14.2501396",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/afd.brandenburg/posts/1901091213411805/?locale=th_TH",
+                    "instagram": "https://www.instagram.com/reschernorbert/?__d=1",
+                    "tiktok": "https://www.tiktok.com/@maxmoede/video/7399394800002288928",
+                    "x.com": "https://twitter.com/uckermarkafd/status/1826217527732556065",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 24,
@@ -262,7 +492,17 @@
             "residence": "Potsdam",
             "electoral_district": 22,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/afdpotsdam/photos/am-sonnabend-ist-unser-kandidat-im-wahlkreis-22-potsdam-ii-chaled-uwe-said-von-1/895200982639936/",
+                    "instagram": "https://www.instagram.com/chaleduwe/",
+                    "tiktok": "https://www.tiktok.com/discover/chaled-uwe-sahid",
+                    "x.com": "https://twitter.com/c_u_said",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=wJfdBpqr2Tc"
+                }
+            ]
         },
         {
             "position": 25,
@@ -273,7 +513,17 @@
             "residence": "Rheinsberg",
             "electoral_district": null,
             "lat": "53.0983176",
-            "lon": "12.8910116"
+            "lon": "12.8910116",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/PNN.de/posts/daniel-pommerenke-sitzt-f%C3%BCr-die-afd-im-kreistag-von-ostprignitz-ruppin-gilt-als-/4310223315709126/",
+                    "instagram": "https://www.instagram.com/aktionsbuendnis.brandenburg/p/C-KQqcUsYyJ/",
+                    "tiktok": "https://www.tiktok.com/discover/Alice-weidel-impfskandal?lang=de-DE",
+                    "x.com": "https://twitter.com/ab_brandenburg/status/1819289841403597165",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 26,
@@ -284,7 +534,17 @@
             "residence": "Schwedt/Oder",
             "electoral_district": null,
             "lat": "53.0586366",
-            "lon": "14.2840858"
+            "lon": "14.2840858",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/peggy.lindemann.73/",
+                    "instagram": "https://www.instagram.com/lindemannpeggy/?igshid=YmMyMTA2M2Y%3D",
+                    "tiktok": "https://www.tiktok.com/@peggyehnert/video/7406309959119490337",
+                    "x.com": "https://twitter.com/BILD/status/1561431693042614275",
+                    "telegram": "https://t.me/s/jeanpascal_hohm?before=633",
+                    "youtube": "https://www.youtube.com/channel/UCLzlR9zLI435b9qnoLpI-9g/videos"
+                }
+            ]
         },
         {
             "position": 27,
@@ -295,7 +555,17 @@
             "residence": "Oranienburg",
             "electoral_district": 9,
             "lat": "52.7529379",
-            "lon": "13.2457591"
+            "lon": "13.2457591",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Tim.Zimmermann.AfD/",
+                    "instagram": "https://www.instagram.com/timzimmermann.afd/",
+                    "tiktok": "https://www.tiktok.com/@tim.zimmermann",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=G482kZuxWTU"
+                }
+            ]
         },
         {
             "position": 28,
@@ -306,7 +576,17 @@
             "residence": "Blankenfelde-Mahlow",
             "electoral_district": 23,
             "lat": "52.3479238",
-            "lon": "13.4119554"
+            "lon": "13.4119554",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/LionEdler/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/lion_edler/?locale=de&hl=en",
+                    "tiktok": "https://www.tiktok.com/@lion_edler",
+                    "x.com": "https://twitter.com/lionedler",
+                    "telegram": "https://t.me/lionedler",
+                    "youtube": "https://www.youtube.com/watch?v=BsKRnTU24Es"
+                }
+            ]
         },
         {
             "position": 29,
@@ -317,7 +597,17 @@
             "residence": "Neuruppin OT Alt Ruppin",
             "electoral_district": 3,
             "lat": "52.9243859",
-            "lon": "12.8092919"
+            "lon": "12.8092919",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/afd.ostprignitz.ruppin/photos/henry-preu%C3%9F-unser-direktkandidat-im-wahlkreis-3-neuruppin-rheinsberg-lindow-fehr/906411168180785/",
+                    "instagram": "https://www.instagram.com/tagesspiegel/p/C9PBW2_sMqX/",
+                    "tiktok": "https://www.tiktok.com/discover/wenn-der-eine-aus-der-afd-mit-abgeschoben-wird",
+                    "x.com": "https://twitter.com/ndaktuell/status/1826662620746637326",
+                    "telegram": "https://t.me/s/ulrichsiegmund0",
+                    "youtube": "https://m.youtube.com/post/UgkxDbIb7xcHnBHznXsN4GftRHS3MfD2_O2j"
+                }
+            ]
         },
         {
             "position": 30,
@@ -328,7 +618,17 @@
             "residence": "Prenzlau",
             "electoral_district": null,
             "lat": "53.3167",
-            "lon": "13.866575"
+            "lon": "13.866575",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Klaus-Bastert",
+                    "instagram": "https://www.instagram.com/afd_kreisverband_uckermark/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/miguel-klaus-afd",
+                    "x.com": "",
+                    "telegram": "https://t.me/s/HannesGnauck?before=1770",
+                    "youtube": "https://www.youtube.com/watch?v=zwTaa3htVTI"
+                }
+            ]
         },
         {
             "position": 31,
@@ -339,7 +639,17 @@
             "residence": "Schulzendorf",
             "electoral_district": null,
             "lat": "52.3643159",
-            "lon": "13.5960911"
+            "lon": "13.5960911",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/story.php/?story_fbid=743751624565570&id=100067922167181",
+                    "instagram": "https://www.instagram.com/benfilter/p/C53gB8ttYFs/?locale=zh_CN&hl=bn",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 32,
@@ -350,7 +660,17 @@
             "residence": "Havelsee",
             "electoral_district": null,
             "lat": "52.4913976",
-            "lon": "12.4595798"
+            "lon": "12.4595798",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/story.php?story_fbid=10160078971169869&id=38246844868",
+                    "instagram": "https://www.instagram.com/afdbrbhavel/p/Czdlhk0NeZ5/",
+                    "tiktok": "https://www.tiktok.com/discover/uwe-afd",
+                    "x.com": "https://twitter.com/uwehomm",
+                    "telegram": "https://t.me/s/stefanhomburg?before=12038",
+                    "youtube": "https://www.youtube.com/channel/UCx30NNpvMi5Qk7g58rmsPpg/videos"
+                }
+            ]
         },
         {
             "position": 33,
@@ -361,7 +681,17 @@
             "residence": "Eichwalde",
             "electoral_district": null,
             "lat": "52.373076",
-            "lon": "13.6219208"
+            "lon": "13.6219208",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/afdimbundestag/photos/a.159958374587682/408855319697985/?type=3",
+                    "instagram": "https://www.instagram.com/p/C-0D3pXtMPa/?hl=hi",
+                    "tiktok": "https://www.tiktok.com/@lvz.de/video/7405599011882798369",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 34,
@@ -372,7 +702,17 @@
             "residence": "Petershagen/Eggersdorf",
             "electoral_district": 32,
             "lat": "52.5468589",
-            "lon": "13.7398494"
+            "lon": "13.7398494",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/afd.brandenburg/photos/heute-stellen-wir-ihnen-ihre-direktkandidaten-f%C3%BCr-die-mitte-brandenburgs-vordenn/1247831015404498/",
+                    "instagram": "https://www.instagram.com/afd_brandenburg/?hl=de",
+                    "tiktok": "",
+                    "x.com": "https://twitter.com/AfDMOL/status/1796120534767304816",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 35,
@@ -383,7 +723,17 @@
             "residence": "Potsdam",
             "electoral_district": null,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/neinzurafd/posts/trotz-seiner-n%C3%A4he-zur-identit%C3%A4ren-bewegung-darf-gerhard-vierfu%C3%9F-im-schiedsgerich/3787964977935578/",
+                    "instagram": "https://www.instagram.com/afd_potsdam/p/C7PCCRUhJiJ/",
+                    "tiktok": "https://www.tiktok.com/discover/Gerhardkemp",
+                    "x.com": "https://twitter.com/IbDoku/status/1782271703281717561",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=fyQmYH2Unq4"
+                }
+            ]
         },
         {
             "position": 2,
@@ -394,7 +744,17 @@
             "residence": "Karstädt OT Blüthen",
             "electoral_district": null,
             "lat": "53.2883824",
-            "lon": "11.4893222"
+            "lon": "11.4893222",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/p/Jean-Ren%C3%A9-Adam-Im-Kreistag-Prignitz-und-der-Gemeindevertretung-Karst%C3%A4dt-100064171383966/",
+                    "instagram": "https://www.instagram.com/jeanrene.adam_afd/",
+                    "tiktok": "https://www.tiktok.com/discover/brandner-afd-28-juni",
+                    "x.com": "https://twitter.com/rbb24/status/1809165859409023112",
+                    "telegram": "",
+                    "youtube": "https://m.youtube.com/post/UgkxMM83YnwONzjcL2sDFEGNIbx8YwEXuMXK"
+                }
+            ]
         },
         {
             "position": 2,
@@ -405,7 +765,17 @@
             "residence": "Wittstock/Dosse",
             "electoral_district": null,
             "lat": "53.162999",
-            "lon": "12.4868962"
+            "lon": "12.4868962",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/photo.php?fbid=10157132883750680&id=112784955679&set=a.275406990679&locale=de_DE",
+                    "instagram": "https://www.instagram.com/goetzfroemming/p/C_p2cH5tl6W/?locale=%E8%AD%A6%E5%AF%9F%E8%83%BD%E4%B8%8D%E8%83%BD%E5%BE%AE%E4%BF%A1%E5%AE%9A%E4%BD%8D%E6%89%BE%E4%BA%BA(TG%3Auw567)%E5%85%A8%E5%9B%BD%E8%B0%83%E6%9F%A5%E4%BF%A1%E6%81%AF%E8%AE%B0%E5%BD%95%E5%9D%87%E5%8F%AF%E6%9F%A5.xemj&hl=en",
+                    "tiktok": "https://www.tiktok.com/@schrittweise8/video/7403845715325127969",
+                    "x.com": "https://twitter.com/a_leininger?lang=de",
+                    "telegram": "",
+                    "youtube": "https://m.youtube.com/@torstenarndt3966"
+                }
+            ]
         },
         {
             "position": 2,
@@ -416,7 +786,17 @@
             "residence": "Premnitz",
             "electoral_district": null,
             "lat": "52.5280946",
-            "lon": "12.3448306"
+            "lon": "12.3448306",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/photo.php?fbid=1243782592476007&id=115602575294020&set=a.115652885288989",
+                    "instagram": "https://www.instagram.com/p/C-NFIDbsVKX/?locale=%E5%AE%9A%E5%88%B6%E7%BE%8E%E5%9B%BD%E6%9C%BA%E5%8A%A8%E8%BD%A6%E8%A1%8C%E9%A9%B6%E6%89%A7%E7%85%A7%E8%81%94%E7%B3%BB%7B%E5%A8%81%E4%BF%A1%2BTG%2F%E9%A3%9E%E6%9C%BA%3A%40buth2788%7DvPtNL%3F%3F%3F%3F%3F%3F%D1%A7%3F%3F%C6%BEKoImG&hl=sk",
+                    "tiktok": "https://www.tiktok.com/discover/berger-grimma-gegen-afd-entscheidung",
+                    "x.com": "https://twitter.com/BergerKai",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=dB8mEY7FiNI"
+                }
+            ]
         },
         {
             "position": 2,
@@ -427,7 +807,17 @@
             "residence": "Eberswalde",
             "electoral_district": null,
             "lat": "52.8350807",
-            "lon": "13.7996542"
+            "lon": "13.7996542",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/rkuffert/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/roman_kuffert_afd/?locale=%25E5%2581%259A%25E4%25B8%25AA%25E9%2598%25BF%25E6%259B%25BC%25E5%25A9%259A%25E5%25A7%25BB%25E5%2585%25AC%25E8%25AF%2581%25E4%25B9%25A6%25E3%2580%2596%25E5%25AE%25A2%25E6%259C%258D%25E5%25A8%2581%25E4%25BF%25A1%252BTG%252F%25E9%25A3%259E%25E6%25d.nlm.nih.gov%2Fdailymed%2Fsearch.cfm%3FID%3D%25E5%25AE%259A%25E5%2588%25B6%25E7%2599%25BD%25E4%25BF%2584%25E7%25BD%2597%25E6%2596%25AF%25E7%2594%25B5%25E8%25B4%25B9%25E8%25B4%25A6%25E5%258D%2595%25E3%2580%2596%25E5%25AE%25A2%25E6%259C%258D%25E5%25A8%2581%25E4%25BF%25A1%252BTG%252F%25E9%25A3%259E%25E6%259C%25BA%253A%2540buth2788%25E3%2580%2597UySwQ%7B%3F%3F%3F%3F1%7DnHlFj&hl=en",
+                    "tiktok": "https://www.tiktok.com/@afd.kuffert",
+                    "x.com": "https://twitter.com/berlinerzeitung/status/1797963762810696074",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/channel/UC5RNPGm_xJJacLMbdJ6MFmQ"
+                }
+            ]
         },
         {
             "position": 2,
@@ -438,7 +828,17 @@
             "residence": "Panketal",
             "electoral_district": null,
             "lat": "52.7137566",
-            "lon": "13.4393862"
+            "lon": "13.4393862",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/neuesprogramm/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/steffenjohn_mdl/",
+                    "tiktok": "https://www.tiktok.com/@steffenjohn_mdl",
+                    "x.com": "https://twitter.com/BrandenburgAfD/status/1829899243764457555",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/channel/UCIjJAAwr2elkcOYMyIzxV-w"
+                }
+            ]
         },
         {
             "position": 2,
@@ -449,7 +849,17 @@
             "residence": "Königs Wusterhausen",
             "electoral_district": null,
             "lat": "52.2994511",
-            "lon": "13.6244389"
+            "lon": "13.6244389",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/p/Jan-Schenk-AfD-100092245437943/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/jan.schenk.98/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@janschenk5/video/7390393510756699425",
+                    "x.com": "https://twitter.com/janschenkkwh?lang=de",
+                    "telegram": "https://t.me/s/freiesachsen?before=9281",
+                    "youtube": "https://www.youtube.com/watch?v=aZo7LNWM4cM"
+                }
+            ]
         },
         {
             "position": 2,
@@ -460,7 +870,17 @@
             "residence": "Grünheide (Mark)",
             "electoral_district": null,
             "lat": "52.4262298",
-            "lon": "13.8226458"
+            "lon": "13.8226458",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/MuxelOderSpree/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/kathimuxel/",
+                    "tiktok": "https://www.tiktok.com/@afd.kv.mol/video/7267821439976295713",
+                    "x.com": "https://twitter.com/kathimuxel",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 2,
@@ -471,7 +891,17 @@
             "residence": "Grünheide (Mark) OT Spreetal",
             "electoral_district": null,
             "lat": "52.4262298",
-            "lon": "13.8226458"
+            "lon": "13.8226458",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/rainer.galla.7/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/afd_brandenburg/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/rainer-galla?lang=de-DE",
+                    "x.com": "https://twitter.com/rainergalla",
+                    "telegram": "https://t.me/s/infokanal_muenzenmaier?before=1877",
+                    "youtube": "https://www.youtube.com/watch?v=BGwhPckT0fI"
+                }
+            ]
         },
         {
             "position": 2,
@@ -482,7 +912,17 @@
             "residence": "Brandenburg an der Havel",
             "electoral_district": null,
             "lat": "52.4141254",
-            "lon": "12.5532547"
+            "lon": "12.5532547",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AxelBroesicke/",
+                    "instagram": "https://www.instagram.com/afdbrbhavel/p/C4A9QMvN-AT/",
+                    "tiktok": "https://www.tiktok.com/discover/axel-br%C3%B6sicke-afd",
+                    "x.com": "https://twitter.com/Pressefuchs_Brb/status/1832008992421265519",
+                    "telegram": "https://www.t.me/s/achseostwest?before=559",
+                    "youtube": "https://www.youtube.com/watch?v=SwZIWuaI8WQ"
+                }
+            ]
         },
         {
             "position": 2,
@@ -493,7 +933,17 @@
             "residence": "Michendorf",
             "electoral_district": null,
             "lat": "52.3165197",
-            "lon": "13.0316383"
+            "lon": "13.0316383",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/photo.php?fbid=2209054569342495&id=1437362649845028&set=a.1674266356154655&locale=pt_BR",
+                    "instagram": "https://www.instagram.com/p/C-GD8KXsbh3/",
+                    "tiktok": "https://www.tiktok.com/discover/afd-kevin-dorow",
+                    "x.com": "https://twitter.com/BrandenburgAfD/status/1828349356266668106",
+                    "telegram": "https://t.me/s/demotermine?before=147730",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 2,
@@ -504,7 +954,17 @@
             "residence": "Potsdam OT Neu Fahrland",
             "electoral_district": null,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/p/Tim-Krause-100072016592395/",
+                    "instagram": "https://www.instagram.com/afd_potsdam/p/C6y2ymOIXwK/?__d=11",
+                    "tiktok": "https://www.tiktok.com/discover/tim-krause-afd",
+                    "x.com": "https://twitter.com/krau05828265?lang=de",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=ZMvdZhYZXjU"
+                }
+            ]
         },
         {
             "position": 2,
@@ -515,7 +975,17 @@
             "residence": "Bad Freienwalde (Oder)",
             "electoral_district": null,
             "lat": "52.787521",
-            "lon": "14.0300689"
+            "lon": "14.0300689",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/story.php/?story_fbid=766977708807648&id=100064862775334",
+                    "instagram": "https://www.instagram.com/larsguentherafd/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd.kv.mol/video/7271295000099573024",
+                    "x.com": "https://twitter.com/AfDMOL/status/1829984946531787235",
+                    "telegram": "https://t.me/s/afdfraktionBB?before=729",
+                    "youtube": "https://www.youtube.com/watch?v=pl8HrWMy4Ms"
+                }
+            ]
         },
         {
             "position": 2,
@@ -526,7 +996,17 @@
             "residence": "Seelow",
             "electoral_district": null,
             "lat": "52.5318238",
-            "lon": "14.380704"
+            "lon": "14.380704",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/FalkJankeAfD/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/afd_brandenburg/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/afd-news-b%C3%BCrgerdialog",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=wqzjY_G4TbY"
+                }
+            ]
         },
         {
             "position": 2,
@@ -537,7 +1017,17 @@
             "residence": "Lichterfeld-Schacksdorf",
             "electoral_district": null,
             "lat": "51.59626775",
-            "lon": "13.774534402601546"
+            "lon": "13.774534402601546",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/Peter.Drenske.AfD/",
+                    "instagram": "https://www.instagram.com/peterdrenske/p/CtgOtEyKm-1/?locale=zh_CN",
+                    "tiktok": "https://www.tiktok.com/discover/afd-brandenburger-tor",
+                    "x.com": "",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://m.youtube.com/watch?v=cFjvGdFrSAg"
+                }
+            ]
         },
         {
             "position": 2,
@@ -548,7 +1038,17 @@
             "residence": "Elsterwerda",
             "electoral_district": null,
             "lat": "51.4614993",
-            "lon": "13.5204883"
+            "lon": "13.5204883",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/VolkerNothing.AfD/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/volker_nothing/",
+                    "tiktok": "https://www.tiktok.com/discover/Volker-nothing-afd",
+                    "x.com": "https://twitter.com/volkernothing?lang=de",
+                    "telegram": "https://t.me/s/afdfraktionBB?before=957",
+                    "youtube": "https://www.youtube.com/watch?v=zwTaa3htVTI"
+                }
+            ]
         },
         {
             "position": 2,
@@ -559,7 +1059,17 @@
             "residence": "Trebbin",
             "electoral_district": null,
             "lat": "52.2150361",
-            "lon": "13.2140282"
+            "lon": "13.2140282",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/birgitbessin/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/bessin_birgit_afd/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@birgit_bessin",
+                    "x.com": "https://twitter.com/birgitbessin",
+                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "youtube": "https://www.youtube.com/channel/UCKza8niDux6U-3fpxEq819g"
+                }
+            ]
         },
         {
             "position": 2,
@@ -570,7 +1080,17 @@
             "residence": "Luckaitztal",
             "electoral_district": null,
             "lat": "51.6773336",
-            "lon": "13.986490863659187"
+            "lon": "13.986490863659187",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/afdosl/photos/am-mittwoch-sind-daniel-m%C3%BCnschke-und-fabian-jank-in-altd%C3%B6bern-/899076585600310/",
+                    "instagram": "https://www.instagram.com/p/C_JJQOftUMG/?locale=zh_CN&hl=fa",
+                    "tiktok": "https://www.tiktok.com/@absolute.mehrheit.mdb/video/7224124491331374363",
+                    "x.com": "https://mobile.twitter.com/fabian_jank_afd",
+                    "telegram": "",
+                    "youtube": "https://m.youtube.com/watch?v=9A-NaFq5Jew"
+                }
+            ]
         }
     ],
     "III_Weg": [
@@ -583,7 +1103,17 @@
             "residence": "Angermünde",
             "electoral_district": 11,
             "lat": "53.0065103",
-            "lon": "13.9978035"
+            "lon": "13.9978035",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Matthias-Fischer/",
+                    "instagram": "https://www.instagram.com/ausdemweg_/p/C8JkCEwiMxu/",
+                    "tiktok": "https://www.tiktok.com/discover/matthias-fischer-der-dritte-weg",
+                    "x.com": "https://twitter.com/jenschristianw1/status/1480219993828741121?lang=ar",
+                    "telegram": "https://t.me/s/DerDritteWegSauerlandSiegerland",
+                    "youtube": "https://www.youtube.com/watch?v=kmidku-OpUc"
+                }
+            ]
         },
         {
             "position": 2,
@@ -594,7 +1124,17 @@
             "residence": "Lanz",
             "electoral_district": 1,
             "lat": "53.0742408",
-            "lon": "11.5993605"
+            "lon": "11.5993605",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/DrMarioVoigt/posts/eine-debatte-die-im-%C3%B6ffentlichen-rampenlicht-steht-viele-fragen-mich-warum-machs/818350483450152/",
+                    "instagram": "https://www.instagram.com/mario_schulz_/?hl=de",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=p3U_Xz_1bp4"
+                }
+            ]
         },
         {
             "position": 3,
@@ -605,7 +1145,17 @@
             "residence": "Pritzwalk",
             "electoral_district": 9,
             "lat": "53.1492896",
-            "lon": "12.1761903"
+            "lon": "12.1761903",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/lutz.meyer.92/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/aktionsbuendnis.brandenburg/p/C7TuGxGsr1G/",
+                    "tiktok": "",
+                    "x.com": "https://twitter.com/meyerberry",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/Jinimeyer"
+                }
+            ]
         },
         {
             "position": 4,
@@ -616,7 +1166,17 @@
             "residence": "Oberuckersee OT Blankenburg",
             "electoral_district": 12,
             "lat": "53.2322212",
-            "lon": "13.8646183"
+            "lon": "13.8646183",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/antifakampfausbildung/posts/das-sind-die-nazifressen-die-zu-den-350-geh%C3%B6ren-die-sich-am-3-oktober-nach-hohen/3425338297511975/",
+                    "instagram": "https://www.instagram.com/ausdemweg_/p/C8JkCEwiMxu/",
+                    "tiktok": "",
+                    "x.com": "https://twitter.com/Jugend_Brb_Bln/status/1786647068867453119",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=YOBn0n0qsEo"
+                }
+            ]
         },
         {
             "position": 5,
@@ -627,7 +1187,17 @@
             "residence": "Wittstock/Dosse",
             "electoral_district": 2,
             "lat": "53.162999",
-            "lon": "12.4868962"
+            "lon": "12.4868962",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "https://www.instagram.com/p/C40uSc2s72F/?next=%2Fkultursebiha%2Ffeed%2F&hl=zh-cn",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "https://t.me/s/DerDritteWeg?before=8156",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 6,
@@ -638,7 +1208,17 @@
             "residence": "Angermünde",
             "electoral_district": null,
             "lat": "53.0146196",
-            "lon": "13.9965501"
+            "lon": "13.9965501",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "https://www.instagram.com/ausdemweg_/p/C9eHBBqISdi/",
+                    "tiktok": "https://www.tiktok.com/discover/lessing-gymnasium-d%C3%BCsseldorf-eller",
+                    "x.com": "",
+                    "telegram": "https://t.me/s/DerDritteWeg?before=8023",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 7,
@@ -649,7 +1229,17 @@
             "residence": "Lanz",
             "electoral_district": null,
             "lat": "53.0742408",
-            "lon": "11.5993605"
+            "lon": "11.5993605",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Karin-Schulz/",
+                    "instagram": "https://www.instagram.com/karinschulz202/",
+                    "tiktok": "https://www.tiktok.com/@karins357",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=3CacOKTUaM4"
+                }
+            ]
         }
     ],
     "WU": [
@@ -662,7 +1252,17 @@
             "residence": "Glienicke/Nordbahn",
             "electoral_district": null,
             "lat": "52.63227",
-            "lon": "13.3307308"
+            "lon": "13.3307308",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/WerteUnionThueringen/photos/liebe-freunde-der-th%C3%BCringer-werteunion-wir-w%C3%BCnschen-euch-ein-sch%C3%B6nes-wochenende/494104926349914/",
+                    "instagram": "https://www.instagram.com/sofiawerz/?hl=de",
+                    "tiktok": "https://www.tiktok.com/discover/werteunion",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=lHHjfYCJN3M"
+                }
+            ]
         },
         {
             "position": 2,
@@ -673,7 +1273,17 @@
             "residence": "Rangsdorf",
             "electoral_district": null,
             "lat": "52.2914292",
-            "lon": "13.418888"
+            "lon": "13.418888",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/oliver.scharfenberg.1/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/oliver.scharfenberg/",
+                    "tiktok": "https://www.tiktok.com/discover/upham-woods?lang=ko-KR",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/channel/UCjgIJi8fb6xmVkndWJFJrEg"
+                }
+            ]
         },
         {
             "position": 3,
@@ -684,7 +1294,17 @@
             "residence": "Stahnsdorf",
             "electoral_district": null,
             "lat": "52.3869675",
-            "lon": "13.2077118"
+            "lon": "13.2077118",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Hans-J%C3%BCrgen-Klein",
+                    "instagram": "https://www.instagram.com/klein.sylt/",
+                    "tiktok": "https://www.tiktok.com/discover/Widgets-beige",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=JdkhhmKMvoE"
+                }
+            ]
         },
         {
             "position": 4,
@@ -695,7 +1315,17 @@
             "residence": "Glienicke/Nordbahn",
             "electoral_district": null,
             "lat": "52.63227",
-            "lon": "13.3307308"
+            "lon": "13.3307308",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/photo.php?fbid=10159462873519293&id=65951004292&set=a.330612699292&locale=ga_IE",
+                    "instagram": "https://www.instagram.com/ohlhauserjan/p/C1ZDpK-gErr/?hl=de",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         },
         {
             "position": 5,
@@ -706,7 +1336,17 @@
             "residence": "Kleinmachnow",
             "electoral_district": null,
             "lat": "52.4064167",
-            "lon": "13.2236601"
+            "lon": "13.2236601",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Karsten-Spies",
+                    "instagram": "https://www.instagram.com/kikidoyouloveme/reel/C0YjZW0NJm1/",
+                    "tiktok": "https://www.tiktok.com/@zauberhaft.handgemacht/video/7248279343313505562",
+                    "x.com": "https://twitter.com/WUBrandenburg",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=yIQ2O_24eGI"
+                }
+            ]
         },
         {
             "position": 6,
@@ -717,7 +1357,17 @@
             "residence": "Ludwigsfelde",
             "electoral_district": null,
             "lat": "52.3016096",
-            "lon": "13.2610163"
+            "lon": "13.2610163",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/tilo.acksel/",
+                    "instagram": "https://www.instagram.com/tilo_acksel.sen/reel/C8-nwI6NLqD/?locale=dehttps%3A555ten.com%2F%3Fgclid%3DCjwKCAiA85efBhBbEiwAD7oLQD0Yv4VqRr-r7JZQO0urJZYdRtRM6QkTusDKWfLnFFK5MAIkhLUd3BoCBiYQAvD_BwE%3Flocale%3Ddehttps%3A%2F%2F555ten.com%2F%3Fgclid%3DCjwKCAiA85efBhBbEiwAD7oLQD0Yv4VqRr-r7JZQO0urJZYdRtRM6QkTusDKWfLnFFK5MAIkhLUd3BoCBiYQAvD_BwE%3Flocale%3Ddehttps%3A%2F555ten.com%2F%3Fgclid%3DCjwKCAiA85efBhBbEiwAD7oLQD0Yv4VqRr-r7JZQO0urJZYdRtRM6QkTusDKWfLnFFK5MAIkhLUd3BoCBiYQAvD_BwE%3Flocale%3Ddehttps%3A%2F%2F555ten.com%2F%3Fgclid%3DCjwKCAiA85efBhBbEiwAD7oLQD0Yv4VqRr-r7JZQO0urJZYdRtRM6QkTusDKWfLnFFK5MAIkhLUd3BoCBiYQAvD_BwEhttps%3A%2F%2F555ten.com%2F&hl=am-et",
+                    "tiktok": "https://www.tiktok.com/discover/werteunionnieder",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=0IralL_xwK0"
+                }
+            ]
         },
         {
             "position": 7,
@@ -728,7 +1378,17 @@
             "residence": "Potsdam",
             "electoral_district": null,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Rolf-Kurz/",
+                    "instagram": "https://www.instagram.com/wald_zapfa/p/C-a6GvXq__c/",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/@wuvienna"
+                }
+            ]
         },
         {
             "position": 8,
@@ -739,7 +1399,17 @@
             "residence": "Ludwigsfelde",
             "electoral_district": null,
             "lat": "52.3016096",
-            "lon": "13.2610163"
+            "lon": "13.2610163",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/J%C3%B6rg-H%C3%BCbner/",
+                    "instagram": "https://www.instagram.com/run_joerg/?hl=de",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/dietmarhubner"
+                }
+            ]
         },
         {
             "position": 9,
@@ -750,7 +1420,17 @@
             "residence": "Potsdam",
             "electoral_district": null,
             "lat": "52.4009309",
-            "lon": "13.0591397"
+            "lon": "13.0591397",
+            "social_media": [
+                {
+                    "facebook": "https://de-de.facebook.com/public/Ronald-Meissner",
+                    "instagram": "https://www.instagram.com/p/C8mazR7u1qV/?locale=es_ES",
+                    "tiktok": "https://www.tiktok.com/@ronaldcrimjr/video/7299178769816767787",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/channel/UCiHHXT8Vbi0kXIfRtDgICsw/videos"
+                }
+            ]
         },
         {
             "position": 10,
@@ -761,7 +1441,17 @@
             "residence": "Stahnsdorf",
             "electoral_district": null,
             "lat": "52.3869675",
-            "lon": "13.2077118"
+            "lon": "13.2077118",
+            "social_media": [
+                {
+                    "facebook": "https://m.facebook.com/public/Klein-Wu",
+                    "instagram": "https://www.instagram.com/pa.wu/",
+                    "tiktok": "https://www.tiktok.com/@pandorafilmverleih/video/7391876317832088865",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=Sa42mtoY5V0"
+                }
+            ]
         },
         {
             "position": 11,
@@ -772,7 +1462,17 @@
             "residence": "Nennhausen",
             "electoral_district": null,
             "lat": "52.6038537",
-            "lon": "12.5072123"
+            "lon": "12.5072123",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/groups/www.potsdamfinder.de/posts/hall%C3%B6chenfalls-noch-jemand-eine-tagesmutti-sucht-kann-ich-meine-sehr-empfehlen-u/10161790603546414/",
+                    "instagram": "https://www.instagram.com/scriba.j/",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=9G1QzFOs6VY"
+                }
+            ]
         },
         {
             "position": 12,
@@ -783,7 +1483,17 @@
             "residence": "Jüterbog",
             "electoral_district": null,
             "lat": "51.9916493",
-            "lon": "13.0801128"
+            "lon": "13.0801128",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/raban.vonstudnitz/",
+                    "instagram": "https://www.instagram.com/andreas_von_studnitz/",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=uylcPLiF2So"
+                }
+            ]
         },
         {
             "position": 13,
@@ -794,7 +1504,17 @@
             "residence": "Eberswalde",
             "electoral_district": null,
             "lat": "52.8350807",
-            "lon": "13.7996542"
+            "lon": "13.7996542",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/jonas.heese.7/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/nerdenheese/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@jonas_5668",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=gcp5NXGcewo"
+                }
+            ]
         }
     ]
 }

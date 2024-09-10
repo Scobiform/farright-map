@@ -16,8 +16,6 @@ const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 // BERLIN BERLIN 52.521429561594175, 13.413687786049813
 const DEFAULT_CENTER = [52.5214295, 13.4136877]
 
-
-
 // Function to generate custom icon based on party
 // CSS classes are in global.scss
 const getIcon = (party) => {
@@ -154,6 +152,17 @@ export default function Home() {
                               <br />
                               {person.profession}
                               <hr />
+                              <h3>Social Media Links</h3>
+                              <ul>
+                                {Object.entries(person.social_media[0]).map(([platform, url]) => (
+                                  <li key={platform}>
+                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                      {platform}
+                                    </a>
+                                  </li>
+                                ))}
+                              </ul>
+                              <h3>Search on other sites</h3>
                               <ul>
                                 <li>
                                 <a
