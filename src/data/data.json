@@ -368,8 +368,11 @@
             "birthplace": "Hannover",
             "residence": "Frankfurt (Oder)",
             "electoral_district": 35,
-            "lat": "52.3412273",
-            "lon": "14.549452",
+            "lat": "52.3229030",
+            "lon": "14.5111954",
+            "mail": "",
+            "mobile": "+491793238146",
+            "website": "http://www.afd-ffo.de/",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/WilkoMoellerMdL/?locale=de_DE",
@@ -377,7 +380,7 @@
                     "tiktok": "https://www.tiktok.com/@wilko_moeller",
                     "x.com": "https://twitter.com/wilko_moeller",
                     "telegram": "https://t.me/s/afdfraktionBB?before=729",
-                    "youtube": "https://www.youtube.com/watch?v=yxUXIhYpV18&vl=de"
+                    "youtube": "https://www.youtube.com/channel/UCisWiu65H41PWHAI-tm7_IQ"
                 }
             ]
         },
@@ -389,16 +392,19 @@
             "birthplace": "Sangerhausen",
             "residence": "Velten",
             "electoral_district": 7,
-            "lat": "52.6882194",
-            "lon": "13.1775867",
+            "lat": "52.7361578",
+            "lon": "13.2414689",
+            "mail": "info@afd-oberhavel.de",
+            "mobile": "",
+            "website": "https://www.heikogehring.de/",
             "social_media": [
                 {
-                    "facebook": "https://www.facebook.com/MAZOberhavel/posts/der-veltener-afd-stadtverordnete-heiko-gehring-soll-janina-gumprecht-leiterin-de/2680818538639576/?locale=ar_AR",
-                    "instagram": "https://www.instagram.com/p/C_iOii4qX8x/",
+                    "facebook": "https://www.facebook.com/afdvelten",
+                    "instagram": "/",
                     "tiktok": "https://www.tiktok.com/discover/heiko-gehring-afd",
                     "x.com": "https://twitter.com/BrandenburgAfD/status/1830886085884322132",
                     "telegram": "",
-                    "youtube": "https://www.youtube.com/watch?v=47uexgTf0_I"
+                    "youtube": ""
                 }
             ]
         },
@@ -412,6 +418,9 @@
             "electoral_district": 20,
             "lat": "52.4676414",
             "lon": "13.6928287",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/philipzeschmann/",
@@ -433,6 +442,9 @@
             "electoral_district": null,
             "lat": "52.6011365",
             "lon": "13.5458815",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/p/Marko-Langer-100016476017006/?locale=pt_BR",
@@ -454,6 +466,9 @@
             "electoral_district": 8,
             "lat": "52.6841309",
             "lon": "13.375854377162955",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/yvonne.prause.10/",
@@ -475,6 +490,9 @@
             "electoral_district": null,
             "lat": "52.4009309",
             "lon": "13.0591397",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/helmar.wobeto.1/?locale=de_DE",
@@ -496,6 +514,9 @@
             "electoral_district": 6,
             "lat": "52.5678244",
             "lon": "13.0855621",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/photo.php?fbid=885631490265459&id=100064558487711&set=a.626580266170584",
@@ -517,6 +538,9 @@
             "electoral_district": 12,
             "lat": "53.0563710",
             "lon": "14.2501396",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/afd.brandenburg/posts/1901091213411805/?locale=th_TH",
@@ -538,6 +562,9 @@
             "electoral_district": 22,
             "lat": "52.4009309",
             "lon": "13.0591397",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/afdpotsdam/photos/am-sonnabend-ist-unser-kandidat-im-wahlkreis-22-potsdam-ii-chaled-uwe-said-von-1/895200982639936/",
@@ -559,6 +586,9 @@
             "electoral_district": null,
             "lat": "53.0983176",
             "lon": "12.8910116",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/PNN.de/posts/daniel-pommerenke-sitzt-f%C3%BCr-die-afd-im-kreistag-von-ostprignitz-ruppin-gilt-als-/4310223315709126/",
@@ -580,6 +610,9 @@
             "electoral_district": null,
             "lat": "53.0586366",
             "lon": "14.2840858",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/peggy.lindemann.73/",
@@ -601,6 +634,9 @@
             "electoral_district": 9,
             "lat": "52.7529379",
             "lon": "13.2457591",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/Tim.Zimmermann.AfD/",
@@ -622,6 +658,9 @@
             "electoral_district": 23,
             "lat": "52.3479238",
             "lon": "13.4119554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/LionEdler/?locale=de_DE",
@@ -643,6 +682,9 @@
             "electoral_district": 3,
             "lat": "52.9243859",
             "lon": "12.8092919",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/afd.ostprignitz.ruppin/photos/henry-preu%C3%9F-unser-direktkandidat-im-wahlkreis-3-neuruppin-rheinsberg-lindow-fehr/906411168180785/",
@@ -664,6 +706,9 @@
             "electoral_district": null,
             "lat": "53.3167",
             "lon": "13.866575",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -685,6 +730,9 @@
             "electoral_district": null,
             "lat": "52.3643159",
             "lon": "13.5960911",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/story.php/?story_fbid=743751624565570&id=100067922167181",
@@ -706,6 +754,9 @@
             "electoral_district": null,
             "lat": "52.4913976",
             "lon": "12.4595798",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/story.php?story_fbid=10160078971169869&id=38246844868",
@@ -727,6 +778,9 @@
             "electoral_district": null,
             "lat": "52.373076",
             "lon": "13.6219208",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/afdimbundestag/photos/a.159958374587682/408855319697985/?type=3",
@@ -748,6 +802,9 @@
             "electoral_district": 32,
             "lat": "52.5468589",
             "lon": "13.7398494",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/afd.brandenburg/photos/heute-stellen-wir-ihnen-ihre-direktkandidaten-f%C3%BCr-die-mitte-brandenburgs-vordenn/1247831015404498/",
@@ -769,6 +826,9 @@
             "electoral_district": null,
             "lat": "52.4009309",
             "lon": "13.0591397",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/neinzurafd/posts/trotz-seiner-n%C3%A4he-zur-identit%C3%A4ren-bewegung-darf-gerhard-vierfu%C3%9F-im-schiedsgerich/3787964977935578/",
@@ -790,6 +850,9 @@
             "electoral_district": null,
             "lat": "53.2883824",
             "lon": "11.4893222",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/p/Jean-Ren%C3%A9-Adam-Im-Kreistag-Prignitz-und-der-Gemeindevertretung-Karst%C3%A4dt-100064171383966/",
@@ -811,6 +874,9 @@
             "electoral_district": null,
             "lat": "53.162999",
             "lon": "12.4868962",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -832,6 +898,9 @@
             "electoral_district": null,
             "lat": "52.5280946",
             "lon": "12.3448306",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/photo.php?fbid=1243782592476007&id=115602575294020&set=a.115652885288989",
