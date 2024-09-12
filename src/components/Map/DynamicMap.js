@@ -49,10 +49,10 @@ const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }
           />
         </LayersControl.BaseLayer>
 
-        <LayersControl.BaseLayer name="OpenTopoMap">
+        <LayersControl.BaseLayer name="cyclosm">
           <TileLayer
             url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a>'
+            attribution='&copy; <a href="https://cyclosm.openstreetmap.fr">cyclosm</a>'
           />
         </LayersControl.BaseLayer>
 
