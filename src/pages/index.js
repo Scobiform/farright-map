@@ -141,7 +141,7 @@ export default function Home() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                {person.name}
+                                <h2>{person.name}</h2>
                               </a>
                               <br />
                               {person.residence} <br /> ({party})
@@ -156,7 +156,9 @@ export default function Home() {
                               <br />
                               {person.mobile}
                               <br />
-                              {person.website}
+                              <a href={person.website} target="_blank" rel="noopener noreferrer">
+                                {person.website}
+                              </a>
                               <hr />
                               <h3>Social Media Links</h3>
                               <ul>
