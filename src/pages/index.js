@@ -142,7 +142,7 @@ export default function Home() {
                                 if (key === "name" || key === "social_media" || key === "position" || key === "lat" || key === "lon" || !value) return null;
 
                                 // For website, render it as a link
-                                if (key === "website") {
+                                if (key === "website" || key === "wikipedia") {
                                   return (
                                     <li key={key}>
                                       <a href={value} target="_blank" rel="noopener noreferrer">

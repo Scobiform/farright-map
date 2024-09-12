@@ -1228,6 +1228,10 @@
             "electoral_district": 11,
             "lat": "53.0065103",
             "lon": "13.9978035",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "https://de.wikipedia.org/wiki/Matthias_Fischer_(Rechtsextremist)",
             "social_media": [
                 {
                     "facebook": "",
@@ -1249,6 +1253,9 @@
             "electoral_district": 1,
             "lat": "53.0742408",
             "lon": "11.5993605",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1270,6 +1277,9 @@
             "electoral_district": 9,
             "lat": "53.1492896",
             "lon": "12.1761903",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1291,6 +1301,9 @@
             "electoral_district": 12,
             "lat": "53.2322212",
             "lon": "13.8646183",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1312,6 +1325,9 @@
             "electoral_district": 2,
             "lat": "53.162999",
             "lon": "12.4868962",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1333,6 +1349,9 @@
             "electoral_district": null,
             "lat": "53.0146196",
             "lon": "13.9965501",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1354,6 +1373,9 @@
             "electoral_district": null,
             "lat": "53.0742408",
             "lon": "11.5993605",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/Karin-Schulz/",
@@ -1377,6 +1399,9 @@
             "electoral_district": null,
             "lat": "52.63227",
             "lon": "13.3307308",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/WerteUnionThueringen/photos/liebe-freunde-der-th%C3%BCringer-werteunion-wir-w%C3%BCnschen-euch-ein-sch%C3%B6nes-wochenende/494104926349914/",
@@ -1398,6 +1423,9 @@
             "electoral_district": null,
             "lat": "52.2914292",
             "lon": "13.418888",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/oliver.scharfenberg.1/?locale=de_DE",
@@ -1419,6 +1447,9 @@
             "electoral_district": null,
             "lat": "52.3869675",
             "lon": "13.2077118",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/Hans-J%C3%BCrgen-Klein",
@@ -1440,6 +1471,9 @@
             "electoral_district": null,
             "lat": "52.63227",
             "lon": "13.3307308",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1461,6 +1495,9 @@
             "electoral_district": null,
             "lat": "52.4064167",
             "lon": "13.2236601",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/Karsten-Spies",
@@ -1482,6 +1519,9 @@
             "electoral_district": null,
             "lat": "52.3016096",
             "lon": "13.2610163",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/tilo.acksel/",
@@ -1503,6 +1543,9 @@
             "electoral_district": null,
             "lat": "52.4009309",
             "lon": "13.0591397",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/Rolf-Kurz/",
@@ -1524,6 +1567,9 @@
             "electoral_district": null,
             "lat": "52.3016096",
             "lon": "13.2610163",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/J%C3%B6rg-H%C3%BCbner/",
@@ -1545,6 +1591,9 @@
             "electoral_district": null,
             "lat": "52.4009309",
             "lon": "13.0591397",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/public/Ronald-Meissner",
@@ -1566,6 +1615,9 @@
             "electoral_district": null,
             "lat": "52.3869675",
             "lon": "13.2077118",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://m.facebook.com/public/Klein-Wu",
@@ -1587,6 +1639,9 @@
             "electoral_district": null,
             "lat": "52.6038537",
             "lon": "12.5072123",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "",
@@ -1608,6 +1663,9 @@
             "electoral_district": null,
             "lat": "51.9916493",
             "lon": "13.0801128",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/raban.vonstudnitz/",
@@ -1629,6 +1687,9 @@
             "electoral_district": null,
             "lat": "52.8350807",
             "lon": "13.7996542",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/jonas.heese.7/?locale=de_DE",
