@@ -131,28 +131,31 @@ export default function Home() {
                           match = match[1];
                         }
 
-                        
-
                         return (
                           <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                             <Popup>
-                              <h2>{person.name}</h2>
-                              <ul>
-                                <li>{person.residence} <br /> ({party})</li>
-                                <li>{person.birth_year}</li>
-                                <li>{person.birthplace}</li>
-                                <li>
-                                {person.profession}</li>
-                                <li>
-                                {person.mail}</li>
-                                <li>
-                                {person.mobile}</li>
-                                <li>
-                                  <a href={person.website} target="_blank" rel="noopener noreferrer">
-                                    {person.website}
-                                  </a>
-                                </li>
-                              </ul>
+                            <h2>{person.name}</h2>
+                            <ul>
+                              {Object.entries(person).map(([key, value]) => {
+                                // Exclude
+                                if (key === "name" || key === "social_media" || key === "position" || key === "lat" || key === "lon" || !value) return null;
+
+                                // For website, render it as a link
+                                if (key === "website") {
+                                  return (
+                                    <li key={key}>
+                                      <a href={value} target="_blank" rel="noopener noreferrer">
+                                        {value}
+                                      </a>
+                                    </li>
+                                  );
+                                }
+
+                                // Default rendering
+                                return <li key={key}>{key}: {value}</li>;
+                              })}
+                            </ul>
+
                               <hr />
                               <h3>Social Media Links</h3>
                               <ul>
