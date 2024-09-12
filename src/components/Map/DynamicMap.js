@@ -7,7 +7,7 @@ import styles from './Map.module.scss';
 
 const { MapContainer } = ReactLeaflet;
 
-const Map = ({ children, className, width, height, ...rest }) => {
+const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }) => {
   let mapClassName = styles.map;
 
   if ( className ) {
@@ -26,7 +26,12 @@ const Map = ({ children, className, width, height, ...rest }) => {
   }, []);
 
   return (
-    <MapContainer className={mapClassName} {...rest}>
+    <MapContainer 
+      className={mapClassName} 
+      style={{ width, height }}
+      keyboard={true} 
+      {...rest}
+    >
       {children(ReactLeaflet, Leaflet)}
     </MapContainer>
   )
