@@ -10,7 +10,6 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import rechtelandeslistebrandenburg from '@data/data.json'
 
-
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
 // BERLIN BERLIN 52.521429561594175, 13.413687786049813
@@ -134,7 +133,7 @@ export default function Home() {
                         return (
                           <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                             <Popup>
-                            <h2>{person.name} <p class="left">{party}</p></h2>
+                            <h2>{person.name} <p className="left">{party}</p></h2>
                             
                             <ul>
                               {Object.entries(person).map(([key, value]) => {
