@@ -416,11 +416,11 @@
             "birthplace": "Berlin",
             "residence": "Schöneiche bei Berlin",
             "electoral_district": 20,
-            "lat": "52.4676414",
-            "lon": "13.6928287",
-            "mail": "",
-            "mobile": "",
-            "website": "",
+            "lat": "52.4499478",
+            "lon": "13.7519237",
+            "mail": "buero.philip.zeschmann@mdl.brandenburg.de",
+            "mobile": "033624079440",
+            "website": "https://www.philip-zeschmann.de/",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/philipzeschmann/",
@@ -428,7 +428,7 @@
                     "tiktok": "https://www.tiktok.com/tag/zeschmann",
                     "x.com": "https://twitter.com/BrandenburgAfD/status/1828349356266668106",
                     "telegram": "https://t.me/s/afdfraktionBB?before=1192",
-                    "youtube": "https://www.youtube.com/watch?v=LBO9988Jsoc"
+                    "youtube": ""
                 }
             ]
         },
