@@ -134,7 +134,8 @@ export default function Home() {
                         return (
                           <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                             <Popup>
-                            <h2>{person.name}</h2>
+                            <h2>{person.name} <p class="left">{party}</p></h2>
+                            
                             <ul>
                               {Object.entries(person).map(([key, value]) => {
                                 // Exclude
