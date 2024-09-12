@@ -153,17 +153,17 @@ export default function Home() {
                               {person.profession}
                               <hr />
                               <h3>Social Media Links</h3>
-<ul>
-  {Object.entries(person.social_media[0]).map(([platform, url]) => 
-    url ? (
-      <li key={platform}>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          {platform}
-        </a>
-      </li>
-    ) : null
-  )}
-</ul>
+                              <ul>
+                                {Object.entries(person.social_media[0]).map(([platform, url]) => 
+                                  url ? (
+                                    <li key={platform}>
+                                      <a href={url} target="_blank" rel="noopener noreferrer">
+                                        {platform}
+                                      </a>
+                                    </li>
+                                  ) : null
+                                )}
+                              </ul>
                               <h3>Search on other sites</h3>
                               <ul>
                                 <li>
