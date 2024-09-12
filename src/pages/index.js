@@ -136,13 +136,7 @@ export default function Home() {
                         return (
                           <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                             <Popup>
-                              <a
-                                href={`https://www.northdata.de/${(person.name)} ${(match)}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                <h2>{person.name}</h2>
-                              </a>
+                              <h2>{person.name}</h2>
                               <br />
                               {person.residence} <br /> ({party})
                               <br />
@@ -174,6 +168,15 @@ export default function Home() {
                               </ul>
                               <h3>Search on other sites</h3>
                               <ul>
+                                <li>
+                                <a
+                                href={`https://www.northdata.de/${(person.name)} ${(match)}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                northdata
+                              </a>
+                                </li>
                                 <li>
                                 <a
                                   href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${(person.name)}`}
