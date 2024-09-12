@@ -29,7 +29,7 @@ def search_google(query, platform):
 
     soup = BeautifulSoup(response.text, "html.parser")
 
-    print(soup.prettify())
+    #print(soup.prettify())
 
     # Match platform with the corresponding social media domain
     platform_domains = {
