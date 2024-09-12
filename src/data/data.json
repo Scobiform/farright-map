@@ -713,8 +713,8 @@
             "website": "",
             "social_media": [
                 {
-                    "facebook": "",
-                    "instagram": "https://www.instagram.com/afd_kreisverband_uckermark/?hl=de",
+                    "facebook": "https://de-de.facebook.com/people/Klaus-Martin-Bastert/",
+                    "instagram": "",
                     "tiktok": "",
                     "x.com": "",
                     "telegram": "",
@@ -737,12 +737,13 @@
             "website": "",
             "social_media": [
                 {
-                    "facebook": "https://www.facebook.com/story.php/?story_fbid=743751624565570&id=100067922167181",
-                    "instagram": "https://www.instagram.com/benfilter/p/C53gB8ttYFs/?locale=zh_CN&hl=bn",
+                    "facebook": "",
+                    "instagram": "",
                     "tiktok": "",
                     "x.com": "",
                     "telegram": "",
-                    "youtube": ""
+                    "youtube": "",
+                    "linkedin": "https://de.linkedin.com/in/brigitte-doberstein-g%C3%BC%C3%9Fmann-bb072680"
                 }
             ]
         },
@@ -754,19 +755,20 @@
             "birthplace": "Rheinsberg",
             "residence": "Havelsee",
             "electoral_district": null,
-            "lat": "52.4913976",
-            "lon": "12.4595798",
+            "lat": "52.5344249",
+            "lon": "12.3509643",
             "mail": "",
             "mobile": "",
             "website": "",
             "social_media": [
                 {
-                    "facebook": "https://www.facebook.com/story.php?story_fbid=10160078971169869&id=38246844868",
-                    "instagram": "https://www.instagram.com/afdbrbhavel/p/Czdlhk0NeZ5/",
-                    "tiktok": "https://www.tiktok.com/discover/uwe-afd",
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
                     "x.com": "https://twitter.com/uwehomm",
-                    "telegram": "https://t.me/s/stefanhomburg?before=12038",
-                    "youtube": "https://www.youtube.com/channel/UCx30NNpvMi5Qk7g58rmsPpg/videos"
+                    "telegram": "",
+                    "youtube": "",
+                    "linkedin": "https://de.linkedin.com/in/uwe-homm-267606315"
                 }
             ]
         },
