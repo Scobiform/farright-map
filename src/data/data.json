@@ -929,12 +929,15 @@
             "electoral_district": null,
             "lat": "52.8350807",
             "lon": "13.7996542",
+            "mail": "kandidat@kuffert.de",
+            "mobile": "",
+            "website": "https://kuffert.de",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/rkuffert/?locale=de_DE",
                     "instagram": "https://www.instagram.com/roman_kuffert_afd/?locale=%25E5%2581%259A%25E4%25B8%25AA%25E9%2598%25BF%25E6%259B%25BC%25E5%25A9%259A%25E5%25A7%25BB%25E5%2585%25AC%25E8%25AF%2581%25E4%25B9%25A6%25E3%2580%2596%25E5%25AE%25A2%25E6%259C%258D%25E5%25A8%2581%25E4%25BF%25A1%252BTG%252F%25E9%25A3%259E%25E6%25d.nlm.nih.gov%2Fdailymed%2Fsearch.cfm%3FID%3D%25E5%25AE%259A%25E5%2588%25B6%25E7%2599%25BD%25E4%25BF%2584%25E7%25BD%2597%25E6%2596%25AF%25E7%2594%25B5%25E8%25B4%25B9%25E8%25B4%25A6%25E5%258D%2595%25E3%2580%2596%25E5%25AE%25A2%25E6%259C%258D%25E5%25A8%2581%25E4%25BF%25A1%252BTG%252F%25E9%25A3%259E%25E6%259C%25BA%253A%2540buth2788%25E3%2580%2597UySwQ%7B%3F%3F%3F%3F1%7DnHlFj&hl=en",
                     "tiktok": "https://www.tiktok.com/@afd.kuffert",
-                    "x.com": "",
+                    "x.com": "https://t.me/romankuffert",
                     "telegram": "",
                     "youtube": "https://www.youtube.com/channel/UC5RNPGm_xJJacLMbdJ6MFmQ"
                 }
