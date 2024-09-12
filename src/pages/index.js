@@ -137,22 +137,22 @@ export default function Home() {
                           <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                             <Popup>
                               <h2>{person.name}</h2>
-                              <br />
-                              {person.residence} <br /> ({party})
-                              <br />
-                              {person.birth_year}
-                              <br />
-                              {person.birthplace}
-                              <br />
-                              {person.profession}
-                              <br />
-                              {person.mail}
-                              <br />
-                              {person.mobile}
-                              <br />
-                              <a href={person.website} target="_blank" rel="noopener noreferrer">
-                                {person.website}
-                              </a>
+                              <ul>
+                                <li>{person.residence} <br /> ({party})</li>
+                                <li>{person.birth_year}</li>
+                                <li>{person.birthplace}</li>
+                                <li>
+                                {person.profession}</li>
+                                <li>
+                                {person.mail}</li>
+                                <li>
+                                {person.mobile}</li>
+                                <li>
+                                  <a href={person.website} target="_blank" rel="noopener noreferrer">
+                                    {person.website}
+                                  </a>
+                                </li>
+                              </ul>
                               <hr />
                               <h3>Social Media Links</h3>
                               <ul>
