@@ -202,6 +202,9 @@
             "electoral_district": 43,
             "lat": "51.7567447",
             "lon": "14.3357307",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/JeanPascal.Hohm/?locale=de_DE",
@@ -223,6 +226,9 @@
             "electoral_district": 15,
             "lat": "52.5406496",
             "lon": "13.0602956",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/Kotre.Lena/?locale=de_DE",
@@ -268,6 +274,9 @@
             "electoral_district": 19,
             "lat": "52.3715809",
             "lon": "12.9329125",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/marlon.deter.73/?locale=de_DE",
@@ -289,6 +298,9 @@
             "electoral_district": 40,
             "lat": "51.9503235",
             "lon": "14.7153567",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/Muenschke.Daniel/?locale=de_DE",
@@ -310,14 +322,17 @@
             "electoral_district": 10,
             "lat": "52.6375777",
             "lon": "13.2057511",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/galaumdl/?locale=de_DE",
-                    "instagram": "https://www.instagram.com/ignazio_salvini/reel/C-IyykCNI1s/",
+                    "instagram": "",
                     "tiktok": "https://www.tiktok.com/discover/andreas-galau-afd",
                     "x.com": "https://twitter.com/galau_mdl",
                     "telegram": "https://t.me/andreasgalau",
-                    "youtube": "https://m.youtube.com/post/Ugkx7XtI60U3P3YxpQbaUKSMIqRoCGkLBiZf"
+                    "youtube": ""
                 }
             ]
         },
