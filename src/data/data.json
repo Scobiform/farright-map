@@ -546,7 +546,7 @@
                     "facebook": "https://www.facebook.com/people/Rescher-Norbert/",
                     "instagram": "https://www.instagram.com/reschernorbert/?__d=1",
                     "tiktok": "",
-                    "x.com": "https://twitter.com/uckermarkafd/status/1826217527732556065",
+                    "x.com": "https://twitter.com/uckermarkafd/",
                     "telegram": "",
                     "youtube": ""
                 }
@@ -560,19 +560,21 @@
             "birthplace": "Dresden",
             "residence": "Potsdam",
             "electoral_district": 22,
-            "lat": "52.4009309",
-            "lon": "13.0591397",
+            "lat": "52.3970511",
+            "lon": "13.0516209",
             "mail": "",
             "mobile": "",
             "website": "",
             "social_media": [
                 {
-                    "facebook": "https://m.facebook.com/afdpotsdam/photos/am-sonnabend-ist-unser-kandidat-im-wahlkreis-22-potsdam-ii-chaled-uwe-said-von-1/895200982639936/",
+                    "facebook": "",
                     "instagram": "https://www.instagram.com/chaleduwe/",
                     "tiktok": "https://www.tiktok.com/discover/chaled-uwe-sahid",
                     "x.com": "https://twitter.com/c_u_said",
                     "telegram": "",
-                    "youtube": "https://www.youtube.com/watch?v=wJfdBpqr2Tc"
+                    "youtube": "https://www.youtube.com/watch?v=wJfdBpqr2Tc",
+                    "linkedin": "Chaled-Uwe Said",
+                    "threads": "https://www.threads.net/@chaleduwe"
                 }
             ]
         },
