@@ -110,7 +110,7 @@ export default function Home() {
               <>
                 <TileLayer
                   url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
-                  attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                  attribution="&copy; <a href=&quot;https://www.openstreetmap.org/copyright&quot;>OpenStreetMap</a> contributors"
                 />
 
                 {/* Loop through parties and candidates */}

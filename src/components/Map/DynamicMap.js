@@ -36,7 +36,7 @@ const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }
         {/* Base layer */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
         </LayersControl.BaseLayer>
@@ -49,16 +49,14 @@ const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }
           />
         </LayersControl.BaseLayer>
 
-        {/* Overlay layer with markers */}
-        <LayersControl.Overlay name="Marker Layer">
-          <LayerGroup>
-            <Marker position={[51.505, -0.09]}>
-              <Popup>A popup for this marker.</Popup>
-            </Marker>
-          </LayerGroup>
-        </LayersControl.Overlay>
-      </LayersControl>
+        <LayersControl.BaseLayer name="OpenTopoMap">
+          <TileLayer
+            url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a>'
+          />
+        </LayersControl.BaseLayer>
 
+      </LayersControl>
       {/* Render any additional children passed into the Map component */}
       {children(ReactLeaflet, Leaflet)}
     </MapContainer>
