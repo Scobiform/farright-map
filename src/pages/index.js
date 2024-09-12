@@ -170,7 +170,7 @@ export default function Home() {
                               <ul>
                                 <li>
                                 <a
-                                href={`https://www.northdata.de/${(person.name)} ${(match)}`}
+                                href={`https://www.northdata.de/${(person.name)}, ${(match)}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
