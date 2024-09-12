@@ -64,7 +64,7 @@
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/p/Felix-Teichner-100064050720103/",
-                    "instagram": "https://www.instagram.com/afduckermark/p/C_dtNYpthlM/?locale=%E6%80%8E%E4%B9%88%E5%88%B6%E4%BD%9C%E5%A5%A5%E5%9C%B0%E5%88%A9ID%E8%BA%AB%E4%BB%BD%E5%8D%A1%E8%81%94%E7%B3%BB%7B%E5%A8%81%E4%BF%A1%2BTG%2F%E9%A3%9E%E6%9C%BA%3A%40buth2788%7DSjK0O%3F%3F%3F%3F%3F%3F%D1%A7%3F%3F%C6%BEa4Y2W&hl=en",
+                    "instagram": "",
                     "tiktok": "https://www.tiktok.com/@felixhwteichner",
                     "x.com": "",
                     "telegram": "",
@@ -80,18 +80,18 @@
             "birthplace": "Zossen",
             "residence": "Blankenfelde-Mahlow",
             "electoral_district": 25,
-            "lat": "52.3479238",
-            "lon": "13.4119554",
-            "mail": "",
+            "lat": "52.4008595",
+            "lon": "13.0469330",
+            "mail": "Daniel.Freiherr.von.Luetzow@web.de",
             "mobile": "",
-            "website": "",
+            "website": "https://www.dervolkslobbyist.de/",
             "social_media": [
                 {
                     "facebook": "https://de-de.facebook.com/daniel-freiherr-von-l%C3%BCtzow-1428591354092550",
                     "instagram": "https://www.instagram.com/p/C-r-Tn3MHiu/?locale=%E5%88%B6%E4%BD%9C%E4%B8%80%E4%B8%AA%E5%8D%A1%E5%A1%94%E5%B0%94%E8%81%8C%E4%B8%9A%E8%AF%81%E4%B9%A6%E3%80%96%E5%A8%81%E4%BF%A1%2BTG%2F%E9%A3%9E%E6%9C%BA%3A%40buth2788%E3%80%97PiMgK&hl=ar",
                     "tiktok": "https://www.tiktok.com/@volkslobbyist",
-                    "x.com": "https://twitter.com/volkslobbyist",
-                    "telegram": "https://t.me/s/afdfraktionBB",
+                    "x.com": "https://x.com/von_lutzow?lang=de",
+                    "telegram": "",
                     "youtube": "https://www.youtube.com/@danielfreiherrvonlutzow9601"
                 }
             ]
@@ -106,6 +106,9 @@
             "electoral_district": 41,
             "lat": "51.896268649999996",
             "lon": "14.388927317479588",
+            "mail": "",
+            "mobile": "",
+            "website": "",
             "social_media": [
                 {
                     "facebook": "https://www.facebook.com/afd.steffen.kubitzki/?locale=de_DE",
