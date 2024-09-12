@@ -151,6 +151,12 @@ export default function Home() {
                               {person.birthplace}
                               <br />
                               {person.profession}
+                              <br />
+                              {person.mail}
+                              <br />
+                              {person.mobile}
+                              <br />
+                              {person.website}
                               <hr />
                               <h3>Social Media Links</h3>
                               <ul>
