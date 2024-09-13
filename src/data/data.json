@@ -1448,19 +1448,19 @@
             "birthplace": "Berlin",
             "residence": "Rangsdorf",
             "electoral_district": null,
-            "lat": "52.2914292",
-            "lon": "13.418888",
-            "mail": "",
+            "lat": "52.4609418",
+            "lon": "13.3644691",
+            "mail": "EMail@oliver-scharfenberg.de",
             "mobile": "",
-            "website": "",
+            "website": "https://www.oliver-scharfenberg.de/",
             "social_media": [
                 {
-                    "facebook": "https://www.facebook.com/oliver.scharfenberg.1/?locale=de_DE",
+                    "facebook": "",
                     "instagram": "https://www.instagram.com/oliver.scharfenberg/",
                     "tiktok": "",
                     "x.com": "",
                     "telegram": "",
-                    "youtube": "https://www.youtube.com/channel/UCjgIJi8fb6xmVkndWJFJrEg"
+                    "youtube": ""
                 }
             ]
         },
