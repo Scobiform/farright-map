@@ -60,7 +60,7 @@ img {
 }
 
 .marker-iii_weg{
-  width: 25px;
+  width: 28px;
   height: 41px;
   background-color: #224e2a; 
   border-radius: 50%; /* Make it round */
@@ -70,7 +70,7 @@ img {
 }
 
 .marker-wu{
-  width: 25px;
+  width: 28px;
   height: 41px;
   background-color: #013B5B; 
   border-radius: 50%; /* Make it round */
@@ -80,7 +80,7 @@ img {
 }
 
 .marker-locations {
-  width: 25px;
+  width: 28px;
   height: 41px;
   border-radius: 50%; /* Make it round */
   display: flex;
@@ -90,7 +90,7 @@ img {
 }
 
 .marker-locations::before {
-  content: "💀"; /* Use the skull emoji */
-  font-size: 18px; /* Adjust the emoji size */
-  color: white; /* Set color for better visibility */
+  content: "☠️"; /* Use the skull emoji */
+  font-size: 28px;
+  filter: hue-rotate(120deg);
 }
