@@ -41,6 +41,7 @@ export default function Home() {
     AfD: true,
     III_Weg: true,
     WU: true,
+    Locations: true
   });
 
   // Function to toggle party visibility
@@ -100,11 +101,6 @@ export default function Home() {
           <Map className={styles.homeMap} 
                center={DEFAULT_CENTER} 
                zoom={8}
-               whenCreated={(mapInstance) => {
-                mapRef.current = mapInstance; 
-                console.log("Map instance created:", mapInstance);
-                setIsMapReady(true); 
-              }}
               >
             {({ TileLayer, Marker, Popup }) => (
               <>
@@ -141,7 +137,7 @@ export default function Home() {
                                 if (key === "name" || key === "social_media" || key === "position" || key === "lat" || key === "lon" || !value) return null;
 
                                 // For website, render it as a link
-                                if (key === "website" || key === "wikipedia") {
+                                if (key === "website" || key === "wikipedia" || key === "tuewat") {
                                   return (
                                     <li key={key}>
                                       <a href={value} target="_blank" rel="noopener noreferrer">

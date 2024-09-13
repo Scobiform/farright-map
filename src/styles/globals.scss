@@ -78,3 +78,19 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+.marker-locations {
+  width: 25px;
+  height: 41px;
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.marker-locations::before {
+  content: "💀"; /* Use the skull emoji */
+  font-size: 18px; /* Adjust the emoji size */
+  color: white; /* Set color for better visibility */
+}
