@@ -1731,7 +1731,7 @@
     ],
     "Locations": [
         {  
-            "Name": "COMPACT-Magazin GmbH",
+            "name": "COMPACT-Magazin GmbH",
             "lat": "52.5792984",
             "lon": "13-0644081",
             "residence": "Falkensee",
@@ -1747,12 +1747,44 @@
             ]
         },
         {  
-            "Name": "Stadtpark Lichtenberg - III. Weg Kampftraining",
+            "name": "Stadtpark Lichtenberg - III. Weg Kampftraining",
             "lat": "52.5181345",
             "lon": "13.4775144",
             "residence": "Lichtenberg",
             "website": "https://maps.app.goo.gl/QYGZyuGtgc6sRU5LA",
             "tuewat": "https://licht-blicke.org/wp-content/uploads/2024/03/Handreichung-3.Weg_A4_web-1.pdf",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {  
+            "name": "tv.berlin",
+            "lat": "52.5018128",
+            "lon": "13.3529916",
+            "residence": "Nollendorfkiez",
+            "website": "https://maps.app.goo.gl/e6dzLp7puqn6xun68",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {  
+            "name": "Godd Media GmbH",
+            "lat": "52.4877784",
+            "lon": "13.2736072",
+            "residence": "GRUNEWALD",
+            "website": "https://maps.app.goo.gl/KgsamygrYcvTaFf19",
             "social_media": [
                 {
                     "facebook": "",
