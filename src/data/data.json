@@ -1794,6 +1794,38 @@
                     "youtube": ""
                 }
             ]
+        },
+        {  
+            "name": "Verlag Antaios e.K.",
+            "lat": "51.2960683",
+            "lon": "11.7125642",
+            "residence": "Oberdorf 24, 06268 Steigra",
+            "website": "https://maps.app.goo.gl/d5AFbQTyJzZ3Ehhh8",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {  
+            "name": "Ein Prozent e.V.",
+            "lat": "51.0295935",
+            "lon": "13.8000727",
+            "residence": "Enderstraße 94, 01277 Dresden",
+            "website": "https://maps.app.goo.gl/rRVemfA8HXm5KMuT6",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ]
 }
