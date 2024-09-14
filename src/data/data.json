@@ -1826,6 +1826,22 @@
                     "youtube": ""
                 }
             ]
+        },
+        {  
+            "name": "Königreich Deutschland",
+            "lat": "51.8975496",
+            "lon": "12.6065835",
+            "residence": "Königreich Deutschland, Am bhf 4, 06889 Lutherstadt Wittenberg",
+            "website": "https://maps.app.goo.gl/a8f9TvAxw8VjmWnS8",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ]
 }
