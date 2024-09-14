@@ -1733,7 +1733,7 @@
         {  
             "name": "COMPACT-Magazin GmbH",
             "lat": "52.5792984",
-            "lon": "13-0644081",
+            "lon": "13.0644081",
             "residence": "Falkensee",
             "website": "https://www.compact-shop.de/",
             "social_media": [
@@ -1833,6 +1833,24 @@
             "lon": "12.6065835",
             "residence": "Königreich Deutschland, Am bhf 4, 06889 Lutherstadt Wittenberg",
             "website": "https://maps.app.goo.gl/a8f9TvAxw8VjmWnS8",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ],
+    "Fraternities":[
+        {
+            "name": "Leipziger Burschenschaft Germania",
+            "lat": "51.3533994",
+            "lon": "12.3735607",
+            "residence": "Leipzig",
+            "website": "https://maps.app.goo.gl/Ls9Kip7Czjpz5V6K8",
             "social_media": [
                 {
                     "facebook": "",

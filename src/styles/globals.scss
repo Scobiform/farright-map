@@ -94,3 +94,19 @@ img {
   font-size: 28px;
   filter: hue-rotate(120deg);
 }
+
+.marker-fraternities {
+  width: 28px;
+  height: 41px;
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.marker-fraternities::before {
+  content: "🤺"; /* Use the skull emoji */
+  font-size: 28px;
+  filter: hue-rotate(120deg);
+}

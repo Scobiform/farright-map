@@ -41,7 +41,8 @@ export default function Home() {
     AfD: true,
     III_Weg: true,
     WU: true,
-    Locations: true
+    Locations: true,
+    Fraternities: true
   });
 
   // Function to toggle party visibility
@@ -113,8 +114,7 @@ export default function Home() {
                 {Object.keys(rechtelandeslistebrandenburg).map((party) =>
                   visibleParties[party]
                     ? rechtelandeslistebrandenburg[party].map((person, index) => {
-                        // Apply jitter to positions that are in the same spot
-                        const position = jitterPosition(parseFloat(person.lat), parseFloat(person.lon), index);
+                        const position = [person.lat,person.lon]
                         // Regex to capture the part before 'OT'
                         var match = person.residence.match(/^(.*?)\s+OT\b/);
 
