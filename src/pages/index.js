@@ -59,6 +59,21 @@ export default function Home() {
     console.log(lat, lon);
   };
 
+  // State for search query
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter candidates based on the search query
+  const filteredCandidates = Object.keys(rechtelandeslistebrandenburg).reduce((acc, party) => {
+    const filteredPartyCandidates = rechtelandeslistebrandenburg[party].filter((person) =>
+      person.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    if (filteredPartyCandidates.length > 0) {
+      acc[party] = filteredPartyCandidates;
+    }
+    return acc;
+  }, {});
+
+
   return (
     <Layout>
       <Head>
@@ -68,6 +83,15 @@ export default function Home() {
       </Head>
       <Section>
         <Container>
+        <div className={styles.searchBox}>
+          <input
+            type="text"
+            placeholder="Search by candidate name..."
+            value={searchQuery}
+            className={styles.inputText} 
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
 
           {/* Buttons to toggle visibility of parties */}
           <div className={styles.partyControls}>
@@ -82,8 +106,8 @@ export default function Home() {
           <div className={styles.candidateList}>
             <h3>Candidate List</h3>
             <ul>
-              {Object.keys(rechtelandeslistebrandenburg).map((party) =>
-                rechtelandeslistebrandenburg[party].map((person, index) => (
+              {Object.keys(filteredCandidates).map((party) =>
+                filteredCandidates[party].map((person, index) => (
                   <li key={index}>
                     <button
                       type="button"
@@ -111,114 +135,105 @@ export default function Home() {
                 />
 
                 {/* Loop through parties and candidates */}
-                {Object.keys(rechtelandeslistebrandenburg).map((party) =>
-                  visibleParties[party]
-                    ? rechtelandeslistebrandenburg[party].map((person, index) => {
-                        const position = [person.lat,person.lon]
-                        // Regex to capture the part before 'OT'
-                        var match = person.residence.match(/^(.*?)\s+OT\b/);
+                {Object.keys(filteredCandidates).map((party) =>
+                  visibleParties[party] ? filteredCandidates[party].map((person, index) => {
+                    const position = [person.lat, person.lon];
 
-                        if (!match || !match[1]) {
-                          match = [person.residence];
-                        }
-                        else
-                        {
-                          match = match[1];
-                        }
+                    // Use regex to capture the part before 'OT' in the residence string
+                    const match = person.residence.match(/^(.*?)\s+OT\b/) || [person.residence];
+                    const residenceWithoutOT = match[1] || match[0];
 
-                        return (
-                          <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
-                            <Popup>
-                            <h2>{person.name} <p className="left">{party}</p></h2>
-                            
-                            <ul>
-                              {Object.entries(person).map(([key, value]) => {
-                                // Exclude
-                                if (key === "name" || key === "social_media" || key === "position" || key === "lat" || key === "lon" || !value) return null;
+                    return (
+                      <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
+                        <Popup>
+                          <h2>{person.name} <p className="left">{party}</p></h2>
+                          <ul>
+                            {Object.entries(person).map(([key, value]) => {
+                              // Exclude unnecessary properties
+                              if (!value || ["name", "social_media", "position", "lat", "lon"].includes(key)) {
+                                return null;
+                              }
 
-                                // For website, render it as a link
-                                if (key === "website" || key === "wikipedia" || key === "tuewat") {
-                                  return (
-                                    <li key={key}>
-                                      <a href={value} target="_blank" rel="noopener noreferrer">
-                                        {value}
-                                      </a>
-                                    </li>
-                                  );
-                                }
+                              // Render websites as clickable links
+                              if (["website", "wikipedia", "tuewat"].includes(key)) {
+                                return (
+                                  <li key={key}>
+                                    <a href={value} target="_blank" rel="noopener noreferrer">{value}</a>
+                                  </li>
+                                );
+                              }
 
-                                // Default rendering
-                                return <li key={key}>{key}: {value}</li>;
-                              })}
-                            </ul>
+                              // Default rendering for other properties
+                              return <li key={key}>{key}: {value}</li>;
+                            })}
+                          </ul>
 
-                              <hr />
-                              <h3>Social Media Links</h3>
-                              <ul>
-                                {Object.entries(person.social_media[0]).map(([platform, url]) => 
-                                  url ? (
-                                    <li key={platform}>
-                                      <a href={url} target="_blank" rel="noopener noreferrer">
-                                        {platform}
-                                      </a>
-                                    </li>
-                                  ) : null
-                                )}
-                              </ul>
-                              <h3>Search on other sites</h3>
-                              <ul>
-                                <li>
-                                <a
-                                href={`https://www.northdata.de/${(person.name)}, ${(match)}`}
+                          <hr />
+                          <h3>Social Media Links</h3>
+                          <ul>
+                            {Object.entries(person.social_media[0]).map(([platform, url]) => 
+                              url ? (
+                                <li key={platform}>
+                                  <a href={url} target="_blank" rel="noopener noreferrer">{platform}</a>
+                                </li>
+                              ) : null
+                            )}
+                          </ul>
+
+                          <h3>Search on other sites</h3>
+                          <ul>
+                            <li>
+                              <a
+                                href={`https://www.northdata.de/${person.name}, ${residenceWithoutOT}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
                                 northdata
                               </a>
-                                </li>
-                                <li>
-                                <a
-                                  href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${(person.name)}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  abgeordnetenwatch
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://www.google.com/search?q=${(person.name)} ${(party)} `}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
+                            </li>
+                            <li>
+                              <a
+                                href={`https://www.abgeordnetenwatch.de/profile?politician_search_keys=${person.name}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                abgeordnetenwatch
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href={`https://www.google.com/search?q=${person.name} ${party}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 google.com search
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://yandex.ru/search/?text=${(person.name)} ${(party)}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href={`https://yandex.ru/search/?text=${person.name} ${party}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 yandex.ru search
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`https://www.bing.com/search?q=${(person.name)} ${(party)}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
+                              </a>
+                            </li>
+                            <li>
+                              <a
+                                href={`https://www.bing.com/search?q=${person.name} ${party}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 bing.com search
-                                </a>
-                              </li>   
-                              </ul>
-                            </Popup>
-                          </Marker>
-                        );
-                      })
-                    : null
+                              </a>
+                            </li>
+                          </ul>
+                        </Popup>
+                      </Marker>
+                    );
+                  }) : null
                 )}
+
               </>
             )}
           </Map>
