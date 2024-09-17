@@ -84,6 +84,22 @@ img {
   align-items: center;
 }
 
+.marker-media {
+  width: 28px;
+  height: 41px;
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.marker-media::before {
+  content: "📡"; /* Use the skull emoji */
+  font-size: 28px;
+  filter: hue-rotate(120deg);
+}
+
 .marker-locations {
   width: 28px;
   height: 41px;
