@@ -26,12 +26,6 @@ const getIcon = (party) => {
   });
 };
 
-// Function to apply jitter if multiple markers are in the same spot
-const jitterPosition = (lat, lon, index) => {
-  const jitterAmount = 0.000001; 
-  return [lat + jitterAmount * (index % 2 === 0 ? 1 : -1), lon + jitterAmount * (index % 2 === 0 ? 1 : -1)];
-};
-
 export default function Home() {
 
   const mapRef = useRef(null); // Ref to store the map instance
