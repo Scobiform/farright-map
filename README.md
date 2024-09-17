@@ -1,19 +1,37 @@
 # 🍃 Next.js Leaflet FarRight Map
 
-![nazi-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "nazi-map screenshot")
+> A map application that visualizes far-right activities using Next.js and Leaflet.
 
+![farright-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "farright-map screenshot")
 
-## 🚀 Getting Started
+## Table of Contents
 
-### Requirements
+- [Disclaimer](#disclaimer)
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Quick Start
+## Disclaimer
 
-```
+All data used in this project was publicly available.
+
+## Background
+
+This project is designed to map far-right party-candidates.
+
+## Install
+
+First, clone the repository or use the following command to create a Next.js app based on this template:
+
+```bash
 npx create-next-app -e https://github.com/Scobiform/farright-map
 ```
 
-### Running the Project
+## Usage
+
 First, run the development server:
 
 ```bash
