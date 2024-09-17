@@ -2238,20 +2238,323 @@
         ]
         },
         {
-        "name": "Lüneburg",
-        "lat": "53.2487060",
-        "lon": "10.4078550",
-        "residence": "Lüneburg",
-        "website": "",
-        "social_media": [
-            {
-            "facebook": "",
-            "tiktok": "",
-            "x.com": "",
-            "telegram": "",
-            "youtube": ""
-            }
-        ]
+            "name": "Lüneburg",
+            "lat": "53.2487060",
+            "lon": "10.4078550",
+            "residence": "Lüneburg",
+            "website": "",
+            "social_media": [
+                {
+                "facebook": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+                }
+            ]
+        },{
+            "name": "Lüdershagen",
+            "lat": "54.3062345",
+            "lon": "12.6096536",
+            "residence": "Lüdershagen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Gribow",
+            "lat": "53.943225",
+            "lon": "13.481916931124196",
+            "residence": "Gribow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Güstrow",
+            "lat": "53.7936523",
+            "lon": "12.1759661",
+            "residence": "Güstrow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Lalendorf",
+            "lat": "53.7562735",
+            "lon": "12.3892512",
+            "residence": "Lalendorf",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Mieckow",
+            "lat": "53.7901163",
+            "lon": "12.5232292",
+            "residence": "Mieckow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Klaber",
+            "lat": "46.56177",
+            "lon": "-123.1279116",
+            "residence": "Klaber",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Hoppenrade-Kölln",
+            "lat": "53.7181845",
+            "lon": "12.2785495",
+            "residence": "Hoppenrade-Kölln",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Koppelow",
+            "lat": "53.7003209",
+            "lon": "12.3117232",
+            "residence": "Koppelow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Krakow am See",
+            "lat": "53.6499594",
+            "lon": "12.266794",
+            "residence": "Krakow am See",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Wahrstorf",
+            "lat": "54.0006197",
+            "lon": "12.0952966",
+            "residence": "Wahrstorf",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Satow",
+            "lat": "53.9896562",
+            "lon": "11.8952147",
+            "residence": "Satow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Benz",
+            "lat": "53.9404498",
+            "lon": "14.0729189",
+            "residence": "Benz",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Jamel",
+            "lat": "53.4826348",
+            "lon": "11.518107",
+            "residence": "Jamel",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Schwerin",
+            "lat": "53.6288297",
+            "lon": "11.4148038",
+            "residence": "Schwerin",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Banzin",
+            "lat": "53.4075246",
+            "lon": "10.9125219",
+            "residence": "Banzin",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Lübtheen",
+            "lat": "53.3023864",
+            "lon": "11.0842837",
+            "residence": "Lübtheen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Pätow-Steegen",
+            "lat": "53.3992736",
+            "lon": "11.1388839",
+            "residence": "Pätow-Steegen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Groß Krams",
+            "lat": "53.3332555",
+            "lon": "11.266353",
+            "residence": "Groß Krams",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Ueckermünde",
+            "lat": "53.7371069",
+            "lon": "14.0458887",
+            "residence": "Ueckermünde",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ]
 }
