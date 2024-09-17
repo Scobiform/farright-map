@@ -88,32 +88,34 @@ img {
   width: 28px;
   height: 41px;
   border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .marker-media::before {
   content: "📡"; /* Use the skull emoji */
   font-size: 28px;
-  filter: hue-rotate(120deg);
+  filter: invert(1);
+}
+
+.marker-organizations{
+  width: 28px;
+  height: 41px;
+  border-radius: 50%; /* Make it round */
+}
+
+.marker-organizations::before {
+  content: "🧿"; /* Use the skull emoji */
+  font-size: 28px;
 }
 
 .marker-locations {
   width: 28px;
   height: 41px;
   border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .marker-locations::before {
   content: "☠️"; /* Use the skull emoji */
   font-size: 28px;
-  filter: hue-rotate(120deg);
 }
 
 .marker-fraternities {

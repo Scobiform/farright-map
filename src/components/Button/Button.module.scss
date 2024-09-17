@@ -11,7 +11,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  background-color: $color-green;
+  background-color: $primary;
   padding: 0.42rem 0.42rem;
   margin: 0.14rem;
   border: 0;
@@ -19,12 +19,12 @@
   cursor: pointer;
 
   &:hover {
-    background-color: lighten($color-green, 10);
+    background-color: lighten($tertiary, 10);
   }
 
   &:disabled {
     color: rgba(white, 0.5);
-    background-color: lighten($color-green, 10);
+    background-color: lighten($tertiary, 10);
     cursor: default;
     opacity: .6;
   }

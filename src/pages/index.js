@@ -43,7 +43,8 @@ export default function Home() {
     WU: true,
     Media: true,
     Locations: true,
-    Fraternities: true
+    Fraternities: true,
+    Organizations: true
   });
 
   // Function to toggle party visibility
