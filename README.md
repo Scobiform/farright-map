@@ -20,7 +20,7 @@ All data used in this project was publicly available.
 
 ## Background
 
-This project is designed to map far-right party-candidates.
+This project is designed to map far-right party-candidates, media, organizations, special locations and fraternities.
 
 ## Install
 
