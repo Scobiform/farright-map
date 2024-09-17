@@ -1880,6 +1880,22 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Hamburger Burschenschaft Germania",
+            "lat": "53.5683303",
+            "lon": "10.0847149",
+            "residence": "Jüthornstraße 104, 22043 Hamburg",
+            "website": "https://maps.app.goo.gl/yEGzsUjRW1mwaWaWA",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ]
 }
