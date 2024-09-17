@@ -1896,6 +1896,38 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Burschenschaft Teutonia-Germania zu Marburg",
+            "lat": "50.8015211",
+            "lon": "8.76314036",
+            "residence": "Schückingstraße 17, 35037 Marburg",
+            "website": "https://maps.app.goo.gl/UBNcH8LXfNoNeAVM7",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Alte Breslauer Burschenschaft der Raczeks zu Bonn",
+            "lat": "50.7265189",
+            "lon": "7.10768880",
+            "residence": "Johannes-Henry-Straße 18, 53113 Bonn",
+            "website": "https://maps.app.goo.gl/7GSLBMLyNumTSDy26",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
         }
     ],
     "Organizations":[
@@ -1930,6 +1962,296 @@
                     "youtube": ""
                 }
             ]
+        }
+    ],
+    "Settlers": [
+        {
+            "name": "Immenhof in Hützel",
+            "lat": "53.1015198",
+            "lon": "10.0218784",
+            "residence": "Hützel",
+            "website": "",
+            "social_media": [
+                {
+                "facebook": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+                }
+            ]
+        },
+        {
+        "name": "Edendorf",
+        "lat": "53.1406400",
+        "lon": "10.5578000",
+        "residence": "Edendorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Lüsche",
+        "lat": "52.7257136",
+        "lon": "10.4423957",
+        "residence": "Lüsche",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Masendorf",
+        "lat": "53.0131974",
+        "lon": "10.6323208",
+        "residence": "Masendorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Hof von Joachim Nahtz in Eschede",
+        "lat": "52.7618186",
+        "lon": "10.2355491",
+        "residence": "Eschede",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Hohnstorf",
+        "lat": "53.1448646",
+        "lon": "10.5343827",
+        "residence": "Hohnstorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Hagen-Schlagte",
+        "lat": "53.0517332",
+        "lon": "10.7395176",
+        "residence": "Hagen-Schlagte",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Reinstorf",
+        "lat": "53.2344677",
+        "lon": "10.5711368",
+        "residence": "Reinstorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Klein Sommerbeck",
+        "lat": "53.2016637",
+        "lon": "10.6805063",
+        "residence": "Klein Sommerbeck",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Gienau",
+        "lat": "53.1640085",
+        "lon": "10.6648874",
+        "residence": "Gienau",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Nahrendorf-Oldendorf",
+        "lat": "53.1592034",
+        "lon": "10.8102669",
+        "residence": "Nahrendorf-Oldendorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Pinnau",
+        "lat": "53.1801933",
+        "lon": "11.0783905",
+        "residence": "Pinnau",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Dahlenburg-Vindorf",
+        "lat": "53.1587425",
+        "lon": "10.7219787",
+        "residence": "Dahlenburg-Vindorf",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Bienenbüttel-Hohenbostel",
+        "lat": "53.1524165",
+        "lon": "10.4820821",
+        "residence": "Bienenbüttel-Hohenbostel",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Himbergen-Strothe",
+        "lat": "53.1054393",
+        "lon": "10.6801782",
+        "residence": "Himbergen-Strothe",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Bad Bevensen",
+        "lat": "53.0809408",
+        "lon": "10.5744812",
+        "residence": "Bad Bevensen",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Gerdau",
+        "lat": "52.9663769",
+        "lon": "10.4201735",
+        "residence": "Gerdau",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
+        },
+        {
+        "name": "Lüneburg",
+        "lat": "53.2487060",
+        "lon": "10.4078550",
+        "residence": "Lüneburg",
+        "website": "",
+        "social_media": [
+            {
+            "facebook": "",
+            "tiktok": "",
+            "x.com": "",
+            "telegram": "",
+            "youtube": ""
+            }
+        ]
         }
     ]
 }

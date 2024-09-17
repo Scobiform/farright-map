@@ -38,7 +38,8 @@ export default function Home() {
     Media: true,
     Locations: true,
     Fraternities: true,
-    Organizations: true
+    Organizations: true,
+    Settlers: true
   });
 
   // Function to toggle party visibility
