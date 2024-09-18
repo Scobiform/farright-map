@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect, use } from 'react';
 import Head from 'next/head';
 
 import Layout from '@components/Layout';
@@ -10,7 +10,6 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import landdata from '@data/data.json'
 import kreisdata from '@data/kreis_data.json'
-import { Tooltip } from 'react-leaflet';
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
@@ -167,6 +166,7 @@ const getCenterCoordinate = (south, north, west, east) => {
 
 const offsetDistance = 0.00021; // Set a distance to offset the markers horizontally
 
+
   return (
     <Layout>
       <Head>
@@ -220,9 +220,8 @@ const offsetDistance = 0.00021; // Set a distance to offset the markers horizont
                center={DEFAULT_CENTER} 
                zoom={8}
                polygons={polygonsData}
-               ref={mapRef}
               >
-            {({ TileLayer, Marker, Popup }) => (
+            {({ TileLayer, Marker, Popup, Tooltip }) => (
               <>
                 <TileLayer
                   url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
@@ -239,27 +238,7 @@ const offsetDistance = 0.00021; // Set a distance to offset the markers horizont
 
                     // Extract bounding box values
                     const boundingbox = person.boundingbox || [];
-                    let position;
-
-                    // Check if bounding box has 4 coordinates
-                    if (boundingbox.length === 4) {
-                      const [south, north, west, east] = boundingbox.map(coord => parseFloat(coord));
-
-                      // Get center of the bounding box
-                      const [centerLat, centerLon] = getCenterCoordinate(south, north, west, east);
-
-                      // Offset each candidate by a small distance horizontally to arrange them side by side
-                      const offset = index * offsetDistance; // Each marker is moved slightly to the right
-                      const offsetLat = centerLat; // Keep latitude constant
-                      const offsetLon = centerLon + offset; // Move longitude to the right for each candidate
-
-                      // Set the position of the marker
-                      position = [person.lat, person.lon];
-                    } else {
-                      // Fallback to existing lat/lon if boundingbox is unavailable
-                      position = [person.lat, person.lon];
-                    }
-
+                    let position = [person.lat, person.lon];
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Tooltip>{person.name} - {party}</Tooltip>
@@ -347,7 +326,6 @@ const offsetDistance = 0.00021; // Set a distance to offset the markers horizont
                             </li>
                           </ul>
                         </Popup>
-                        {/* Draw the bounding box around the candidate */}
                       </Marker>
                     );
                   }) : null
