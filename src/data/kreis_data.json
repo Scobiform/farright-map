@@ -1,0 +1,5282 @@
+{
+    "AfD": [
+        {
+            "type": "kreis",
+            "name": "Weingardt, Tilo",
+            "votes": "2.708",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.834112220573346",
+            "lon": "13.812493914105083",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/afd.brandenburg/posts/wir-gratulieren-dem-neugew%C3%A4hlten-kreisvorstand-der-afd-kreisverband-barnim-und-w/1161958973991703/",
+                    "instagram": "https://www.instagram.com/afd_ortsverband_eberswalde/p/C8BsJlvtiXH/?locale=zh_CN",
+                    "tiktok": "https://www.tiktok.com/@ortsverbandeberswalde",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/watch?v=5J4-NvN8scc"
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kuffert, Roman",
+            "votes": "2.890",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/rkuffert/?locale=de_DE",
+                    "instagram": "https://www.instagram.com/roman_kuffert_afd/",
+                    "tiktok": "https://www.tiktok.com/@afd.kuffert",
+                    "x.com": "https://twitter.com/berlinerzeitung/status/1797963762810696074",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schaaf, Joachim Günther",
+            "votes": "2.984",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Didlof, Guido Georg",
+            "votes": "4.656",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hübner, Lars",
+            "votes": "3.650",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Nitsch, Inta",
+            "votes": "2.875",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bury, Norbert",
+            "votes": "5.059",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hirsch, Alexandra",
+            "votes": "4.114",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Neumann, Jürgen Werner",
+            "votes": "3.229",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "John, Steffen",
+            "votes": "2.339",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Stöwe, Ulf",
+            "votes": "4.515",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Regling, Alexander",
+            "votes": "3.779",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Reuter, Steffen",
+            "votes": "4.711",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Knüttel, Heike-Ilka",
+            "votes": "4.671",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Barnim",
+            "electoral_district": "60",
+            "lat": "52.80193215",
+            "lon": "13.677193256503498",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kleinwächter, Norbert",
+            "votes": "6.781",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Müller-Schmölzer, Martina",
+            "votes": "1.515",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Stettnisch, Petra",
+            "votes": "3.410",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schenk, Jan",
+            "votes": "2.887",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Berge, Heinz",
+            "votes": "2.768",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Keßel, Matthias",
+            "votes": "4.142",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Calov, Oliver",
+            "votes": "3.086",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Weinowski, Marco",
+            "votes": "1.332",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Fuchs, Vincent",
+            "votes": "4.938",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Eichner, Jörg",
+            "votes": "1.944",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schulz, Reinhardt",
+            "votes": "1.923",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Berndt, Hans-Christoph",
+            "votes": "7.825",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kortz, Florian",
+            "votes": "1.857",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Fuchs, Ute",
+            "votes": "1.344",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Dahme-Spreewald",
+            "electoral_district": "61",
+            "lat": "52.073909549999996",
+            "lon": "13.866791497499554",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Ruschin, Thomas",
+            "votes": "3.375",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Grundmann, Ulrich",
+            "votes": "1.149",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schober, Andreas",
+            "votes": "2.615",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lentzsch, Matthias",
+            "votes": "2.107",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schurig, Norbert",
+            "votes": "2.104",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Nothing, Volker",
+            "votes": "5.850",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Waldau, Torsten",
+            "votes": "2.368",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Haufe, Jörg",
+            "votes": "1.354",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kerstan, Andreas",
+            "votes": "1.157",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Drenske, Peter",
+            "votes": "3.285",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kuhla, Mario",
+            "votes": "1.528",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Starick, Maik",
+            "votes": "1.060",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lutz, Dirk",
+            "votes": "2.092",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Brunk, Hans-Georg",
+            "votes": "1.325",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Elbe-Elster",
+            "electoral_district": "62",
+            "lat": "51.62717585",
+            "lon": "13.480545282630338",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Berger, Kai",
+            "votes": "4.723",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Frömming, Götz",
+            "votes": "4.380",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Wilimzig, Ingo",
+            "votes": "2.986",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Kaufner, Dominik",
+            "votes": "8.246",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Niedermeyer, Felix",
+            "votes": "3.180",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Stein, Gregor",
+            "votes": "2.485",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dahlenburg, Jacqueline",
+            "votes": "2.169",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hübner, Gerald",
+            "votes": "5.052",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rhein, Michael",
+            "votes": "3.990",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Naß, André",
+            "votes": "2.681",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hermann, Ronny",
+            "votes": "2.456",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. van Raemdonck, Rainer",
+            "votes": "6.206",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Graf, André",
+            "votes": "2.445",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kotré, Lena",
+            "votes": "1.724",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Havelland",
+            "electoral_district": "63",
+            "lat": "52.62444375",
+            "lon": "12.684726380402369",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Günther, Lars",
+            "votes": "8.869",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Leimann, Ulf Bernd",
+            "votes": "2.021",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schneider, Jürgen",
+            "votes": "1.635",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rothe, Anne",
+            "votes": "1.458",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Janke, Falk Gerd",
+            "votes": "6.383",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Erler, Robin",
+            "votes": "3.904",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rothe, Thomas",
+            "votes": "2.020",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Weiß, Stefan",
+            "votes": "6.277",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hansch, Michael",
+            "votes": "2.145",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schäffer, Manuela",
+            "votes": "1.775",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Pardeik, Erik",
+            "votes": "5.272",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Pravida, Mike",
+            "votes": "3.994",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Latzke, Jens",
+            "votes": "2.095",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Klemm, Thomas Martin",
+            "votes": "6.383",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Mirus, Manuel",
+            "votes": "2.531",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Huget, Norbert Dankwardt",
+            "votes": "1.562",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Märkisch-Oderland",
+            "electoral_district": "64",
+            "lat": "52.638733450000004",
+            "lon": "14.178298969674543",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Galau, Andreas",
+            "votes": "5.814",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Barthel, Sabine",
+            "votes": "4.401",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Knorr, Elke",
+            "votes": "3.122",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Appelt, Florian",
+            "votes": "1.967",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gehring, Heiko",
+            "votes": "7.846",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Ahlers, Marek",
+            "votes": "2.795",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dirksen, Erik",
+            "votes": "2.521",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Zimmermann, Tim",
+            "votes": "8.143",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kiefer, Jochen",
+            "votes": "4.536",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hörig, Grit",
+            "votes": "4.443",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Friese, Daniel",
+            "votes": "3.618",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Prause, Yvonne",
+            "votes": "6.168",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kay, Thomas",
+            "votes": "2.772",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Fiedler, Steffen",
+            "votes": "1.708",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberhavel",
+            "electoral_district": "65",
+            "lat": "52.91888095",
+            "lon": "13.227980302482093",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "von Stürmer, Marian",
+            "votes": "4.811",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dreger, Danilo",
+            "votes": "2.996",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Meyer, Mathias",
+            "votes": "1.390",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Winter, Bernd",
+            "votes": "2.591",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Scholz, Robert Viktor",
+            "votes": "2.320",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Thiele, Simone",
+            "votes": "1.880",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Nicolai, Jürgen",
+            "votes": "5.672",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gebel, Hagen",
+            "votes": "2.175",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dietrich, Bernd",
+            "votes": "2.080",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gleitsmann, Roland",
+            "votes": "4.419",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Korte, Stefan",
+            "votes": "2.367",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Döring, Martin",
+            "votes": "2.348",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gröbe, Peter",
+            "votes": "1.214",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Wolf, Silvio",
+            "votes": "2.861",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Wolf, Silvio",
+            "votes": "2.317",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Wälder, Julian",
+            "votes": "1.637",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberspreewald-Lausitz",
+            "electoral_district": "66",
+            "lat": "51.630905150000004",
+            "lon": "14.033929813357613",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Galla, Rainer",
+            "votes": "8.464",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Zeschmann, Philip",
+            "votes": "4.564",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Muxel, Kathleen",
+            "votes": "2.094",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Aulich, Lars",
+            "votes": "6.566",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Natusch, Matthias",
+            "votes": "3.684",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Wand, Volker",
+            "votes": "2.192",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hooge, Rolf-Peter",
+            "votes": "1.996",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Zdebik, Alexander",
+            "votes": "7.352",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Both, Lutz",
+            "votes": "6.895",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Grund, Enrico",
+            "votes": "3.713",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Weißheimer, Steven",
+            "votes": "3.367",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Storek, Bernhard",
+            "votes": "2.012",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Diepold, Maik",
+            "votes": "11.424",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Haberkorn, Ralph",
+            "votes": "5.977",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kadelke, Andreas",
+            "votes": "3.790",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kirschke, Manuela",
+            "votes": "2.734",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Aulich, Rudolf",
+            "votes": "1.106",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oder-Spree",
+            "electoral_district": "67",
+            "lat": "52.250214150000005",
+            "lon": "14.268387618463276",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Preuß, Henry",
+            "votes": "4.954",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hurtig, Caroline",
+            "votes": "1.970",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Krüger, Veit",
+            "votes": "1.275",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Mießner, Manfred",
+            "votes": "6.179",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gaszczak, Marcel",
+            "votes": "4.306",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Herrmann, Kristin",
+            "votes": "1.360",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Wick, Tom",
+            "votes": "1.074",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Trebeß, Oliver",
+            "votes": "949",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Simon, Karsten",
+            "votes": "5.915",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Pommerenke, Daniel",
+            "votes": "2.611",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Queiser, Danny",
+            "votes": "1.093",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Arndt, Torsten",
+            "votes": "952",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Mende, Holger",
+            "votes": "717",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Ostprignitz-Ruppin",
+            "electoral_district": "68",
+            "lat": "53.0010645",
+            "lon": "12.703367031062648",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Behnke, Ellen",
+            "votes": "4.230",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schultz, Olaf",
+            "votes": "1.987",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dorow, Peer",
+            "votes": "7.991",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lieb, Sabine",
+            "votes": "3.547",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Deter, Marlon",
+            "votes": "7.024",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hoffmann, Claudia",
+            "votes": "2.560",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Deuter, Falk",
+            "votes": "5.839",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hünich, Lars",
+            "votes": "5.449",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Fritsche, Nico",
+            "votes": "2.213",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schulze, Frank",
+            "votes": "4.762",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Deichmann, Udo",
+            "votes": "4.720",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Potsdam-Mittelmark",
+            "electoral_district": "69",
+            "lat": "52.2682985",
+            "lon": "12.701359586567165",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Overlach, Silvio",
+            "votes": "4.038",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Jaenicke, Heino",
+            "votes": "2.710",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hamel, Mareen",
+            "votes": "2.520",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Niebling, Peter",
+            "votes": "758",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schulz, Mario",
+            "votes": "767",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Adam, Jean-René",
+            "votes": "3.429",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Tamm, Eckhard",
+            "votes": "2.037",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bellach, Claudia",
+            "votes": "1.947",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Tamm, Christopher Klaus Nikolai",
+            "votes": "1.676",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Sperling, Ralf",
+            "votes": "3.472",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kipp, Tino",
+            "votes": "2.677",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Genrich, Torsten",
+            "votes": "1.670",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Prignitz",
+            "electoral_district": "70",
+            "lat": "53.12313355",
+            "lon": "11.901469377691978",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Münschke, Daniel",
+            "votes": "4.829",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Franz, Olaf",
+            "votes": "1.270",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Horn, Konstantin",
+            "votes": "5.028",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Herzberg, Günter",
+            "votes": "2.122",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bochmann, Ingo",
+            "votes": "1.263",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Hanko, Michael",
+            "votes": "10.910",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Meier, Ulrike",
+            "votes": "2.052",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Henschel, Frank",
+            "votes": "1.407",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Jurk, Volkmar",
+            "votes": "765",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kubitzki, Steffen",
+            "votes": "8.423",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Fechner, Marco",
+            "votes": "1.986",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Langlotz, Marco",
+            "votes": "1.900",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Eule, Bernd",
+            "votes": "1.488",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kochan, Thomas",
+            "votes": "5.605",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Meyer, Frank",
+            "votes": "2.232",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Prüfer, René",
+            "votes": "1.889",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Serb, Dietmar",
+            "votes": "3.815",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kobialka, David",
+            "votes": "2.552",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lippert, Detlef",
+            "votes": "1.770",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Spree-Neiße",
+            "electoral_district": "71",
+            "lat": "51.7812916",
+            "lon": "14.197048760921327",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dr. Grünert, Eberhard",
+            "votes": "5.022",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kuwald, Mario",
+            "votes": "3.238",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Pfahler, Michael",
+            "votes": "7.468",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "von Drateln, Andreas",
+            "votes": "2.306",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bitterling, Frank",
+            "votes": "1.894",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Leisten, Edgar",
+            "votes": "5.514",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Edler, Lion",
+            "votes": "3.590",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Leisten, Martina",
+            "votes": "2.875",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bessin, Birgit",
+            "votes": "6.847",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Prill, Rajko",
+            "votes": "2.570",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Groschwitz, Uwe",
+            "votes": "1.428",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Freiherr von Lützow, Daniel",
+            "votes": "3.999",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Edler, Hans-Stefan",
+            "votes": "2.937",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Teltow-Fläming",
+            "electoral_district": "72",
+            "lat": "52.0994194",
+            "lon": "13.265844031440718",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Riller, Tony",
+            "votes": "2.987",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bank, Enno",
+            "votes": "2.269",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Koschel, Mirko",
+            "votes": "1.307",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Nitze, Ariane",
+            "votes": "1.172",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Teichner, Felix",
+            "votes": "6.375",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gnauck, Hannes",
+            "votes": "5.900",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Nitze, Enrico",
+            "votes": "1.139",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Affeldt, Claudia",
+            "votes": "689",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Gutzmann, Monty",
+            "votes": "470",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lindemann, Peggy",
+            "votes": "5.478",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rescher, Norbert",
+            "votes": "3.762",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Weihser, Roman",
+            "votes": "1.860",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Dettmann, Torsten",
+            "votes": "1.049",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Bork, Christian",
+            "votes": "4.964",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Christ, Aribert",
+            "votes": "1.191",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rakow, Jörg",
+            "votes": "974",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Uckermark",
+            "electoral_district": "73",
+            "lat": "53.24526305",
+            "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ]
+}

@@ -8,7 +8,8 @@ import Map from '@components/Map';
 import Button from '@components/Button';
 
 import styles from '@styles/Home.module.scss';
-import rechtelandeslistebrandenburg from '@data/data.json'
+import landdata from '@data/data.json'
+import kreisdata from '@data/kreis_data.json'
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
@@ -56,12 +57,35 @@ export default function Home() {
     console.log(lat, lon);
   };
 
+  // Combine landdata and kreisdata
+  // ToDo: Add bunddata 
+  // Assuming landdata and kreisdata are loaded as JavaScript objects
+  const mergedData = Object.keys(landdata).reduce((acc, party) => {
+    
+    // Start with the party data from landdata
+    acc[party] = [...landdata[party]];
+
+    // If the party also exists in kreisdata, combine the entries
+    if (kreisdata[party]) {
+      acc[party] = acc[party].concat(kreisdata[party]);  // Add kreisdata entries to the existing landdata entries
+    }
+
+    return acc;
+  }, {});
+
+  // Include any parties that are only in kreisdata but not in landdata
+  Object.keys(kreisdata).forEach((party) => {
+    if (!mergedData[party]) {
+      mergedData[party] = [...kreisdata[party]]; // Add parties that are only in kreisdata
+    }
+  });
+
   // State for search query
   const [searchQuery, setSearchQuery] = useState('');
 
   // Filter candidates based on the search query
-  const filteredCandidates = Object.keys(rechtelandeslistebrandenburg).reduce((acc, party) => {
-    const filteredPartyCandidates = rechtelandeslistebrandenburg[party].filter((person) =>
+  const filteredCandidates = Object.keys(landdata).reduce((acc, party) => {
+    const filteredPartyCandidates = landdata[party].filter((person) =>
       person.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
     if (filteredPartyCandidates.length > 0) {
@@ -69,7 +93,6 @@ export default function Home() {
     }
     return acc;
   }, {});
-
 
   return (
     <Layout>
@@ -132,8 +155,8 @@ export default function Home() {
                 />
 
                 {/* Loop through parties and candidates */}
-                {Object.keys(filteredCandidates).map((party) =>
-                  visibleParties[party] ? filteredCandidates[party].map((person, index) => {
+                {Object.keys(mergedData).map((party) =>
+                  visibleParties[party] ? mergedData[party].map((person, index) => {
                     const position = [person.lat, person.lon];
 
                     // Use regex to capture the part before 'OT' in the residence string

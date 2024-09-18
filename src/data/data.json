@@ -2555,6 +2555,22 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Grabow",
+            "lat": "53.27759868",
+            "lon": "11.56462542",
+            "residence": "Grabow",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ]
 }
