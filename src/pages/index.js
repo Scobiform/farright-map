@@ -10,6 +10,7 @@ import Button from '@components/Button';
 import styles from '@styles/Home.module.scss';
 import landdata from '@data/data.json'
 import kreisdata from '@data/kreis_data.json'
+import { Tooltip } from 'react-leaflet';
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
@@ -261,6 +262,7 @@ const offsetDistance = 0.00021; // Set a distance to offset the markers horizont
 
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
+                        <Tooltip>{person.name} - {party}</Tooltip>
                         <Popup>
                           <h2>{person.name} <p className="left">{party}</p></h2>
                           <ul>
