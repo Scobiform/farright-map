@@ -59,7 +59,7 @@ const Map = ({ children, className, width = "100vw", height = "100vh", polygons 
       </LayersControl>
       {/* Render Polygons */}
       {polygons.map((polygonCoords, index) => (
-        <Polygon key={index} positions={polygonCoords} color="rgba(140,210,77,0.021)"
+        <Polygon key={index} positions={polygonCoords} color="rgba(140,210,140,0.014)"
         />
       ))}
       {/* Render any additional children passed into the Map component */}
