@@ -83,16 +83,88 @@ export default function Home() {
   // State for search query
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Filter candidates based on the search query
-  const filteredCandidates = Object.keys(landdata).reduce((acc, party) => {
-    const filteredPartyCandidates = landdata[party].filter((person) =>
-      person.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-    if (filteredPartyCandidates.length > 0) {
-      acc[party] = filteredPartyCandidates;
+  // Function to filter candidates based on the search query dynamically in all fields of the person object
+const filteredCandidates = Object.keys(mergedData).reduce((acc, party) => {
+  const filteredPartyCandidates = mergedData[party].filter((person) => {
+    const lowerSearchQuery = searchQuery.toLowerCase();
+
+    // Iterate through all keys in the person object and check if any value contains the search query
+    return Object.keys(person).some((key) => {
+      const value = person[key];
+
+      // Handle different data types (string, number, array, object)
+      if (typeof value === 'string' || typeof value === 'number') {
+        return value.toString().toLowerCase().includes(lowerSearchQuery);
+      }
+
+      // If the field is an array, check if any item in the array contains the search query
+      if (Array.isArray(value)) {
+        return value.some((item) => {
+          if (typeof item === 'string' || typeof item === 'number') {
+            return item.toString().toLowerCase().includes(lowerSearchQuery);
+          } else if (typeof item === 'object') {
+            // If the array contains objects, check their values too
+            return Object.values(item).some((nestedValue) => 
+              nestedValue && nestedValue.toString().toLowerCase().includes(lowerSearchQuery)
+            );
+          }
+          return false;
+        });
+      }
+
+      // If the field is an object, check if any value in the object contains the search query
+      if (typeof value === 'object' && value !== null) {
+        return Object.values(value).some((nestedValue) =>
+          nestedValue && nestedValue.toString().toLowerCase().includes(lowerSearchQuery)
+        );
+      }
+
+      return false;
+    });
+  });
+
+  if (filteredPartyCandidates.length > 0) {
+    acc[party] = filteredPartyCandidates;
+  }
+  
+  return acc;
+}, {});
+
+// Create polygons from the kreisdata
+const polygonsData = Object.keys(kreisdata).reduce((acc, party) => {
+  kreisdata[party].forEach((person) => {
+    const boundingbox = person.boundingbox;
+    
+    // Ensure the bounding box has exactly 4 coordinates: [south, north, west, east]
+    if (boundingbox.length === 4) {
+      const [south, north, west, east] = boundingbox.map(coord => parseFloat(coord));
+
+      // Create a polygon using the bounding box corners
+      const polygonCoords = [
+        [south, west], // Southwest corner
+        [north, west], // Northwest corner
+        [north, east], // Northeast corner
+        [south, east], // Southeast corner
+        [south, west]  // Close the loop by returning to the Southwest corner
+      ];
+
+      acc.push(polygonCoords); // Add the polygon coordinates to the array
     }
-    return acc;
-  }, {});
+  });
+  return acc;
+}, []);
+
+const getRandomCoordinate = (min, max) => {
+  return Math.random() * (max - min) + min;
+};
+
+const getCenterCoordinate = (south, north, west, east) => {
+  const centerLat = (south + north) / 2;
+  const centerLon = (west + east) / 2;
+  return [centerLat, centerLon];
+};
+
+const offsetDistance = 0.00021; // Set a distance to offset the markers horizontally
 
   return (
     <Layout>
@@ -146,6 +218,8 @@ export default function Home() {
           <Map className={styles.homeMap} 
                center={DEFAULT_CENTER} 
                zoom={8}
+               polygons={polygonsData}
+               ref={mapRef}
               >
             {({ TileLayer, Marker, Popup }) => (
               <>
@@ -155,13 +229,35 @@ export default function Home() {
                 />
 
                 {/* Loop through parties and candidates */}
-                {Object.keys(mergedData).map((party) =>
-                  visibleParties[party] ? mergedData[party].map((person, index) => {
-                    const position = [person.lat, person.lon];
+                {Object.keys(filteredCandidates).map((party) =>
+                  visibleParties[party] ? filteredCandidates[party].map((person, index) => {
 
                     // Use regex to capture the part before 'OT' in the residence string
                     const match = person.residence.match(/^(.*?)\s+OT\b/) || [person.residence];
                     const residenceWithoutOT = match[1] || match[0];
+
+                    // Extract bounding box values
+                    const boundingbox = person.boundingbox || [];
+                    let position;
+
+                    // Check if bounding box has 4 coordinates
+                    if (boundingbox.length === 4) {
+                      const [south, north, west, east] = boundingbox.map(coord => parseFloat(coord));
+
+                      // Get center of the bounding box
+                      const [centerLat, centerLon] = getCenterCoordinate(south, north, west, east);
+
+                      // Offset each candidate by a small distance horizontally to arrange them side by side
+                      const offset = index * offsetDistance; // Each marker is moved slightly to the right
+                      const offsetLat = centerLat; // Keep latitude constant
+                      const offsetLon = centerLon + offset; // Move longitude to the right for each candidate
+
+                      // Set the position of the marker
+                      position = [person.lat, person.lon];
+                    } else {
+                      // Fallback to existing lat/lon if boundingbox is unavailable
+                      position = [person.lat, person.lon];
+                    }
 
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
@@ -249,6 +345,7 @@ export default function Home() {
                             </li>
                           </ul>
                         </Popup>
+                        {/* Draw the bounding box around the candidate */}
                       </Marker>
                     );
                   }) : null

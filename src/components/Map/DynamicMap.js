@@ -5,9 +5,9 @@ import 'leaflet/dist/leaflet.css';
 
 import styles from './Map.module.scss';
 
-const { MapContainer, TileLayer, LayersControl, Marker, LayerGroup, Popup } = ReactLeaflet;
+const { MapContainer, TileLayer, LayersControl, Marker, LayerGroup, Popup, Polygon } = ReactLeaflet;
 
-const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }) => {
+const Map = ({ children, className, width = "100vw", height = "100vh", polygons = [],  ...rest }) => {
   let mapClassName = styles.map;
 
   if (className) {
@@ -57,6 +57,11 @@ const Map = ({ children, className, width = "100vw", height = "100vh", ...rest }
         </LayersControl.BaseLayer>
 
       </LayersControl>
+      {/* Render Polygons */}
+      {polygons.map((polygonCoords, index) => (
+        <Polygon key={index} positions={polygonCoords} color="rgba(140,210,77,0.021)"
+        />
+      ))}
       {/* Render any additional children passed into the Map component */}
       {children(ReactLeaflet, Leaflet)}
     </MapContainer>
