@@ -3538,7 +3538,7 @@
             "profession": "",
             "birth_year": null,
             "birthplace": "",
-            "residence": "Oder-Spree",
+            "residence": "Fürstenwalde/Spree",
             "boundingbox": [
                 "51.9997229",
                 "52.5008842",
@@ -3569,9 +3569,9 @@
             "name": "Hooge, Rolf-Peter",
             "votes": "1.996",
             "profession": "",
-            "birth_year": null,
+            "birth_year": 1952,
             "birthplace": "",
-            "residence": "Oder-Spree",
+            "residence": "Fürstenwalde/Spree",
             "boundingbox": [
                 "51.9997229",
                 "52.5008842",
@@ -3580,12 +3580,12 @@
             ],
             "voting_district": "6702",
             "electoral_district": "67",
-            "lat": "52.250214150000005",
-            "lon": "14.268387618463276",
+            "lat": "52.350259734003764",
+            "lon": "14.056303717800992",
             "mail": "",
-            "mobile": "",
+            "mobile": "+491627304282",
             "website": "",
-            "wikipedia": "",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rolf-Peter_Hooge",
             "social_media": [
                 {
                     "facebook": "",
