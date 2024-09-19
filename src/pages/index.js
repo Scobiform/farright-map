@@ -20,7 +20,7 @@ const DEFAULT_CENTER = [52.5214295, 13.4136877]
 // CSS classes are in global.scss
 const getIcon = (party) => {
   return new L.DivIcon({
-    className: `marker-${party}`,
+    className: `marker-${party} invert`,
     iconSize: [21, 21],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],

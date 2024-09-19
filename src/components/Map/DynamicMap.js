@@ -24,9 +24,10 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
     })();
   }, []);
 
+  // ToDo: Change invert to new component
   return (
     <MapContainer 
-      className={mapClassName} 
+      className={mapClassName + " invert"} 
       style={{ width, height }} 
       keyboard={true} 
       ToolTip={ToolTip}
