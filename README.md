@@ -20,7 +20,7 @@ All data used in this project was publicly available.
 
 ## Background
 
-This project is designed to map far-right party-candidates, media, organizations, special locations and fraternities.
+This project is designed to map far-right party-candidates, media, organizations, special locations, fraternities and settlers (yes, Germany has "völkische SIedler*innen"). The data was exclusively collected from open sources and is in public interest.
 
 ## Install
 
