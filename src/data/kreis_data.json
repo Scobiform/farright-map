@@ -6669,41 +6669,8 @@
         },
         {
             "type": "kreis",
-            "name": "Düpre, Frank",
-            "votes": "",
-            "profession": "",
-            "birth_year": null,
-            "birthplace": "",
-            "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
-            "voting_district": "7304",
-            "electoral_district": "73",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
-            "mail": "",
-            "mobile": "",
-            "website": "",
-            "wikipedia": "",
-            "social_media": [
-                {
-                    "facebook": "",
-                    "instagram": "",
-                    "tiktok": "",
-                    "x.com": "",
-                    "telegram": "",
-                    "youtube": ""
-                }
-            ]
-        },
-        {
-            "type": "kreis",
             "name": "Schneider, Peter",
-            "votes": "",
+            "votes": "855",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
@@ -6736,7 +6703,7 @@
         {
             "type": "kreis",
             "name": "Keller, Andreas",
-            "votes": "",
+            "votes": "496",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
@@ -6769,7 +6736,7 @@
         {
             "type": "kreis",
             "name": "Kuschke, Jens",
-            "votes": "",
+            "votes": "524",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
@@ -6802,7 +6769,7 @@
         {
             "type": "kreis",
             "name": "Moede, Diana",
-            "votes": "",
+            "votes": "339",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
@@ -6864,34 +6831,6 @@
             "type": "kreis",
             "name": "Bastert, Klaus-Martin",
             "votes": "794",
-            "profession": "",
-            "birth_year": null,
-            "birthplace": "",
-            "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
-            "voting_district": "",
-            "electoral_district": "",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
-            "mail": "",
-            "mobile": "",
-            "website": "",
-            "wikipedia": "",
-            "social_media": [
-              {
-                "facebook": "",
-                "instagram": "",
-                "tiktok": "",
-                "x.com": "",
-                "telegram": "",
-                "youtube": ""
-              }
-            ]
-          },
-          {
-            "type": "kreis",
-            "name": "Schneider, Peter",
-            "votes": "855",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
@@ -7144,34 +7083,6 @@
             "type": "kreis",
             "name": "Letz, Christian",
             "votes": "477",
-            "profession": "",
-            "birth_year": null,
-            "birthplace": "",
-            "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
-            "voting_district": "",
-            "electoral_district": "",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
-            "mail": "",
-            "mobile": "",
-            "website": "",
-            "wikipedia": "",
-            "social_media": [
-              {
-                "facebook": "",
-                "instagram": "",
-                "tiktok": "",
-                "x.com": "",
-                "telegram": "",
-                "youtube": ""
-              }
-            ]
-          },
-          {
-            "type": "kreis",
-            "name": "Keller, Andreas",
-            "votes": "496",
             "profession": "",
             "birth_year": null,
             "birthplace": "",
