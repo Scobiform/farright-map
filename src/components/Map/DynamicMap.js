@@ -58,7 +58,7 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
 
       {/* Render Polygons */}
       {polygons.map((polygonCoords, index) => (
-        <Polygon key={index} positions={polygonCoords} color="rgba(140,210,140,0.014)" />
+        <Polygon key={index} positions={polygonCoords} color="rgba(140,210,140,0.0)" />
       ))}
 
       {/* Render additional children passed into the Map component */}
