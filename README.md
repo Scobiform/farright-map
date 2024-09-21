@@ -52,4 +52,4 @@ Feel free to contribute to this project.
 
 ## License
 
-- AFL-3.0
+- AGFL-3.0
