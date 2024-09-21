@@ -7109,34 +7109,6 @@
           },
           {
             "type": "kreis",
-            "name": "Splisteser, Sigrid",
-            "votes": "631",
-            "profession": "",
-            "birth_year": null,
-            "birthplace": "",
-            "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
-            "voting_district": "",
-            "electoral_district": "",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
-            "mail": "",
-            "mobile": "",
-            "website": "",
-            "wikipedia": "",
-            "social_media": [
-              {
-                "facebook": "",
-                "instagram": "",
-                "tiktok": "",
-                "x.com": "",
-                "telegram": "",
-                "youtube": ""
-              }
-            ]
-          },
-          {
-            "type": "kreis",
             "name": "Dähn, Kevin",
             "votes": "381",
             "profession": "",
@@ -7531,15 +7503,15 @@
             "type": "kreis",
             "name": "Seifarth, Mike",
             "votes": "419",
-            "profession": "",
-            "birth_year": null,
+            "profession": "Fliesen-Patten-Mosaikverleger",
+            "birth_year": 1973,
             "birthplace": "",
             "residence": "",
             "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
+            "lat": "52.97609708662864",
+            "lon": "14.037368710518189",
             "mail": "",
             "mobile": "",
             "website": "",
@@ -7650,8 +7622,8 @@
             "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
-            "lat": "53.06270766316476",
-            "lon": "14.165821380294489",
+            "lat": "53.056421706739535",
+            "lon": "14.286966884128669",
             "mail": "",
             "mobile": "",
             "website": "",
@@ -7666,6 +7638,258 @@
                 "youtube": ""
               }
             ]
-          }
+        },
+        {
+            "type": "kreis",
+            "name": "Brauer, Jörg",
+            "votes": "736",
+            "profession": "Selbstständiger Handwerker",
+            "birth_year": 1966,
+            "birthplace": "",
+            "residence": "Angermünde/Crussow",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.00411783989936",
+            "lon": "14.082313196773594",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Plathe, Maik",
+            "votes": "639",
+            "profession": "Landwirtschaftlicher Vertrieb",
+            "birth_year": 1991,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Lemke, Arthur",
+            "votes": "346",
+            "profession": "Landwirt",
+            "birth_year": 1948,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06948191026734",
+            "lon": "13.990607201553159",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Splisteser, Sigrid",
+            "votes": "333",
+            "profession": "Einzelhandelskauffrau",
+            "birth_year": 1961,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.07966090906284",
+            "lon": "13.974037460316632",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Peronne, Liane",
+            "votes": "299",
+            "profession": "Finanzkauffrau",
+            "birth_year": 1969,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Lindenberg, Matthias",
+            "votes": "292",
+            "profession": "Schlosser",
+            "birth_year": 1963,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Lindenberg, Birgit",
+            "votes": "278",
+            "profession": "Friseurin",
+            "birth_year": 1966,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Seifarth, Mike",
+            "votes": "249",
+            "profession": "Nachrückend",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Guttmann, Frank",
+            "votes": "187",
+            "profession": "Schlosser",
+            "birth_year": 1960,
+            "birthplace": "",
+            "residence": "Angermünde",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.018206915639546",
+            "lon": "14.004323777013182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+        }
     ]
 }
