@@ -1,4 +1,4 @@
-# 🍃 Next.js Leaflet FarRight Map
+# 🍃 FarRight Map
 
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
