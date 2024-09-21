@@ -6831,6 +6831,930 @@
                     "youtube": ""
                 }
             ]
-        }
+        },
+        {
+            "type": "kreis",
+            "name": "Hagenow, Torsten",
+            "votes": "657",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Bastert, Klaus-Martin",
+            "votes": "794",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Schneider, Peter",
+            "votes": "855",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Paesler, Jens-Uwe",
+            "votes": "647",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Bieche, Thomas",
+            "votes": "411",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Düpre, Frank",
+            "votes": "614",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Herm, Sandro",
+            "votes": "608",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Stellmacher, Gerd",
+            "votes": "786",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Küther, Hartmut",
+            "votes": "387",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Dr. Bahr, Siegfried",
+            "votes": "687",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Oberuckersee",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Meier, Dietmar",
+            "votes": "596",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Letz, Christian",
+            "votes": "477",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Keller, Andreas",
+            "votes": "496",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Splisteser, Sigrid",
+            "votes": "631",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Dähn, Kevin",
+            "votes": "381",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Juche, Peter",
+            "votes": "333",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Teucher, Matthias",
+            "votes": "566",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Baumann, Roy",
+            "votes": "326",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Räder, Matthias",
+            "votes": "294",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Seidlitzki, Silko",
+            "votes": "546",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Buhtz, Susanne",
+            "votes": "178",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Moede, Max",
+            "votes": "332",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Laupitz, Thomas",
+            "votes": "270",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Sasse, Christian",
+            "votes": "527",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Klinge, Diana",
+            "votes": "145",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Schulz, Birgit",
+            "votes": "291",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Lüdke, Kornelia",
+            "votes": "138",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Weihser, Wolfgang",
+            "votes": "244",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Seifarth, Mike",
+            "votes": "419",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Daubner, Tom",
+            "votes": "269",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Blüggel, Jürgen",
+            "votes": "396",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Erdmann, Frank",
+            "votes": "261",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Abdulović, Franka",
+            "votes": "79",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          }
     ]
 }
