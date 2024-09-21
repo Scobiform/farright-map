@@ -242,7 +242,7 @@ const offsetDistance = 0.00021; // Set a distance to offset the markers horizont
                     return (
                       <Marker key={index} position={position} icon={getIcon(party.toLowerCase())}>
                         <Tooltip>{person.name} - {party}</Tooltip>
-                        <Popup>
+                        <Popup className={styles.noBorder}>
                           <h2>{person.name} <p className="left">{party}</p></h2>
                           <ul>
                             {Object.entries(person).map(([key, value]) => {

@@ -4,6 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import Container from '@components/Container';
 
 import styles from './Header.module.scss';
+import InvertToggle from '@components/Invert/InvertToggle'; 
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
