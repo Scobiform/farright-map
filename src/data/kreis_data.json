@@ -6509,7 +6509,7 @@
             "profession": "Kommunikationselektroniker",
             "birth_year": null,
             "birthplace": "",
-            "residence": "Uckermark",
+            "residence": "16278 Pinnow",
             "boundingbox": [
                 "52.9314894",
                 "53.5590907",
@@ -6518,8 +6518,8 @@
             ],
             "voting_district": "7303",
             "electoral_district": "73",
-            "lat": "53.24526305",
-            "lon": "13.915135050326025",
+            "lat": "53.063864559195174",
+            "lon": "14.086779820577311",
             "mail": "",
             "mobile": "",
             "website": "",
@@ -6527,7 +6527,7 @@
             "social_media": [
                 {
                     "facebook": "",
-                    "instagram": "",
+                    "instagram": "https://www.instagram.com/romanweihser/",
                     "tiktok": "",
                     "x.com": "",
                     "telegram": "",
@@ -6652,6 +6652,171 @@
             "electoral_district": "73",
             "lat": "53.27526305",
             "lon": "13.915135050326025",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Düpre, Frank",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": [
+                "52.9314894",
+                "53.5590907",
+                "13.2397842",
+                "14.4505651"
+            ],
+            "voting_district": "7304",
+            "electoral_district": "73",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Schneider, Peter",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": [
+                "52.9314894",
+                "53.5590907",
+                "13.2397842",
+                "14.4505651"
+            ],
+            "voting_district": "7304",
+            "electoral_district": "73",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Keller, Andreas",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": [
+                "52.9314894",
+                "53.5590907",
+                "13.2397842",
+                "14.4505651"
+            ],
+            "voting_district": "7304",
+            "electoral_district": "73",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Kuschke, Jens",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": [
+                "52.9314894",
+                "53.5590907",
+                "13.2397842",
+                "14.4505651"
+            ],
+            "voting_district": "7304",
+            "electoral_district": "73",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Moede, Diana",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": [
+                "52.9314894",
+                "53.5590907",
+                "13.2397842",
+                "14.4505651"
+            ],
+            "voting_district": "7304",
+            "electoral_district": "73",
+            "lat": "53.06270766316476",
+            "lon": "14.165821380294489",
             "mail": "",
             "mobile": "",
             "website": "",
