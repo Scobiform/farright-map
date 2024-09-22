@@ -21,7 +21,7 @@ const DEFAULT_CENTER = [52.5214295, 13.4136877]
 const getIcon = (party) => {
   return new L.DivIcon({
     className: `marker-${party} invert`,
-    iconSize: [21, 21],
+    iconSize: [14, 14],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
   });

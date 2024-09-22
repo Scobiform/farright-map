@@ -55,8 +55,8 @@ img {
 
 /* marker classes */
 .marker-afd{
-  width: 25px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   background-color: #009ee0; 
   border-radius: 50%; /* Make it round */
   display: flex;
@@ -65,8 +65,8 @@ img {
 }
 
 .marker-iii_weg{
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   background-color: #224e2a; 
   border-radius: 50%; /* Make it round */
   display: flex;
@@ -75,8 +75,8 @@ img {
 }
 
 .marker-wu{
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   background-color: #013B5B; 
   border-radius: 50%; /* Make it round */
   display: flex;
@@ -85,42 +85,42 @@ img {
 }
 
 .marker-media {
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%; /* Make it round */
 }
 
 .marker-media::before {
   content: "📡"; /* Use the skull emoji */
-  font-size: 28px;
+  font-size: 21px;
   filter: invert(1);
 }
 
 .marker-organizations{
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%; /* Make it round */
 }
 
 .marker-organizations::before {
   content: "🧿"; /* Use the skull emoji */
-  font-size: 28px;
+  font-size: 21px;
 }
 
 .marker-locations {
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%; /* Make it round */
 }
 
 .marker-locations::before {
   content: "☠️"; /* Use the skull emoji */
-  font-size: 28px;
+  font-size: 21px;
 }
 
 .marker-fraternities {
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%; /* Make it round */
   display: flex;
   justify-content: center;
@@ -130,13 +130,13 @@ img {
 
 .marker-fraternities::before {
   content: "🤺"; /* Use the skull emoji */
-  font-size: 28px;
+  font-size: 21px;
   filter: hue-rotate(120deg);
 }
 
 .marker-settlers{
-  width: 28px;
-  height: 41px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%; /* Make it round */
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ img {
 
 .marker-settlers::before {
   content: "⛺"; /* Use the skull emoji */
-  font-size: 28px;
+  font-size: 21px;
   filter: hue-rotate(120deg);
 }
 
