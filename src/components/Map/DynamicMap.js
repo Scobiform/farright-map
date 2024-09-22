@@ -61,13 +61,6 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
             attribution='&copy; <a href="https://www.esri.com/en-us/home">Esri</a>, USGS, NOAA'
           />
         </LayersControl.BaseLayer>
-        
-        <LayersControl.BaseLayer name="Bing Aerial Imagery">
-          <TileLayer
-            url="https://dev.virtualearth.net/REST/V1/Imagery/Metadata/Aerial?output=json&key=YourBingMapsKey"
-            attribution='&copy; <a href="https://www.microsoft.com/en-us/maps">Bing Maps</a>'
-          />
-        </LayersControl.BaseLayer>
       </LayersControl>
 
       {/* Render Polygons */}
