@@ -1,4 +1,4 @@
-# 🍃 FarRight Map
+# 🍃 FarRight Map Germany
 
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
