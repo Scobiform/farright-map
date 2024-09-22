@@ -84,13 +84,13 @@ img {
   align-items: center;
 }
 
-.marker-office{
+.marker-associations{
   width: 14px;
   height: 14px;
   border-radius: 50%; /* Make it round */
 }
 
-.marker-office::before {
+.marker-associations::before {
   content: "🏢"; 
   font-size: 21px;
 }
