@@ -8114,6 +8114,146 @@
                 "youtube": ""
               }
             ]
-        }
+        },
+        {
+            "type": "kreis",
+            "name": "Hilbig, Steven",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.063950127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+        },
+        {
+            "type": "kreis",
+            "name": "Rändler, Annett",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.063850127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Keim, Heinrich",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.063750127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Schubbert, Sven",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.063650127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Wilde, Hans-Peter",
+            "votes": "",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.063550127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+        }  
     ]
 }
