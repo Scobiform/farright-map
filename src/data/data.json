@@ -1732,6 +1732,280 @@
             ]
         }
     ],
+    "Office": [
+        {
+            "name": "Alternative für Deutschland Landeszentrale Brandenburg",
+            "lat": "52.400871450554504",
+            "lon": "13.046842096169948",
+            "residence": "Potsdam",
+            "website": "https://www.afd-brandenburg.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Brandenburg/",
+                    "instagram": "https://www.instagram.com/afd_brandenburg/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_brandenburg",
+                    "x.com": "https://twitter.com/afd_brandenburg",
+                    "telegram": "https://t.me/afd_brandenburg",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Thüringen",
+            "lat": "50.91206594838277",
+            "lon": "11.020385638499171",
+            "residence": "Erfurt",
+            "website": "https://www.afd-thueringen.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfDThueringen/",
+                    "instagram": "https://www.instagram.com/afd_thueringen/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_thueringen",
+                    "x.com": "https://twitter.com/afd_thueringen",
+                    "telegram": "https://t.me/afd_thueringen",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Sachsen-Anhalt",
+            "lat": "52.10971960675155",
+            "lon": "11.637866667423738",
+            "residence": "Magdeburg",
+            "website": "https://www.afd-lsa.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.SachsenAnhalt/",
+                    "instagram": "https://www.instagram.com/afd_sachsenanhalt/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_sachsenanhalt",
+                    "x.com": "https://twitter.com/afd_sachsenanhalt",
+                    "telegram": "https://t.me/afd_sachsenanhalt",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Mecklenburg-Vorpommern",
+            "lat": "53.559221173636224",
+            "lon": "13.274562025204808",
+            "residence": "Neubrandenburg",
+            "website": "https://www.afd-mv.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.MV/",
+                    "instagram": "https://www.instagram.com/afd_mv/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_mv",
+                    "x.com": "https://twitter.com/afd_mv",
+                    "telegram": "https://t.me/afd_mv",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Berlin",
+            "lat": "52.602320836456826",
+            "lon": "13.337021809789476",
+            "residence": "Berlin",
+            "website": "https://www.afd.berlin/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Berlin/",
+                    "instagram": "https://www.instagram.com/afd_berlin/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_berlin",
+                    "x.com": "https://twitter.com/afd_berlin",
+                    "telegram": "https://t.me/afd_berlin",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Hamburg",
+            "lat": "53.54968544373894",
+            "lon": "9.996115238697138",
+            "residence": "Hamburg",
+            "website": "https://www.afd-hamburg.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Hamburg/",
+                    "instagram": "https://www.instagram.com/afd_hamburg/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_hamburg",
+                    "x.com": "https://twitter.com/afd_hamburg",
+                    "telegram": "https://t.me/afd_hamburg",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Niedersachsen",
+            "lat": "52.32329106234754",
+            "lon": "9.78453220976847",
+            "residence": "Hannover",
+            "website": "https://www.afd-niedersachsen.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Niedersachsen/",
+                    "instagram": "https://www.instagram.com/afd_niedersachsen/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_niedersachsen",
+                    "x.com": "https://twitter.com/afd_niedersachsen",
+                    "telegram": "https://t.me/afd_niedersachsen",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Bremen",
+            "lat": " 53.05091948450112",
+            "lon": "8.817099360776162",
+            "residence": "Bremen",
+            "website": "https://www.afd-bremen.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Bremen/",
+                    "instagram": "https://www.instagram.com/afd_bremen/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_bremen",
+                    "x.com": "https://twitter.com/afd_bremen",
+                    "telegram": "https://t.me/afd_bremen",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Schleswig-Holstein",
+            "lat": "54.31896145098046",
+            "lon": "10.130859396427578",
+            "residence": "Kiel",
+            "website": "https://www.afd-sh.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.SH/",
+                    "instagram": "https://www.instagram.com/afd_sh/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_sh",
+                    "x.com": "https://twitter.com/afd_sh",
+                    "telegram": "https://t.me/afd_sh",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Nordrhein-Westfalen",
+            "lat": "51.274470819197646",
+            "lon": "6.794493809690272",
+            "residence": "Düsseldorf",
+            "website": "https://www.afd.nrw/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.NRW/",
+                    "instagram": "https://www.instagram.com/afd_nrw/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_nrw",
+                    "x.com": "https://twitter.com/afd_nrw",
+                    "telegram": "https://t.me/afd_nrw",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Hessen",
+            "lat": "50.59515125662503",
+            "lon": "8.708003867311565",
+            "residence": "Gießen",
+            "website": "https://www.afd-hessen.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Hessen/",
+                    "instagram": "https://www.instagram.com/afd_hessen/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_hessen",
+                    "x.com": "https://twitter.com/afd_hessen",
+                    "telegram": "https://t.me/afd_hessen",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Rheinland-Pfalz",
+            "lat": "50.00193310866063",
+            "lon": "8.12959511389507",
+            "residence": "Mainz",
+            "website": "https://www.alternative-rlp.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.RLP/",
+                    "instagram": "https://www.instagram.com/afd_rlp/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_rlp",
+                    "x.com": "https://twitter.com/afd_rlp",
+                    "telegram": "https://t.me/afd_rlp",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Baden-Württemberg",
+            "lat": "48.708386931850974",
+            "lon": "9.1712622648904",
+            "residence": "Stuttgart",
+            "website": "https://www.afd-bw.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.BW/",
+                    "instagram": "https://www.instagram.com/afd_bw/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_bw",
+                    "x.com": "https://twitter.com/afd_bw",
+                    "telegram": "https://t.me/afd_bw",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Bayern",
+            "lat": "48.07841403127721",
+            "lon": "11.743514343205481",
+            "residence": "Grasbrunn",
+            "website": "https://www.afd-bayern.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Bayern/",
+                    "instagram": "https://www.instagram.com/afd_bayern/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_bayern",
+                    "x.com": "https://twitter.com/afd_bayern",
+                    "telegram": "https://t.me/afd_bayern",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Saarland",
+            "lat": "49.31248617238135",
+            "lon": "6.7487116027237555",
+            "residence": "Saarlouis",
+            "website": "https://afd.saarland",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Saarland/",
+                    "instagram": "https://www.instagram.com/afd_saarland/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_saarland",
+                    "x.com": "https://twitter.com/afd_saarland",
+                    "telegram": "https://t.me/afd_saarland",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        },
+        {
+            "name": "AfD-Landesverband Sachsen",
+            "lat": "51.03487977812029",
+            "lon": "13.822431138508268",
+            "residence": "Dresden",
+            "website": "https://www.afdsachsen.de/",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfD.Sachsen/",
+                    "instagram": "https://www.instagram.com/afd_sachsen/?hl=de",
+                    "tiktok": "https://www.tiktok.com/@afd_sachsen",
+                    "x.com": "https://twitter.com/afd_sachsen",
+                    "telegram": "https://t.me/afd_sachsen",
+                    "youtube": "https://www.youtube.com/channel/UC9J9Z9Q9Z9J9Z9J9Z9J9Z9Q"
+                }
+            ]
+        }
+    ],
     "Media": [
         {
             "name": "COMPACT-Magazin GmbH",

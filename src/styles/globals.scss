@@ -84,6 +84,18 @@ img {
   align-items: center;
 }
 
+.marker-office{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%; /* Make it round */
+}
+
+.marker-office::before {
+  content: "🏢"; 
+  font-size: 21px;
+}
+
+
 .marker-media {
   width: 14px;
   height: 14px;

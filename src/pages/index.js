@@ -36,6 +36,7 @@ export default function Home() {
     AfD: true,
     III_Weg: true,
     WU: true,
+    Office: true,
     Media: true,
     Locations: true,
     Fraternities: true,
