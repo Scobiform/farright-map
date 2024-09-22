@@ -7862,6 +7862,258 @@
                 "youtube": ""
               }
             ]
+        },
+        {
+            "type": "kreis",
+            "name": "Mehrholz, Steffi",
+            "votes": "118",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064050127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Heuke, Birk",
+            "votes": "231",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064150127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Baumüller, Martin",
+            "votes": "90",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064250127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Lahmer, Detlef",
+            "votes": "209",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064350127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Hagenow, Burghard",
+            "votes": "182",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064450127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Mehls, Peter",
+            "votes": "200",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064550127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Salewski, Felix",
+            "votes": "75",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064650127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Woike, David",
+            "votes": "189",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064950127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
+          },
+          {
+            "type": "kreis",
+            "name": "Schneider, Bruno",
+            "votes": "111",
+            "profession": "",
+            "birth_year": null,
+            "birthplace": "",
+            "residence": "Schwedt/Oder",
+            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
+            "voting_district": "",
+            "electoral_district": "",
+            "lat": "53.064850127939426",
+            "lon": "14.279179446092758",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+              {
+                "facebook": "",
+                "instagram": "",
+                "tiktok": "",
+                "x.com": "",
+                "telegram": "",
+                "youtube": ""
+              }
+            ]
         }
     ]
 }
