@@ -8,16 +8,10 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6001",
             "electoral_district": "60",
             "lat": "52.83421207692407",
-            "lon": "13.812485867478344",
+            "lon": "13.81248586747834",
             "mail": "tilo.weingardt@web.de",
             "mobile": "+4915170089595",
             "website": "",
@@ -41,12 +35,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6002",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -74,12 +62,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6003",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -107,12 +89,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6004",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -140,12 +116,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6005",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -173,12 +143,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6005",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -206,12 +170,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6006",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -239,12 +197,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6006",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -272,12 +224,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6007",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -305,12 +251,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6007",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -338,12 +278,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6008",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -371,12 +305,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6008",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -404,12 +332,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6009",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -437,12 +359,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Barnim",
-            "boundingbox": [
-                "52.5455665",
-                "53.0586826",
-                "13.3952778",
-                "14.1566419"
-            ],
             "voting_district": "6009",
             "electoral_district": "60",
             "lat": "52.80193215",
@@ -470,12 +386,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6101",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -503,12 +413,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6101",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -536,12 +440,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6102",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -569,12 +467,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6102",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -602,12 +494,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6102",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -635,12 +521,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6103",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -668,12 +548,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6103",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -701,12 +575,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6103",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -734,12 +602,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6104",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -767,12 +629,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6104",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -800,12 +656,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6104",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -833,12 +683,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6105",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -866,12 +710,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6105",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -899,12 +737,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Dahme-Spreewald",
-            "boundingbox": [
-                "51.7267394",
-                "52.4210797",
-                "13.4109651",
-                "14.4535504"
-            ],
             "voting_district": "6105",
             "electoral_district": "61",
             "lat": "52.073909549999996",
@@ -932,12 +764,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6201",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -965,12 +791,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6201",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -998,12 +818,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6202",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1031,12 +845,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6202",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1064,12 +872,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6202",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1097,12 +899,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6203",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1130,12 +926,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6203",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1163,12 +953,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6203",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1196,12 +980,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6203",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1229,12 +1007,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6204",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1262,12 +1034,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6204",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1295,12 +1061,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6204",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1328,12 +1088,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6205",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1361,12 +1115,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Elbe-Elster",
-            "boundingbox": [
-                "51.367729",
-                "51.8860719",
-                "13.0508856",
-                "13.8905451"
-            ],
             "voting_district": "6205",
             "electoral_district": "62",
             "lat": "51.62717585",
@@ -1394,12 +1142,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6301",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1427,12 +1169,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6301",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1460,12 +1196,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6301",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1493,12 +1223,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6302",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1526,12 +1250,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6302",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1559,12 +1277,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6302",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1592,12 +1304,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6302",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1625,12 +1331,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6303",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1658,12 +1358,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6303",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1691,12 +1385,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6303",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1724,12 +1412,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6303",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1757,12 +1439,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6304",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1790,12 +1466,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6304",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1823,12 +1493,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Havelland",
-            "boundingbox": [
-                "52.4385676",
-                "52.8106114",
-                "12.1421717",
-                "13.1688227"
-            ],
             "voting_district": "6304",
             "electoral_district": "63",
             "lat": "52.62444375",
@@ -1856,12 +1520,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6401",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -1889,12 +1547,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6401",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -1922,12 +1574,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6401",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -1955,12 +1601,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6401",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -1988,12 +1628,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6402",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2021,12 +1655,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6402",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2054,12 +1682,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6402",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2087,12 +1709,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6403",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2120,12 +1736,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6403",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2153,12 +1763,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6403",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2186,12 +1790,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6404",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2219,12 +1817,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6404",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2252,12 +1844,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6404",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2285,12 +1871,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6405",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2318,12 +1898,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6405",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2351,12 +1925,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Märkisch-Oderland",
-            "boundingbox": [
-                "52.3739688",
-                "52.903305",
-                "13.6105904",
-                "14.6397196"
-            ],
             "voting_district": "6405",
             "electoral_district": "64",
             "lat": "52.638733450000004",
@@ -2384,12 +1952,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6501",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2417,12 +1979,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6501",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2450,12 +2006,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6501",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2483,12 +2033,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6501",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2516,12 +2060,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6502",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2549,12 +2087,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6502",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2582,12 +2114,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6502",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2615,12 +2141,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6503",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2648,12 +2168,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6503",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2681,12 +2195,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oranienburg",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6503",
             "electoral_district": "65",
             "lat": "52.75806120587162",
@@ -2714,12 +2222,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6503",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2747,12 +2249,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6504",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2780,12 +2276,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6504",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2813,12 +2303,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberhavel",
-            "boundingbox": [
-                "52.5865996",
-                "53.2512124",
-                "12.8246251",
-                "13.5230803"
-            ],
             "voting_district": "6504",
             "electoral_district": "65",
             "lat": "52.91888095",
@@ -2846,12 +2330,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6601",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -2879,12 +2357,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6601",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -2912,12 +2384,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6601",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -2945,12 +2411,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6602",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -2978,12 +2438,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schulstraße 2, 03205 Calau",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6602",
             "electoral_district": "66",
             "lat": "51.791340755509715",
@@ -3011,12 +2465,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6602",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3044,12 +2492,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6603",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3077,12 +2519,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6603",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3110,12 +2546,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6603",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3143,12 +2573,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6604",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3176,12 +2600,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6604",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3209,12 +2627,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6604",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3242,12 +2654,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6604",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3275,12 +2681,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6605",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3308,12 +2708,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6605",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3341,12 +2735,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oberspreewald-Lausitz",
-            "boundingbox": [
-                "51.359064",
-                "51.9026761",
-                "13.6309636",
-                "14.2174998"
-            ],
             "voting_district": "6605",
             "electoral_district": "66",
             "lat": "51.630905150000004",
@@ -3374,12 +2762,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6701",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3407,12 +2789,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6701",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3440,12 +2816,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6701",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3473,12 +2843,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Fürstenwalde/Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6702",
             "electoral_district": "67",
             "lat": "52.370457588414524",
@@ -3506,12 +2870,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6702",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3539,12 +2897,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Fürstenwalde/Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6702",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3572,12 +2924,6 @@
             "birth_year": 1952,
             "birthplace": "",
             "residence": "Fürstenwalde/Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6702",
             "electoral_district": "67",
             "lat": "52.350259734003764",
@@ -3605,12 +2951,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6703",
             "electoral_district": "67",
             "lat": "52.30349245309477",
@@ -3638,12 +2978,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6703",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3671,12 +3005,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6703",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3704,12 +3032,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6703",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3738,12 +3060,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6703",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3771,12 +3087,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6704",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3804,12 +3114,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6704",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3837,12 +3141,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6704",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3870,12 +3168,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6704",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3903,12 +3195,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Oder-Spree",
-            "boundingbox": [
-                "51.9997229",
-                "52.5008842",
-                "13.6672387",
-                "14.759094"
-            ],
             "voting_district": "6704",
             "electoral_district": "67",
             "lat": "52.250214150000005",
@@ -3936,12 +3222,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6801",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -3969,12 +3249,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6801",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4002,12 +3276,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6801",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4035,12 +3303,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6802",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4068,12 +3330,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6802",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4101,12 +3357,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6802",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4134,12 +3384,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6802",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4167,12 +3411,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6802",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4200,12 +3438,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6803",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4233,12 +3465,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6803",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4266,12 +3492,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6803",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4299,12 +3519,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6803",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4332,12 +3546,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Ostprignitz-Ruppin",
-            "boundingbox": [
-                "52.6810392",
-                "53.3213463",
-                "12.12038",
-                "13.0578059"
-            ],
             "voting_district": "6803",
             "electoral_district": "68",
             "lat": "53.0010645",
@@ -4365,12 +3573,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6901",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4398,12 +3600,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6901",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4431,12 +3627,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6902",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4464,12 +3654,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6902",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4497,12 +3681,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6903",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4530,12 +3708,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6903",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4563,12 +3735,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6904",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4596,12 +3762,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6904",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4629,12 +3789,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6904",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4662,12 +3816,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6905",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4695,12 +3843,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Potsdam-Mittelmark",
-            "boundingbox": [
-                "51.9794258",
-                "52.5572154",
-                "12.2158471",
-                "13.3123024"
-            ],
             "voting_district": "6905",
             "electoral_district": "69",
             "lat": "52.2682985",
@@ -4728,12 +3870,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7001",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4761,12 +3897,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7001",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4794,12 +3924,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7001",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4827,12 +3951,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7001",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4860,12 +3978,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7002",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4893,12 +4005,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7002",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4926,12 +4032,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7002",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4959,12 +4059,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7002",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -4992,12 +4086,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7003",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -5025,12 +4113,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7003",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -5058,12 +4140,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prignitz",
-            "boundingbox": [
-                "52.875821",
-                "53.371256",
-                "11.2662278",
-                "12.4186469"
-            ],
             "voting_district": "7003",
             "electoral_district": "70",
             "lat": "53.12313355",
@@ -5091,12 +4167,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7101",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5124,12 +4194,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7101",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5157,12 +4221,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7102",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5190,12 +4248,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7102",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5223,12 +4275,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7102",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5256,12 +4302,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7103",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5289,12 +4329,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7103",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5322,12 +4356,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7103",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5355,12 +4383,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7103",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5388,12 +4410,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7104",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5421,12 +4437,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7104",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5454,12 +4464,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7104",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5487,12 +4491,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7104",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5520,12 +4518,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7105",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5553,12 +4545,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7105",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5586,12 +4572,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7105",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5619,12 +4599,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7106",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5652,12 +4626,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7106",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5685,12 +4653,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Spree-Neiße",
-            "boundingbox": [
-                "51.5048989",
-                "52.0576962",
-                "14.0728152",
-                "14.7658159"
-            ],
             "voting_district": "7106",
             "electoral_district": "71",
             "lat": "51.7812916",
@@ -5718,12 +4680,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7201",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5751,12 +4707,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7201",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5784,12 +4734,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7202",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5817,12 +4761,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7202",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5850,12 +4788,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7202",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5883,12 +4815,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7203",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5916,12 +4842,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7203",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5949,12 +4869,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7203",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -5982,12 +4896,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7204",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -6015,12 +4923,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7204",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -6048,12 +4950,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7204",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -6081,12 +4977,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7205",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -6114,12 +5004,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Teltow-Fläming",
-            "boundingbox": [
-                "51.7907328",
-                "52.411724",
-                "12.7699232",
-                "13.6527633"
-            ],
             "voting_district": "7205",
             "electoral_district": "72",
             "lat": "52.0994194",
@@ -6147,12 +5031,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "17291 Randowtal, Wollin",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7301",
             "electoral_district": "73",
             "lat": "53.27646106474883",
@@ -6180,12 +5058,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7301",
             "electoral_district": "73",
             "lat": "52.95049472814258",
@@ -6213,12 +5085,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Grünow",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7301",
             "electoral_district": "73",
             "lat": "53.31319798144329",
@@ -6246,12 +5112,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7301",
             "electoral_district": "73",
             "lat": "53.24526305",
@@ -6279,12 +5139,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7302",
             "electoral_district": "73",
             "lat": "53.24526305",
@@ -6312,12 +5166,6 @@
             "birth_year": 1991,
             "birthplace": "Prenzlau",
             "residence": "Gramzow",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7302",
             "electoral_district": "73",
             "lat": "53.21165146476513",
@@ -6345,12 +5193,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7302",
             "electoral_district": "73",
             "lat": "53.31935627041648",
@@ -6378,12 +5220,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7302",
             "electoral_district": "73",
             "lat": "53.320528988676024",
@@ -6411,12 +5247,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Boitzenburger Land",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7302",
             "electoral_district": "73",
             "lat": "53.26089055139536",
@@ -6444,12 +5274,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "16278 Pinnow",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7303",
             "electoral_district": "73",
             "lat": "53.06396599657123",
@@ -6477,12 +5301,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Uckermark",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7303",
             "electoral_district": "73",
             "lat": "53.24526305",
@@ -6510,12 +5328,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "16278 Pinnow",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7303",
             "electoral_district": "73",
             "lat": "53.063864559195174",
@@ -6543,12 +5355,6 @@
             "birth_year": 1965,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7303",
             "electoral_district": "73",
             "lat": "53.064750127939426",
@@ -6576,12 +5382,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.10917552529894",
@@ -6609,12 +5409,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.117083519179566",
@@ -6642,12 +5436,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Boitzenburger Land",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.26645715495859",
@@ -6675,12 +5463,6 @@
             "birth_year": 1974,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.06270766316476",
@@ -6708,12 +5490,6 @@
             "birth_year": 1965,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.06270766316476",
@@ -6741,12 +5517,6 @@
             "birth_year": 1963,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.06270766316476",
@@ -6774,12 +5544,6 @@
             "birth_year": 1978,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": [
-                "52.9314894",
-                "53.5590907",
-                "13.2397842",
-                "14.4505651"
-            ],
             "voting_district": "7304",
             "electoral_district": "73",
             "lat": "53.06270766316476",
@@ -6807,7 +5571,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -6835,7 +5598,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -6863,7 +5625,6 @@
             "birth_year": 1968,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.11554639443634",
@@ -6891,7 +5652,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -6919,7 +5679,6 @@
             "birth_year": 1954,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -6947,7 +5706,6 @@
             "birth_year": 1978,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.11905534770822",
@@ -6975,7 +5733,6 @@
             "birth_year": 1967,
             "birthplace": "",
             "residence": "Gartz (Oder)",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.214649547034064",
@@ -7003,7 +5760,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7031,7 +5787,6 @@
             "birth_year": 1941,
             "birthplace": "",
             "residence": "Oberuckersee",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7059,7 +5814,6 @@
             "birth_year": 1965,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.12058287947066",
@@ -7087,7 +5841,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7115,7 +5868,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7143,7 +5895,6 @@
             "birth_year": 1970,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.10325146064043",
@@ -7171,7 +5922,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7199,7 +5949,6 @@
             "birth_year": 1989,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7227,7 +5976,6 @@
             "birth_year": 1984,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.123858756346024",
@@ -7255,7 +6003,6 @@
             "birth_year": null,
             "birthplace": "Uckerfelde",
             "residence": "Uckerfelde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7283,7 +6030,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7311,7 +6057,6 @@
             "birth_year": 2002,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7339,7 +6084,6 @@
             "birth_year": 1962,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7367,7 +6111,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Gramzow",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7395,7 +6138,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7423,7 +6165,6 @@
             "birth_year": 1962,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.107693915975744",
@@ -7451,7 +6192,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7479,7 +6219,6 @@
             "birth_year": 1950,
             "birthplace": "",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06270766316476",
@@ -7507,7 +6246,6 @@
             "birth_year": 1973,
             "birthplace": "Angermünde",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "52.975204815839106",
@@ -7535,7 +6273,6 @@
             "birth_year": 1984,
             "birthplace": "Gerswalde",
             "residence": "Gerswalde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.16081661939834",
@@ -7563,7 +6300,6 @@
             "birth_year": 1966,
             "birthplace": "",
             "residence": "16306 Casekow",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.21266189562525",
@@ -7591,7 +6327,6 @@
             "birth_year": 1962,
             "birthplace": "Gramzow",
             "residence": "",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.21200640917644",
@@ -7619,7 +6354,6 @@
             "birth_year": 1963,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.056421706739535",
@@ -7647,7 +6381,6 @@
             "birth_year": 1966,
             "birthplace": "",
             "residence": "Angermünde/Crussow",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.00411783989936",
@@ -7675,7 +6408,6 @@
             "birth_year": 1991,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.418781161774184",
@@ -7703,7 +6435,6 @@
             "birth_year": 1948,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.06948191026734",
@@ -7731,7 +6462,6 @@
             "birth_year": 1961,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.07966090906284",
@@ -7759,7 +6489,6 @@
             "birth_year": 1969,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.012350654590456",
@@ -7787,7 +6516,6 @@
             "birth_year": 1963,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.022206915639546",
@@ -7815,7 +6543,6 @@
             "birth_year": 1966,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.021206915639546",
@@ -7843,7 +6570,6 @@
             "birth_year": 1960,
             "birthplace": "",
             "residence": "Angermünde",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.021206915639546",
@@ -7871,7 +6597,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.064050127939426",
@@ -7899,7 +6624,6 @@
             "birth_year": 1961,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.27470672367624",
@@ -7927,7 +6651,6 @@
             "birth_year": 1985,
             "birthplace": "",
             "residence": "Prenzlau",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.064250127939426",
@@ -7955,7 +6678,6 @@
             "birth_year": 1951,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.064350127939426",
@@ -7983,7 +6705,6 @@
             "birth_year": 1942,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.11179534981293",
@@ -8011,7 +6732,6 @@
             "birth_year": 1960,
             "birthplace": "",
             "residence": "Randowtal",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.307336930427454",
@@ -8039,7 +6759,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.064650127939426",
@@ -8067,7 +6786,6 @@
             "birth_year": 1988,
             "birthplace": "",
             "residence": "Randowtal",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.31779794449608",
@@ -8095,7 +6813,6 @@
             "birth_year": 1960 ,
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.108198112510316",
@@ -8123,7 +6840,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.063950127939426",
@@ -8151,7 +6867,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.063850127939426",
@@ -8179,7 +6894,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.063750127939426",
@@ -8207,7 +6921,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.063650127939426",
@@ -8235,7 +6948,6 @@
             "birth_year": null,
             "birthplace": "",
             "residence": "Schwedt/Oder",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.063550127939426",
@@ -8263,7 +6975,6 @@
             "birth_year": "1967",
             "birthplace": "",
             "residence": "Randowtal",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.298514867820366",
@@ -8291,7 +7002,6 @@
             "birth_year": "1978",
             "birthplace": "",
             "residence": "Templin",
-            "boundingbox": ["52.9314894", "53.5590907", "13.2397842", "14.4505651"],
             "voting_district": "",
             "electoral_district": "",
             "lat": "53.064750127939426",

@@ -3,8 +3,9 @@ import Leaflet from 'leaflet';
 import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.scss';
+import geodata from '@data/geo.json';
 
-const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip } = ReactLeaflet;
+const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
 
 const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "100vh", ...rest }) => {
   let mapClassName = styles.map;
@@ -24,7 +25,6 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
     })();
   }, []);
 
-  // ToDo: Change invert to new component
   return (
     <MapContainer 
       className={mapClassName + " invert"} 
@@ -70,6 +70,17 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
 
       {/* Render additional children passed into the Map component */}
       {children(ReactLeaflet, Leaflet)}
+        
+      {/* Render GeoJSON */}
+      <GeoJSON data={geodata} 
+        style={() => ({ 
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+      />
+
     </MapContainer>
   );
 };

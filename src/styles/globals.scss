@@ -53,111 +53,65 @@ img {
   font-size: small;
 }
 
-/* marker classes */
-.marker-afd{
+.marker-state_candidate{
   width: 14px;
   height: 14px;
+  border-radius: 50%;
+}
+
+.marker-district_candidate{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.afd{
   background-color: #009ee0; 
-  border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.marker-iii_weg{
-  width: 14px;
-  height: 14px;
+.iii_weg{
   background-color: #224e2a; 
-  border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.marker-wu{
-  width: 14px;
-  height: 14px;
+.wu{
   background-color: #013B5B; 
-  border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.marker-associations{
+.marker-entity{
   width: 14px;
   height: 14px;
-  border-radius: 50%; /* Make it round */
+  border-radius: 50%;
 }
 
-.marker-associations::before {
+.associations::before {
   content: "🏢"; 
   font-size: 21px;
 }
 
-
-.marker-media {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Make it round */
-}
-
-.marker-media::before {
-  content: "📡"; /* Use the skull emoji */
+.media::before {
+  content: "📡"; 
   font-size: 21px;
   filter: invert(1);
 }
 
-.marker-organizations{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Make it round */
-}
-
-.marker-organizations::before {
-  content: "🧿"; /* Use the skull emoji */
+.organizations::before {
+  content: "🧿"; 
   font-size: 21px;
 }
 
-.marker-locations {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Make it round */
-}
-
-.marker-locations::before {
-  content: "☠️"; /* Use the skull emoji */
+.locations::before {
+  content: "☠️";
   font-size: 21px;
 }
 
-.marker-fraternities {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.marker-fraternities::before {
-  content: "🤺"; /* Use the skull emoji */
+.fraternities::before {
+  content: "🤺"; 
   font-size: 21px;
   filter: hue-rotate(120deg);
 }
 
-.marker-settlers{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Make it round */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.marker-settlers::before {
-  content: "⛺"; /* Use the skull emoji */
+.settlers::before {
+  content: "⛺"; 
   font-size: 21px;
   filter: hue-rotate(120deg);
 }

@@ -18,9 +18,11 @@
     "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
   },
   "dependencies": {
+    "better-sqlite3": "^11.3.0",
     "copy-webpack-plugin": "^11.0.0",
     "leaflet": "^1.9.4",
     "next": "^14.0.1",
+    "npm": "^10.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
