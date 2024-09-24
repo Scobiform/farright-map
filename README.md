@@ -38,7 +38,7 @@ npx create-next-app -e https://github.com/Scobiform/farright-map
 
 ## Usage
 
-First, run the development server:
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -46,7 +46,11 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+API routes can be accessed on:
+[http://localhost:3000/api/organization](http://localhost:3000/api/organization)
+[http://localhost:3000/api/person](http://localhost:3000/api/person)
+[http://localhost:3000/api/location](http://localhost:3000/api/location)
+[http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia)
 
 ## Maintainers
 
