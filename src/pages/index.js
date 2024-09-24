@@ -170,16 +170,22 @@ export default function Home() {
                           })}
                         </ul>
                         <hr />   
-                        <h3>Social Media</h3>
-                            <ul>
+                        {socialLinks.length > 0 ? (
+                          <>
+                          <h3>Social Media</h3>
+                          <ul>
                             {socialLinks.map((link, index) => (
-                                <li key={index}>
-                                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                                    {link.url}
-                                  </a>
-                                </li>
-                              ))}  
-                            </ul>
+                              <li key={index}>
+                                <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                  {link.url}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                          </>
+                        ) : (
+                          <></>
+                        )}
                       </Popup>
                     </Marker>
                   ) : null;
