@@ -30,15 +30,17 @@ export default function Home() {
   const [candidates, setCandidates] = useState([]);
   const [locations, setLocations] = useState([]);
   const [organizations, setOrganizations] = useState([]);
+  const [socialMedia, setSocialMedia] = useState([]);
 
   // Fetch data from API routes
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [organizationsRes, personsRes, locationsRes] = await Promise.all([
+        const [organizationsRes, personsRes, locationsRes, socialMediaRes] = await Promise.all([
           fetch('/api/organization').then((res) => res.json()),
           fetch('/api/person').then((res) => res.json()),
           fetch('/api/location').then((res) => res.json()),
+          fetch('/api/socialmedia').then((res) => res.json()),
         ]);
 
         // Set organizations and initialize visibleParties
@@ -56,6 +58,15 @@ export default function Home() {
           return acc;
         }, {});
 
+        // Map social media by person_id
+        const socialMediaMap = socialMediaRes.reduce((acc, sm) => {
+          if (!acc[sm.person_id]) {
+            acc[sm.person_id] = [];
+          }
+          acc[sm.person_id].push({ type: sm.type, url: sm.url });
+          return acc;
+        }, {});
+
         // Combine persons with their organizations
         const personsWithOrganizations = personsRes.map((person) => {
           const organization = organizationsRes.find(org => org.id === person.organization_id);
@@ -63,6 +74,7 @@ export default function Home() {
         });
 
         setLocations(locationsMap);
+        setSocialMedia(socialMediaMap);
         setCandidates(personsWithOrganizations);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -142,6 +154,7 @@ export default function Home() {
                 {filteredCandidates.map((person, index) => {
                   const position = locations[person.id];
                   const orgName = person.organization?.name;
+                  const socialLinks = socialMedia[person.id] || [];
 
                   return position && visibleParties[orgName] ? (
                     <Marker key={index} position={position} icon={getIcon(person.type, orgName.toLowerCase())}>
@@ -156,6 +169,17 @@ export default function Home() {
                             return <li key={key}>{key}: {value}</li>;
                           })}
                         </ul>
+                        <hr />   
+                        <h3>Social Media</h3>
+                            <ul>
+                            {socialLinks.map((link, index) => (
+                                <li key={index}>
+                                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                    {link.url}
+                                  </a>
+                                </li>
+                              ))}  
+                            </ul>
                       </Popup>
                     </Marker>
                   ) : null;
