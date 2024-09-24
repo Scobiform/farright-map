@@ -3,7 +3,7 @@
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
 [![SQLite](https://img.shields.io/badge/SQLite-blue.svg)](https://www.sqlite.org/index.html)
-nextjs
+[![React](https://img.shields.io/badge/React-blue.svg)](https://reactjs.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-blue.svg)](https://nextjs.org/)
 [![Leaflet](https://img.shields.io/badge/Leaflet-blue.svg)](https://leafletjs.com/)
 [![AGFL-3.0](https://img.shields.io/badge/License-AGFL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
