@@ -10,6 +10,7 @@ import PersonCard from '@components/Card/PersonCard';
 
 import styles from '@styles/Home.module.scss';
 
+
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
 // BERLIN BERLIN IST UMZINGELT
