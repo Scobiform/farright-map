@@ -8,11 +8,11 @@ import PersonCard from '@components/Card/PersonCard';
 import styles from '@styles/Home.module.scss';
 import { icon } from '@fortawesome/fontawesome-svg-core'; 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome, faTents } from '@fortawesome/free-solid-svg-icons';
+import { faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome, faTents, faChessKing } from '@fortawesome/free-solid-svg-icons';
 
 
 // Add icons to the FontAwesome library
-library.add(faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome,faTents);
+library.add(faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome,faTents, faChessKing);
 
 // Get app title from environment variables
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
@@ -39,13 +39,13 @@ const getIcon = (person, orgName) => {
   let iconHtml;
   switch (person.type) {
     case 'nation':
-      iconHtml = icon({ prefix: 'fas', iconName: 'chess-knight' }).html;
+      iconHtml = icon({ prefix: 'fas', iconName: 'chess-queen' }).html;
       break;
     case 'state':
       iconHtml = icon({ prefix: 'fas', iconName: 'chess-rook' }).html;
       break;
     case 'district':
-      iconHtml = icon({ prefix: 'fas', iconName: 'chess-pawn' }).html;
+      iconHtml = icon({ prefix: 'fas', iconName: 'chess-knight' }).html;
       break;
     case 'entity':
       switch (orgName) {
