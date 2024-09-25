@@ -12,7 +12,7 @@ import styles from '@styles/Home.module.scss';
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
-// Default center for the map BERLIN
+// BERLIN BERLIN IST UMZINGELT
 const DEFAULT_CENTER = [52.5214295, 13.4136877];
 
 // Function to generate custom icon based on party
@@ -124,6 +124,7 @@ export default function Home() {
       </Head>
       <Section>
         <Container>
+          {/* Search input field */}
           <div className={styles.searchBox}>
             <input
               type="text"
@@ -145,13 +146,9 @@ export default function Home() {
 
           {/* Map Component */}
           <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={8}>
-            {({ TileLayer, Marker, Popup, Tooltip }) => (
+            {({ Marker, Popup, Tooltip }) => (
               <>
-                <TileLayer
-                  url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                />
-                
+                {/* Display markers for each person / legal entity */}
                 {filteredCandidates.map((person, index) => {
                   const position = locations[person.id];
                   const orgName = person.organization?.name;
