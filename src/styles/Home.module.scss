@@ -34,11 +34,24 @@
 }
 
 .inputText {
-  width:100vw;
-  font-size: 1.63em;
+  width:77vw;
+  height: 2.1em;
+  font-size: 1.4em;
   background: rgba(0,0,0, 1.0);
   color: white;
   border: none;
+  margin-left: 2.94rem ;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  position: relative;
+  z-index: 1000;
+}
+
+.inputText:focus {
+  outline: none;
 }
 
 .socialLinks{

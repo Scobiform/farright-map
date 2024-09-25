@@ -1,15 +1,12 @@
 import { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
-
 import Layout from '@components/Layout';
 import Section from '@components/Section';
 import Container from '@components/Container';
 import Map from '@components/Map';
 import Button from '@components/Button';
 import PersonCard from '@components/Card/PersonCard';
-
 import styles from '@styles/Home.module.scss';
-
 
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
@@ -125,6 +122,7 @@ export default function Home() {
       </Head>
       <Section>
         <Container>
+          
           {/* Search input field */}
           <div className={styles.searchBox}>
             <input
