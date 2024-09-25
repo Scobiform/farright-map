@@ -69,15 +69,14 @@ const getIcon = (person, orgName) => {
     className: `${person.type} 
                 ${orgName.toLowerCase()} 
                 invert
-                flex`,
-    iconSize: [14, 14],
+                flex
+                bg-primary`,
+    iconSize: [21, 21],
     iconAnchor: [7, 7], // Adjust the anchor point
     popupAnchor: [0, -10], // Popup anchor above the marker
     html: iconHtml,
   });
 };
-
-
 
 export default function Home() {
   const [visibleParties, setVisibleParties] = useState({});

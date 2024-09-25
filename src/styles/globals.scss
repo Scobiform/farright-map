@@ -1,7 +1,7 @@
 :root{
-  --primary: ivory;
+  --primary: rgb(255, 233, 252);
   --secondary: black;
-  --tertiary: red;
+  --tertiary: rgba(255,0,0,0.77);
   --quaternary: yellow;
   --quinary: green;
 }
@@ -70,31 +70,30 @@ img {
 }
 
 .nation{
-  content: "";
+  justify-content: center;
 }
 
 .state {
-  content: "";
+  justify-content: center;
 }
 
 .district {
-  content: ""; 
+  justify-content: center;
 }
 
 .associations {
-  content: "";
+  justify-content: center;
 }
 
 .media {
-  content: "";
+  justify-content: center;
 }
 
 .locations {
-  content: "";
+  justify-content: center;
 }
 
 .events {
-  content: ""; 
   color: yellow
 }
 
@@ -132,19 +131,19 @@ img {
   border: none;
 }
 
-.primary{
+.bg-primary{
   background-color: var(--primary);
 }
 
-.secondary{
+.bg-secondary{
   background-color: var(--secondary);
 }
 
-.tertiary{
+.bg-tertiary{
   background-color: var(--tertiary);
 }
 
-.quaternary{
+.bg-quaternary{
   background-color: var(--quaternary);
 }
 
