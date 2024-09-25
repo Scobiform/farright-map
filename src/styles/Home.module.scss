@@ -34,20 +34,19 @@
 }
 
 .inputText {
-  width:77vw;
-  height: 2.1em;
   font-size: 1.4em;
-  background: rgba(0,0,0, 1.0);
+  background: rgb(11, 0, 10);
   color: white;
   border: none;
-  margin-left: 2.94rem ;
-  display: flex ;
+  margin-left: 3.21rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.14rem;
   border-radius: 0.5em;
   position: relative;
   z-index: 1000;
+  margin-bottom: 0.35rem;
 }
 
 .inputText:focus {

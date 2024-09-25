@@ -10,12 +10,8 @@
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.28rem;
   position: absolute;
   left: 0.42rem;
-  top: 0.21rem;
   z-index: 9999;
+  margin-top: -0.35rem;
 }
