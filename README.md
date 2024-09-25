@@ -62,6 +62,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Feel free to contribute to this project.
 
+- [Project Kanban Board](https://github.com/users/Scobiform/projects/8)
+- [Discussions](https://github.com/Scobiform/farright-map/discussions)
+- [Issues](https://github.com/Scobiform/farright-map/issues)
+
 ## License
 
 - AGFL-3.0
