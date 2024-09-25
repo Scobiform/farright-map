@@ -6,6 +6,7 @@ import Section from '@components/Section';
 import Container from '@components/Container';
 import Map from '@components/Map';
 import Button from '@components/Button';
+import PersonCard from '@components/Card/PersonCard';
 
 import styles from '@styles/Home.module.scss';
 
@@ -160,32 +161,7 @@ export default function Home() {
                     <Marker key={index} position={position} icon={getIcon(person.type, orgName.toLowerCase())}>
                       <Tooltip>{person.name} - {orgName}</Tooltip>
                       <Popup>
-                        <h2>{person.name} <p className="left">{orgName}</p></h2>
-                        <ul>
-                          {Object.entries(person).map(([key, value]) => {
-                            if (!value || ['name', 'organization', 'lat', 'lon'].includes(key)) {
-                              return null;
-                            }
-                            return <li key={key}>{key}: {value}</li>;
-                          })}
-                        </ul>
-                        <hr />   
-                        {socialLinks.length > 0 ? (
-                          <>
-                          <h3>Social Media</h3>
-                          <ul>
-                            {socialLinks.map((link, index) => (
-                              <li key={index}>
-                                <a href={link.url} target="_blank" rel="noopener noreferrer">
-                                  {link.url}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                          </>
-                        ) : (
-                          <></>
-                        )}
+                        <PersonCard person={person} orgName={orgName} socialLinks={socialLinks} />
                       </Popup>
                     </Marker>
                   ) : null;
