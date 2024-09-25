@@ -8,7 +8,8 @@
 [![Leaflet](https://img.shields.io/badge/Leaflet-blue.svg)](https://leafletjs.com/)
 [![AGPL-3.0](https://img.shields.io/badge/License-AGFL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-| ![farright-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "farright-map screenshot") | 
+<img src="https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png" alt="farright-map screenshot" title="farright-map screenshot" style="float: right; width: 50%; margin-left: 20px;" />
+
 ## Table of Contents
 - [Disclaimer](#disclaimer)
 - [Background](#background)
