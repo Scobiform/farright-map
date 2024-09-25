@@ -56,7 +56,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Maintainers
 
-@Scobiform
+[@Scobiform](https://github.com/Scobiform/farright-map)
 
 ## Contributing
 
