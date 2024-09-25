@@ -2,5 +2,6 @@
     "default": true,
     "MD003": { "style": "atx_closed" },
     "MD007": { "indent": 4 },
-    "no-hard-tabs": false
+    "no-hard-tabs": false,
+    "MD013": false
 }
