@@ -8,9 +8,7 @@
 [![Leaflet](https://img.shields.io/badge/Leaflet-blue.svg)](https://leafletjs.com/)
 [![AGPL-3.0](https://img.shields.io/badge/License-AGFL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-<img src="https://raw.githubusercontent.com/Scobiform/farright-map/8234533ea8ef5bdb0deab80005e0864d2d378ade/public/images/Screenshot.png" alt="farright-map screenshot" title="farright-map screenshot" style="float: right; width: 50%; margin-left: 20px; float: inline-end;" />
-
-<img src="https://raw.githubusercontent.com/Scobiform/farright-map/8234533ea8ef5bdb0deab80005e0864d2d378ade/public/images/Screenshot2.png" alt="farright-map screenshot" align="right" style="width: 14%" />
+<img src="https://github.com/Scobiform/farright-map/blob/master/public/images/Screenshot.png" alt="farright-map screenshot" align="right" style="width: 14%" />
 
 ## Table of Contents
 
