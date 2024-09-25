@@ -8,17 +8,16 @@
 [![Leaflet](https://img.shields.io/badge/Leaflet-blue.svg)](https://leafletjs.com/)
 [![AGPL-3.0](https://img.shields.io/badge/License-AGFL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-![farright-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "farright-map screenshot")
-
+| ![farright-map screenshot](https://github.com/Scobiform/nazi-map/blob/master/public/images/Screenshot.png "farright-map screenshot") | 
 ## Table of Contents
-
 - [Disclaimer](#disclaimer)
 - [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#license) |
+| --- | --- |
 
 ## Disclaimer
 
