@@ -10,6 +10,8 @@
 
 <img src="https://raw.githubusercontent.com/Scobiform/farright-map/8234533ea8ef5bdb0deab80005e0864d2d378ade/public/images/Screenshot.png" alt="farright-map screenshot" title="farright-map screenshot" style="float: right; width: 50%; margin-left: 20px; float: inline-end;" />
 
+<img src="https://raw.githubusercontent.com/Scobiform/farright-map/8234533ea8ef5bdb0deab80005e0864d2d378ade/public/images/Screenshot2.png" alt="farright-map screenshot" align="right" style="width: 14%" />
+
 ## Table of Contents
 
 - [Disclaimer](#disclaimer)
