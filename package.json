@@ -1,9 +1,9 @@
 {
-  "name": "next-leaflet-starter",
-  "homepage": "https://next-leaflet-starter.netlify.app",
-  "version": "0.1.0",
-  "license": "MIT",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "name": "farright-map",
+  "homepage": "https://github.com/Scobiform/farright-map",
+  "version": "0.1.1",
+  "license": "AGPL-3.0-only",
+  "author": "Scobiform <datenkrake@scobiform.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +18,9 @@
     "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "better-sqlite3": "^11.3.0",
     "copy-webpack-plugin": "^11.0.0",
     "leaflet": "^1.9.4",

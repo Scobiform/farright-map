@@ -7,23 +7,13 @@ import geodata from '@data/geo.json';
 
 const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
 
-const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "100vh", ...rest }) => {
+const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "97.2vh", ...rest }) => {
   let mapClassName = styles.map;
 
   if (className) {
     mapClassName = `${mapClassName} ${className}`;
   }
 
-  useEffect(() => {
-    (async function init() {
-      delete Leaflet.Icon.Default.prototype._getIconUrl;
-      Leaflet.Icon.Default.mergeOptions({
-        iconRetinaUrl: 'leaflet/images/marker-icon-2x.png',
-        iconUrl: 'leaflet/images/marker-icon.png',
-        shadowUrl: 'leaflet/images/marker-shadow.png',
-      });
-    })();
-  }, []);
 
   return (
     <MapContainer 
@@ -37,17 +27,14 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
             url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           />
         </LayersControl.BaseLayer>
-
         <LayersControl.BaseLayer name="OpenTopoMap">
           <TileLayer
             url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a>'
           />
         </LayersControl.BaseLayer>
-
         <LayersControl.BaseLayer name="cyclosm">
           <TileLayer
             url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"

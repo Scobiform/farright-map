@@ -1,27 +1,83 @@
 import { useRef, useState, useEffect } from 'react';
 import Head from 'next/head';
 import Layout from '@components/Layout';
-import Section from '@components/Section';
 import Container from '@components/Container';
 import Map from '@components/Map';
 import Button from '@components/Button';
 import PersonCard from '@components/Card/PersonCard';
 import styles from '@styles/Home.module.scss';
+import { icon } from '@fortawesome/fontawesome-svg-core'; 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome, faTents } from '@fortawesome/free-solid-svg-icons';
 
+
+// Add icons to the FontAwesome library
+library.add(faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome,faTents);
+
+// Get app title from environment variables
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
 // BERLIN BERLIN IST UMZINGELT
 const DEFAULT_CENTER = [52.5214295, 13.4136877];
 
-// Function to generate custom icon based on party
-const getIcon = (type, orgname) => {
+const getIcon = (person, orgName) => {
+  // Default FontAwesome icon for fallback
+  const defaultIcon = 'fas fa-chess-pawn';
+
+  // List of organizations and their corresponding icon classes
+  const organizationsData = [
+    { name: 'AfD', type: 'party', icon: 'fas fa-chess-pawn' },
+    { name: 'III_Weg', type: 'party', icon: 'fas fa-chess-pawn' },
+    { name: 'WU', type: 'party', icon: 'fas fa-chess-pawn' },
+    { name: 'Media', type: 'organization', icon: 'fas fa-chess-pawn' },
+    { name: 'Fraternities', type: 'association', icon: 'fas fa-chess-pawn' },
+    { name: 'Associations', type: 'association', icon: 'fas fa-chess-pawn' },
+    { name: 'Settlers', type: 'association', icon: 'fas fa-chess-pawn' },
+  ];
+
+  // Generate the correct HTML for the icon based on the person's type
+  let iconHtml;
+  switch (person.type) {
+    case 'nation':
+      iconHtml = icon({ prefix: 'fas', iconName: 'chess-knight' }).html;
+      break;
+    case 'state':
+      iconHtml = icon({ prefix: 'fas', iconName: 'chess-rook' }).html;
+      break;
+    case 'district':
+      iconHtml = icon({ prefix: 'fas', iconName: 'chess-pawn' }).html;
+      break;
+    case 'entity':
+      switch (orgName) {
+        case organizationsData[3].name:
+          iconHtml = icon({ prefix: 'fas', iconName: 'satellite-dish' }).html;
+          break;
+        case organizationsData[4].name:
+          iconHtml = icon({ prefix: 'fas', iconName: 'people-group' }).html;
+          break;
+        case organizationsData[5].name:
+          iconHtml = icon({ prefix: 'fas', iconName: 'landmark-dome' }).html;
+          break;
+        case organizationsData[6].name:
+          iconHtml = icon({ prefix: 'fas', iconName: 'tents' }).html;
+          break;
+      }
+  }
+
+  // Return a new DivIcon with the generated HTML and necessary options
   return new L.DivIcon({
-    className: `marker-${type} ${orgname} invert`,
+    className: `${person.type} 
+                ${orgName.toLowerCase()} 
+                invert
+                flex`,
     iconSize: [14, 14],
-    iconAnchor: [14, 14],
-    popupAnchor: [1, -34],
+    iconAnchor: [7, 7], // Adjust the anchor point
+    popupAnchor: [0, -10], // Popup anchor above the marker
+    html: iconHtml,
   });
 };
+
+
 
 export default function Home() {
   const [visibleParties, setVisibleParties] = useState({});
@@ -113,6 +169,8 @@ export default function Home() {
     }));
   };
 
+
+
   return (
     <Layout>
       <Head>
@@ -120,9 +178,7 @@ export default function Home() {
         <meta name="description" content="Overview of politicians and their corresponding electoral districts." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Section>
-        <Container>
-          
+        <Container>      
           {/* Search input field */}
           <div className={styles.searchBox}>
             <input
@@ -154,7 +210,11 @@ export default function Home() {
                   const socialLinks = socialMedia[person.id] || [];
 
                   return position && visibleParties[orgName] ? (
-                    <Marker key={index} position={position} icon={getIcon(person.type, orgName.toLowerCase())}>
+                    <Marker 
+                      key={index} 
+                      position={position} 
+                      icon={getIcon(person, orgName)}
+                    >
                       <Tooltip>{person.name} - {orgName}</Tooltip>
                       <Popup>
                         <PersonCard person={person} orgName={orgName} socialLinks={socialLinks} />
@@ -166,7 +226,6 @@ export default function Home() {
             )}
           </Map>
         </Container>
-      </Section>
     </Layout>
   );
 }

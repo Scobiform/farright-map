@@ -1,3 +1,11 @@
+:root{
+  --primary: ivory;
+  --secondary: black;
+  --tertiary: red;
+  --quaternary: yellow;
+  --quinary: green;
+}
+
 html{
   background-color: black;
 }
@@ -57,67 +65,63 @@ img {
   font-size: small;
 }
 
-.marker-state_candidate{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+.flex{
+  display: flex;
 }
 
-.marker-district_candidate{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
+.nation{
+  content: "";
+}
+
+.state {
+  content: "";
+}
+
+.district {
+  content: ""; 
+}
+
+.associations {
+  content: "";
+}
+
+.media {
+  content: "";
+}
+
+.locations {
+  content: "";
+}
+
+.events {
+  content: ""; 
+  color: yellow
+}
+
+.fraternities {
+  color: darkred;
+}
+
+.settlers {
+  color: brown;
 }
 
 .afd{
-  background-color: #009ee0; 
+  color: #009ee0;
 }
 
 .iii_weg{
-  background-color: #224e2a; 
+  color: #224e2a;
 }
 
 .wu{
-  background-color: #013B5B; 
+  color: #013B5B;
 }
 
-.marker-entity{
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-}
-
-.associations::before {
-  content: "🏢"; 
-  font-size: 21px;
-}
-
-.media::before {
-  content: "📡"; 
-  font-size: 21px;
-  filter: invert(1);
-}
-
-.organizations::before {
-  content: "🧿"; 
-  font-size: 21px;
-}
-
-.locations::before {
-  content: "☠️";
-  font-size: 21px;
-}
-
-.fraternities::before {
-  content: "🤺"; 
-  font-size: 21px;
-  filter: hue-rotate(120deg);
-}
-
-.settlers::before {
-  content: "⛺"; 
-  font-size: 21px;
-  filter: hue-rotate(120deg);
+.svg-inline--fa {
+  height: auto !important; 
+  width: auto;
+  vertical-align: middle;
 }
 
 .invert{
@@ -126,4 +130,24 @@ img {
 
 .noBorder{
   border: none;
+}
+
+.primary{
+  background-color: var(--primary);
+}
+
+.secondary{
+  background-color: var(--secondary);
+}
+
+.tertiary{
+  background-color: var(--tertiary);
+}
+
+.quaternary{
+  background-color: var(--quaternary);
+}
+
+.quinary{
+  background-color: var(--quinary);
 }

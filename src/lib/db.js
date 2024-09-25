@@ -129,7 +129,7 @@ const insertOrganizations = (organizations) => {
 // Insert candidates into the database
 const insertCandidate = (candidate, organizationId) => {
     try { 
-        let personType = candidate.type === "kreis" ? "district_candidate" : "state_candidate"; 
+        let personType = candidate.type === "kreis" ? "district" : "state"; 
         // If organization ID is greater than 3, it is an legal entity
         if (organizationId > 3) {   
             personType = "entity";
@@ -266,6 +266,20 @@ const insertCandidates = (organizations) => {
         }
     });
 };
+
+// Change person.type from district_candidate to district and state_candidate to state
+const changePersonType = () => {
+    try {
+        db.exec(`
+            UPDATE person SET type = 'district' WHERE type = 'district_candidate';
+            UPDATE person SET type = 'state' WHERE type = 'state_candidate';
+        `);
+        console.log("Person types updated successfully.");
+    } catch (error) {
+        console.error("Error updating person types:", error);
+    }
+}
+//changePersonType();
 
 // Main execution
 const main = () => {
