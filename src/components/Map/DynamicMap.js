@@ -7,7 +7,7 @@ import geodata from '@data/geo.json';
 
 const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
 
-const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "97.2vh", ...rest }) => {
+const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "100vh", ...rest }) => {
   let mapClassName = styles.map;
 
   if (className) {
