@@ -38,7 +38,6 @@
   background: rgb(11, 0, 10);
   color: white;
   border: none;
-  margin-left: 3.21rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +45,6 @@
   border-radius: 0.5em;
   position: relative;
   z-index: 1000;
-  margin-bottom: 0.35rem;
 }
 
 .inputText:focus {
@@ -60,3 +58,23 @@
   width: 7rem;
   top: 2.8vh;
 }
+
+.header {
+  z-index: 1001;
+  height: 2.1rem;
+  position: absolute;
+}
+
+.searchBox {
+  margin-left: 3.5rem;
+  margin-top: 0.42rem;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  left: 0.42rem;
+  z-index: 9999;
+  top: 0.14rem;
+}
+
