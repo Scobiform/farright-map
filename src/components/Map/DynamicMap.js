@@ -4,6 +4,10 @@ import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.scss';
 import geodata from '@data/geo.json';
+// Copyright: Jörg Reichert
+// MIT License
+// https://github.com/CodeforLeipzig/wahldaten/
+import sachsenGeoData from '@data/sachsen/geo.json';
 
 const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
 
@@ -58,9 +62,18 @@ const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = 
       {/* Render additional children passed into the Map component */}
       {children(ReactLeaflet, Leaflet)}
         
-      {/* Render GeoJSON */}
+      {/* Render Brandenburg GeoJSON */}
       <GeoJSON data={geodata} 
         style={() => ({ 
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+      />
+      {/* Render Sachsen GeoJSON */}
+      <GeoJSON data={sachsenGeoData}
+        style={() => ({
           color: 'green',
           weight: 1,
           fillColor: 'green',
