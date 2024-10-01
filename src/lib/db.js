@@ -313,7 +313,7 @@ const main = () => {
 };
 
 // Run once ;)
-main();
+//main();
 
 
 
