@@ -89,6 +89,18 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
   // Recursive function to render nested attributes
   const renderAttributes = (obj) => {
     return Object.entries(obj).map(([key, value]) => {
+      const isUrl = typeof value === 'string' && value.startsWith('https://');
+      if (isUrl) {
+        return (
+          <li key={key}>
+            <strong>{key}:</strong>{' '}
+            <a href={value || '#'} target="_blank" rel="noopener noreferrer">
+              {value}
+            </a>
+          </li>
+        );  
+      }
+
       if (typeof value === 'object' && value !== null) {
         return (
           <li key={key}>
