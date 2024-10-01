@@ -273,7 +273,7 @@ const main = () => {
 
     const dataPath = path.resolve('src/data/data.json');
     // Add Saxony data
-    const saxonyDataPath = path.resolve('src/data/saxonia/sachsen_landtag2024_afd_direktbewerberin.json');
+    const saxonyDataPath = path.resolve('src/data/saxony/sachsen_landtag2024_afd_direktbewerberin.json');
     const saxonyData = loadData(saxonyDataPath);
     // Load the rest of the data
     let data = loadData(dataPath);

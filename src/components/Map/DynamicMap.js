@@ -7,7 +7,7 @@ import geodata from '@data/geo.json';
 // Copyright: Jörg Reichert
 // MIT License
 // https://github.com/CodeforLeipzig/wahldaten/
-import sachsenGeoData from '@data/saxonia/geo.json';
+import sachsenGeoData from '@data/saxony/geo.json';
 
 const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
 
