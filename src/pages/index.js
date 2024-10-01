@@ -16,8 +16,8 @@ library.add(faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSa
 // Get app title from environment variables
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 
-// BERLIN BERLIN IST UMZINGELT
-const DEFAULT_CENTER = [52.5214295, 13.4136877];
+// Default center for the map
+const DEFAULT_CENTER = process.env.NEXT_PUBLIC_DEFAULT_CENTER.split(',').map(parseFloat);
 
 // Function to generate a DivIcon based on the person's type and organization
 const getIcon = (person, orgName) => {
