@@ -252,7 +252,6 @@ const changePersonType = () => {
         console.error("Error updating person types:", error);
     }
 }
-//changePersonType();
 
 // Main execution
 const main = () => {
@@ -311,9 +310,10 @@ const main = () => {
     }
 
     insertCandidates(allCandidates);
+    changePersonType();
 };
 
 // Run once ;)
-main();
+//main();
 
 export default db;

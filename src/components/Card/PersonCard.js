@@ -5,14 +5,18 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
   const [newAttrKey, setNewAttrKey] = useState('');
   const [newAttrValue, setNewAttrValue] = useState('');
   const [admin, setAdmin] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+  const [attributes, setAttributes] = useState(person.attributes || {});
 
   useEffect(() => {
     setPersonData(person);
+    setAttributes(person.attributes || {});
   }, [person]);
 
   const handleAddAttribute = () => {
-    setPersonData({
-      ...personData,
+    if (!newAttrKey || !newAttrValue) return;
+    setAttributes({
+      ...attributes,
       [newAttrKey]: newAttrValue
     });
     setNewAttrKey('');
@@ -20,32 +24,16 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
   };
 
   const handleUpdateAttribute = (key, value) => {
-    setPersonData({
-      ...personData,
+    setAttributes({
+      ...attributes,
       [key]: value
     });
   };
 
   const handleDeleteAttribute = (key) => {
-    const updatedData = { ...personData };
-    delete updatedData[key];
-    setPersonData(updatedData);
-  };
-
-  const handleCreate = async () => {
-    try {
-      const response = await fetch('/api/person', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(personData),
-      });
-      const data = await response.json();
-      setPersonData(data);
-    } catch (error) {
-      console.error('Error creating person:', error);
-    }
+    const updatedAttributes = { ...attributes };
+    delete updatedAttributes[key];
+    setAttributes(updatedAttributes);
   };
 
   const handleUpdate = async () => {
@@ -55,41 +43,51 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(personData),
+        body: JSON.stringify({ ...personData, attributes }),
       });
       const data = await response.json();
-      setPersonData(data);
+      if (response.ok) {
+        setPersonData(data);
+        setErrorMessage('');
+      } else {
+        setErrorMessage(data.message);
+      }
     } catch (error) {
-      console.error('Error updating person:', error);
+      setErrorMessage('Error updating person');
     }
   };
 
-  const handleDelete = async () => {
+  const handleCreate = async () => {
     try {
-      await fetch('/api/person', {
-        method: 'DELETE',
+      const response = await fetch('/api/person', {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ id: personData.id }),
+        body: JSON.stringify({ ...personData, attributes }),
       });
-      setPersonData(null);
+      const data = await response.json();
+      if (response.ok) {
+        setPersonData(data);
+        setErrorMessage('');
+      } else {
+        setErrorMessage(data.message);
+      }
     } catch (error) {
-      console.error('Error deleting person:', error);
+      setErrorMessage('Error creating person');
     }
   };
 
+  //
   if (!admin) {
     return (
       <div>
-        <button onClick={() => setAdmin(true)}>Admin</button>
-        <h2>
-          {person.name}
-          <p className="left">{orgName}</p>
-        </h2>
+        <button onClick={() => setAdmin(true)}>EDIT</button>
+        <h2>{personData.name}</h2>
+        <p className="left">{orgName}</p>
         <ul>
-          {Object.entries(person).map(([key, value]) => {
-            if (!value || ['name', 'organization', 'lat', 'lon'].includes(key)) {
+          {Object.entries(personData).map(([key, value]) => {
+            if (!value || ['name', 'organization'].includes(key)) {
               return null;
             }
             return (
@@ -98,6 +96,14 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
               </li>
             );
           })}
+        </ul>
+        <h3>Attributes</h3>
+        <ul>
+          {Object.entries(attributes).map(([key, value]) => (
+            <li key={key}>
+              {key}: {value}
+            </li>
+          ))}
         </ul>
         <hr />
         {socialLinks.length > 0 && (
@@ -120,10 +126,8 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     return (
       <div>
         <button onClick={() => setAdmin(false)}>View</button>
-        <h2>
-          {personData.name}
-          <p className="left">{orgName}</p>
-        </h2>
+        <h2>{personData.name}</h2>
+        <p className="left">{orgName}</p>
         <ul>
           {Object.entries(personData).map(([key, value]) => {
             if (!value || ['name', 'organization'].includes(key)) {
@@ -131,31 +135,24 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
             }
             return (
               <li key={key}>
-                <input
-                  type="text"
-                  value={value}
-                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
-                />
-                <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
+                {key}: {value}
               </li>
             );
           })}
         </ul>
-        <hr />
-        {socialLinks.length > 0 && (
-          <>
-            <h3>Social Media</h3>
-            <ul>
-              {socialLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.url}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
+        <h3>Attributes</h3>
+        <ul>
+          {Object.entries(attributes).map(([key, value]) => (
+            <li key={key}>
+              <input
+                type="text"
+                value={value}
+                onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+              />
+              <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
+            </li>
+          ))}
+        </ul>
         <div>
           <input
             type="text"
@@ -172,6 +169,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
           <button onClick={handleAddAttribute}>Add Attribute</button>
         </div>
         <button onClick={handleUpdate}>Update</button>
+        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       </div>
     );
   }

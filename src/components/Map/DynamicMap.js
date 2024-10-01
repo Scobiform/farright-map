@@ -9,9 +9,20 @@ import geodata from '@data/geo.json';
 // https://github.com/CodeforLeipzig/wahldaten/
 import sachsenGeoData from '@data/saxony/geo.json';
 
-const { MapContainer, TileLayer, LayersControl, Marker, Popup, Polygon, ToolTip, GeoJSON } = ReactLeaflet;
+const { MapContainer, 
+  TileLayer, 
+  LayersControl, 
+  Marker, 
+  Popup, 
+  Polygon, 
+  ToolTip, 
+  GeoJSON } = ReactLeaflet;
 
-const DynamicMap = ({ polygons = [], ToolTip = "", children, className, width = "100vw", height = "100vh", ...rest }) => {
+const DynamicMap = ({ polygons = [], 
+  ToolTip = "", 
+  children, 
+  className, width = "100vw", height = "98vh", ...rest }) => {
+  
   let mapClassName = styles.map;
 
   if (className) {
