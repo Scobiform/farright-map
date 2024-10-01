@@ -14,7 +14,11 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
 
   useEffect(() => {
     setPersonData(person);
-    setAttributes(typeof person.attributes === 'string' ? JSON.parse(person.attributes) : person.attributes || {});
+    setAttributes(
+      typeof person.attributes === 'string'
+        ? JSON.parse(person.attributes)
+        : person.attributes || {}
+    );
   }, [person]);
 
   const handleAddAttribute = () => {
@@ -107,19 +111,22 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         <button onClick={() => setAdmin(true)}>EDIT</button>
         <h2>{personData.name}</h2>
         <p className="left">{orgName}</p>
-        <ul>
-          {Object.entries(personData).map(([key, value]) => {
-            if (!value || ['name', 'organization'].includes(key)) {
-              return null;
-            }
-            return (
-              <li key={key}>
-                {key}: {value}
-              </li>
-            );
-          })}
-        </ul>
-        <hr />
+        {attributes && Object.keys(attributes).length > 0 ? (
+          <ul>{renderAttributes(attributes)}</ul>
+        ) : (
+          <ul>
+            {Object.entries(personData).map(([key, value]) => {
+              if (!value || ['name', 'organization', 'attributes'].includes(key)) {
+                return null;
+              }
+              return (
+                <li key={key}>
+                  {key}: {value}
+                </li>
+              );
+            })}
+          </ul>
+        )}
         {socialLinks.length > 0 && (
           <>
             <h3>Social Media</h3>
