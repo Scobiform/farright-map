@@ -19,9 +19,8 @@ const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
 // BERLIN BERLIN IST UMZINGELT
 const DEFAULT_CENTER = [52.5214295, 13.4136877];
 
+// Function to generate a DivIcon based on the person's type and organization
 const getIcon = (person, orgName) => {
-  // Default FontAwesome icon for fallback
-  const defaultIcon = 'fas fa-chess-pawn';
 
   // List of organizations and their corresponding icon classes
   const organizationsData = [
@@ -37,7 +36,7 @@ const getIcon = (person, orgName) => {
   // Generate the correct HTML for the icon based on the person's type
   let iconHtml;
   switch (person.type) {
-    case 'nation':
+    case 'federal':
       iconHtml = icon({ prefix: 'fas', iconName: 'chess-queen' }).html;
       break;
     case 'state':
@@ -71,8 +70,8 @@ const getIcon = (person, orgName) => {
                 flex
                 bg-primary`,
     iconSize: [21, 21],
-    iconAnchor: [7, 7], // Adjust the anchor point
-    popupAnchor: [0, -10], // Popup anchor above the marker
+    iconAnchor: [7, 7],
+    popupAnchor: [0, -10],
     html: iconHtml,
   });
 };
@@ -167,6 +166,7 @@ export default function Home() {
     }));
   };
 
+  // Render the home page
   return (
     <Layout>
       <Head>
@@ -213,7 +213,6 @@ export default function Home() {
             </Button>
           ))}
         </div>
-
         {/* Map Component */}
         <Map className={styles.homeMap} 
              center={DEFAULT_CENTER} 

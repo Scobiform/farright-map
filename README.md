@@ -1,4 +1,4 @@
-# 🍃 FarRight Map Germany
+# 🍃 FarRight Map Germany #
 
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
@@ -10,7 +10,7 @@
 
 <img src="https://github.com/Scobiform/farright-map/blob/master/public/images/Screenshot.png" alt="farright-map screenshot" align="cenzer" style="width: 100%" />
 
-## Table of Contents
+## Table of Contents ##
 
 - [Disclaimer](#disclaimer)
 - [Background](#background)
@@ -20,15 +20,15 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Disclaimer
+## Disclaimer ##
 
 All data used in this project was publicly available.
 
-## Background
+## Background ##
 
 This project is designed to map far-right party-candidates, media, organizations, special locations, fraternities and settlers (yes, Germany has "völkische SIedler*innen"). The data was exclusively collected from open sources and is in public interest.
 
-## Install
+## Install ##
 
 First, clone the repository or use the following command to create a Next.js app based on this template:
 
@@ -36,7 +36,7 @@ First, clone the repository or use the following command to create a Next.js app
 npx create-next-app -e https://github.com/Scobiform/farright-map
 ```
 
-## Usage
+## Usage ##
 
 Second, run the development server:
 
@@ -54,11 +54,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [http://localhost:3000/api/location](http://localhost:3000/api/location)
 - [http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia)
 
-## Maintainers
+## Maintainers ##
 
 [@Scobiform](https://github.com/Scobiform/)
 
-## Contributing
+## Contributing ##
 
 Feel free to contribute to this project.
 
@@ -66,6 +66,6 @@ Feel free to contribute to this project.
 - [Discussions](https://github.com/Scobiform/farright-map/discussions)
 - [Issues](https://github.com/Scobiform/farright-map/issues)
 
-## License
+## License ##
 
 - AGPL-3.0
