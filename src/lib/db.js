@@ -239,7 +239,6 @@ const insertCandidates = (organizations) => {
     });
 };
 
-
 // Change person.type from district_candidate to district and state_candidate to state
 const changePersonType = () => {
     try {

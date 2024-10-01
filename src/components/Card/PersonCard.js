@@ -6,11 +6,15 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
   const [newAttrValue, setNewAttrValue] = useState('');
   const [admin, setAdmin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [attributes, setAttributes] = useState(person.attributes || {});
+  const [attributes, setAttributes] = useState(() => {
+    return typeof person.attributes === 'string'
+      ? JSON.parse(person.attributes)
+      : person.attributes || {};
+  });
 
   useEffect(() => {
     setPersonData(person);
-    setAttributes(person.attributes || {});
+    setAttributes(typeof person.attributes === 'string' ? JSON.parse(person.attributes) : person.attributes || {});
   }, [person]);
 
   const handleAddAttribute = () => {
@@ -78,7 +82,25 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     }
   };
 
-  //
+  // Recursive function to render nested attributes
+  const renderAttributes = (obj) => {
+    return Object.entries(obj).map(([key, value]) => {
+      if (typeof value === 'object' && value !== null) {
+        return (
+          <li key={key}>
+            <strong>{key}:</strong>
+            <ul>{renderAttributes(value)}</ul>
+          </li>
+        );
+      }
+      return (
+        <li key={key}>
+          <strong>{key}:</strong> {value}
+        </li>
+      );
+    });
+  };
+
   if (!admin) {
     return (
       <div>
@@ -96,14 +118,6 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
               </li>
             );
           })}
-        </ul>
-        <h3>Attributes</h3>
-        <ul>
-          {Object.entries(attributes).map(([key, value]) => (
-            <li key={key}>
-              {key}: {value}
-            </li>
-          ))}
         </ul>
         <hr />
         {socialLinks.length > 0 && (
@@ -130,7 +144,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         <p className="left">{orgName}</p>
         <ul>
           {Object.entries(personData).map(([key, value]) => {
-            if (!value || ['name', 'organization'].includes(key)) {
+            if (!value || ['name', 'organization', 'attributes'].includes(key)) {
               return null;
             }
             return (

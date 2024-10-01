@@ -150,3 +150,10 @@ img {
 .leaflet-right {
   right: 14px !important;
 }
+
+.leaflet-popup-content-wrapper {
+  color: var(--primary) !important;
+  background-color: var(--secondary) !important;
+  max-height: 77vh !important;
+  overflow-y: auto !important;
+}
