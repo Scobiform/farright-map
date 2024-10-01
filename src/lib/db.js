@@ -51,6 +51,7 @@ const createTables = () => {
                 website TEXT,
                 wikipedia TEXT,
                 organization_id INTEGER,
+                attributes TEXT,
                 FOREIGN KEY (organization_id) REFERENCES organization(id)
             );
         `);
@@ -313,8 +314,6 @@ const main = () => {
 };
 
 // Run once ;)
-//main();
-
-
+main();
 
 export default db;

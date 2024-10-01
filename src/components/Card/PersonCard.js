@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function PersonCard({ person, orgName, socialLinks = [] }) {
   const [personData, setPersonData] = useState(person);
   const [newAttrKey, setNewAttrKey] = useState('');
   const [newAttrValue, setNewAttrValue] = useState('');
   const [admin, setAdmin] = useState(false);
+
+  useEffect(() => {
+    setPersonData(person);
+  }, [person]);
 
   const handleAddAttribute = () => {
     setPersonData({
@@ -28,11 +32,57 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     setPersonData(updatedData);
   };
 
-  if(!admin) {
+  const handleCreate = async () => {
+    try {
+      const response = await fetch('/api/person', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(personData),
+      });
+      const data = await response.json();
+      setPersonData(data);
+    } catch (error) {
+      console.error('Error creating person:', error);
+    }
+  };
+
+  const handleUpdate = async () => {
+    try {
+      const response = await fetch('/api/person', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(personData),
+      });
+      const data = await response.json();
+      setPersonData(data);
+    } catch (error) {
+      console.error('Error updating person:', error);
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      await fetch('/api/person', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: personData.id }),
+      });
+      setPersonData(null);
+    } catch (error) {
+      console.error('Error deleting person:', error);
+    }
+  };
+
+  if (!admin) {
     return (
-      
       <div>
-                <button onClick={() => setAdmin(true)}>View</button>
+        <button onClick={() => setAdmin(true)}>Admin</button>
         <h2>
           {person.name}
           <p className="left">{orgName}</p>
@@ -66,8 +116,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         )}
       </div>
     );
-  }
-  else {
+  } else {
     return (
       <div>
         <button onClick={() => setAdmin(false)}>View</button>
@@ -122,6 +171,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
           />
           <button onClick={handleAddAttribute}>Add Attribute</button>
         </div>
+        <button onClick={handleUpdate}>Update</button>
       </div>
     );
   }
