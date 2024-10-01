@@ -6,6 +6,30 @@
   --quinary: green;
 }
 
+/* Scrollbar */
+/* The scrollbar container */
+::-webkit-scrollbar {
+  width: 12px;              /* Width of the scrollbar */
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: var(--secondary)
+}
+
+/* The handle (scrollbar thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary);
+  border-radius: 10px;
+  border: 2px solid var(--secondary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;    /* Darker color on hover */
+}
+
+
 html,
 body {
   padding: 0;
@@ -156,4 +180,6 @@ img {
   background-color: var(--secondary) !important;
   max-height: 77vh !important;
   overflow-y: auto !important;
+  overflow-x: hidden !important;
+  width: 56vw !important;
 }
