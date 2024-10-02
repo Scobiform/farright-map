@@ -77,6 +77,7 @@ const getIcon = (person, orgName) => {
 };
 
 export default function Home() {
+  // State variables
   const [visibleParties, setVisibleParties] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [candidates, setCandidates] = useState([]);

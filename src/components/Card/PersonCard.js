@@ -21,6 +21,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     );
   }, [person]);
 
+  // Function to add a new attribute
   const handleAddAttribute = () => {
     if (!newAttrKey || !newAttrValue) return;
     setAttributes({
@@ -31,6 +32,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     setNewAttrValue('');
   };
 
+  // Function to update an attribute
   const handleUpdateAttribute = (key, value) => {
     setAttributes({
       ...attributes,
@@ -38,16 +40,39 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     });
   };
 
-  const handleDeleteAttribute = (key) => {
-    const updatedAttributes = { ...attributes };
-    delete updatedAttributes[key];
-    setAttributes(updatedAttributes);
+  // Function to delete an attribute
+  const handleDeleteAttribute = async (key) => {
+    try {
+      const response = await fetch('/api/person', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ id: personData.id, key }), // Include person ID and key to delete
+      });
+  
+      const data = await response.json();
+  
+      if (response.ok) {
+        setAttributes((prevAttributes) => {
+          const updatedAttributes = { ...prevAttributes };
+          delete updatedAttributes[key];
+          return updatedAttributes; // Return the updated object
+        });
+        setErrorMessage(''); // Clear any error message
+      } else {
+        setErrorMessage(data.message); // Show error message from the server
+      }
+    } catch (error) {
+      setErrorMessage('Error deleting attribute');
+    }
   };
-
+  
+  // Function to update the person's attributes
   const handleUpdate = async () => {
     try {
       const response = await fetch('/api/person', {
-        method: 'PUT',
+        method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -65,6 +90,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     }
   };
 
+  // Function to create a new person
   const handleCreate = async () => {
     try {
       const response = await fetch('/api/person', {
@@ -86,37 +112,76 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     }
   };
 
-  // Recursive function to render nested attributes
+  // Recursive function to render attributes, ensuring the image appears first
   const renderAttributes = (obj) => {
-    return Object.entries(obj).map(([key, value]) => {
-      const isUrl = typeof value === 'string' && value.startsWith('https://');
-      if (isUrl) {
-        return (
-          <li key={key}>
-            <strong>{key}:</strong>{' '}
-            <a href={value || '#'} target="_blank" rel="noopener noreferrer">
-              {value}
-            </a>
-          </li>
-        );  
+    const entries = Object.entries(obj);
+
+    // Separate image attribute from the rest
+    const imageEntry = entries.find(([key]) => key === 'image');
+    const otherEntries = entries.filter(([key]) => key !== 'image');
+
+    // Function to render each attribute
+    const renderAttribute = ([key, value]) => {
+      let element;
+
+      switch (true) {
+        // Case for URLs
+        case typeof value === 'string' && value.startsWith('https://'):
+          element = (
+            <li key={key}>
+              <strong>{key}:</strong>{' '}
+              <a href={value || '#'} target="_blank" rel="noopener noreferrer">
+                {value}
+              </a>
+            </li>
+          );
+          break;
+
+        // case for number fields
+        case typeof value === 'number':
+          element = (
+            <li key={key}>
+              <strong>{key}:</strong> {value}
+            </li>
+          );
+          break;
+
+        // Case for nested objects
+        case typeof value === 'object' && value !== null:
+          element = (
+            <li key={key}>
+              <strong>{key}:</strong>
+              <ul>{renderAttributes(value)}</ul>
+            </li>
+          );
+          break;
+        
+        // Default case for simple text fields
+        default:
+          element = (
+            <li key={key}>
+              <strong>{key}:</strong> {value}
+            </li>
+          );
       }
 
-      if (typeof value === 'object' && value !== null) {
-        return (
-          <li key={key}>
-            <strong>{key}:</strong>
-            <ul>{renderAttributes(value)}</ul>
-          </li>
-        );
-      }
-      return (
-        <li key={key}>
-          <strong>{key}:</strong> {value}
-        </li>
-      );
-    });
+      return element;
+    };
+
+    return (
+      <>
+        {/* Render image attribute first, if it exists */}
+        {imageEntry && (
+            <img src={imageEntry[1]} alt={personData.name} />
+        )}
+
+        {/* Render other attributes */}
+        {otherEntries.map(renderAttribute)}
+      </>
+    );
   };
 
+  // If the user is not admin
   if (!admin) {
     return (
       <div>
@@ -124,21 +189,14 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         <h2>{personData.name}</h2>
         <p className="left">{orgName}</p>
         {attributes && Object.keys(attributes).length > 0 ? (
-          <ul>{renderAttributes(attributes)}</ul>
-        ) : (
           <ul>
-            {Object.entries(personData).map(([key, value]) => {
-              if (!value || ['name', 'organization', 'attributes'].includes(key)) {
-                return null;
-              }
-              return (
-                <li key={key}>
-                  {key}: {value}
-                </li>
-              );
-            })}
+            {renderAttributes(attributes)}
           </ul>
+        ) : (
+          <p>No attributes available</p>
         )}
+
+        {/* Render social media links */}
         {socialLinks.length > 0 && (
           <>
             <h3>Social Media</h3>
@@ -156,36 +214,94 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
       </div>
     );
   } else {
+    // --------------------------------------------------
+    // If the user is admin
+    // --------------------------------------------------
     return (
       <div>
         <button onClick={() => setAdmin(false)}>View</button>
         <h2>{personData.name}</h2>
+        <img src={attributes.image} alt={personData.name} style={{ maxWidth: '100px' }} />;
+        
         <p className="left">{orgName}</p>
-        <ul>
-          {Object.entries(personData).map(([key, value]) => {
-            if (!value || ['name', 'organization', 'attributes'].includes(key)) {
+
+        <ul className='attributes-list'>
+          {Object.entries(attributes).map(([key, value]) => {
+            // Skip the "attributes" key if it's the top-level key to avoid duplication
+            if (key === 'attributes' && typeof value === 'object') {
               return null;
             }
+            
+            let inputElement;
+
+            // Case for image fields
+            if (key === 'image' && typeof value === 'string') {
+              inputElement = (
+                <>
+                  <img src={value} alt={personData.name} style={{ maxWidth: '100px' }} />
+                  <input
+                    type="text"
+                    value={value}
+                    onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+                  />
+                </>
+              );
+            }
+            // Case for URL fields
+            else if (typeof value === 'string' && value.startsWith('https://')) {
+              inputElement = (
+                <>
+                  <a href={value} target="_blank" rel="noopener noreferrer">{value}</a>
+                  <input
+                    type="text"
+                    value={value}
+                    onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+                  />
+                </>
+              );
+            }
+            // Case for nested objects
+            else if (typeof value === 'object' && value !== null) {
+              inputElement = (
+                <ul>
+                  {Object.entries(value).map(([nestedKey, nestedValue]) => (
+                    <li key={nestedKey}>
+                      <strong>{nestedKey}:</strong>{' '}
+                      <input
+                        type="text"
+                        value={nestedValue}
+                        onChange={(e) =>
+                          handleUpdateAttribute(`${key}.${nestedKey}`, e.target.value)
+                        }
+                      />
+                    </li>
+                  ))}
+                </ul>
+              );
+            }
+            // Default case for simple text fields
+            else {
+              inputElement = (
+                <input
+                  type="text"
+                  value={value}
+                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+                />
+              );
+            }
+
             return (
               <li key={key}>
-                {key}: {value}
+                <strong>{key}:</strong>{' '}
+                {inputElement}
+                <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
               </li>
             );
           })}
         </ul>
-        <h3>Attributes</h3>
-        <ul>
-          {Object.entries(attributes).map(([key, value]) => (
-            <li key={key}>
-              <input
-                type="text"
-                value={value}
-                onChange={(e) => handleUpdateAttribute(key, e.target.value)}
-              />
-              <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
-            </li>
-          ))}
-        </ul>
+
+        <hr />
+        <p>Add a new attribute:</p>
         <div>
           <input
             type="text"
@@ -193,17 +309,22 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
             value={newAttrKey}
             onChange={(e) => setNewAttrKey(e.target.value)}
           />
-          <input
-            type="text"
+          <textarea
             placeholder="Attribute Value"
             value={newAttrValue}
             onChange={(e) => setNewAttrValue(e.target.value)}
+            rows={4} // Adjust the number of rows as needed
+            style={{ width: '100%', resize: 'vertical' }} // Optional styling
           />
           <button onClick={handleAddAttribute}>Add Attribute</button>
         </div>
+
+        <hr />
+
         <button onClick={handleUpdate}>Update</button>
         {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
       </div>
     );
+
   }
 }
