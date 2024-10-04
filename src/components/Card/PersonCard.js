@@ -120,6 +120,8 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     const imageEntry = entries.find(([key]) => key === 'image');
     const otherEntries = entries.filter(([key]) => key !== 'image');
 
+    
+
     // Function to render each attribute
     const renderAttribute = ([key, value]) => {
       let element;
@@ -147,11 +149,11 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
           break;
 
         // Case for nested objects
+        // only last element is rendered
         case typeof value === 'object' && value !== null:
           element = (
             <li key={key}>
-              <strong>{key}:</strong>
-              <ul>{renderAttributes(value)}</ul>
+              <strong>{key}:</strong> {Object.values(value).pop()}
             </li>
           );
           break;
@@ -171,12 +173,15 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     return (
       <>
         {/* Render image attribute first, if it exists */}
-        {imageEntry && (
-            <img src={imageEntry[1]} alt={personData.name} />
+        {imageEntry && !imageEntry[1].includes('<svg') && (
+          <img src={imageEntry[1]} alt={personData.name} />
         )}
-
-        {/* Render other attributes */}
-        {otherEntries.map(renderAttribute)}
+        {/* Render SVG image attribute */}
+        {imageEntry && imageEntry[1].includes('<svg') && (
+          <img src={`data:image/svg+xml;utf8,${encodeURIComponent(imageEntry[1])}`} alt={personData.name} />
+        )}
+          {/* Render other attributes */}
+          {otherEntries.map(renderAttribute)}
       </>
     );
   };

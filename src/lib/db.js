@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 // Initialize the database
-const db = new Database(path.resolve('data.db'));
+const db = new Database(path.resolve('public/data.db'));
 
 // Drop database tables if they exist
 const dropTables = () => {
