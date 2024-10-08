@@ -87,7 +87,7 @@ const createTables = () => {
             CREATE TABLE IF NOT EXISTS social_media (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 platform TEXT NOT NULL,
-                url TEXT NOT NULL,
+                url TEXT,
                 person_id INTEGER,
                 FOREIGN KEY (person_id) REFERENCES person(id)
             );
@@ -212,8 +212,12 @@ const insertSocialMedia = (socialMediaArray, personId) => {
 
         socialMediaArray.forEach(socialMedia => {
             for (const [platform, url] of Object.entries(socialMedia)) {
-                if (url) { // Only insert if the URL is not empty
-                    insertSocialMediaStmt.run(platform, url, personId);
+                if(url) {
+                    insertSocialMediaStmt.run(
+                        platform || "", 
+                        url || "", 
+                        personId
+                    );
                 }
             }
         });
