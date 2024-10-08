@@ -78,20 +78,12 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
   // Function to update the person's attributes
   const handleUpdate = async () => {
     try {
-      const updatedAttributes = {
-        ...attributes,
-        socialMedia: socialLinks.reduce((acc, link) => {
-          acc[link.platform] = link.url;
-          return acc;
-        }, {}),
-      };
-
       const response = await fetch('/api/person', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...personData, attributes: updatedAttributes }),
+        body: JSON.stringify({ ...personData, attributes }),
       });
       const data = await response.json();
       if (response.ok) {
@@ -102,6 +94,28 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
       }
     } catch (error) {
       setErrorMessage('Error updating person');
+    }
+  };
+
+  // Function to create a new person
+  const handleCreate = async () => {
+    try {
+      const response = await fetch('/api/person', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...personData, attributes }),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        setPersonData(data);
+        setErrorMessage('');
+      } else {
+        setErrorMessage(data.message);
+      }
+    } catch (error) {
+      setErrorMessage('Error creating person');
     }
   };
 
