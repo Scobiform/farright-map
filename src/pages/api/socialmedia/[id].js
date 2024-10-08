@@ -16,44 +16,5 @@ export default function handler(req, res) {
     }
   }
 
-  if (req.method === 'POST') {
-    const { facebook, instagram, tiktok, x_com, telegram, youtube } = req.body;
-
-    // Ensure at least one social media link is provided
-    if (!facebook && !instagram && !tiktok && !x_com && !telegram && !youtube) {
-      return res.status(400).json({ message: 'At least one social media link is required' });
-    }
-
-    try {
-      // Insert or update social media links for the given person_id
-      const stmt = db.prepare(`
-        INSERT INTO social_media (person_id, platform, url)
-        VALUES (?, ?, ?)
-        ON CONFLICT (person_id, platform) DO UPDATE SET url = excluded.url
-      `);
-
-      // Inserting each social media platform (if they exist)
-      const socialMediaData = [
-        { platform: 'facebook', url: facebook },
-        { platform: 'instagram', url: instagram },
-        { platform: 'tiktok', url: tiktok },
-        { platform: 'x.com', url: x_com },
-        { platform: 'telegram', url: telegram },
-        { platform: 'youtube', url: youtube },
-      ];
-
-      socialMediaData.forEach(({ platform, url }) => {
-        if (url) {
-          stmt.run(id, platform, url);
-        }
-      });
-
-      return res.status(201).json({ message: 'Social media updated successfully' });
-    } catch (error) {
-      console.error('Error updating social media:', error);
-      return res.status(500).json({ message: 'Failed to update social media' });
-    }
-  }
-
   return res.status(405).json({ message: 'Method not allowed' });
 }

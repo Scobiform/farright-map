@@ -3,20 +3,23 @@ import React, { useState, useEffect } from 'react';
 export default function PersonCard({ person, orgName, socialLinks = [] }) {
   // Function to generate attributes from person object if attributes are missing
   const generateAttributesFromPerson = (personObj) => {
-    const { attributes, ...rest } = personObj; // Exclude attributes field if it exists
-    return rest; // Use other fields as attributes
+    const { attributes, socialLinks, ...rest } = personObj;
+    return { ...rest, socialMedia: socialLinks };
   };
 
   const [personData, setPersonData] = useState(person);
+  const [newPlatform, setNewPlatform] = useState('');
+  const [newPlatformUrl, setNewPlatformUrl] = useState('');
   const [newAttrKey, setNewAttrKey] = useState('');
   const [newAttrValue, setNewAttrValue] = useState('');
   const [admin, setAdmin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+
   const [attributes, setAttributes] = useState(() => {
-    // Initialize attributes from person or fallback to other fields in person
+    // Initialize attributes from person or generate them if missing
     return person.attributes && typeof person.attributes === 'string'
       ? JSON.parse(person.attributes)
-      : person.attributes || generateAttributesFromPerson(person);
+      : person.attributes || generateAttributesFromPerson({ ...person, socialLinks });
   });
 
   useEffect(() => {
@@ -24,9 +27,33 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
     setAttributes(
       person.attributes && typeof person.attributes === 'string'
         ? JSON.parse(person.attributes)
-        : person.attributes || generateAttributesFromPerson(person)
+        : person.attributes || generateAttributesFromPerson({ ...person, socialLinks })
     );
   }, [person]);
+
+  // Function to add a new social media link
+  const handleAddSocialMedia = () => {
+    if (!newPlatform || !newPlatformUrl) return;
+    setAttributes((prevAttributes) => {
+      const updatedSocialMedia = [
+        ...(prevAttributes.socialMedia || []),
+        { platform: newPlatform, url: newPlatformUrl },
+      ];
+      return { ...prevAttributes, socialMedia: updatedSocialMedia };
+    });
+    setNewPlatform('');
+    setNewPlatformUrl('');
+  };
+
+  // Function to delete a social media link
+  const handleDeleteSocialMedia = (platform) => {
+    setAttributes((prevAttributes) => {
+      const updatedSocialMedia = (prevAttributes.socialMedia || []).filter(
+        (link) => link.platform !== platform
+      );
+      return { ...prevAttributes, socialMedia: updatedSocialMedia };
+    });
+  };
 
   // Function to add a new attribute
   const handleAddAttribute = () => {
@@ -41,38 +68,35 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
 
   // Function to update an attribute
   const handleUpdateAttribute = (key, value) => {
-    setAttributes({
-      ...attributes,
-      [key]: value,
+    setAttributes((prevAttributes) => {
+      // Handle nested keys (e.g., socialMedia array)
+      if (key.includes('.')) {
+        const keys = key.split('.');
+        const lastKey = keys.pop();
+        let nested = { ...prevAttributes };
+        let temp = nested;
+        keys.forEach((k) => {
+          temp[k] = { ...temp[k] };
+          temp = temp[k];
+        });
+        temp[lastKey] = value;
+        return nested;
+      } else {
+        return {
+          ...prevAttributes,
+          [key]: value,
+        };
+      }
     });
   };
 
   // Function to delete an attribute
-  const handleDeleteAttribute = async (key) => {
-    try {
-      const response = await fetch('/api/person', {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id: personData.id, key }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setAttributes((prevAttributes) => {
-          const updatedAttributes = { ...prevAttributes };
-          delete updatedAttributes[key];
-          return updatedAttributes; 
-        });
-        setErrorMessage(''); // Clear any error message
-      } else {
-        setErrorMessage(data.message);
-      }
-    } catch (error) {
-      setErrorMessage('Error deleting attribute');
-    }
+  const handleDeleteAttribute = (key) => {
+    setAttributes((prevAttributes) => {
+      const updatedAttributes = { ...prevAttributes };
+      delete updatedAttributes[key];
+      return updatedAttributes;
+    });
   };
 
   // Function to update the person's attributes
@@ -90,36 +114,14 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         setPersonData(data);
         setErrorMessage('');
       } else {
-        setErrorMessage(data.message);
+        setErrorMessage(data.message || 'Error updating person');
       }
     } catch (error) {
       setErrorMessage('Error updating person');
     }
   };
 
-  // Function to create a new person
-  const handleCreate = async () => {
-    try {
-      const response = await fetch('/api/person', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ ...personData, attributes }),
-      });
-      const data = await response.json();
-      if (response.ok) {
-        setPersonData(data);
-        setErrorMessage('');
-      } else {
-        setErrorMessage(data.message);
-      }
-    } catch (error) {
-      setErrorMessage('Error creating person');
-    }
-  };
-
-  // Recursive function to render attributes, ensuring the image appears first
+  // Function to render attributes
   const renderAttributes = (obj) => {
     const entries = Object.entries(obj);
 
@@ -129,73 +131,64 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
 
     // Function to render each attribute
     const renderAttribute = ([key, value]) => {
-      let element;
-
-      switch (true) {
-        // Case for URLs
-        case typeof value === 'string' && value.startsWith('https://'):
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong>{' '}
-              <a href={value || '#'} target="_blank" rel="noopener noreferrer">
-                {value}
-              </a>
-            </li>
-          );
-          break;
-
-        // Case for number fields
-        case typeof value === 'number':
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {value}
-            </li>
-          );
-          break;
-
-        // Case for nested objects
-        case typeof value === 'object' && value !== null:
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {Object.values(value).pop()}
-            </li>
-          );
-          break;
-
-        // Default case for simple text fields
-        default:
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {value}
-            </li>
-          );
+      if (key === 'socialMedia' && Array.isArray(value)) {
+        return (
+          <div key={key}>
+            <h3>Social Media</h3>
+            <ul>
+              {value.map((link, index) => (
+                <li key={index}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    {link.platform}: {link.url}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
       }
 
-      return element;
+      if (typeof value === 'string' && value.startsWith('https://')) {
+        return (
+          <li key={key}>
+            <strong>{key}:</strong>{' '}
+            <a href={value} target="_blank" rel="noopener noreferrer">
+              {value}
+            </a>
+          </li>
+        );
+      }
+
+      if (typeof value === 'object' && value !== null) {
+        return (
+          <li key={key}>
+            <strong>{key}:</strong> {JSON.stringify(value)}
+          </li>
+        );
+      }
+
+      return (
+        <li key={key}>
+          <strong>{key}:</strong> {value}
+        </li>
+      );
     };
 
     return (
       <>
-        {/* Render image attribute first, if it exists */}
-        {imageEntry && !imageEntry[1].includes('<svg') && (
-          <img src={imageEntry[1]} alt={personData.name} />
-        )}
-        {/* Render SVG image attribute */}
-        {imageEntry && imageEntry[1].includes('<svg') && (
+        {imageEntry && (
           <img
-            src={`data:image/svg+xml;utf8,${encodeURIComponent(
-              imageEntry[1]
-            )}`}
+            src={imageEntry[1]}
             alt={personData.name}
+            style={{ maxWidth: '100px' }}
           />
         )}
-        {/* Render other attributes */}
         {otherEntries.map(renderAttribute)}
       </>
     );
   };
 
-  // If the user is not admin
+  // Render for non-admin view
   if (!admin) {
     return (
       <div>
@@ -207,80 +200,112 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
         ) : (
           <p>No attributes available</p>
         )}
-
-        {/* Render social media links */}
-        {socialLinks.length > 0 && (
-          <>
-            <h3>Social Media</h3>
-            <ul>
-              {socialLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.url}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
       </div>
     );
-  } else {
-    // If the user is admin
-    return (
-      <div>
-        <button onClick={() => setAdmin(false)}>View</button>
-        <h2>{personData.name}</h2>
-        <img
-          src={attributes.image}
-          alt={personData.name}
-          style={{ maxWidth: '100px' }}
-        />
+  }
 
-        <p className="left">{orgName}</p>
+  // Admin view with your specified rendering
+  return (
+    <div>
+      <button onClick={() => setAdmin(false)}>View</button>
+      <h2>{personData.name}</h2>
+      <img
+        src={attributes.image}
+        alt={personData.name}
+        style={{ maxWidth: '100px' }}
+      />
 
-        <ul className="attributes-list">
-          {Object.entries(attributes).map(([key, value]) => {
-            let inputElement;
+      <p className="left">{orgName}</p>
 
-            // Case for image fields
-            if (key === 'image' && typeof value === 'string') {
+      <ul className="attributes-list">
+        {Object.entries(attributes).map(([key, value]) => {
+          let inputElement;
+
+          // Case for image fields
+          if (key === 'image' && typeof value === 'string') {
+            inputElement = (
+              <>
+                <img
+                  src={value}
+                  alt={personData.name}
+                  style={{ maxWidth: '100px' }}
+                />
+                <input
+                  type="text"
+                  value={value}
+                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+                />
+              </>
+            );
+          }
+          // Case for URL fields
+          else if (typeof value === 'string' && value.startsWith('https://')) {
+            inputElement = (
+              <>
+                <a href={value} target="_blank" rel="noopener noreferrer">
+                  {value}
+                </a>
+                <input
+                  type="text"
+                  value={value}
+                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+                />
+              </>
+            );
+          }
+          // Case for nested objects
+          else if (typeof value === 'object' && value !== null) {
+            // Handle socialMedia array
+            if (key === 'socialMedia' && Array.isArray(value)) {
               inputElement = (
-                <>
-                  <img
-                    src={value}
-                    alt={personData.name}
-                    style={{ maxWidth: '100px' }}
+                <div>
+                  <h3>Edit Social Media</h3>
+                  <ul>
+                    {value.map((link, index) => (
+                      <li key={index}>
+                        <strong>{link.platform}:</strong>
+                        <input
+                          type="text"
+                          value={link.url}
+                          onChange={(e) => {
+                            const updatedLinks = value.map((item, idx) =>
+                              idx === index
+                                ? { ...item, url: e.target.value }
+                                : item
+                            );
+                            handleUpdateAttribute('socialMedia', updatedLinks);
+                          }}
+                        />
+                        <button
+                          onClick={() => {
+                            const updatedLinks = value.filter(
+                              (_, idx) => idx !== index
+                            );
+                            handleUpdateAttribute('socialMedia', updatedLinks);
+                          }}
+                        >
+                          Delete
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  <input
+                    type="text"
+                    placeholder="Platform"
+                    value={newPlatform}
+                    onChange={(e) => setNewPlatform(e.target.value)}
                   />
                   <input
                     type="text"
-                    value={value}
-                    onChange={(e) =>
-                      handleUpdateAttribute(key, e.target.value)
-                    }
+                    placeholder="URL"
+                    value={newPlatformUrl}
+                    onChange={(e) => setNewPlatformUrl(e.target.value)}
                   />
-                </>
+                  <button onClick={handleAddSocialMedia}>Add Social Media</button>
+                </div>
               );
-            }
-            // Case for URL fields
-            else if (typeof value === 'string' && value.startsWith('https://')) {
-              inputElement = (
-                <>
-                  <a href={value} target="_blank" rel="noopener noreferrer">
-                    {value}
-                  </a>
-                  <input
-                    type="text"
-                    value={value}
-                    onChange={(e) =>
-                      handleUpdateAttribute(key, e.target.value)
-                    }
-                  />
-                </>
-              );
-            }
-            // Case for nested objects
-            else if (typeof value === 'object' && value !== null) {
+            } else {
+              // Handle other nested objects
               inputElement = (
                 <ul>
                   {Object.entries(value).map(([nestedKey, nestedValue]) => (
@@ -301,54 +326,52 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
                 </ul>
               );
             }
-            // Default case for simple text fields
-            else {
-              inputElement = (
-                <input
-                  type="text"
-                  value={value}
-                  onChange={(e) =>
-                    handleUpdateAttribute(key, e.target.value)
-                  }
-                />
-              );
-            }
-
-            return (
-              <li key={key}>
-                <strong>{key}:</strong> {inputElement}
-                <button onClick={() => handleDeleteAttribute(key)}>
-                  Delete
-                </button>
-              </li>
+          }
+          // Default case for simple text fields
+          else {
+            inputElement = (
+              <input
+                type="text"
+                value={value}
+                onChange={(e) => handleUpdateAttribute(key, e.target.value)}
+              />
             );
-          })}
-        </ul>
+          }
 
-        <hr />
-        <p>Add a new attribute:</p>
-        <div>
-          <input
-            type="text"
-            placeholder="Attribute Key"
-            value={newAttrKey}
-            onChange={(e) => setNewAttrKey(e.target.value)}
-          />
-          <textarea
-            placeholder="Attribute Value"
-            value={newAttrValue}
-            onChange={(e) => setNewAttrValue(e.target.value)}
-            rows={4} //
-            style={{ width: '100%', resize: 'vertical' }} 
-          />
-          <button onClick={handleAddAttribute}>Add Attribute</button>
-        </div>
+          return (
+            <li key={key}>
+              <strong>{key}:</strong> {inputElement}
+              <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
+            </li>
+          );
+        })}
+      </ul>
 
-        <hr />
+      <hr />
 
-        <button onClick={handleUpdate}>Update</button>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+      {/* Add a new attribute */}
+      <p>Add a new attribute:</p>
+      <div>
+        <input
+          type="text"
+          placeholder="Attribute Key"
+          value={newAttrKey}
+          onChange={(e) => setNewAttrKey(e.target.value)}
+        />
+        <textarea
+          placeholder="Attribute Value"
+          value={newAttrValue}
+          onChange={(e) => setNewAttrValue(e.target.value)}
+          rows={4}
+          style={{ width: '100%', resize: 'vertical' }}
+        />
+        <button onClick={handleAddAttribute}>Add Attribute</button>
       </div>
-    );
-  }
+
+      <hr />
+
+      <button onClick={handleUpdate}>Update</button>
+      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+    </div>
+  );
 }
