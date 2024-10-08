@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from './PersonCard.module.css';
 
 export default function PersonCard({ person, orgName, socialLinks = [] }) {
   // Function to generate attributes from person object if attributes are missing
@@ -370,7 +371,7 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
 
       <hr />
 
-      <button onClick={handleUpdate}>Update</button>
+      <button className={styles.updateButton} onClick={handleUpdate}>Update</button>
       {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
     </div>
   );

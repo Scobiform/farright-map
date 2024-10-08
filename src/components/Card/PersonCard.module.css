@@ -1,0 +1,10 @@
+.updateButton {
+    height: 7vh;
+    font-size: 4.2vh;
+    float: right;
+}
+
+.updateButton:hover {
+    background-color: var(--quaternary);
+    color: var(--secondary);
+}
