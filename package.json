@@ -12,10 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/next-leaflet-starter"
+    "url": "https://github.com/Scobiform/farright-map"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/next-leaflet-starter/issues"
+    "url": "https://github.com/Scobiform/farright-map/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

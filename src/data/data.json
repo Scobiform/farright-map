@@ -2102,6 +2102,57 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Epoch Times Europe GmbH",
+            "lat": "52.58384867935954",
+            "lon": "13.283320882802045",
+            "residence": "Am Borsigturm 56,D – 13507 Berlin",
+            "phone": "030 340 60 292",
+            "mail": "info@epochtimes.de",
+            "website": "https://www.epochtimes.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Tichys Einblick GmbH",
+            "lat": "50.13345329802052",
+            "lon": "8.576058509606558",
+            "residence": "Alfred-Herrhausen-Allee 3-5, 65760 Eschborn",
+            "website": "https://www.tichyseinblick.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "JUNGE FREIHEIT Verlag GmbH & Co. KG",
+            "lat": "52.49195619955657",
+            "lon": "13.317703580945526",
+            "residence": "Hohenzollerndamm 27a, D-10713 Berlin",
+            "phone": "030/864953-0",
+            "website": "https://jungefreiheit.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [

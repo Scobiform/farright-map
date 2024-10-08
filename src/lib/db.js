@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 
 // Initialize the database
-const db = new Database(path.resolve('src/data/data.db'));
+const db = new Database(path.resolve('public/data.db'));
 
 // Drop database tables if they exist
 const dropTables = () => {
@@ -51,6 +51,7 @@ const createTables = () => {
                 website TEXT,
                 wikipedia TEXT,
                 organization_id INTEGER,
+                attributes TEXT,
                 FOREIGN KEY (organization_id) REFERENCES organization(id)
             );
         `);
@@ -111,6 +112,35 @@ const loadData = (filePath) => {
     }
 };
 
+// Insert a person into the database
+const insertPerson = (candidate, personType, organizationId) => {
+    const insertPersonStmt = db.prepare(`
+        INSERT INTO person (
+            name, type, profession, birth_year, birthplace, residence, 
+            electoral_district, lat, lon, mail, mobile, website, wikipedia,
+            votes, voting_district, organization_id
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    return insertPersonStmt.run(
+        candidate.name || "Unknown",
+        personType,
+        candidate.profession || "",
+        candidate.birth_year || 0,
+        candidate.birthplace || "",
+        candidate.residence || "",
+        candidate.electoral_district || "0",
+        parseFloat(candidate.lat) || 52.5214295,
+        parseFloat(candidate.lon) || 13.4136877,
+        candidate.mail || "",
+        candidate.mobile || "",
+        candidate.website || "",
+        candidate.wikipedia || "",
+        candidate.votes || "0",
+        candidate.voting_district || "0",
+        organizationId
+    );
+};
+
 // Insert organizations into the database
 const insertOrganizations = (organizations) => {
     try {
@@ -133,66 +163,8 @@ const insertCandidate = (candidate, organizationId) => {
         // If organization ID is greater than 3, it is an legal entity
         if (organizationId > 3) {   
             personType = "entity";
-
-            const insertPersonStmt = db.prepare(`
-                INSERT INTO person (
-                name, type, profession, birth_year, birthplace, residence, 
-                electoral_district, lat, lon, mail, mobile, website, wikipedia,
-                votes, voting_district, organization_id
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            `);
-
-            const personResult = insertPersonStmt.run(
-                candidate.name || "Unknown",
-                personType,
-                candidate.profession || "",
-                candidate.birth_year || 0,
-                candidate.birthplace || "",
-                candidate.residence || "",
-                candidate.electoral_district || "0",
-                parseFloat(candidate.lat) || 52.5214295,
-                parseFloat(candidate.lon) || 13.4136877,
-                candidate.mail || "",
-                candidate.mobile || "",
-                candidate.website || "",
-                candidate.wikipedia || "",
-                candidate.votes || "0",
-                candidate.voting_district || "0",
-                organizationId
-            );
-
-            // Insert social media if it exists
-            if (candidate.social_media && candidate.social_media.length > 0) {
-                insertSocialMedia(candidate.social_media, personResult.lastInsertRowid);
-            }
-            return personResult.lastInsertRowid;
         }
-        const insertPersonStmt = db.prepare(`
-            INSERT INTO person (
-                name, type, profession, birth_year, birthplace, residence, 
-                electoral_district, lat, lon, mail, mobile, website, wikipedia,
-                votes, voting_district, organization_id
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        `);
-
-        const personResult = insertPersonStmt.run(
-            candidate.name || "Unknown",
-            personType,
-            candidate.profession || "",
-            candidate.birth_year || 0,
-            candidate.birthplace || "",
-            candidate.residence || "",
-            candidate.electoral_district || "0",
-            parseFloat(candidate.lat) || 52.5214295,
-            parseFloat(candidate.lon) || 13.4136877,
-            candidate.mail || "",
-            candidate.mobile || "",
-            candidate.website || "",
-            candidate.wikipedia || "",
-            candidate.votes || "0",
-            candidate.voting_district || "0",
-            organizationId
-        );
+        const personResult = insertPerson(candidate, personType, organizationId);
 
         // Insert social media if it exists
         if (candidate.social_media && candidate.social_media.length > 0) {
@@ -279,7 +251,6 @@ const changePersonType = () => {
         console.error("Error updating person types:", error);
     }
 }
-//changePersonType();
 
 // Main execution
 const main = () => {
@@ -300,9 +271,19 @@ const main = () => {
     insertOrganizations(organizationsData);
 
     const dataPath = path.resolve('src/data/data.json');
-    const data = loadData(dataPath);
+    // Add Saxony data
+    const saxonyDataPath = path.resolve('src/data/saxony/sachsen_landtag2024_afd_direktbewerberin.json');
+    const saxonyData = loadData(saxonyDataPath);
+    // Load the rest of the data
+    let data = loadData(dataPath);
+    // Merge Saxony data with the rest of the data
+    if (saxonyData && data) {
+        data.AfD = data.AfD.concat(saxonyData.AfD);
+    }
+    // Array to hold all candidates
     let allCandidates = [];
 
+    // Add all candidates to the array
     if (data) {
         allCandidates = [
             ...allCandidates,
@@ -318,6 +299,7 @@ const main = () => {
         console.error("No data loaded from data.json.");
     }
 
+    // Add district candidates data
     const kreisDataPath = path.resolve('src/data/kreis_data.json');
     const kreis_data = loadData(kreisDataPath);
     if (kreis_data) {
@@ -327,6 +309,7 @@ const main = () => {
     }
 
     insertCandidates(allCandidates);
+    changePersonType();
 };
 
 // Run once ;)
