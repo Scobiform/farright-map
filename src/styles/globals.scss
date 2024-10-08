@@ -95,8 +95,6 @@ button:hover {
   color: var(--secondary);
 }
 
-
-
 /* inputs */
 .inputText {
   width:100vw;
@@ -227,10 +225,8 @@ button:hover {
 }
 
 .attributes-list li {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-grid;
+  width: max-content;
 }
 
 .attributes-list strong {
@@ -248,16 +244,17 @@ button:hover {
 }
 
 .attributes-list button {
-  background-color: #dc3545;
   color: white;
   border: none;
   padding: 6px 10px;
   cursor: pointer;
   border-radius: 4px;
+  width: fit-content;
 }
 
 .attributes-list button:hover {
-  background-color: #c82333;
+  background-color: var(--quaternary);
+  color: var(--secondary);
 }
 
 /* Style for the new attribute section */

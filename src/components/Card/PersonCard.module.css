@@ -8,3 +8,7 @@
     background-color: var(--quaternary);
     color: var(--secondary);
 }
+
+.deleteButton {
+    background: var(--tertiary);
+}

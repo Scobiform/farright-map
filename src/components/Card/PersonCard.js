@@ -284,8 +284,9 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
                             );
                             handleUpdateAttribute('socialMedia', updatedLinks);
                           }}
+                          className={styles.deleteButton}
                         >
-                          Delete
+                          🗑️
                         </button>
                       </li>
                     ))}
@@ -342,7 +343,10 @@ export default function PersonCard({ person, orgName, socialLinks = [] }) {
           return (
             <li key={key}>
               <strong>{key}:</strong> {inputElement}
-              <button onClick={() => handleDeleteAttribute(key)}>Delete</button>
+              <button 
+              onClick={() => handleDeleteAttribute(key)}
+              className={styles.deleteButton}
+              >🗑️</button>
             </li>
           );
         })}
