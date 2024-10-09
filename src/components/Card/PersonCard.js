@@ -16,7 +16,6 @@ const fetchSocialMedia = async (personId) => {
   }
 };
 
-
 // Fetch function to get attributes for a person
 const fetchAttributes = async (personId) => {
   const response = await fetch(`/api/personAttributes?personId=${personId}`);
@@ -30,7 +29,6 @@ export default function PersonCard({ person, orgName }) {
   const [attributes, setAttributes] = useState([]);
   const [admin, setAdmin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-
   const [newPlatform, setNewPlatform] = useState('');
   const [newPlatformUrl, setNewPlatformUrl] = useState('');
   const [newAttrKey, setNewAttrKey] = useState('');
@@ -129,6 +127,89 @@ export default function PersonCard({ person, orgName }) {
     );
   };
 
+  // Handle adding a new location
+  const handleAddLocation = async () => {
+    try {
+      const response = await fetch('/api/location', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: personData.residence,
+          lat: personData.lat,
+          lon: personData.lon,
+          personId: personData.id,
+          organizationId: personData.organization_id,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message || 'Error adding location');
+        return;
+      }
+
+
+    } catch (error) {
+      console.error('Error adding location:', error);
+      setErrorMessage('Error adding location');
+    }
+  };
+
+  // Handle updating a location
+  const handleUpdateLocation = async () => {
+    try {
+      const response = await fetch('/api/location', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: personData.location_id,
+          name: personData.residence,
+          lat: personData.lat,
+          lon: personData.lon,
+          personId: personData.id,
+          organizationId: personData.organization_id,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message || 'Error updating location');
+        return;
+      }
+    } catch (error) {
+      console.error('Error updating location:', error);
+      setErrorMessage('Error updating location');
+    }
+  };
+  
+  // Handle deleting a location
+  const handleDeleteLocation = async () => {
+    try {
+      const response = await fetch('/api/location', {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: personData.location_id,
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        setErrorMessage(errorData.message || 'Error deleting location');
+        return;
+      }
+    } catch (error) {
+      console.error('Error deleting location:', error);
+      setErrorMessage('Error deleting location');
+    }
+  };
+
   // Handle saving updates to the database
   const handleUpdate = async () => {
     try {
@@ -185,6 +266,17 @@ export default function PersonCard({ person, orgName }) {
             return;
           }
         }
+      }
+
+      // Update location
+      if (personData.lat && personData.lon) {
+        if (personData.location_id) {
+          await handleUpdateLocation();
+        } else {
+          await handleAddLocation();
+        }
+      } else if (personData.location_id) {
+        await handleDeleteLocation();
       }
 
       setErrorMessage('');
