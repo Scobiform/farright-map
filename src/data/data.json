@@ -2170,6 +2170,54 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Brunnen-Verlag GmbH",
+            "lat": "50.58082578829273",
+            "lon": "8.645941765207656",
+            "residence": "Gießen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Evangelischen Presseverband für Bayern e.V.",
+            "lat": "48.14755426351494",
+            "lon": "11.539890620757536",
+            "residence": "München",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "Deutsche Bibelgesellschaft",
+            "lat": "48.72976129524058",
+            "lon": "9.14205513146051",
+            "residence": "Balinger Str. 31A, 70567 Stuttgart",
+            "website": "https://www.die-bibel.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [
