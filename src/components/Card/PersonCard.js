@@ -45,6 +45,9 @@ export default function PersonCard({ person, orgName }) {
     loadData();
   }, [person]);
 
+  // Extract image attribute from attributes
+  const imageAttribute = attributes.find((attr) => attr.key === 'image');
+
   // Handle input changes for person data
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -232,7 +235,9 @@ export default function PersonCard({ person, orgName }) {
         <strong>{attr.key}:</strong>{' '}
         {admin ? (
           <>
-            <input classname={styles.personEdit} type="text"
+            <input
+              className={styles.personEdit}
+              type="text"
               value={attr.value || ''}
               onChange={(e) => handleAttributeChange(attr.id, e.target.value)}
             />
@@ -286,6 +291,13 @@ export default function PersonCard({ person, orgName }) {
 
   return (
     <div>
+      {imageAttribute && imageAttribute.value && (
+        <img
+          src={imageAttribute.value}
+          alt={personData.name}
+          className={styles.personImage}
+        />
+      )}
       <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
       <h2>{personData.name}</h2>
       <p>{orgName}</p>
