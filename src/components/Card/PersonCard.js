@@ -334,7 +334,7 @@ export default function PersonCard({ person, orgName }) {
       )}
 
       <h3>Social Media</h3>
-      <ul>{renderSocialMediaLinks()}</ul>
+      <ul className={styles.addSocialMedia}>{renderSocialMediaLinks()}</ul>
       {admin && (
         <div className={styles.addSocialMedia}>
           <h4>Add New Social Media</h4>
