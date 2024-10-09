@@ -48,12 +48,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ### API routes can be accessed on
 
-- [http://localhost:3000/api/organization](http://localhost:3000/api/organization)
-- [http://localhost:3000/api/person](http://localhost:3000/api/person)
-- [http://localhost:3000/api/person/1](http://localhost:3000/api/person/1)
-- [http://localhost:3000/api/location](http://localhost:3000/api/location)
-- [http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia)
-- [http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia/1)
+- [/api/organization](http://localhost:3000/api/organization)
+- [/api/person](http://localhost:3000/api/person)
+- [/api/person/1](http://localhost:3000/api/person/1)
+- [/api/location](http://localhost:3000/api/location)
+- [/api/socialmedia](http://localhost:3000/api/socialmedia)
+- [/api/socialmedia/1](http://localhost:3000/api/socialmedia/1)
+- [/api/personAttributes?personId=133](http://localhost:3000/api/personAttributes?personId=133)
 
 
 ## Maintainers ##
