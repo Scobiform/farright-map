@@ -8,13 +8,19 @@ const db = new Database(path.resolve('public/data.db'));
 // Drop database tables if they exist
 const dropTables = () => {
     try {
-        db.exec(`DROP TABLE IF EXISTS social_media`);
-        db.exec(`DROP TABLE IF EXISTS event`);
-        db.exec(`DROP TABLE IF EXISTS location`);
-        db.exec(`DROP TABLE IF EXISTS entity`);
-        db.exec(`DROP TABLE IF EXISTS person`);
-        db.exec(`DROP TABLE IF EXISTS organization`);
-        console.log("Tables dropped successfully.");
+        db.exec(`DROP TABLE IF EXISTS person_attributes;`);
+        console.log("Person attributes table dropped.");
+        db.exec(`DROP TABLE IF EXISTS social_media;`);
+        console.log("Social media table dropped.");
+        db.exec(`DROP TABLE IF EXISTS event;`);
+        console.log("Event table dropped.");
+        db.exec(`DROP TABLE IF EXISTS location;`);
+        console.log("Location table dropped.");
+        db.exec(`DROP TABLE IF EXISTS person;`);
+        console.log("Person table dropped.");
+        db.exec(`DROP TABLE IF EXISTS organization;`);
+        console.log("Organization table dropped.");
+
     } catch (error) {
         console.error("Error dropping tables:", error);
     }

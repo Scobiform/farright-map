@@ -53,6 +53,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [/api/person/1](http://localhost:3000/api/person/1)
 - [/api/location](http://localhost:3000/api/location)
 - [/api/location?personId=133](http://localhost:3000/api/location?personId=133)
+- [/api/location?organizationId=1](http://localhost:3000/api/location?organizationId=1)
 - [/api/socialmedia](http://localhost:3000/api/socialmedia)
 - [/api/socialmedia/1](http://localhost:3000/api/socialmedia/1)
 - [/api/personAttributes?personId=133](http://localhost:3000/api/personAttributes?personId=133)
