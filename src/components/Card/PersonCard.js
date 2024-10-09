@@ -299,7 +299,7 @@ export default function PersonCard({ person, orgName }) {
   };
 
   return (
-    <div>
+    <div className={styles.personContainer}>
       {imageAttribute && imageAttribute.value && (
         <img
           src={imageAttribute.value}

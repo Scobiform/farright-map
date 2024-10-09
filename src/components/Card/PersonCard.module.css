@@ -1,3 +1,7 @@
+.personContainer{
+    width: 300px;
+}
+
 .personEdit li input {
     width: 100%;
     border-bottom: 1px solid var(--secondary);
@@ -27,6 +31,11 @@
     border-bottom: 1px solid var(--secondary);
     background: var(--primary);
     color: var(--secondary);
+    border-radius: 0.42rem;
+}
+
+.personImage {
+    max-width: 100%;
     border-radius: 0.42rem;
 }
 
