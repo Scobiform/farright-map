@@ -1,382 +1,340 @@
 import React, { useState, useEffect } from 'react';
 import styles from './PersonCard.module.css';
 
-export default function PersonCard({ person, orgName, socialLinks = [] }) {
-  // Function to generate attributes from person object if attributes are missing
-  const generateAttributesFromPerson = (personObj) => {
-    const { attributes, socialLinks, ...rest } = personObj;
-    return { ...rest, socialMedia: socialLinks };
-  };
+// Fetch function to get social media links for a person
+const fetchSocialMedia = async (personId) => {
+  const response = await fetch(`/api/socialmedia/${personId}`);
+  const data = await response.json();
+  return data;
+};
 
+// Fetch function to get attributes for a person
+const fetchAttributes = async (personId) => {
+  const response = await fetch(`/api/personAttributes?personId=${personId}`);
+  const data = await response.json();
+  return data;
+};
+
+export default function PersonCard({ person, orgName }) {
   const [personData, setPersonData] = useState(person);
+  const [socialMediaLinks, setSocialMediaLinks] = useState([]);
+  const [attributes, setAttributes] = useState([]);
+  const [admin, setAdmin] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
+
   const [newPlatform, setNewPlatform] = useState('');
   const [newPlatformUrl, setNewPlatformUrl] = useState('');
   const [newAttrKey, setNewAttrKey] = useState('');
   const [newAttrValue, setNewAttrValue] = useState('');
-  const [admin, setAdmin] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
 
-  const [attributes, setAttributes] = useState(() => {
-    // Initialize attributes from person or generate them if missing
-    return person.attributes && typeof person.attributes === 'string'
-      ? JSON.parse(person.attributes)
-      : person.attributes || generateAttributesFromPerson({ ...person, socialLinks });
-  });
-
+  // Fetch social media links and attributes when the component mounts or person changes
   useEffect(() => {
-    setPersonData(person);
-    setAttributes(
-      person.attributes && typeof person.attributes === 'string'
-        ? JSON.parse(person.attributes)
-        : person.attributes || generateAttributesFromPerson({ ...person, socialLinks })
-    );
+    const loadData = async () => {
+      try {
+        const [links, attrs] = await Promise.all([
+          fetchSocialMedia(person.id),
+          fetchAttributes(person.id),
+        ]);
+        setSocialMediaLinks(links);
+        setAttributes(attrs);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    loadData();
   }, [person]);
 
-  // Function to add a new social media link
+  // Handle input changes for person data
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setPersonData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  // Handle adding a new social media link
   const handleAddSocialMedia = () => {
-    if (!newPlatform || !newPlatformUrl) return;
-    setAttributes((prevAttributes) => {
-      const updatedSocialMedia = [
-        ...(prevAttributes.socialMedia || []),
-        { platform: newPlatform, url: newPlatformUrl },
-      ];
-      return { ...prevAttributes, socialMedia: updatedSocialMedia };
-    });
-    setNewPlatform('');
-    setNewPlatformUrl('');
+    if (newPlatform && newPlatformUrl) {
+      setSocialMediaLinks((prevLinks) => [
+        ...prevLinks,
+        { id: Date.now(), platform: newPlatform, url: newPlatformUrl },
+      ]);
+      setNewPlatform('');
+      setNewPlatformUrl('');
+    }
   };
 
-  // Function to delete a social media link
-  const handleDeleteSocialMedia = (platform) => {
-    setAttributes((prevAttributes) => {
-      const updatedSocialMedia = (prevAttributes.socialMedia || []).filter(
-        (link) => link.platform !== platform
-      );
-      return { ...prevAttributes, socialMedia: updatedSocialMedia };
-    });
+  // Handle deleting a social media link
+  const handleDeleteSocialMedia = (id) => {
+    setSocialMediaLinks((prevLinks) => prevLinks.filter((link) => link.id !== id));
   };
 
-  // Function to add a new attribute
-  const handleAddAttribute = () => {
-    if (!newAttrKey || !newAttrValue) return;
-    setAttributes({
-      ...attributes,
-      [newAttrKey]: newAttrValue,
-    });
-    setNewAttrKey('');
-    setNewAttrValue('');
-  };
-
-  // Function to update an attribute
-  const handleUpdateAttribute = (key, value) => {
-    setAttributes((prevAttributes) => {
-      // Handle nested keys (e.g., socialMedia array)
-      if (key.includes('.')) {
-        const keys = key.split('.');
-        const lastKey = keys.pop();
-        let nested = { ...prevAttributes };
-        let temp = nested;
-        keys.forEach((k) => {
-          temp[k] = { ...temp[k] };
-          temp = temp[k];
+  // Handle adding a new attribute
+  const handleAddAttribute = async () => {
+    if (newAttrKey) {
+      try {
+        const response = await fetch('/api/personAttributes', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            personId: personData.id,
+            key: newAttrKey,
+            value: newAttrValue,
+          }),
         });
-        temp[lastKey] = value;
-        return nested;
-      } else {
-        return {
-          ...prevAttributes,
-          [key]: value,
-        };
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          setErrorMessage(errorData.message || 'Error adding attribute');
+          return;
+        }
+
+        const newAttribute = await response.json();
+
+        // Add the new attribute with the correct id from the response
+        setAttributes((prevAttrs) => [...prevAttrs, newAttribute]);
+
+        // Clear input fields
+        setNewAttrKey('');
+        setNewAttrValue('');
+      } catch (error) {
+        console.error('Error adding attribute:', error);
+        setErrorMessage('Error adding attribute');
       }
-    });
+    }
   };
 
-  // Function to delete an attribute
-  const handleDeleteAttribute = (key) => {
-    setAttributes((prevAttributes) => {
-      const updatedAttributes = { ...prevAttributes };
-      delete updatedAttributes[key];
-      return updatedAttributes;
-    });
+  // Handle deleting an attribute
+  const handleDeleteAttribute = (id) => {
+    setAttributes((prevAttrs) => prevAttrs.filter((attr) => attr.id !== id));
   };
 
-  // Function to update the person's attributes
+  // Handle attribute value change
+  const handleAttributeChange = (id, value) => {
+    setAttributes((prevAttrs) =>
+      prevAttrs.map((attr) => (attr.id === id ? { ...attr, value } : attr))
+    );
+  };
+
+  // Handle saving updates to the database
   const handleUpdate = async () => {
     try {
-      const response = await fetch('/api/person', {
+      // Update person data
+      const personResponse = await fetch('/api/person', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...personData, attributes }),
+        body: JSON.stringify(personData),
       });
-      const data = await response.json();
-      if (response.ok) {
-        setPersonData(data);
-        setErrorMessage('');
-      } else {
-        setErrorMessage(data.message || 'Error updating person');
+
+      if (!personResponse.ok) {
+        const errorData = await personResponse.json();
+        setErrorMessage(errorData.message || 'Error updating person');
+        return;
       }
+
+      // Update social media links
+      const socialMediaResponse = await fetch('/api/socialmedia', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          personId: personData.id,
+          socialMediaLinks: socialMediaLinks,
+        }),
+      });
+
+      if (!socialMediaResponse.ok) {
+        const errorData = await socialMediaResponse.json();
+        setErrorMessage(errorData.message || 'Error updating social media');
+        return;
+      }
+
+      // Update attributes
+      for (const attribute of attributes) {
+        if (attribute.id) {
+          const attributesResponse = await fetch('/api/personAttributes', {
+            method: 'PATCH',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: attribute.id,
+              value: attribute.value,
+            }),
+          });
+
+          if (!attributesResponse.ok) {
+            const errorData = await attributesResponse.json();
+            setErrorMessage(errorData.message || 'Error updating attribute');
+            return;
+          }
+        }
+      }
+
+      setErrorMessage('');
+      alert('Person, social media, and attributes updated successfully!');
     } catch (error) {
-      setErrorMessage('Error updating person');
+      console.error('Error updating data:', error);
+      setErrorMessage('Error updating data');
     }
   };
 
-  // Function to render attributes
-  const renderAttributes = (obj) => {
-    const entries = Object.entries(obj);
+  // Render person details
+  const renderPersonDetails = () => {
+    const fields = [
+      'id',
+      'type',
+      'name',
+      'profession',
+      'birth_year',
+      'birthplace',
+      'residence',
+      'electoral_district',
+      'voting_district',
+      'lat',
+      'lon',
+      'mail',
+      'mobile',
+      'website',
+      'wikipedia',
+    ];
 
-    // Separate image attribute from the rest
-    const imageEntry = entries.find(([key]) => key === 'image');
-    const otherEntries = entries.filter(([key]) => key !== 'image');
-
-    // Function to render each attribute
-    const renderAttribute = ([key, value]) => {
-      if (key === 'socialMedia' && Array.isArray(value)) {
-        return (
-          <div key={key}>
-            <h3>Social Media</h3>
-            <ul>
-              {value.map((link, index) => (
-                <li key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.platform}: {link.url}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        );
-      }
-
-      if (typeof value === 'string' && value.startsWith('https://')) {
-        return (
-          <li key={key}>
-            <strong>{key}:</strong>{' '}
-            <a href={value} target="_blank" rel="noopener noreferrer">
-              {value}
-            </a>
-          </li>
-        );
-      }
-
-      if (typeof value === 'object' && value !== null) {
-        return (
-          <li key={key}>
-            <strong>{key}:</strong> {JSON.stringify(value)}
-          </li>
-        );
-      }
-
-      return (
-        <li key={key}>
-          <strong>{key}:</strong> {value}
-        </li>
-      );
-    };
-
-    return (
-      <>
-        {imageEntry && (
-          <img
-            src={imageEntry[1]}
-            alt={personData.name}
-            style={{ maxWidth: '100px' }}
+    return fields.map((field) => (
+      <li key={field}>
+        <strong>{field.replace('_', ' ')}:</strong>{' '}
+        {admin ? (
+          <input
+            type="text"
+            name={field}
+            value={personData[field] || ''}
+            onChange={handleInputChange}
+            readOnly={field === 'id'}
           />
+        ) : field === 'website' || field === 'wikipedia' ? (
+          <a href={personData[field]} target="_blank" rel="noopener noreferrer">
+            {personData[field]}
+          </a>
+        ) : (
+          personData[field]
         )}
-        {otherEntries.map(renderAttribute)}
-      </>
-    );
+      </li>
+    ));
   };
 
-  // Render for non-admin view
-  if (!admin) {
-    return (
-      <div>
-        <button onClick={() => setAdmin(true)}>EDIT</button>
-        <h2>{personData.name}</h2>
-        <p className="left">{orgName}</p>
-        {attributes && Object.keys(attributes).length > 0 ? (
-          <ul>{renderAttributes(attributes)}</ul>
+  // Render attributes
+  const renderAttributes = () => {
+    return attributes.map((attr) => (
+      <li key={attr.id}>
+        <strong>{attr.key}:</strong>{' '}
+        {admin ? (
+          <>
+            <input classname={styles.personEdit} type="text"
+              value={attr.value || ''}
+              onChange={(e) => handleAttributeChange(attr.id, e.target.value)}
+            />
+            <button onClick={() => handleDeleteAttribute(attr.id)}>🗑️</button>
+          </>
         ) : (
-          <p>No attributes available</p>
+          attr.value
         )}
-      </div>
-    );
-  }
+      </li>
+    ));
+  };
 
-  // Admin view with your specified rendering
+  // Render social media links
+  const renderSocialMediaLinks = () => {
+    if (!Array.isArray(socialMediaLinks)) return null;
+
+    return socialMediaLinks.map((link) => (
+      <li key={link.id}>
+        {admin ? (
+          <>
+            <input
+              type="text"
+              value={link.platform}
+              onChange={(e) => {
+                const updatedLinks = [...socialMediaLinks];
+                const index = updatedLinks.findIndex((l) => l.id === link.id);
+                updatedLinks[index].platform = e.target.value;
+                setSocialMediaLinks(updatedLinks);
+              }}
+            />
+            <input
+              type="text"
+              value={link.url}
+              onChange={(e) => {
+                const updatedLinks = [...socialMediaLinks];
+                const index = updatedLinks.findIndex((l) => l.id === link.id);
+                updatedLinks[index].url = e.target.value;
+                setSocialMediaLinks(updatedLinks);
+              }}
+            />
+            <button onClick={() => handleDeleteSocialMedia(link.id)}>🗑️</button>
+          </>
+        ) : (
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            {link.platform}: {link.url}
+          </a>
+        )}
+      </li>
+    ));
+  };
+
   return (
     <div>
-      <button onClick={() => setAdmin(false)}>View</button>
+      <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
       <h2>{personData.name}</h2>
-      <img
-        src={attributes.image}
-        alt={personData.name}
-        style={{ maxWidth: '100px' }}
-      />
+      <p>{orgName}</p>
+      <ul>{renderPersonDetails()}</ul>
 
-      <p className="left">{orgName}</p>
+      <h3>Custom Attributes</h3>
+      <ul>{renderAttributes()}</ul>
+      {admin && (
+        <>
+          <h4>Add New Attribute</h4>
+          <input
+            type="text"
+            placeholder="Attribute Key"
+            value={newAttrKey}
+            onChange={(e) => setNewAttrKey(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Attribute Value"
+            value={newAttrValue}
+            onChange={(e) => setNewAttrValue(e.target.value)}
+          />
+          <button onClick={handleAddAttribute}>Add Attribute</button>
+        </>
+      )}
 
-      <ul className="attributes-list">
-        {Object.entries(attributes).map(([key, value]) => {
-          let inputElement;
+      <h3>Social Media</h3>
+      <ul>{renderSocialMediaLinks()}</ul>
+      {admin && (
+        <>
+          <h4>Add New Social Media</h4>
+          <input
+            type="text"
+            placeholder="Platform"
+            value={newPlatform}
+            onChange={(e) => setNewPlatform(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="URL"
+            value={newPlatformUrl}
+            onChange={(e) => setNewPlatformUrl(e.target.value)}
+          />
+          <button onClick={handleAddSocialMedia}>Add Social Media</button>
 
-          // Case for image fields
-          if (key === 'image' && typeof value === 'string') {
-            inputElement = (
-              <>
-                <img
-                  src={value}
-                  alt={personData.name}
-                  style={{ maxWidth: '100px' }}
-                />
-                <input
-                  type="text"
-                  value={value}
-                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
-                />
-              </>
-            );
-          }
-          // Case for URL fields
-          else if (typeof value === 'string' && value.startsWith('https://')) {
-            inputElement = (
-              <>
-                <a href={value} target="_blank" rel="noopener noreferrer">
-                  {value}
-                </a>
-                <input
-                  type="text"
-                  value={value}
-                  onChange={(e) => handleUpdateAttribute(key, e.target.value)}
-                />
-              </>
-            );
-          }
-          // Case for nested objects
-          else if (typeof value === 'object' && value !== null) {
-            // Handle socialMedia array
-            if (key === 'socialMedia' && Array.isArray(value)) {
-              inputElement = (
-                <div>
-                  <h3>Edit Social Media</h3>
-                  <ul>
-                    {value.map((link, index) => (
-                      <li key={index}>
-                        <strong>{link.platform}:</strong>
-                        <input
-                          type="text"
-                          value={link.url}
-                          onChange={(e) => {
-                            const updatedLinks = value.map((item, idx) =>
-                              idx === index
-                                ? { ...item, url: e.target.value }
-                                : item
-                            );
-                            handleUpdateAttribute('socialMedia', updatedLinks);
-                          }}
-                        />
-                        <button
-                          onClick={() => {
-                            const updatedLinks = value.filter(
-                              (_, idx) => idx !== index
-                            );
-                            handleUpdateAttribute('socialMedia', updatedLinks);
-                          }}
-                          className={styles.deleteButton}
-                        >
-                          🗑️
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                  <input
-                    type="text"
-                    placeholder="Platform"
-                    value={newPlatform}
-                    onChange={(e) => setNewPlatform(e.target.value)}
-                  />
-                  <input
-                    type="text"
-                    placeholder="URL"
-                    value={newPlatformUrl}
-                    onChange={(e) => setNewPlatformUrl(e.target.value)}
-                  />
-                  <button onClick={handleAddSocialMedia}>Add Social Media</button>
-                </div>
-              );
-            } else {
-              // Handle other nested objects
-              inputElement = (
-                <ul>
-                  {Object.entries(value).map(([nestedKey, nestedValue]) => (
-                    <li key={nestedKey}>
-                      <strong>{nestedKey}:</strong>{' '}
-                      <input
-                        type="text"
-                        value={nestedValue}
-                        onChange={(e) =>
-                          handleUpdateAttribute(
-                            `${key}.${nestedKey}`,
-                            e.target.value
-                          )
-                        }
-                      />
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-          }
-          // Default case for simple text fields
-          else {
-            inputElement = (
-              <input
-                type="text"
-                value={value}
-                onChange={(e) => handleUpdateAttribute(key, e.target.value)}
-              />
-            );
-          }
-
-          return (
-            <li key={key}>
-              <strong>{key}:</strong> {inputElement}
-              <button 
-              onClick={() => handleDeleteAttribute(key)}
-              className={styles.deleteButton}
-              >🗑️</button>
-            </li>
-          );
-        })}
-      </ul>
-
-      <hr />
-
-      {/* Add a new attribute */}
-      <p>Add a new attribute:</p>
-      <div>
-        <input
-          type="text"
-          placeholder="Attribute Key"
-          value={newAttrKey}
-          onChange={(e) => setNewAttrKey(e.target.value)}
-        />
-        <textarea
-          placeholder="Attribute Value"
-          value={newAttrValue}
-          onChange={(e) => setNewAttrValue(e.target.value)}
-          rows={4}
-          style={{ width: '100%', resize: 'vertical' }}
-        />
-        <button onClick={handleAddAttribute}>Add Attribute</button>
-      </div>
-
-      <hr />
-
-      <button className={styles.updateButton} onClick={handleUpdate}>Update</button>
-      {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+          <button className={styles.updateButton} onClick={handleUpdate}>Save Changes</button>
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+        </>
+      )}
     </div>
   );
 }

@@ -51,11 +51,21 @@ const createTables = () => {
                 website TEXT,
                 wikipedia TEXT,
                 organization_id INTEGER,
-                attributes TEXT,
                 FOREIGN KEY (organization_id) REFERENCES organization(id)
             );
         `);
         console.log("Person table created.");
+
+        db.exec(`
+            CREATE TABLE IF NOT EXISTS person_attributes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                person_id INTEGER,
+                key TEXT NOT NULL,
+                value TEXT,
+                FOREIGN KEY (person_id) REFERENCES person(id)
+            );
+        `);
+        console.log("Person attributes table created.");
 
         db.exec(`
             CREATE TABLE IF NOT EXISTS location (
