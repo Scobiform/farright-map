@@ -173,8 +173,6 @@ export default function Home() {
     <Layout>
       <Head>
         <title>{appTitle}</title>
-        <meta name="description" content="Overview of politicians and their corresponding electoral districts." />
-        <link rel="icon" href="/favicon.svg" />
       </Head>
       <div className={styles.header}>
         <div className={styles.logo}>
@@ -195,7 +193,7 @@ export default function Home() {
         {/* Organization controls */}
         <div className={styles.partyControls}>
           {organizations.map((org) => (
-            <Button key={org.id} onClick={() => toggleParty(org.name)}>
+            <Button className={org.name.toLowerCase()+"-bg"} key={org.id} onClick={() => toggleParty(org.name)}>
               {visibleParties[org.name] ? org.name : org.name}
             </Button>
           ))}
