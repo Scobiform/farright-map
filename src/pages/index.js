@@ -135,6 +135,7 @@ export default function Home() {
     };
 
     fetchData();
+    
   }, []);
 
   // Filter candidates based on the search query dynamically
