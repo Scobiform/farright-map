@@ -8,10 +8,10 @@ import PersonCard from '@components/Card/PersonCard';
 import styles from '@styles/Home.module.scss';
 import { icon } from '@fortawesome/fontawesome-svg-core'; 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome, faTents, faChessKing } from '@fortawesome/free-solid-svg-icons';
+import { faChurch, faChessBishop, faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome, faTents, faChessKing } from '@fortawesome/free-solid-svg-icons';
 
 // Add icons to the FontAwesome library
-library.add(faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome,faTents, faChessKing);
+library.add(faChurch, faChessBishop, faChessQueen, faChessPawn, faChessKnight, faChessRook, faUsers, faSatelliteDish, faPeopleGroup, faLandmarkDome,faTents, faChessKing);
 
 // Get app title from environment variables
 const appTitle = process.env.NEXT_PUBLIC_APP_TITLE;
@@ -31,6 +31,7 @@ const getIcon = (person, orgName) => {
     { name: 'Fraternities', type: 'association', icon: 'fas fa-chess-pawn' },
     { name: 'Associations', type: 'association', icon: 'fas fa-chess-pawn' },
     { name: 'Settlers', type: 'association', icon: 'fas fa-chess-pawn' },
+    { name: 'Fundis', type: 'association', icon: 'fas fa-chess-bishop' },
   ];
 
   // Generate the correct HTML for the icon based on the person's type
@@ -58,6 +59,9 @@ const getIcon = (person, orgName) => {
           break;
         case organizationsData[6].name:
           iconHtml = icon({ prefix: 'fas', iconName: 'tents' }).html;
+          break;
+        case organizationsData[7].name:
+          iconHtml = icon({ prefix: 'fas', iconName: 'church' }).html;
           break;
       }
   }

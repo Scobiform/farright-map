@@ -285,7 +285,8 @@ const main = () => {
         { name: 'Media', type: 'organization' },
         { name: 'Fraternities', type: 'association' },
         { name: 'Associations', type: 'association' },
-        { name: 'Settlers', type: 'association' }
+        { name: 'Settlers', type: 'association' },
+        { name: 'Fundis', type: 'association' },
     ];
 
     insertOrganizations(organizationsData);
@@ -313,7 +314,8 @@ const main = () => {
             { candidates: data.Media, id: 4 },
             { candidates: data.Fraternities, id: 5 },
             { candidates: data.Associations, id: 6 },
-            { candidates: data.Settlers, id: 7 }
+            { candidates: data.Settlers, id: 7 },
+            { candidates: data.Fundis, id: 8 }
         ];
     } else {
         console.error("No data loaded from data.json.");

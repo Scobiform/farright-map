@@ -2154,6 +2154,22 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "AHRIMAN - Verlag GmbH",
+            "lat": "48.028213530524866",
+            "lon": "7.850697803113478",
+            "residence": "Stübeweg 60, D-79108 Freiburg i. Breisgau",
+            "website": "https://www.ahriman.com/de",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [
@@ -2999,6 +3015,24 @@
             "lon": "11.56462542",
             "residence": "Grabow",
             "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ],
+    "Fundis": [
+        {
+            "name": "Evangelische Allianz in Deutschland e.V.",
+            "lat": "50.68575654380105",
+            "lon": "11.263962925603419",
+            "residence": "Esplanade 5, 07422 Bad Blankenburg",
+            "website": "https://www.ead.de/",
             "social_media": [
                 {
                     "facebook": "",
