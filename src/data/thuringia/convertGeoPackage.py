@@ -7,12 +7,26 @@
 # https://www.govdata.de/dl-de/by-2-0
 
 import geopandas as gpd
+import json
 
-# Load data
+# Load the GeoPackage file
 gdf = gpd.read_file("16TH_L24_Wahlkreiseinteilung.gpkg")
 
-# Convert to GeoJSON
-gdf.to_file("geo.json", driver="GeoJSON")
+# Function to reformat properties using only provided data
+def reformat_properties(properties):
+    formatted_properties = {
+        "WahlkreisNr": str(properties.get("WK_ID", "")),
+        "WahlkreisName": properties.get("WK", ""),
+    }
+    return formatted_properties
 
-# Print first 5 rows
-print(gdf.head())
+# Apply the reformatting to each feature's properties
+gdf["properties"] = gdf.apply(lambda row: reformat_properties(row), axis=1)
+
+# Convert the GeoDataFrame to GeoJSON and save it to a file
+geojson_output = gdf.to_json()
+
+# Save the reformatted GeoJSON to a file
+with open("reformatted_geo.json", "w") as f:
+    json.dump(json.loads(geojson_output), f, indent=4)
+
