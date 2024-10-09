@@ -1,354 +1,361 @@
 import React, { useState, useEffect } from 'react';
+import styles from './PersonCard.module.css';
 
-export default function PersonCard({ person, orgName, socialLinks = [] }) {
-  // Function to generate attributes from person object if attributes are missing
-  const generateAttributesFromPerson = (personObj) => {
-    const { attributes, ...rest } = personObj; // Exclude attributes field if it exists
-    return rest; // Use other fields as attributes
-  };
+// Fetch function to get social media links for a person
+const fetchSocialMedia = async (personId) => {
+  try {
+    const response = await fetch(`/api/socialmedia/${personId}`);
+    if (!response.ok) {
+      throw new Error('Social media not found for this person');
+    }
+    const data = await response.json();
+    return Array.isArray(data) ? data : []; // Ensure the data is an array
+  } catch (error) {
+    console.error('Error fetching social media:', error);
+    return []; // Return an empty array on error
+  }
+};
 
+
+// Fetch function to get attributes for a person
+const fetchAttributes = async (personId) => {
+  const response = await fetch(`/api/personAttributes?personId=${personId}`);
+  const data = await response.json();
+  return data || [];
+};
+
+export default function PersonCard({ person, orgName }) {
   const [personData, setPersonData] = useState(person);
-  const [newAttrKey, setNewAttrKey] = useState('');
-  const [newAttrValue, setNewAttrValue] = useState('');
+  const [socialMediaLinks, setSocialMediaLinks] = useState([]);
+  const [attributes, setAttributes] = useState([]);
   const [admin, setAdmin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
-  const [attributes, setAttributes] = useState(() => {
-    // Initialize attributes from person or fallback to other fields in person
-    return person.attributes && typeof person.attributes === 'string'
-      ? JSON.parse(person.attributes)
-      : person.attributes || generateAttributesFromPerson(person);
-  });
 
+  const [newPlatform, setNewPlatform] = useState('');
+  const [newPlatformUrl, setNewPlatformUrl] = useState('');
+  const [newAttrKey, setNewAttrKey] = useState('');
+  const [newAttrValue, setNewAttrValue] = useState('');
+
+  // Fetch social media links and attributes when the component mounts or person changes
   useEffect(() => {
-    setPersonData(person);
-    setAttributes(
-      person.attributes && typeof person.attributes === 'string'
-        ? JSON.parse(person.attributes)
-        : person.attributes || generateAttributesFromPerson(person)
-    );
+    const loadData = async () => {
+      try {
+        const [links, attrs] = await Promise.all([
+          fetchSocialMedia(person.id),
+          fetchAttributes(person.id),
+        ]);
+        setSocialMediaLinks(links);
+        setAttributes(attrs);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    loadData();
   }, [person]);
 
-  // Function to add a new attribute
-  const handleAddAttribute = () => {
-    if (!newAttrKey || !newAttrValue) return;
-    setAttributes({
-      ...attributes,
-      [newAttrKey]: newAttrValue,
-    });
-    setNewAttrKey('');
-    setNewAttrValue('');
+  // Extract image attribute from attributes
+  const imageAttribute = attributes.find((attr) => attr.key === 'image');
+
+  // Handle input changes for person data
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setPersonData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  // Function to update an attribute
-  const handleUpdateAttribute = (key, value) => {
-    setAttributes({
-      ...attributes,
-      [key]: value,
-    });
-  };
-
-  // Function to delete an attribute
-  const handleDeleteAttribute = async (key) => {
-    try {
-      const response = await fetch('/api/person', {
-        method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ id: personData.id, key }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setAttributes((prevAttributes) => {
-          const updatedAttributes = { ...prevAttributes };
-          delete updatedAttributes[key];
-          return updatedAttributes; 
-        });
-        setErrorMessage(''); // Clear any error message
-      } else {
-        setErrorMessage(data.message);
-      }
-    } catch (error) {
-      setErrorMessage('Error deleting attribute');
+  // Handle adding a new social media link
+  const handleAddSocialMedia = () => {
+    if (newPlatform && newPlatformUrl) {
+      setSocialMediaLinks((prevLinks) => [
+        ...(prevLinks || []),
+        { id: Date.now(), platform: newPlatform, url: newPlatformUrl },
+      ]);
+      setNewPlatform('');
+      setNewPlatformUrl('');
     }
   };
 
-  // Function to update the person's attributes
+  // Handle deleting a social media link
+  const handleDeleteSocialMedia = (id) => {
+    setSocialMediaLinks((prevLinks) => (prevLinks || []).filter((link) => link.id !== id));
+  };
+
+  // Handle adding a new attribute
+  const handleAddAttribute = async () => {
+    if (newAttrKey) {
+      try {
+        const response = await fetch('/api/personAttributes', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            personId: personData.id,
+            key: newAttrKey,
+            value: newAttrValue,
+          }),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          setErrorMessage(errorData.message || 'Error adding attribute');
+          return;
+        }
+
+        const newAttribute = await response.json();
+
+        // Add the new attribute with the correct id from the response
+        setAttributes((prevAttrs) => [...prevAttrs, newAttribute]);
+
+        // Clear input fields
+        setNewAttrKey('');
+        setNewAttrValue('');
+      } catch (error) {
+        console.error('Error adding attribute:', error);
+        setErrorMessage('Error adding attribute');
+      }
+    }
+  };
+
+  // Handle deleting an attribute
+  const handleDeleteAttribute = (id) => {
+    setAttributes((prevAttrs) => prevAttrs.filter((attr) => attr.id !== id));
+  };
+
+  // Handle attribute value change
+  const handleAttributeChange = (id, value) => {
+    setAttributes((prevAttrs) =>
+      prevAttrs.map((attr) => (attr.id === id ? { ...attr, value } : attr))
+    );
+  };
+
+  // Handle saving updates to the database
   const handleUpdate = async () => {
     try {
-      const response = await fetch('/api/person', {
+      // Update person data
+      const personResponse = await fetch('/api/person', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...personData, attributes }),
+        body: JSON.stringify(personData),
       });
-      const data = await response.json();
-      if (response.ok) {
-        setPersonData(data);
-        setErrorMessage('');
-      } else {
-        setErrorMessage(data.message);
-      }
-    } catch (error) {
-      setErrorMessage('Error updating person');
-    }
-  };
 
-  // Function to create a new person
-  const handleCreate = async () => {
-    try {
-      const response = await fetch('/api/person', {
-        method: 'POST',
+      if (!personResponse.ok) {
+        const errorData = await personResponse.json();
+        setErrorMessage(errorData.message || 'Error updating person');
+        return;
+      }
+
+      // Update social media links
+      const socialMediaResponse = await fetch('/api/socialmedia', {
+        method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ ...personData, attributes }),
+        body: JSON.stringify({
+          personId: personData.id,
+          socialMediaLinks: socialMediaLinks,
+        }),
       });
-      const data = await response.json();
-      if (response.ok) {
-        setPersonData(data);
-        setErrorMessage('');
-      } else {
-        setErrorMessage(data.message);
+
+      if (!socialMediaResponse.ok) {
+        const errorData = await socialMediaResponse.json();
+        setErrorMessage(errorData.message || 'Error updating social media');
+        return;
       }
+
+      // Update attributes
+      for (const attribute of attributes) {
+        if (attribute.id) {
+          const attributesResponse = await fetch('/api/personAttributes', {
+            method: 'PATCH',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: attribute.id,
+              value: attribute.value,
+            }),
+          });
+
+          if (!attributesResponse.ok) {
+            const errorData = await attributesResponse.json();
+            setErrorMessage(errorData.message || 'Error updating attribute');
+            return;
+          }
+        }
+      }
+
+      setErrorMessage('');
+      alert('Person, social media, and attributes updated successfully!');
     } catch (error) {
-      setErrorMessage('Error creating person');
+      console.error('Error updating data:', error);
+      setErrorMessage('Error updating data');
     }
   };
 
-  // Recursive function to render attributes, ensuring the image appears first
-  const renderAttributes = (obj) => {
-    const entries = Object.entries(obj);
+  // Render person details
+  const renderPersonDetails = () => {
+    const fields = [
+      'id',
+      'type',
+      'name',
+      'profession',
+      'birth_year',
+      'birthplace',
+      'residence',
+      'electoral_district',
+      'voting_district',
+      'lat',
+      'lon',
+      'mail',
+      'mobile',
+      'website',
+      'wikipedia',
+    ];
 
-    // Separate image attribute from the rest
-    const imageEntry = entries.find(([key]) => key === 'image');
-    const otherEntries = entries.filter(([key]) => key !== 'image');
-
-    // Function to render each attribute
-    const renderAttribute = ([key, value]) => {
-      let element;
-
-      switch (true) {
-        // Case for URLs
-        case typeof value === 'string' && value.startsWith('https://'):
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong>{' '}
-              <a href={value || '#'} target="_blank" rel="noopener noreferrer">
-                {value}
-              </a>
-            </li>
-          );
-          break;
-
-        // Case for number fields
-        case typeof value === 'number':
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {value}
-            </li>
-          );
-          break;
-
-        // Case for nested objects
-        case typeof value === 'object' && value !== null:
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {Object.values(value).pop()}
-            </li>
-          );
-          break;
-
-        // Default case for simple text fields
-        default:
-          element = (
-            <li key={key}>
-              <strong>{key}:</strong> {value}
-            </li>
-          );
-      }
-
-      return element;
-    };
-
-    return (
-      <>
-        {/* Render image attribute first, if it exists */}
-        {imageEntry && !imageEntry[1].includes('<svg') && (
-          <img src={imageEntry[1]} alt={personData.name} />
-        )}
-        {/* Render SVG image attribute */}
-        {imageEntry && imageEntry[1].includes('<svg') && (
-          <img
-            src={`data:image/svg+xml;utf8,${encodeURIComponent(
-              imageEntry[1]
-            )}`}
-            alt={personData.name}
+    return fields.map((field) => (
+      <li key={field}>
+        <strong>{field.replace('_', ' ')}:</strong>{' '}
+        {admin ? (
+          <input
+            type="text"
+            name={field}
+            value={personData[field] || ''}
+            onChange={handleInputChange}
+            readOnly={field === 'id'}
           />
+        ) : field === 'website' || field === 'wikipedia' ? (
+          <a href={personData[field]} target="_blank" rel="noopener noreferrer">
+            {personData[field]}
+          </a>
+        ) : (
+          personData[field]
         )}
-        {/* Render other attributes */}
-        {otherEntries.map(renderAttribute)}
-      </>
-    );
+      </li>
+    ));
   };
 
-  // If the user is not admin
-  if (!admin) {
-    return (
-      <div>
-        <button onClick={() => setAdmin(true)}>EDIT</button>
-        <h2>{personData.name}</h2>
-        <p className="left">{orgName}</p>
-        {attributes && Object.keys(attributes).length > 0 ? (
-          <ul>{renderAttributes(attributes)}</ul>
-        ) : (
-          <p>No attributes available</p>
-        )}
-
-        {/* Render social media links */}
-        {socialLinks.length > 0 && (
+  // Render attributes
+  const renderAttributes = () => {
+    return attributes.map((attr) => (
+      <li key={attr.id}>
+        <strong>{attr.key}:</strong>{' '}
+        {admin ? (
           <>
-            <h3>Social Media</h3>
-            <ul>
-              {socialLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.url} target="_blank" rel="noopener noreferrer">
-                    {link.url}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <input
+              className={styles.personEdit}
+              type="text"
+              value={attr.value || ''}
+              onChange={(e) => handleAttributeChange(attr.id, e.target.value)}
+            />
+            <button onClick={() => handleDeleteAttribute(attr.id)}>🗑️</button>
           </>
+        ) : (
+          attr.value
         )}
-      </div>
-    );
-  } else {
-    // If the user is admin
-    return (
-      <div>
-        <button onClick={() => setAdmin(false)}>View</button>
-        <h2>{personData.name}</h2>
+      </li>
+    ));
+  };
+
+  // Render social media links
+  const renderSocialMediaLinks = () => {
+    if (!Array.isArray(socialMediaLinks)) return null;
+
+    return socialMediaLinks.map((link) => (
+      <li key={link.id}>
+        {admin ? (
+          <>
+            <input
+              type="text"
+              value={link.platform}
+              onChange={(e) => {
+                const updatedLinks = [...socialMediaLinks];
+                const index = updatedLinks.findIndex((l) => l.id === link.id);
+                updatedLinks[index].platform = e.target.value;
+                setSocialMediaLinks(updatedLinks);
+              }}
+            />
+            <input
+              type="text"
+              value={link.url}
+              onChange={(e) => {
+                const updatedLinks = [...socialMediaLinks];
+                const index = updatedLinks.findIndex((l) => l.id === link.id);
+                updatedLinks[index].url = e.target.value;
+                setSocialMediaLinks(updatedLinks);
+              }}
+            />
+            <button onClick={() => handleDeleteSocialMedia(link.id)}>🗑️</button>
+          </>
+        ) : (
+          <a href={link.url} target="_blank" rel="noopener noreferrer">
+            {link.platform}: {link.url}
+          </a>
+        )}
+      </li>
+    ));
+  };
+
+  return (
+    <div className={styles.personContainer}>
+      {imageAttribute && imageAttribute.value && (
         <img
-          src={attributes.image}
+          src={imageAttribute.value}
           alt={personData.name}
-          style={{ maxWidth: '100px' }}
+          className={styles.personImage}
         />
+      )}
+      <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
+      <h2>{personData.name}</h2>
+      <p>{orgName}</p>
+      <ul className={styles.personEdit}>{renderPersonDetails()}</ul>
 
-        <p className="left">{orgName}</p>
-
-        <ul className="attributes-list">
-          {Object.entries(attributes).map(([key, value]) => {
-            let inputElement;
-
-            // Case for image fields
-            if (key === 'image' && typeof value === 'string') {
-              inputElement = (
-                <>
-                  <img
-                    src={value}
-                    alt={personData.name}
-                    style={{ maxWidth: '100px' }}
-                  />
-                  <input
-                    type="text"
-                    value={value}
-                    onChange={(e) =>
-                      handleUpdateAttribute(key, e.target.value)
-                    }
-                  />
-                </>
-              );
-            }
-            // Case for URL fields
-            else if (typeof value === 'string' && value.startsWith('https://')) {
-              inputElement = (
-                <>
-                  <a href={value} target="_blank" rel="noopener noreferrer">
-                    {value}
-                  </a>
-                  <input
-                    type="text"
-                    value={value}
-                    onChange={(e) =>
-                      handleUpdateAttribute(key, e.target.value)
-                    }
-                  />
-                </>
-              );
-            }
-            // Case for nested objects
-            else if (typeof value === 'object' && value !== null) {
-              inputElement = (
-                <ul>
-                  {Object.entries(value).map(([nestedKey, nestedValue]) => (
-                    <li key={nestedKey}>
-                      <strong>{nestedKey}:</strong>{' '}
-                      <input
-                        type="text"
-                        value={nestedValue}
-                        onChange={(e) =>
-                          handleUpdateAttribute(
-                            `${key}.${nestedKey}`,
-                            e.target.value
-                          )
-                        }
-                      />
-                    </li>
-                  ))}
-                </ul>
-              );
-            }
-            // Default case for simple text fields
-            else {
-              inputElement = (
-                <input
-                  type="text"
-                  value={value}
-                  onChange={(e) =>
-                    handleUpdateAttribute(key, e.target.value)
-                  }
-                />
-              );
-            }
-
-            return (
-              <li key={key}>
-                <strong>{key}:</strong> {inputElement}
-                <button onClick={() => handleDeleteAttribute(key)}>
-                  Delete
-                </button>
-              </li>
-            );
-          })}
-        </ul>
-
-        <hr />
-        <p>Add a new attribute:</p>
-        <div>
+      <h3>Custom Attributes</h3>
+      <ul className={styles.personEdit}>{renderAttributes()}</ul>
+      {admin && (
+        <div className={styles.addAttributes}>
+          <h4>Add New Attribute</h4>
           <input
             type="text"
             placeholder="Attribute Key"
             value={newAttrKey}
             onChange={(e) => setNewAttrKey(e.target.value)}
           />
-          <textarea
+          <input
+            type="text"
             placeholder="Attribute Value"
             value={newAttrValue}
             onChange={(e) => setNewAttrValue(e.target.value)}
-            rows={4} //
-            style={{ width: '100%', resize: 'vertical' }} 
           />
           <button onClick={handleAddAttribute}>Add Attribute</button>
         </div>
+      )}
 
-        <hr />
+      <h3>Social Media</h3>
+      <ul className={styles.addSocialMedia}>{renderSocialMediaLinks()}</ul>
+      {admin && (
+        <div className={styles.addSocialMedia}>
+          <h4>Add New Social Media</h4>
+          <input
+            type="text"
+            placeholder="Platform"
+            value={newPlatform}
+            onChange={(e) => setNewPlatform(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="URL"
+            value={newPlatformUrl}
+            onChange={(e) => setNewPlatformUrl(e.target.value)}
+          />
+          <button onClick={handleAddSocialMedia}>Add Social Media</button>
 
-        <button onClick={handleUpdate}>Update</button>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-      </div>
-    );
-  }
+          <button className={styles.updateButton} onClick={handleUpdate}>Save Changes</button>
+          {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+        </div>
+      )}
+    </div>
+  );
 }

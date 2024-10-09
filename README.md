@@ -53,6 +53,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [http://localhost:3000/api/person/1](http://localhost:3000/api/person/1)
 - [http://localhost:3000/api/location](http://localhost:3000/api/location)
 - [http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia)
+- [http://localhost:3000/api/socialmedia](http://localhost:3000/api/socialmedia/1)
+
 
 ## Maintainers ##
 

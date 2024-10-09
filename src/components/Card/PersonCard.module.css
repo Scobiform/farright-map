@@ -1,0 +1,54 @@
+.personContainer{
+    width: 280px;
+}
+
+.personEdit li input {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.42rem;
+}
+
+.personEdit li input[type="text"] {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.42rem;
+}
+
+.addAttributes input[type="text"] {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.42rem;
+}
+
+.addSocialMedia li input[type="text"] {
+    width: 100%;
+    border-bottom: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    border-radius: 0.42rem;
+}
+
+.personImage {
+    max-width: 100%;
+    border-radius: 0.42rem;
+}
+
+.updateButton {
+    height: 4.2vh;
+    width: 100%;
+}
+
+.updateButton:hover {
+    background-color: var(--quaternary);
+    color: var(--secondary);
+}
+
+.deleteButton {
+    background: var(--tertiary);
+}

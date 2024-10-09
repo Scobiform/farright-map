@@ -51,11 +51,21 @@ const createTables = () => {
                 website TEXT,
                 wikipedia TEXT,
                 organization_id INTEGER,
-                attributes TEXT,
                 FOREIGN KEY (organization_id) REFERENCES organization(id)
             );
         `);
         console.log("Person table created.");
+
+        db.exec(`
+            CREATE TABLE IF NOT EXISTS person_attributes (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                person_id INTEGER,
+                key TEXT NOT NULL,
+                value TEXT,
+                FOREIGN KEY (person_id) REFERENCES person(id)
+            );
+        `);
+        console.log("Person attributes table created.");
 
         db.exec(`
             CREATE TABLE IF NOT EXISTS location (
@@ -87,7 +97,7 @@ const createTables = () => {
             CREATE TABLE IF NOT EXISTS social_media (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 platform TEXT NOT NULL,
-                url TEXT NOT NULL,
+                url TEXT,
                 person_id INTEGER,
                 FOREIGN KEY (person_id) REFERENCES person(id)
             );
@@ -212,8 +222,12 @@ const insertSocialMedia = (socialMediaArray, personId) => {
 
         socialMediaArray.forEach(socialMedia => {
             for (const [platform, url] of Object.entries(socialMedia)) {
-                if (url) { // Only insert if the URL is not empty
-                    insertSocialMediaStmt.run(platform, url, personId);
+                if(url) {
+                    insertSocialMediaStmt.run(
+                        platform || "", 
+                        url || "", 
+                        personId
+                    );
                 }
             }
         });

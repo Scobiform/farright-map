@@ -10,25 +10,34 @@ export default function handler(req, res) {
             return res.status(500).json({ message: 'Failed to fetch social media' });
         }
     }
-    
-    if (req.method === 'POST') {
-        const { personId, facebook, instagram, tiktok, x_com, telegram, youtube } = req.body;
 
-        if (!personId || !facebook) {
-            return res.status(400).json({ message: 'personId and at least one social media link (facebook) are required' });
+    if (req.method === 'PATCH') {
+        const { personId, socialMediaLinks } = req.body;
+        if (!personId || !Array.isArray(socialMediaLinks)) {
+            return res.status(400).json({ message: 'Invalid data' });
         }
 
-        try {
-            const stmt = db.prepare(`
-                INSERT INTO social_media (person_id, facebook, instagram, tiktok, x_com, telegram, youtube) 
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            `);
-            stmt.run(personId, facebook, instagram || "", tiktok || "", x_com || "", telegram || "", youtube || "");
+        // Begin transaction
+        const transaction = db.transaction(() => {
+            // Delete existing social media links
+            const deleteStmt = db.prepare('DELETE FROM social_media WHERE person_id = ?');
+            deleteStmt.run(personId);
 
-            return res.status(201).json({ message: 'Social media created' });
+            // Insert new social media links
+            const insertStmt = db.prepare(
+            'INSERT INTO social_media (platform, url, person_id) VALUES (?, ?, ?)'
+            );
+            for (const link of socialMediaLinks) {
+            insertStmt.run(link.platform, link.url, personId);
+            }
+        });
+
+        try {
+            transaction();
+            res.json({ message: 'Social media links updated successfully' });
         } catch (error) {
-            console.error("Error inserting social media:", error);
-            return res.status(500).json({ message: 'Failed to create social media entry' });
+            console.error('Error updating social media links:', error);
+            res.status(500).json({ message: 'Error updating social media links' });
         }
     }
     
