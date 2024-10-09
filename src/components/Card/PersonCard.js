@@ -3,16 +3,25 @@ import styles from './PersonCard.module.css';
 
 // Fetch function to get social media links for a person
 const fetchSocialMedia = async (personId) => {
-  const response = await fetch(`/api/socialmedia/${personId}`);
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch(`/api/socialmedia/${personId}`);
+    if (!response.ok) {
+      throw new Error('Social media not found for this person');
+    }
+    const data = await response.json();
+    return Array.isArray(data) ? data : []; // Ensure the data is an array
+  } catch (error) {
+    console.error('Error fetching social media:', error);
+    return []; // Return an empty array on error
+  }
 };
+
 
 // Fetch function to get attributes for a person
 const fetchAttributes = async (personId) => {
   const response = await fetch(`/api/personAttributes?personId=${personId}`);
   const data = await response.json();
-  return data;
+  return data || [];
 };
 
 export default function PersonCard({ person, orgName }) {
@@ -58,7 +67,7 @@ export default function PersonCard({ person, orgName }) {
   const handleAddSocialMedia = () => {
     if (newPlatform && newPlatformUrl) {
       setSocialMediaLinks((prevLinks) => [
-        ...prevLinks,
+        ...(prevLinks || []),
         { id: Date.now(), platform: newPlatform, url: newPlatformUrl },
       ]);
       setNewPlatform('');
@@ -68,7 +77,7 @@ export default function PersonCard({ person, orgName }) {
 
   // Handle deleting a social media link
   const handleDeleteSocialMedia = (id) => {
-    setSocialMediaLinks((prevLinks) => prevLinks.filter((link) => link.id !== id));
+    setSocialMediaLinks((prevLinks) => (prevLinks || []).filter((link) => link.id !== id));
   };
 
   // Handle adding a new attribute
@@ -301,12 +310,12 @@ export default function PersonCard({ person, orgName }) {
       <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
       <h2>{personData.name}</h2>
       <p>{orgName}</p>
-      <ul>{renderPersonDetails()}</ul>
+      <ul className={styles.personEdit}>{renderPersonDetails()}</ul>
 
       <h3>Custom Attributes</h3>
-      <ul>{renderAttributes()}</ul>
+      <ul className={styles.personEdit}>{renderAttributes()}</ul>
       {admin && (
-        <>
+        <div className={styles.addAttributes}>
           <h4>Add New Attribute</h4>
           <input
             type="text"
@@ -321,13 +330,13 @@ export default function PersonCard({ person, orgName }) {
             onChange={(e) => setNewAttrValue(e.target.value)}
           />
           <button onClick={handleAddAttribute}>Add Attribute</button>
-        </>
+        </div>
       )}
 
       <h3>Social Media</h3>
       <ul>{renderSocialMediaLinks()}</ul>
       {admin && (
-        <>
+        <div className={styles.addSocialMedia}>
           <h4>Add New Social Media</h4>
           <input
             type="text"
@@ -345,7 +354,7 @@ export default function PersonCard({ person, orgName }) {
 
           <button className={styles.updateButton} onClick={handleUpdate}>Save Changes</button>
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        </>
+        </div>
       )}
     </div>
   );

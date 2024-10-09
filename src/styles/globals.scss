@@ -20,7 +20,7 @@
 /* The handle (scrollbar thumb) */
 ::-webkit-scrollbar-thumb {
   background-color: var(--tertiary);
-  border-radius: 10px;
+  border-radius: 0.42rem !important;
   border: 2px solid var(--secondary);
 }
 
@@ -86,7 +86,7 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 0.42rem !important;
   color: var(--primary);
 }
 
@@ -95,9 +95,20 @@ button:hover {
   color: var(--secondary);
 }
 
-/* inputs */
+input{
+  font-size: small;
+  height: 1.68rem;
+  margin-bottom: 0.42rem;
+}
+
+label{
+  color: var(--primary);
+  font-size: xx-small;
+}
+
 .inputText {
   width:100vw;
+  border-radius: 0.42rem;
 }
 
 /* floats, grids */
@@ -204,70 +215,17 @@ button:hover {
   max-height: 77vh !important;
   overflow-y: auto !important;
   overflow-x: hidden !important;
+  border-radius: 0.42rem !important;
 }
 
 /* General styling for the popup */
 .leaflet-popup-content {
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 0.42rem !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 320px;
   display: inline-table;
-}
-
-
-/* Style for the attributes list */
-.attributes-list {
-  list-style: none;
-  padding: 0;
-}
-
-.attributes-list li {
-  display: inline-grid;
-  width: max-content;
-}
-
-.attributes-list strong {
-  min-width: 100px;
-}
-
-.attributes-list input {
-  padding: 6px;
-  font-size: 1em;
-  width: calc(100% - 160px);
-  margin-right: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  width: auto;
-}
-
-.attributes-list button {
-  color: white;
-  border: none;
-  padding: 6px 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  width: fit-content;
-}
-
-.attributes-list button:hover {
-  background-color: var(--quaternary);
-  color: var(--secondary);
-}
-
-/* Style for the new attribute section */
-.new-attribute {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.new-attribute input {
-  padding: 6px;
-  font-size: 1em;
-  border: 1px solid #ddd;
-  border-radius: 4px;
 }
 
 
