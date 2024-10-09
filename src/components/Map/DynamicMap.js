@@ -34,7 +34,6 @@ const DynamicMap = ({ polygons = [],
     mapClassName = `${mapClassName} ${className}`;
   }
 
-
   return (
     <MapContainer 
       className={mapClassName + " invert"} 
