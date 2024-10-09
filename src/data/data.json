@@ -2271,6 +2271,118 @@
                     "youtube": ""
                 }
             ]   
+        },
+        {
+            "name": "Marburger Burschenschaft Germania",
+            "lat": "50.8020000",
+            "lon": "8.7660000",
+            "residence": "Marburg",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Burschenschaft Normannia Leipzig zu Marburg",
+            "lat": "50.8020000",
+            "lon": "8.7660000",
+            "residence": "Marburg",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Katholische Deutsche Studentenverbindung Danubia München",
+            "lat": "48.1500000",
+            "lon": "11.5833333",
+            "residence": "München",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Burschenschaft Dresdensia-Rugia zu Gießen",
+            "lat": "50.5833333",
+            "lon": "8.6666667",
+            "residence": "Gießen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Burschenschaft Frankonia Erlangen",
+            "lat": "49.5966667",
+            "lon": "11.0038889",
+            "residence": "Erlangen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Burschenschaft Hannovera Göttingen",
+            "lat": "51.5416667",
+            "lon": "9.9350000",
+            "residence": "Göttingen",
+            "website": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Burschenschaft Thuringia zu Frankfurt",
+            "lat": "50.110924",
+            "lon": "8.682127",
+            "residence": "Frankfurt",
+            "website": "https://www.burschenschaft-thuringia.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
         }
     ],
     "Associations":[

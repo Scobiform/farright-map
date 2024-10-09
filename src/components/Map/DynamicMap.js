@@ -8,6 +8,11 @@ import geodata from '@data/geo.json';
 // MIT License
 // https://github.com/CodeforLeipzig/wahldaten/
 import sachsenGeoData from '@data/saxony/geo.json';
+// https://wahlen.thueringen.de/landtagswahlen/lw_informationen.asp
+// © GDI-Th / Thüringer Landesamt für Statistik
+// Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0
+// https://www.govdata.de/dl-de/by-2-0
+import thuringiaGeoData from '@data/thuringia/geo.json';
 
 const { MapContainer, 
   TileLayer, 
@@ -28,7 +33,6 @@ const DynamicMap = ({ polygons = [],
   if (className) {
     mapClassName = `${mapClassName} ${className}`;
   }
-
 
   return (
     <MapContainer 
@@ -84,6 +88,16 @@ const DynamicMap = ({ polygons = [],
       />
       {/* Render Sachsen GeoJSON */}
       <GeoJSON data={sachsenGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+      />
+
+      {/* Render Thüringen GeoJSON */}
+      <GeoJSON data={thuringiaGeoData}
         style={() => ({
           color: 'green',
           weight: 1,
