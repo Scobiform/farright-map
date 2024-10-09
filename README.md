@@ -1,4 +1,6 @@
-# 🍃 FarRight Map Germany #
+# FarRight Map Germany #
+
+<img src="https://raw.githubusercontent.com/Scobiform/farright-map/f13cd587aa48b9ab660ee26b04894cb0be1a4d15/public/favicon.svg" align="right" width="100" alt="FarRight Map Logo">
 
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
@@ -8,7 +10,6 @@
 [![SQLite](https://img.shields.io/badge/SQLite-blue.svg)](https://www.sqlite.org/index.html)
 [![AGPL-3.0](https://img.shields.io/badge/License-AGFL--3.0-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.html)
 
-<img src="https://raw.githubusercontent.com/Scobiform/farright-map/f13cd587aa48b9ab660ee26b04894cb0be1a4d15/public/favicon.svg" alt="farright-map screenshot" align="cenzer" style="width: 10%" />
 
 ## Table of Contents ##
 
