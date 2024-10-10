@@ -1,6 +1,6 @@
 # FarRight Map Germany #
 
-<img src="https://raw.githubusercontent.com/Scobiform/farright-map/f13cd587aa48b9ab660ee26b04894cb0be1a4d15/public/favicon.svg" align="right" width="100" alt="FarRight Map Logo">
+<img src="https://github.com/Scobiform/farright-map/blob/master/public/favicon.svg" align="right" width="100" alt="FarRight Map Logo">
 
 > A map application that visualizes far-right activities using Next.js and Leaflet.
 
