@@ -15,6 +15,7 @@
 
 - [Disclaimer](#disclaimer)
 - [Background](#background)
+- [Prerequisites](#prerequisites)
 - [Install](#install)
 - [Usage](#usage)
 - [Maintainers](#maintainers)
@@ -29,6 +30,15 @@ All data used in this project was publicly available.
 ## Background ##
 
 This project is designed to map far-right party-candidates, media, organizations, special locations, fraternities and settlers (yes, Germany has "völkische SIedler*innen"). The data was exclusively collected from open sources and is in public interest.
+
+## Prerequisites ##
+
+To run this project, you need to have the following software installed on your machine:
+
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+- [Git](https://git-scm.com/)
+- [SQLite](https://www.sqlite.org/index.html)
 
 ## Install ##
 
