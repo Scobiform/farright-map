@@ -68,7 +68,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [/api/socialmedia/1](http://localhost:3000/api/socialmedia/1)
 - [/api/personAttributes?personId=133](http://localhost:3000/api/personAttributes?personId=133)
 
-
 ## Maintainers ##
 
 [@Scobiform](https://github.com/Scobiform/)
