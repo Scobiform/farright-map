@@ -67,7 +67,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Contributing ##
 
-Feel free to contribute to this project.
+Feel free to contribute to this project. You can find more information on how to contribute in the following links:
 
 - [Project Kanban Board](https://github.com/users/Scobiform/projects/8)
 - [Discussions](https://github.com/Scobiform/farright-map/discussions)
