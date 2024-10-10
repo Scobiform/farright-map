@@ -35,10 +35,8 @@ This project is designed to map far-right party-candidates, media, organizations
 
 To run this project, you need to have the following software installed on your machine:
 
-- [Node.js](https://nodejs.org/en/)
 - [npm](https://www.npmjs.com/)
-- [Git](https://git-scm.com/)
-- [SQLite](https://www.sqlite.org/index.html)
+- [Node.js](https://nodejs.org/)
 
 ## Install ##
 
