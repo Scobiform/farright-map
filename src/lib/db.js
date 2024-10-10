@@ -359,6 +359,6 @@ const main = () => {
 };
 
 // Run once ;)
-main();
+//main();
 
 export default db;
