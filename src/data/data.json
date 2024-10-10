@@ -2234,6 +2234,38 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Verlag Die Silberschnur GmbH",
+            "lat": "50.59619918336607",
+            "lon": "7.524872915341683",
+            "residence": "Steinstraße 1, 56593 Güllesheim",
+            "website": "http://www.silberschnur.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "SCM Verlagsgruppe GmbH",
+            "lat": "48.631491140954616",
+            "lon": "9.031199982512652",
+            "residence": "Max-Eyth-Straße 41, 71088 Holzgerlingen",
+            "website": "http://www.scm-verlagsgruppe.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [
@@ -3097,6 +3129,22 @@
             "lon": "11.263962925603419",
             "residence": "Esplanade 5, 07422 Bad Blankenburg",
             "website": "https://www.ead.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "name": "DVCK e.V.",
+            "lat": "50.10164566743009",
+            "lon": "8.84992327275703",
+            "residence": "Mühlheimer Str. 57-59, 63165 Mühlheim am Main",
+            "website": "https://www.dvck.de/",
             "social_media": [
                 {
                     "facebook": "",

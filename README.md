@@ -20,6 +20,7 @@
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
+- [Funding](#funding)
 
 ## Disclaimer ##
 
@@ -75,3 +76,13 @@ Feel free to contribute to this project.
 ## License ##
 
 - AGPL-3.0
+
+## Funding ##
+
+The [FarRight Map](https://github.com/Scobiform/farright-map) is an initiative to make far-right networks in Germany visible. With your support, we can continue developing and updating the map with new data, raising awareness about far-right structures, and strengthening democratic processes.
+
+Every contribution—no matter the size—helps keep this project going. Your donation will help fund essential research, data collection, and further development of the tool.
+
+You can support us through [GitHub Sponsors](https://github.com/sponsors/Scobiform) or via [PayPal](https://paypal.me/kompromat).
+
+Thank you for your support!
