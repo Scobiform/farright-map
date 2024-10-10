@@ -2218,6 +2218,22 @@
                     "youtube": ""
                 }
             ]
+        },
+        {
+            "name": "Evangelische Verlagsanstalt GmbH",
+            "lat": "51.36304246975816",
+            "lon": "12.371572222881674",
+            "residence": "Blumenstraße 76, 04155 Leipzig",
+            "website": "https://www.eva-leipzig.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [

@@ -1,0 +1,529 @@
+{
+    "AfD": [
+        {
+            "position": 1,
+            "name": "Hüther-Keseling, Stephanie",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Eichsfeld I",
+            "electoral_district": 1,
+            "lat": "51.379987216832134",
+            "lon": "10.256048882072099",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 2,
+            "name": "Drößler, Christopher",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Eichsfeld II",
+            "electoral_district": 2,
+            "lat": "51.3338914",
+            "lon": "10.4088839",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 3,
+            "name": "Prophet, Jörg",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Nordhausen I",
+            "electoral_district": 3,
+            "lat": "51.505023308604734",
+            "lon": "10.79963372471764",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 4,
+            "name": "Düben-Schaumann, Kerstin",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Nordhausen II",
+            "electoral_district": 4,
+            "lat": "51.49840515624353",
+            "lon": "10.793767948266703",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 5,
+            "name": "Krell, Uwe",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Wartburgkreis I",
+            "electoral_district": 5,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 6,
+            "name": "Gröger, Thomas",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Unstrut-Hainich-Kreis I",
+            "electoral_district": 6,
+            "lat": "51.1632889",
+            "lon": "10.5794608",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 7,
+            "name": "Möller, Stefan",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Unstrut-Hainich-Kreis II",
+            "electoral_district": 7,
+            "lat": "51.1982711",
+            "lon": "10.483570333791942",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 8,
+            "name": "Teske, Robert",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Kyffhäuserkreis I",
+            "electoral_district": 8,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 9,
+            "name": "Cotta, Jens",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Kyffhäuserkreis II",
+            "electoral_district": 9,
+            "lat": "51.3697411",
+            "lon": "10.8465931",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 10,
+            "name": "Rottstedt, Vivien",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Schmalkalden-Meiningen I",
+            "electoral_district": 10,
+            "lat": "50.7197818",
+            "lon": "10.3532358",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 11,
+            "name": "Abicht, Jan",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Schmalkalden-Meiningen II",
+            "electoral_district": 11,
+            "lat": "50.56960185",
+            "lon": "10.430735738042378",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 12,
+            "name": "Hoffmann, Nadine",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Hildburghausen I/Schmalkalden-Meiningen III",
+            "electoral_district": 12,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 13,
+            "name": "Treutler, Jürgen",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Sonneberg I",
+            "electoral_district": 13,
+            "lat": "50.4924207",
+            "lon": "12.7977013",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 14,
+            "name": "Berger, Melanie",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Hildburghausen II/Sonneberg II",
+            "electoral_district": 14,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 15,
+            "name": "Luhn, Thomas",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Suhl/Schmalkalden-Meiningen IV",
+            "electoral_district": 15,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 16,
+            "name": "Dr. Dietrich, Jens",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Ilm-Kreis I",
+            "electoral_district": 16,
+            "lat": "50.682791949999995",
+            "lon": "10.931538377258725",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 17,
+            "name": "Kießling, Olaf",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Ilm-Kreis II",
+            "electoral_district": 17,
+            "lat": "50.8505185",
+            "lon": "10.9637839",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 18,
+            "name": "Schlösser, Sascha",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Erfurt I",
+            "electoral_district": 18,
+            "lat": "50.98481386032662",
+            "lon": "11.02985020991182",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 19,
+            "name": "Herold, Corinna",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Erfurt II",
+            "electoral_district": 19,
+            "lat": "50.98328165",
+            "lon": "11.055039793619098",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 20,
+            "name": "Claus, Alexander",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Erfurt III",
+            "electoral_district": 20,
+            "lat": "50.9787979",
+            "lon": "11.02094861230638",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 21,
+            "name": "Erfurth, Marek",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "Erfurt IV",
+            "electoral_district": 21,
+            "lat": "50.9777974",
+            "lon": "11.0287364",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ]
+}

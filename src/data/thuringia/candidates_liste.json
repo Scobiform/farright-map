@@ -1,0 +1,520 @@
+{
+    "AfD": [
+        {
+            "position": 1,
+            "name": "Höcke, Björn",
+            "profession": "Abgeordneter des Thüringer Landtags",
+            "birth_year": 1972,
+            "birthplace": "Lünen",
+            "residence": "Bornhagen",
+            "lat": "51.3441959",
+            "lon": "9.943528"
+        },
+        {
+            "position": 2,
+            "name": "Müller, Stefan",
+            "profession": "Rechtsanwalt",
+            "birth_year": 1975,
+            "birthplace": "Erfurt",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364"
+        },
+        {
+            "position": 3,
+            "name": "Muhsal, Wiebke",
+            "profession": "Diplom-Jurist",
+            "birth_year": 1986,
+            "birthplace": "Lüdinghausen",
+            "residence": "Jena",
+            "lat": "50.9281717",
+            "lon": "11.5879359"
+        },
+        {
+            "position": 4,
+            "name": "Braga, Torben",
+            "profession": "Politikwissenschaftler",
+            "birth_year": 1991,
+            "birthplace": "Niterói (Brasilien)",
+            "residence": "Altenburg",
+            "lat": "50.9852411",
+            "lon": "12.4340988"
+        },
+        {
+            "position": 5,
+            "name": "Cotta, Jens",
+            "profession": "Bankbetriebswirt",
+            "birth_year": 1972,
+            "birthplace": "Bad Frankenhausen",
+            "residence": "Artern",
+            "lat": "51.3627798",
+            "lon": "11.2935249"
+        },
+        {
+            "position": 6,
+            "name": "Prophet, Jörg",
+            "profession": "Unternehmer",
+            "birth_year": 1962,
+            "birthplace": "Schwerin",
+            "residence": "Nordhausen",
+            "lat": "51.5051574",
+            "lon": "10.7925317"
+        },
+        {
+            "position": 7,
+            "name": "Mühlmann, Ringo",
+            "profession": "Polizeibeamter",
+            "birth_year": 1975,
+            "birthplace": "Pößneck",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364"
+        },
+        {
+            "position": 8,
+            "name": "Hoffmann, Nadine",
+            "profession": "Diplom-Biologin",
+            "birth_year": 1979,
+            "birthplace": "Hildburghausen",
+            "residence": "Hildburghausen",
+            "lat": "50.4266327",
+            "lon": "10.7300263"
+        },
+        {
+            "position": 9,
+            "name": "Dietrich, Jens",
+            "profession": "Chemiker/Selbstständig",
+            "birth_year": 1965,
+            "birthplace": "Berlin",
+            "residence": "Ilmenau",
+            "lat": "50.6867695",
+            "lon": "10.9142385"
+        },
+        {
+            "position": 10,
+            "name": "Czuppon, Torsten Silvio",
+            "profession": "Polizeibeamter",
+            "birth_year": 1986,
+            "birthplace": "Kölleda",
+            "residence": "Sömmerda OT Frohndorf"
+        },
+        {
+            "position": 11,
+            "name": "Thrum, Uwe",
+            "profession": "Tischlermeister",
+            "birth_year": 1974,
+            "birthplace": "Schleiz",
+            "residence": "Hirschberg",
+            "lat": "50.40796381886205",
+            "lon": "11.815439518153482"
+        },
+        {
+            "position": 12,
+            "name": "Schlösser, Sascha",
+            "profession": "Rechtsanwalt",
+            "birth_year": 1974,
+            "birthplace": "Erfurt",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364"
+        },
+        {
+            "position": 13,
+            "name": "Haseloff, Daniel",
+            "profession": "Angestellter",
+            "birth_year": 1988,
+            "birthplace": "Heilbad Heiligenstadt",
+            "residence": "Heiligenstadt",
+            "lat": "51.3756186",
+            "lon": "10.138224"
+        },
+        {
+            "position": 14,
+            "name": "Jankowski, Denny",
+            "profession": "Ingenieur",
+            "birth_year": 1983,
+            "birthplace": "Wolfen",
+            "residence": "Jena",
+            "lat": "50.9281717",
+            "lon": "11.5879359"
+        },
+        {
+            "position": 15,
+            "name": "Benninghaus, Thomas",
+            "profession": "Kfm. Fachwirt",
+            "birth_year": 1973,
+            "birthplace": "Rudolstadt",
+            "residence": "Rudolstadt",
+            "lat": "50.7206063",
+            "lon": "11.3401985"
+        },
+        {
+            "position": 16,
+            "name": "Wloch, Pascal",
+            "profession": "Staatlich geprüfter Techniker für Maschinentechnik",
+            "birth_year": 1976,
+            "birthplace": "Lutherstadt Eisleben",
+            "residence": "Bad Salzungen",
+            "lat": "50.812318",
+            "lon": "10.2320784"
+        },
+        {
+            "position": 17,
+            "name": "Abicht, Jan",
+            "profession": "Unternehmer/Bauingenieur",
+            "birth_year": 1965,
+            "birthplace": "Leipzig",
+            "residence": "Schmalkalden",
+            "lat": "50.7213643",
+            "lon": "10.4510467"
+        },
+        {
+            "position": 18,
+            "name": "Menge-Stähle, Elisabeth",
+            "profession": "Kauffrau in der Grundstücks- und Wohnungswirtschaft",
+            "birth_year": 1982,
+            "birthplace": "Sömmerda",
+            "residence": "Stadtroda",
+            "lat": "50.8582666",
+            "lon": "11.7263639"
+        },
+        {
+            "position": 19,
+            "name": "Laudenbach, Dieter",
+            "profession": "Selbstständiger Gastronom",
+            "birth_year": 1957,
+            "birthplace": "Dermbach/Rhön",
+            "residence": "Gera",
+            "lat": "50.8765537",
+            "lon": "12.0832666"
+        },
+        {
+            "position": 20,
+            "name": "Häußler, Denis",
+            "profession": "Softwareentwickler",
+            "birth_year": 1974,
+            "birthplace": "Saalfeld/Saale",
+            "residence": "Saalfeld/Saale",
+            "lat": "50.6479143",
+            "lon": "11.3610041"
+        },
+        {
+            "position": 21,
+            "name": "Rottstedt, Vivien Denise",
+            "profession": "Jurist",
+            "birth_year": 1993,
+            "birthplace": "Erfurt",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364"
+        },
+        {
+            "position": 22,
+            "name": "Drößler, Christopher",
+            "profession": "Polizeibeamter",
+            "birth_year": 1995,
+            "birthplace": "Leinefelde",
+            "residence": "Uder OT Steinheuterode"
+        },
+        {
+            "position": 23,
+            "name": "Beutler, Tim Egon",
+            "profession": "Historiker",
+            "birth_year": 1982,
+            "birthplace": "Sömmerda",
+            "residence": "Kahla",
+            "lat": "50.8025663",
+            "lon": "11.5877025"
+        },
+        {
+            "position": 24,
+            "name": "Gröger, Thomas",
+            "profession": "NC-Anwendungsfachmann",
+            "birth_year": 1976,
+            "birthplace": "Mühlhausen",
+            "residence": "Unstrut-Hainich-Kreis",
+            "lat": "51.18772045",
+            "lon": "10.574479592611794"
+        },
+        {
+            "position": 25,
+            "name": "Trommer, Thomas",
+            "profession": "Fachhandwerker für Instandhaltung ÖPNV",
+            "birth_year": 1969,
+            "birthplace": "Weida",
+            "residence": "Weida",
+            "lat": "50.7581426",
+            "lon": "12.0470063"
+        },
+        {
+            "position": 26,
+            "name": "Linke, Johannes",
+            "profession": "Diplom-Verwaltungswirt/Wahlkreismitarbeiter",
+            "birth_year": 1995,
+            "birthplace": "Pößneck",
+            "residence": "Moxa",
+            "lat": "50.6412361",
+            "lon": "11.6298536"
+        },
+        {
+            "position": 27,
+            "name": "Erfurth, Marek",
+            "profession": "MA in Sicherheitsdienst, Bereich Geld- und Werttransport",
+            "birth_year": 1978,
+            "birthplace": "Erfurt",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364"
+        },
+        {
+            "position": 28,
+            "name": "Steinbrück, Stephan",
+            "profession": "Zentralheizungs- und Lüftungsbauer",
+            "birth_year": 1975,
+            "birthplace": "Gotha",
+            "residence": "Gotha",
+            "lat": "50.9494849",
+            "lon": "10.7014435"
+        },
+        {
+            "position": 35,
+            "name": "Hartung-Schettler, Andreas",
+            "profession": "Dipl.Kfm.",
+            "birth_year": 1975,
+            "birthplace": "Sondershausen",
+            "residence": "Sondershausen",
+            "lat": "51.3666041",
+            "lon": "10.8668419",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 36,
+            "name": "Schwerdt, Jürgen",
+            "profession": "Selbstständig",
+            "birth_year": 1964,
+            "birthplace": "Mühlhausen",
+            "residence": "Dingelstädt",
+            "lat": "51.312112600000006",
+            "lon": "10.311077257458898",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 37,
+            "name": "Cebulla, Marcus",
+            "profession": "Konstruktionsmechaniker",
+            "birth_year": 1987,
+            "birthplace": "Sömmerda",
+            "residence": "Kleinneuhausen",
+            "lat": "51.1525062",
+            "lon": "11.2860125",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 38,
+            "name": "Claus, Alexander",
+            "profession": "Wissenschaftlicher Mitarbeiter/Referent",
+            "birth_year": 1995,
+            "birthplace": "Chemnitz",
+            "residence": "Erfurt",
+            "lat": "50.9777974",
+            "lon": "11.0287364",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 39,
+            "name": "Klimpel, Markus",
+            "profession": "Hotelfachmann",
+            "birth_year": 1986,
+            "birthplace": "Ilmenau",
+            "residence": "Am Stadt",
+            "lat": "42.6756698",
+            "lon": "23.2896486",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 40,
+            "name": "Pflug, Reiko",
+            "profession": "Koch",
+            "birth_year": 1974,
+            "birthplace": "Bad Saarow-Pieskow",
+            "residence": "Gera",
+            "lat": "50.8765537",
+            "lon": "12.0832666",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 41,
+            "name": "Göring-Kube, Antje",
+            "profession": "Industriekauffrau",
+            "birth_year": 1967,
+            "birthplace": "Suhl",
+            "residence": "Altenburg",
+            "lat": "50.9852411",
+            "lon": "12.4340988",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 42,
+            "name": "Krell, Uwe",
+            "profession": "Unternehmer Bau- und Immobilienwirtschaft",
+            "birth_year": 1964,
+            "birthplace": "Suhl",
+            "residence": "Bad Salzungen",
+            "lat": "50.812318",
+            "lon": "10.2320784",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 43,
+            "name": "Strube, René",
+            "profession": "Polizeibeamter",
+            "birth_year": 1971,
+            "birthplace": "Bleicherode",
+            "residence": "Niedergebra",
+            "lat": "51.4216209",
+            "lon": "10.5991659",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 44,
+            "name": "Heinz, Melanie",
+            "profession": "Steuerfachangestellte",
+            "birth_year": 1981,
+            "birthplace": "Eisenach",
+            "residence": "Krauthausen",
+            "lat": "51.0157933",
+            "lon": "10.2665518",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ]
+}
