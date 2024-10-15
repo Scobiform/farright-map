@@ -1,0 +1,56 @@
+{  
+    "AfD": [
+        {
+            "position": 1,
+            "type": "federal",
+            "name": "Alice Weidel",
+            "profession": "Diplom Volkswirtin",
+            "birth_year": 1979,
+            "birthplace": "Gütersloh",
+            "residence": "Wahlkreis 293: Bodensee",
+            "electoral_district": 293,
+            "lat": "51.9401717",
+            "lon": "13.6206076",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 2,
+            "type": "federal",
+            "name": "Markus Frohnmaier",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "",
+            "residence": "",
+            "electoral_district": 0,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "https://www.markusfrohnmaier.de/impressum/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ]
+}
