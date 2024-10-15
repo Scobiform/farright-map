@@ -30,7 +30,7 @@
             "position": 2,
             "type": "federal",
             "name": "Markus Frohnmaier",
-            "profession": "",
+            "profession": "Pressesprecher",
             "birth_year": 1991,
             "birthplace": "Craiova, Rumänien",
             "residence": "Wahlkreis 260: Böblingen",
@@ -55,6 +55,344 @@
         {
             "position": 3,
             "type": "federal",
+            "name": "Martin Hess",
+            "profession": "Polizist",
+            "birth_year": 1971,
+            "birthplace": "Hechingen",
+            "residence": "Wahlkreis 265: Ludwigsburg",
+            "electoral_district": 265,
+            "lat": "48.897982",
+            "lon": "9.191502",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/MartinHessMdB/",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "https://twitter.com/Martin_Hess_MdB",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 4,
+            "type": "federal",
+            "name": "Marc Bernhard",
+            "profession": "Jurist",
+            "birth_year": 1972,
+            "birthplace": "Karlsruhe",
+            "residence": "Wahlkreis 271: Karlsruhe Stadt",
+            "electoral_district": 271,
+            "lat": "49.0068901",
+            "lon": "8.4036527",
+            "mail": "",
+            "mobile": "",
+            "website": "https://www.marcbernhard.de",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 5,
+            "type": "federal",
+            "name": "Ruben Rupp",
+            "profession": "Wissenschaftlicher Referent",
+            "birth_year": 1990,
+            "birthplace": "Mutlangen",
+            "residence": " Wahlkreis 269: Backnang – Schwäbisch Gmünd",
+            "electoral_district": 269,
+            "lat": "48.88790724590136",
+            "lon": "9.871688008759843",
+            "mail": "",
+            "mobile": "",
+            "website": "https://ruben-rupp.de/",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ruben_Rupp",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "https://www.instagram.com/rubenruppecht/?hl=de",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 6,
+            "type": "federal",
+            "name": "Hans-Jürgen Goßner",
+            "profession": "Industriemeister (Elektronik)",
+            "birth_year": 1970,
+            "birthplace": "Göppingen",
+            "residence": "Wahlkreis 263: Göppingen ",
+            "electoral_district": 263,
+            "lat": "48.701851749167766",
+            "lon": "9.653328723315441",
+            "mail": "",
+            "mobile": "",
+            "website": "https://neu.gossner-im-landtag.de/",
+            "wikipedia": "https://de.wikipedia.org/wiki/Hans-J%C3%BCrgen_Go%C3%9Fner",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/AfDWahlkreisGoeppingen/",
+                    "instagram": "https://www.instagram.com/hansjuergen_gossner/?hl=de",
+                    "tiktok": "",
+                    "x.com": "https://x.com/hjgossner_mdl?lang=de",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 7,
+            "type": "federal",
+            "name": "Jürgen Koegel",
+            "profession": "Unternehmensberater",
+            "birth_year": 1977,
+            "birthplace": "Adelshofen",
+            "residence": "Wahlkreis 267: Heilbronn, Eppingen",
+            "electoral_district": 267,
+            "lat": "49.16544016453415",
+            "lon": "8.898700675804315",
+            "mail": "jkoegel.mba@t-online.de",
+            "mobile": "+49 151 14839170",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 8,
+            "type": "federal",
+            "name": "Diana Zimmer",
+            "profession": "Finanzassistentin",
+            "birth_year": 2000,
+            "birthplace": "Pforzheim",
+            "residence": "Wahlkreis 279: Pforzheim/Enzkreis",
+            "electoral_district": 279,
+            "lat": "48.89029741391396",
+            "lon": "8.70046992691044",
+            "mail": "info@diana-zimmer.de",
+            "mobile": "+4972315866680",
+            "website": "https://diana-zimmer.de/impressum/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/zimmerdiana.afd",
+                    "instagram": "https://www.instagram.com/diana_zimmer98/?hl=de",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "https://www.youtube.com/channel/UCqtpDIJNcZLGb_s9fX4yvzg"
+                }
+            ]
+        },
+        {
+            "position": 9,
+            "type": "federal",
+            "name": "Achim Köhler",
+            "profession": "Angestellter im öffentl. Dienst",
+            "birth_year": 1964,
+            "birthplace": "Walldorf",
+            "residence": "Wahlkreis 277: Rhein-Neckar, St. Leon-Rot",
+            "electoral_district": 262,
+            "lat": "49.26629399561856",
+            "lon": "8.601653641595668",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }, 
+        {
+            "position": 10,
+            "type": "federal",
+            "name": "Lars Haise",
+            "profession": "Kaufmännischer Angestellter",
+            "birth_year": 1989,
+            "birthplace": "Schondorf",
+            "residence": "Wahlkreis 264: Waiblingen, Olgastraße 4 73614 Schorndorf",
+            "electoral_district": 264,
+            "lat": "48.80892686557181,",
+            "lon": "9.526098411555136",  
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/LarsHaiseAfD/",
+                    "instagram": "https://www.instagram.com/larshaise.afd/",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 11,
+            "type": "federal",
+            "name": "Alexander Arpaschi",
+            "profession": "selbstständiger Immobilienunternehmer",
+            "birth_year": 1970,
+            "birthplace": "Karlsruhe",
+            "residence": "Wahlkreis 272: Karlsruhe-Land",
+            "electoral_district": 272,
+            "lat": "49.008344544818584",
+            "lon": "8.421661557766207",
+            "mail": "kontakt@arpaschi.de",
+            "mobile": "",
+            "website": "https://arpaschi.de/footer/impressum",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/alexander.arpaschi.seite/?locale=de_DE",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 12,
+            "type": "federal",
+            "name": "Dr. Malte Kaufmann",
+            "profession": "Volkswirt",
+            "birth_year": 1976,
+            "birthplace": "Mannheim",
+            "residence": "Wahlkreis 274 Heidelberg",
+            "electoral_district": 274,
+            "lat": "49.39767379192597",
+            "lon": "8.673623636290529",
+            "mail": "",
+            "mobile": "",
+            "website": "http://www.malte-kaufmann.de/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/malte.kaufmann",
+                    "instagram": "https://www.instagram.com/malte.kaufmann",
+                    "tiktok": "https://www.tiktok.com/@malte.kaufmann",
+                    "x.com": "https://twitter.com/MalteKaufmann",
+                    "telegram": "https://t.me/maltekaufmann",
+                    "youtube": "https://www.youtube.com/user/maltekaufmann"
+                }
+            ]
+        },
+        {
+            "position": 13,
+            "type": "federal",
+            "name": "Joachim Bloch",
+            "profession": "Rechtsanwalt",
+            "birth_year": 1963,
+            "birthplace": "Tuttlingen",
+            "residence": "Wahlkreis 285: Rottweil – Tuttlingen",
+            "electoral_district": 285,
+            "lat": "447.95965431801262",
+            "lon": "8.768855068369446",
+            "mail": "",
+            "mobile": "+4915237910569",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 14,
+            "type": "federal",
+            "name": "Dr. Michael Blos",
+            "profession": "Geowissenschaftler",
+            "birth_year": 1962,
+            "birthplace": "Ettlingen",
+            "residence": "Wahlkreis 272: Karlsruhe-Land",
+            "electoral_district": 279,
+            "lat": "48.94382093347005",
+            "lon": "8.401936969120873",
+            "mail": "michael.blos@afd-bw.de",
+            "mobile": "+4917620019388",
+            "website": "https://michaelblos.de",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/drblosmichael/?locale=de_DE",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 15,
+            "type": "federal",
+            "name": "Heinrich Koch",
+            "profession": "Ingenieur",
+            "birth_year": 1962,
+            "birthplace": "",
+            "residence": "Wahlkreis 287: Mannheim",
+            "electoral_district": 287,
+            "lat": "49.435299401374",
+            "lon": "8.524595888725216",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 16,
+            "type": "federal",
             "name": "Johann Martel",
             "profession": "Technischer Fachwirt (KfZ-Mechaniker)",
             "birth_year": 1979,
@@ -66,6 +404,241 @@
             "mail": "",
             "mobile": "+491607550879",
             "website": "https://johann-martel.de",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 17,
+            "type": "federal",
+            "name": "Martina Kempf",
+            "profession": "Juristin",
+            "birth_year": 1964,
+            "birthplace": "Breisach am Rhein",
+            "residence": "Wahlkreis 282: Lörrach – Müllheim, Breisach am Rhein",
+            "electoral_district": 282,
+            "lat": "48.033402854750435",
+            "lon": "7.58445703741922",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 18,
+            "type": "federal",
+            "name": "Sieghard Knodel",
+            "profession": "Landmaschinenmechanikermeister, Sachverständiger, Betriebswirt (HWK)",
+            "birth_year": 1967,
+            "birthplace": "Trochtelfingen",
+            "residence": "Wahlkreis 289: Reutlingen, 72818 Trochtelfingen",
+            "electoral_district": 280,
+            "lat": "48.28989259678499",
+            "lon": "9.217139754860266",
+            "mail": "info@sknodel.de",
+            "mobile": "",
+            "website": "https://www.sknodel.de/uber-uns/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 19,
+            "type": "federal",
+            "name": "Dr. Paul Schmidt",
+            "profession": "Betriebsphysiker in der Energieerzeugung",
+            "birth_year": 1965,
+            "birthplace": "Karlsruhe",
+            "residence": "Wahlkreis 271: Karlsruhe-Stadt",
+            "electoral_district": 290,
+            "lat": "49.008100932849224",
+            "lon": "8.403154213359407",
+            "mail": "",
+            "mobile": "",
+            "website": "https://schmidt-afd.de/impressum/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 20,
+            "type": "federal",
+            "name": "Sandro Scheer",
+            "profession": "Leiter Abgeordnetenbüro",
+            "birth_year": 1978,
+            "birthplace": "Ebersbach an der Fils",
+            "residence": "Wahlkreis 263: Göppingen, Ebersbach an der Fils",
+            "electoral_district": 263,
+            "lat": "48.70561900073023",
+            "lon": "9.507454087923549",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/scheer.sandro.3/",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 21,
+            "type": "federal",
+            "name": "Benjamin Götz",
+            "profession": "",
+            "birth_year": 1998,
+            "birthplace": "",
+            "residence": "Wahlkreis 268: Schwäbisch Hall – Hohenlohe",
+            "electoral_district": 268,
+            "lat": "49.113960027886705",
+            "lon": "9.733343135460164",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/benjamin.gotz.98",
+                    "instagram": "https://www.instagram.com/benjamin.goetz.afd/",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 22,
+            "type": "federal",
+            "name": "Dieter Glatting",
+            "profession": "Physiker, Ingenieur Verfahrenstechnik, Berechnung, Komponenintegrität, Alterungsmanagement, Projektmanagement",
+            "birth_year": 1960,
+            "birthplace": "Leimen",
+            "residence": "Wahlkreis 266: Neckar-Zaber, Lauffen am Neckar",
+            "electoral_district": 266,
+            "lat": "49.06809532250705",
+            "lon": "9.140361583897358",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": "",
+                    "linkedin": "https://de.linkedin.com/in/dieter-glatting-15034b236"
+                }
+            ]
+        },
+        {
+            "position": 23,
+            "type": "federal",
+            "name": "Christine Schäfer",
+            "profession": "Bankkauffrau",
+            "birth_year": 1964,
+            "birthplace": "",
+            "residence": "Wahlkreis 260: Böblingen ",
+            "electoral_district": 260,
+            "lat": "48.62347794802083",
+            "lon": "8.888896132471102",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 24,
+            "type": "federal",
+            "name": "Christian Köhler",
+            "profession": "",
+            "birth_year": 1975,
+            "birthplace": "",
+            "residence": "Wahlkreis 258: Stuttgart I",
+            "electoral_district": 297,
+            "lat": "48.77813990491474",
+            "lon": "9.181586756757433",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 25,
+            "type": "federal",
+            "name": "Sebastian van Ryt",
+            "profession": "selbstständiger Fliesenleger",
+            "birth_year": 1987,
+            "birthplace": "Villingen-Schwenningen",
+            "residence": "Wahlkreis 286: Schwarzwald-Baar",
+            "electoral_district": 286,
+            "lat": "48.05616705505451",
+            "lon": "8.512673530937574",
+            "mail": "",
+            "mobile": "+491723895651",
+            "website": "",
             "wikipedia": "",
             "social_media": [
                 {

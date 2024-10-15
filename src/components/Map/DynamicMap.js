@@ -13,6 +13,10 @@ import sachsenGeoData from '@data/saxony/geo.json';
 // Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0
 // https://www.govdata.de/dl-de/by-2-0
 import thuringiaGeoData from '@data/thuringia/geo.json';
+// Statistisches Landesamt Baden-Württemberg, Stuttgart 2020
+// Wahlkreiskarte für die Landtagswahl 2021 in Baden-Württemberg
+// Kartengrundlage: LGL (www.lgl-bw.de), Stadt Freiburg, Stadt Karlsruhe, Stadt Mannheim, Landeshauptstadt Stuttgart
+import badenWuerttembergGeoData from '@data/baden-wuerttemberg/geo.json';
 
 const { MapContainer, 
   TileLayer, 
@@ -98,6 +102,16 @@ const DynamicMap = ({ polygons = [],
 
       {/* Render Thüringen GeoJSON */}
       <GeoJSON data={thuringiaGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+      />
+
+      {/* Render Baden-Württemberg GeoJSON */}
+      <GeoJSON data={badenWuerttembergGeoData}
         style={() => ({
           color: 'green',
           weight: 1,
