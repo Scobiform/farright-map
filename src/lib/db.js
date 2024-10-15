@@ -175,9 +175,15 @@ const insertOrganizations = (organizations) => {
 // Insert a candidate
 const insertCandidate = (candidate, organizationId) => {
     try {
-
-        // Fallback for undefined or missing 'type' property
-        let personType = candidate.type ? (candidate.type === "kreis" ? "district" : "state") : "state";
+        
+        // Person type is based on the candidate type
+        let personType = candidate.type 
+        ? (candidate.type === "kreis" 
+            ? "district" 
+            : candidate.type === "federal" 
+                ? "federal" 
+                : "state") 
+        : "state";
         
         console.log("Person type:", personType);
 
@@ -303,6 +309,13 @@ const main = () => {
     // Load the rest of the data
     let data = loadData(dataPath);
 
+    // Add federal data
+    const federalDataPath = path.resolve('src/data/bund2025/candidates.json');
+    const federalData = loadData(federalDataPath);
+    // Merge federal data with the rest of the data
+    if (federalData && data) {
+        data.AfD = data.AfD.concat(federalData.AfD);
+    }
     // Add Saxony data
     const saxonyDataPath = path.resolve('src/data/saxony/sachsen_landtag2024_afd_direktbewerberin.json');
     const saxonyData = loadData(saxonyDataPath);
