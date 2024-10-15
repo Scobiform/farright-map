@@ -31,15 +31,41 @@
             "type": "federal",
             "name": "Markus Frohnmaier",
             "profession": "",
-            "birth_year": 0,
-            "birthplace": "",
-            "residence": "",
-            "electoral_district": 0,
-            "lat": "",
-            "lon": "",
+            "birth_year": 1991,
+            "birthplace": "Craiova, Rumänien",
+            "residence": "Wahlkreis 260: Böblingen",
+            "electoral_district": 260,
+            "lat": "48.68434357855371",
+            "lon": "9.00632436393006",
             "mail": "",
             "mobile": "",
             "website": "https://www.markusfrohnmaier.de/impressum/",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 3,
+            "type": "federal",
+            "name": "Johann Martel",
+            "profession": "Technischer Fachwirt (KfZ-Mechaniker)",
+            "birth_year": 1979,
+            "birthplace": "Bishkek, Kyrgyzstan",
+            "residence": "Wahlkreis 270: Neckar-Odenwald-Kreis, 74731 Walldürn-Altheim",
+            "electoral_district": 270,
+            "lat": "49.52304610040126",
+            "lon": "9.447830305648278",
+            "mail": "",
+            "mobile": "+491607550879",
+            "website": "https://johann-martel.de",
             "wikipedia": "",
             "social_media": [
                 {
