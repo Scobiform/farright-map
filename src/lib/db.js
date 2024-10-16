@@ -323,13 +323,19 @@ const main = () => {
     if (thuringiaData && data) {
         data.AfD = data.AfD.concat(thuringiaData.AfD);
     }
-
     // Add Thuringia landtag list data
     const thuringiaListDataPath = path.resolve('src/data/thuringia/candidates_liste.json');
     const thuringiaListData = loadData(thuringiaListDataPath);
     // Merge Thuringia list data with the rest of the data
     if (thuringiaListData && data) {
         data.AfD = data.AfD.concat(thuringiaListData.AfD);
+    }
+    // Add Lower Saxony data
+    const lowerSaxonyDataPath = path.resolve('src/data/lower-saxony/candidates.json');
+    const lowerSaxonyData = loadData(lowerSaxonyDataPath);
+    // Merge Lower Saxony data with the rest of the data
+    if (lowerSaxonyData && data) {
+        data.AfD = data.AfD.concat(lowerSaxonyData.AfD);
     }
 
     // Array to hold all candidates

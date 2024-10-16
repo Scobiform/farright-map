@@ -1,0 +1,579 @@
+{
+    "AfD": [
+        {
+            "position": 1,
+            "name": "Stefan Marzischewski-Drewes",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Gifhorn",
+            "residence": "Gifhorn",
+            "electoral_district": 0,
+            "lat": "52.57806125",
+            "lon": "10.661344801415442",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 2,
+            "name": "Ansgar Schledde",
+            "profession": "Bauunternehmer",
+            "birth_year": 1977,
+            "birthplace": "Wickede (Ruhr)",
+            "residence": "Schüttorf",
+            "electoral_district": 80,
+            "lat": "52.321619",
+            "lon": "7.2220864",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 3,
+            "name": "Jens-Christoph Brockmann",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Landkreis Celle",
+            "residence": "Landkreis Celle",
+            "electoral_district": 0,
+            "lat": "52.7124619",
+            "lon": "10.06221225325545",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 4,
+            "name": "Klaus Wichmann",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Verden",
+            "residence": "Verden",
+            "electoral_district": 0,
+            "lat": "52.9759701",
+            "lon": "9.18083913235294",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 5,
+            "name": "Peer Lilienthal",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Barsinghausen",
+            "residence": "Barsinghausen",
+            "electoral_district": 0,
+            "lat": "52.30223",
+            "lon": "9.4623741",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 6,
+            "name": "Delia Klages",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Gemeinde Emmerthal",
+            "residence": "Gemeinde Emmerthal",
+            "electoral_district": 0,
+            "lat": "52.044966599999995",
+            "lon": "9.388692994626568",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 7,
+            "name": "Stephan Bothe",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Lüneburg",
+            "residence": "Lüneburg",
+            "electoral_district": 0,
+            "lat": "53.248706",
+            "lon": "10.407855",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 8,
+            "name": "Alfred Dannenberg",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Heidekreis",
+            "residence": "Heidekreis",
+            "electoral_district": 0,
+            "lat": "52.8217435",
+            "lon": "9.6601426",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 9,
+            "name": "Harm Rykena",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Gemeinde Großenkneten",
+            "residence": "Gemeinde Großenkneten",
+            "electoral_district": 0,
+            "lat": "52.9439925",
+            "lon": "8.241514903064651",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 10,
+            "name": "Marcel Queckemeyer",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Bippen",
+            "residence": "Bippen",
+            "electoral_district": 0,
+            "lat": "52.5820933",
+            "lon": "7.7398896",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 11,
+            "name": "Dr. Dr. Jozef Rakicky",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Helmstedt",
+            "residence": "Helmstedt",
+            "electoral_district": 0,
+            "lat": "52.2277037",
+            "lon": "11.0104702",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 12,
+            "name": "Thorsten Paul Moriße",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Wilhelmshaven",
+            "residence": "Wilhelmshaven",
+            "electoral_district": 0,
+            "lat": "53.5278793",
+            "lon": "8.106301",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 13,
+            "name": "Holger Kühnlenz",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Unterems",
+            "residence": "Unterems",
+            "electoral_district": 0,
+            "lat": "52.98220965",
+            "lon": "7.460644785962986",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 14,
+            "name": "Omid Najafi",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Hannover",
+            "residence": "Hannover",
+            "electoral_district": 0,
+            "lat": "52.3744779",
+            "lon": "9.7385532",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 15,
+            "name": "Jessica Miriam Schülke",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Wunstorf",
+            "residence": "Wunstorf",
+            "electoral_district": 0,
+            "lat": "52.4257979",
+            "lon": "9.4294425",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 16,
+            "name": "Vanessa Behrendt",
+            "profession": "Medizinische Fachangestellte, Ernährungsberaterin für Kinder,Hundetherapeutin ",
+            "birth_year": 1984,
+            "birthplace": "Helmstedt",
+            "residence": "Helmstedt",
+            "electoral_district": 8,
+            "lat": "52.2277037",
+            "lon": "11.0104702",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "https://de.wikipedia.org/wiki/Vanessa_Behrendt",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 17,
+            "name": "Dennis Jahn",
+            "profession": "",
+            "birth_year": 1992,
+            "birthplace": "",
+            "residence": "Celle",
+            "electoral_district": 45,
+            "lat": "52.624056",
+            "lon": "10.081052",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "https://de.wikipedia.org/wiki/Dennis_Jahn",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 18,
+            "name": "Jürgen Pastewsky",
+            "profession": "Diplom-Kaufmann",
+            "birth_year": 1961,
+            "birthplace": "Salzgitter",
+            "residence": "Wolfenbüttel-Süd / Salzgitter",
+            "electoral_district": 10,
+            "lat": "52.14011647614963",
+            "lon": "10.379624498121322",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "https://de.wikipedia.org/wiki/J%C3%BCrgen_Pastewsky",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 19,
+            "name": "Dr. Ingo Kerzel",
+            "profession": "Veterinär",
+            "birth_year": 1965,
+            "birthplace": "Bielefeld",
+            "residence": "Freren",
+            "electoral_district": 82,
+            "lat": "52.4858972",
+            "lon": "7.5459254",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 20,
+            "name": "Rainer Sekula",
+            "profession": "Tischler",
+            "birth_year": 1947,
+            "birthplace": "Buchholz",
+            "residence": "Buchholz in der Nordheide",
+            "electoral_district": 52,
+            "lat": "53.33055615753491",
+            "lon": "9.870458220202705",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 21,
+            "name": "David Schmalstieg",
+            "profession": "",
+            "birth_year": 0,
+            "birthplace": "Hannover",
+            "residence": "Hannover-Linden",
+            "electoral_district": 0,
+            "lat": "52.3533451",
+            "lon": "9.7173774",
+            "mail": "david.schmalstieg@afd-niedersachsen.de",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "https://www.facebook.com/david.schmalstieg.afd/",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 22,
+            "name": "Alfons Muhle",
+            "profession": "Metallbauer, Kfz Schlosser, San-Soldat",
+            "birth_year": 1957,
+            "birthplace": "Diepholz",
+            "residence": "Diepholz",
+            "electoral_district": 41,
+            "lat": "52.7478987",
+            "lon": "8.761526143598829",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        },
+        {
+            "position": 23,
+            "name": "Rene Kühn",
+            "profession": "Bestatter",
+            "birth_year": 1991,
+            "birthplace": "",
+            "residence": "Neustadt am Rübenberg",
+            "electoral_district": 28,
+            "lat": "",
+            "lon": "",
+            "mail": "",
+            "mobile": "",
+            "website": "",
+            "wikipedia": "",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "instagram": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
+        }
+    ]
+}
