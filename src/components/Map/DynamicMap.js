@@ -3,7 +3,12 @@ import Leaflet from 'leaflet';
 import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.scss';
+// © Der Landeswahlleiter Berlin/Amt für Statistik Berlin-Brandenburg
+// Wahlkreise zur Landtagswahl 2024 in Brandenburg
 import geodata from '@data/geo.json';
+// © Der Landeswahlleiter Berlin/Amt für Statistik Berlin-Brandenburg
+// Wahlkreise zur Wahl des Abgeordnetenhauses von Berlin 2023
+import berlinGeoData from '@data/berlin/geo.json';
 // Copyright: Jörg Reichert
 // MIT License
 // https://github.com/CodeforLeipzig/wahldaten/
@@ -17,9 +22,8 @@ import thuringiaGeoData from '@data/thuringia/geo.json';
 // Wahlkreiskarte für die Landtagswahl 2021 in Baden-Württemberg
 // Kartengrundlage: LGL (www.lgl-bw.de), Stadt Freiburg, Stadt Karlsruhe, Stadt Mannheim, Landeshauptstadt Stuttgart
 import badenWuerttembergGeoData from '@data/baden-wuerttemberg/geo.json';
-// © Der Landeswahlleiter Berlin/Amt für Statistik Berlin-Brandenburg
-import berlinGeoData from '@data/berlin/geo.json';
 
+// Import the required components from React-Leaflet
 const { MapContainer, 
   TileLayer, 
   LayersControl, 
@@ -29,6 +33,7 @@ const { MapContainer,
   ToolTip, 
   GeoJSON } = ReactLeaflet;
 
+// Custom Map component
 const DynamicMap = ({ polygons = [], 
   ToolTip = "", 
   children, 

@@ -206,8 +206,6 @@ const insertCandidate = (candidate, organizationId) => {
     }
 };
 
-
-
 // Insert location data for candidates
 const insertLocation = (candidate, organizationId, personId) => {
     const latitude = parseFloat(candidate.lat);
@@ -272,19 +270,6 @@ const insertCandidates = (organizations) => {
         }
     });
 };
-
-// Change person.type from district_candidate to district and state_candidate to state
-const changePersonType = () => {
-    try {
-        db.exec(`
-            UPDATE person SET type = 'district' WHERE type = 'district_candidate';
-            UPDATE person SET type = 'state' WHERE type = 'state_candidate';
-        `);
-        console.log("Person types updated successfully.");
-    } catch (error) {
-        console.error("Error updating person types:", error);
-    }
-}
 
 // Main execution
 const main = () => {
