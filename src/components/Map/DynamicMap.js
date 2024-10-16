@@ -91,6 +91,11 @@ const DynamicMap = ({ polygons = [],
           fillColor: 'green',
           fillOpacity: 0.1
         })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
+          }
+        }}
       />
       {/* Render Sachsen GeoJSON */}
       <GeoJSON data={sachsenGeoData}
@@ -100,6 +105,11 @@ const DynamicMap = ({ polygons = [],
           fillColor: 'green',
           fillOpacity: 0.1
         })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.WahlkreisName) {
+            layer.bindPopup(feature.properties.WahlkreisName);
+          }
+        }}
       />
 
       {/* Render Thüringen GeoJSON */}
@@ -110,6 +120,11 @@ const DynamicMap = ({ polygons = [],
           fillColor: 'green',
           fillOpacity: 0.1
         })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.WK) {
+            layer.bindPopup(feature.properties.WK);
+          }
+        }}
       />
 
       {/* Render Baden-Württemberg GeoJSON */}
@@ -120,16 +135,27 @@ const DynamicMap = ({ polygons = [],
           fillColor: 'green',
           fillOpacity: 0.1
         })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties['WK Name']) {
+            layer.bindPopup(feature.properties['WK Name']);
+          }
+        }}
       />
 
       {/* Render Berlin GeoJSON */}
-      <GeoJSON data={berlinGeoData}
+      <GeoJSON 
+        data={berlinGeoData} 
         style={() => ({
           color: 'green',
           weight: 1,
           fillColor: 'green',
           fillOpacity: 0.1
         })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
+          }
+        }}
       />
 
     </MapContainer>
