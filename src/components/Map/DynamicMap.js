@@ -22,6 +22,10 @@ import thuringiaGeoData from '@data/thuringia/geo.json';
 // Wahlkreiskarte für die Landtagswahl 2021 in Baden-Württemberg
 // Kartengrundlage: LGL (www.lgl-bw.de), Stadt Freiburg, Stadt Karlsruhe, Stadt Mannheim, Landeshauptstadt Stuttgart
 import badenWuerttembergGeoData from '@data/baden-wuerttemberg/geo.json';
+// © Landesamt für Statistik Niedersachsen
+// Wahlkreiseinteilung zur Landtagswahl 2022 in Niedersachsen
+// https://www.statistik.niedersachsen.de/startseite/
+import niedersachsenGeoData from '@data/lower-saxony/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -159,6 +163,21 @@ const DynamicMap = ({ polygons = [],
         onEachFeature={(feature, layer) => {
           if (feature.properties && feature.properties.name) {
             layer.bindPopup(feature.properties.name);
+          }
+        }}
+      />
+
+      {/* Render Niedersachsen GeoJSON */}
+      <GeoJSON data={niedersachsenGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.WKName) {
+            layer.bindPopup(feature.properties.WKName);
           }
         }}
       />
