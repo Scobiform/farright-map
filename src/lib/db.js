@@ -310,11 +310,19 @@ const main = () => {
     let data = loadData(dataPath);
 
     // Add federal data
-    const federalDataPath = path.resolve('src/data/bund2025/candidates.json');
+    // Add baden-wuerttemberg data
+    const federalDataPath = path.resolve('src/data/bund2025/candidates_bawue.json');
     const federalData = loadData(federalDataPath);
     // Merge federal data with the rest of the data
     if (federalData && data) {
         data.AfD = data.AfD.concat(federalData.AfD);
+    }
+    // Add Berlin data
+    const berlinDataPath = path.resolve('src/data/bund2025/candidates_berlin.json');
+    const berlinData = loadData(berlinDataPath);
+    // Merge Berlin data with the rest of the data
+    if (berlinData && data) {
+        data.AfD = data.AfD.concat(berlinData.AfD);
     }
     // Add Saxony data
     const saxonyDataPath = path.resolve('src/data/saxony/sachsen_landtag2024_afd_direktbewerberin.json');

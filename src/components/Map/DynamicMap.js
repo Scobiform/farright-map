@@ -17,6 +17,8 @@ import thuringiaGeoData from '@data/thuringia/geo.json';
 // Wahlkreiskarte für die Landtagswahl 2021 in Baden-Württemberg
 // Kartengrundlage: LGL (www.lgl-bw.de), Stadt Freiburg, Stadt Karlsruhe, Stadt Mannheim, Landeshauptstadt Stuttgart
 import badenWuerttembergGeoData from '@data/baden-wuerttemberg/geo.json';
+// © Der Landeswahlleiter Berlin/Amt für Statistik Berlin-Brandenburg
+import berlinGeoData from '@data/berlin/geo.json';
 
 const { MapContainer, 
   TileLayer, 
@@ -112,6 +114,16 @@ const DynamicMap = ({ polygons = [],
 
       {/* Render Baden-Württemberg GeoJSON */}
       <GeoJSON data={badenWuerttembergGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+      />
+
+      {/* Render Berlin GeoJSON */}
+      <GeoJSON data={berlinGeoData}
         style={() => ({
           color: 'green',
           weight: 1,
