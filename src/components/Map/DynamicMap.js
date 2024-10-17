@@ -105,7 +105,7 @@ const DynamicMap = ({ polygons = [],
 
       <LayersControl position="topright">
         {/* Add OpenStreetMap Layer */}
-        <LayersControl.BaseLayer name="OpenStreetMap">
+        <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
             url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
           />
@@ -132,7 +132,7 @@ const DynamicMap = ({ polygons = [],
           />
         </LayersControl.BaseLayer>
         {/* Add the World Terrain Base Layer */}
-        <LayersControl.BaseLayer checked name="Esri World Terrain">
+        <LayersControl.BaseLayer name="Esri World Terrain">
           <TileLayer
             url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}"
             attribution='&copy; Esri, USGS, NOAA'
