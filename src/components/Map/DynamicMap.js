@@ -42,6 +42,11 @@ import hamburgGeoData from '@data/hamburg/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2022 im Saarland
 // https://wahlergebnis.saarland.de
 import saarlandGeoData from '@data/saarland/geo.json';
+// © Statistisches Landesamt Bremen
+// Wahlkreiseinteilung zur Bürgerschaftswahl 2023 in Bremen
+// https://www.wahlen-bremen.de
+import bremenGeoData from '@data/bremen/bremen_geo.json';
+import bremerhavenGeoData from '@data/bremen/bremerhaven_geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -245,6 +250,36 @@ const DynamicMap = ({ polygons = [],
 
       {/* Render Saarland GeoJSON */}
       <GeoJSON data={saarlandGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
+          }
+        }}
+      />
+
+      {/* Render Bremen GeoJSON */}
+      <GeoJSON data={bremenGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
+          }
+        }}
+      />
+
+      {/* Render Bremerhaven GeoJSON */}#
+      <GeoJSON data={bremerhavenGeoData}
         style={() => ({
           color: 'green',
           weight: 1,
