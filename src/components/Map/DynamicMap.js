@@ -26,6 +26,10 @@ import badenWuerttembergGeoData from '@data/baden-wuerttemberg/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2022 in Niedersachsen
 // https://www.statistik.niedersachsen.de/startseite/
 import niedersachsenGeoData from '@data/lower-saxony/geo.json';
+//  Ministerium des Innern des Landes Nordrhein-Westfalen, IT.NRW, Düsseldorf
+// Wahlkreiseinteilung des Landes Nordrhein-Westfalen zur Landtagswahl am 15. Mai 2022.
+// https://www.it.nrw/
+import nrwGeoData from '@data/north-rhine-westphalia/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -178,6 +182,21 @@ const DynamicMap = ({ polygons = [],
         onEachFeature={(feature, layer) => {
           if (feature.properties && feature.properties.WKName) {
             layer.bindPopup(feature.properties.WKName);
+          }
+        }}
+      />
+
+      {/* Render Nordrhein-Westfalen GeoJSON */}
+      <GeoJSON data={nrwGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.Name) {
+            layer.bindPopup(feature.properties.Name);
           }
         }}
       />
