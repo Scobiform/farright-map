@@ -1,8 +1,13 @@
 import { useEffect } from 'react';
+import { useState } from 'react';
 import Leaflet from 'leaflet';
 import * as ReactLeaflet from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './Map.module.scss';
+// © Die Bundeswahlleiterin, Statistisches Bundesamt, Wiesbaden 2024,
+// Wahlkreiskarte für die Wahl zum 21. Deutschen Bundestag
+// Grundlage der Geoinformationen © Geobasis-DE / BKG 2024
+import bundestagGeoData from '@data/bund2025/geo.json';
 // © Der Landeswahlleiter Berlin/Amt für Statistik Berlin-Brandenburg
 // Wahlkreise zur Landtagswahl 2024 in Brandenburg
 import geodata from '@data/geo.json';
@@ -64,11 +69,17 @@ const DynamicMap = ({ polygons = [],
   children, 
   className, width = "100vw", height = "98vh", ...rest }) => {
   
+  const [selectedMap, setSelectedMap] = useState('bundestag'); // Default to Bundestagwahl data
+  
   let mapClassName = styles.map;
 
   if (className) {
     mapClassName = `${mapClassName} ${className}`;
   }
+
+  const handleSwitch = (event) => {
+    setSelectedMap(event.target.value);
+  };
 
   return (
     <MapContainer 
@@ -78,6 +89,17 @@ const DynamicMap = ({ polygons = [],
       ToolTip={ToolTip}
       {...rest}
     >
+      {/* Electoral view Dropdown */}
+      <div className={styles.electoralSwitch}>
+        <label>
+          <strong>Wahlkreise anzeigen: </strong>
+          <select onChange={handleSwitch} value={selectedMap}>
+            <option value="bundestag">Bundestagswahlkreise</option>
+            <option value="landtag">Landtagswahlkreise</option>
+          </select>
+        </label>
+      </div>
+
       <LayersControl position="topright">
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
@@ -105,195 +127,123 @@ const DynamicMap = ({ polygons = [],
         </LayersControl.BaseLayer>
       </LayersControl>
 
-      {/* Render Polygons */}
-      {polygons.map((polygonCoords, index) => (
-        <Polygon key={index} positions={polygonCoords} color="rgba(210,210,140,0.0)" />
-      ))}
-
       {/* Render additional children passed into the Map component */}
       {children(ReactLeaflet, Leaflet)}
-        
-      {/* Render Brandenburg GeoJSON */}
-      <GeoJSON data={geodata} 
-        style={() => ({ 
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-          }
-        }}
-      />
-      {/* Render Sachsen GeoJSON */}
-      <GeoJSON data={sachsenGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.WahlkreisName) {
-            layer.bindPopup(feature.properties.WahlkreisName);
-          }
-        }}
-      />
 
-      {/* Render Thüringen GeoJSON */}
-      <GeoJSON data={thuringiaGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.WK) {
-            layer.bindPopup(feature.properties.WK);
-          }
-        }}
-      />
+      {/* Conditional Rendering for Bundestagswahl and Landtagswahl */}
+      {selectedMap === 'bundestag' && (
+          <GeoJSON data={bundestagGeoData} 
+            style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+            onEachFeature={(feature, layer) => {
+              if (feature.properties && feature.properties.WKR_NAME) {
+                layer.bindPopup(feature.properties.WKR_NAME);
+              }
+            }}
+          />
+        )}
 
-      {/* Render Baden-Württemberg GeoJSON */}
-      <GeoJSON data={badenWuerttembergGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties['WK Name']) {
-            layer.bindPopup(feature.properties['WK Name']);
-          }
-        }}
-      />
-
-      {/* Render Berlin GeoJSON */}
-      <GeoJSON 
-        data={berlinGeoData} 
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-          }
-        }}
-      />
-
-      {/* Render Niedersachsen GeoJSON */}
-      <GeoJSON data={niedersachsenGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.WKName) {
-            layer.bindPopup(feature.properties.WKName);
-          }
-        }}
-      />
-
-      {/* Render Nordrhein-Westfalen GeoJSON */}
-      <GeoJSON data={nrwGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.Name) {
-            layer.bindPopup(feature.properties.Name);
-          }
-        }}
-      />
-    
-      {/* Render Bayern GeoJSON */}
-      <GeoJSON data={bavariaGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.SKR_NAME) {
-            layer.bindPopup(feature.properties.SKR_NAME);
-          }
-        }}
-      />
-    
-      {/* Render Hamburg GeoJSON */}
-      <GeoJSON data={hamburgGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.WK_Name) {
-            layer.bindPopup(feature.properties.WK_Name);
-          }
-        }}
-      />
-
-      {/* Render Saarland GeoJSON */}
-      <GeoJSON data={saarlandGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-          }
-        }}
-      />
-
-      {/* Render Bremen GeoJSON */}
-      <GeoJSON data={bremenGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-          }
-        }}
-      />
-
-      {/* Render Bremerhaven GeoJSON */}#
-      <GeoJSON data={bremerhavenGeoData}
-        style={() => ({
-          color: 'green',
-          weight: 1,
-          fillColor: 'green',
-          fillOpacity: 0.1
-        })}
-        onEachFeature={(feature, layer) => {
-          if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-          }
-        }}
-      />
-
-    </MapContainer>
+        {selectedMap === 'landtag' && (
+          <>
+            {/* Render all Landtagswahlkreise GeoJSONs */}
+            <GeoJSON data={geodata} 
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.name) {
+                  layer.bindPopup(feature.properties.name);
+                }
+              }}
+            />
+            <GeoJSON data={sachsenGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.WahlkreisName) {
+                  layer.bindPopup(feature.properties.WahlkreisName);
+                }
+              }}
+            />
+            <GeoJSON data={thuringiaGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.WK) {
+                  layer.bindPopup(feature.properties.WK);
+                }
+              }}
+            />
+            <GeoJSON data={badenWuerttembergGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties['WK Name']) {
+                  layer.bindPopup(feature.properties['WK Name']);
+                }
+              }}
+            />
+            <GeoJSON data={berlinGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.name) {
+                  layer.bindPopup(feature.properties.name);
+                }
+              }}
+            />
+            <GeoJSON data={niedersachsenGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.WKName) {
+                  layer.bindPopup(feature.properties.WKName);
+                }
+              }}
+            />
+            <GeoJSON data={nrwGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.Name) {
+                  layer.bindPopup(feature.properties.Name);
+                }
+              }}
+            />
+            <GeoJSON data={bavariaGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.SKR_NAME) {
+                  layer.bindPopup(feature.properties.SKR_NAME);
+                }
+              }}
+            />
+            <GeoJSON data={hamburgGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.WK_Name) {
+                  layer.bindPopup(feature.properties.WK_Name);
+                }
+              }}
+            />
+            <GeoJSON data={saarlandGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.name) {
+                  layer.bindPopup(feature.properties.name);
+                }
+              }}
+            />
+            <GeoJSON data={bremenGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.name) {
+                  layer.bindPopup(feature.properties.name);
+                }
+              }}
+            />
+            <GeoJSON data={bremerhavenGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.name) {
+                  layer.bindPopup(feature.properties.name);
+                }
+              }}
+            />
+          </>
+        )}
+      </MapContainer>
   );
 };
 
