@@ -55,6 +55,11 @@ import bremerhavenGeoData from '@data/bremen/bremerhaven_geo.json';
 // © Statistisches Amt für  Hamburg und Schleswig-Holstein 2022
 // © GeoBasis-DE/ LVermGeo SH / BKG (2022)
 import schleswigHolsteinGeoData from '@data/schleswig-holstein/geo.json';
+// © Landesamt für innere Verwaltung, Mecklenburg-Vorpommern
+// Amt für Geoinformation, Vermessungs- und Katasterwesen - Geodatenservice
+// Wahlkreiseinteilung zur Landtagswahl 2021 in Mecklenburg-Vorpommern
+// https://www.laiv-mv.de/
+import mecklenburgVorpommernGeoData from '@data/mecklenburg/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -259,6 +264,14 @@ const DynamicMap = ({ polygons = [],
               onEachFeature={(feature, layer) => {
                 if (feature.properties && feature.properties.WKNAME) {
                   layer.bindPopup(feature.properties.WKNAME);
+                }
+              }}
+            />
+            <GeoJSON data={mecklenburgVorpommernGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={(feature, layer) => {
+                if (feature.properties && feature.properties.Wahl_name) {
+                  layer.bindPopup(feature.properties.Wahl_name);
                 }
               }}
             />
