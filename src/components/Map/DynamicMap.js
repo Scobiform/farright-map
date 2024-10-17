@@ -38,6 +38,10 @@ import bavariaGeoData from '@data/bavaria/geo.json';
 // Wahlkreiseinteilung zur Bürgerschaftswahl 2025 in Hamburg
 // https://www.statistik-nord.de/
 import hamburgGeoData from '@data/hamburg/geo.json';
+// © Die Landeswahlleiterin, Statistisches Amt Saarland, Saarbrücken 2022
+// Wahlkreiseinteilung zur Landtagswahl 2022 im Saarland
+// https://wahlergebnis.saarland.de
+import saarlandGeoData from '@data/saarland/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -235,6 +239,21 @@ const DynamicMap = ({ polygons = [],
         onEachFeature={(feature, layer) => {
           if (feature.properties && feature.properties.WK_Name) {
             layer.bindPopup(feature.properties.WK_Name);
+          }
+        }}
+      />
+
+      {/* Render Saarland GeoJSON */}
+      <GeoJSON data={saarlandGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
           }
         }}
       />
