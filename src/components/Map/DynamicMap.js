@@ -30,6 +30,10 @@ import niedersachsenGeoData from '@data/lower-saxony/geo.json';
 // Wahlkreiseinteilung des Landes Nordrhein-Westfalen zur Landtagswahl am 15. Mai 2022.
 // https://www.it.nrw/
 import nrwGeoData from '@data/north-rhine-westphalia/geo.json';
+// © Bayerisches Landesamt für Statistik
+// Wahlkreiseinteilung zur Landtagswahl 2023 in Bayern
+// https://www.statistik.bayern.de/
+import bavariaGeoData from '@data/bavaria/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -197,6 +201,21 @@ const DynamicMap = ({ polygons = [],
         onEachFeature={(feature, layer) => {
           if (feature.properties && feature.properties.Name) {
             layer.bindPopup(feature.properties.Name);
+          }
+        }}
+      />
+    
+      {/* Render Bayern GeoJSON */}
+      <GeoJSON data={bavariaGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.SKR_NAME) {
+            layer.bindPopup(feature.properties.SKR_NAME);
           }
         }}
       />
