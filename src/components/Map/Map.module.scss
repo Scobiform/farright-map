@@ -4,12 +4,13 @@
 
 .electoralSwitch select {
   padding: 5px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  font-size: 0.7rem;
+  border-radius: 0.42em;
   background-color: var(--secondary);
   color: var(--primary);
   z-index: 9999;
   position: relative;
-  margin-top: 2.8rem;
+  margin-top: 2.1rem;
+  display: block;
+  margin-left: 0.42rem;
 }
