@@ -34,6 +34,10 @@ import nrwGeoData from '@data/north-rhine-westphalia/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2023 in Bayern
 // https://www.statistik.bayern.de/
 import bavariaGeoData from '@data/bavaria/geo.json';
+// © Statistisches Amt für Hamburg und Schleswig-Holstein, Hamburg 2024
+// Wahlkreiseinteilung zur Bürgerschaftswahl 2025 in Hamburg
+// https://www.statistik-nord.de/
+import hamburgGeoData from '@data/hamburg/geo.json';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -216,6 +220,21 @@ const DynamicMap = ({ polygons = [],
         onEachFeature={(feature, layer) => {
           if (feature.properties && feature.properties.SKR_NAME) {
             layer.bindPopup(feature.properties.SKR_NAME);
+          }
+        }}
+      />
+    
+      {/* Render Hamburg GeoJSON */}
+      <GeoJSON data={hamburgGeoData}
+        style={() => ({
+          color: 'green',
+          weight: 1,
+          fillColor: 'green',
+          fillOpacity: 0.1
+        })}
+        onEachFeature={(feature, layer) => {
+          if (feature.properties && feature.properties.WK_Name) {
+            layer.bindPopup(feature.properties.WK_Name);
           }
         }}
       />
