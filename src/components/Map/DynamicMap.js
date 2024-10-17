@@ -104,17 +104,20 @@ const DynamicMap = ({ polygons = [],
       </div>
 
       <LayersControl position="topright">
-        <LayersControl.BaseLayer checked name="OpenStreetMap">
+        {/* Add OpenStreetMap Layer */}
+        <LayersControl.BaseLayer name="OpenStreetMap">
           <TileLayer
             url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
           />
         </LayersControl.BaseLayer>
+        {/* Add OpenTopoMap Layer */}
         <LayersControl.BaseLayer name="OpenTopoMap">
           <TileLayer
             url="https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="https://opentopomap.org">OpenTopoMap</a>'
           />
         </LayersControl.BaseLayer>
+        {/* Add Cyclosm Layer */}
         <LayersControl.BaseLayer name="cyclosm">
           <TileLayer
             url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
@@ -126,6 +129,13 @@ const DynamicMap = ({ polygons = [],
           <TileLayer
             url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
             attribution='&copy; <a href="https://www.esri.com/en-us/home">Esri</a>, USGS, NOAA'
+          />
+        </LayersControl.BaseLayer>
+        {/* Add the World Terrain Base Layer */}
+        <LayersControl.BaseLayer checked name="Esri World Terrain">
+          <TileLayer
+            url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}"
+            attribution='&copy; Esri, USGS, NOAA'
           />
         </LayersControl.BaseLayer>
       </LayersControl>
