@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ExternalSites from '../ExternalSites/ExternalSites';
 import styles from './PersonCard.module.css';
 
 // Fetch function to get social media links for a person
@@ -448,6 +449,7 @@ export default function PersonCard({ person, orgName }) {
           {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
         </div>
       )}
+      <ExternalSites person={personData} organization={orgName} />
     </div>
   );
 }

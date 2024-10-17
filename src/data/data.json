@@ -2266,6 +2266,22 @@
                     "youtube": ""
                 }
             ]
+        }, 
+        {
+            "name": "Nordkurier Mediengruppe GmbH & Co. KG",
+            "lat": "53.55832634019096",
+            "lon": "13.254123606721665",
+            "residence": "Neubrandenburg",
+            "website": "https://www.nordkurier.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]
         }
     ],
     "Locations": [
@@ -2486,6 +2502,38 @@
             "lon": "8.682127",
             "residence": "Frankfurt",
             "website": "https://www.burschenschaft-thuringia.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Kölner Burschenschaft Germania",
+            "lat": "50.905847834692636",
+            "lon": "6.97782994647833",
+            "residence": "Köln",
+            "website": "https://www.germania-koeln.de/",
+            "social_media": [
+                {
+                    "facebook": "",
+                    "tiktok": "",
+                    "x.com": "",
+                    "telegram": "",
+                    "youtube": ""
+                }
+            ]   
+        },
+        {
+            "name": "Kölner Burschenschaft Wartburg-Suevia Leipzig",
+            "lat": "50.91528173661296",
+            "lon": "6.932285765632113",
+            "residence": "Köln",
+            "website": "https://www.wartburg-suevia.de/",
             "social_media": [
                 {
                     "facebook": "",

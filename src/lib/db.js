@@ -337,6 +337,13 @@ const main = () => {
     if (lowerSaxonyData && data) {
         data.AfD = data.AfD.concat(lowerSaxonyData.AfD);
     }
+    // Add Mecklenburg-Vorpommern data
+    const mecklenburgDataPath = path.resolve('src/data/mecklenburg/candidates.json');
+    const mecklenburgData = loadData(mecklenburgDataPath);
+    // Merge Mecklenburg data with the rest of the data
+    if (mecklenburgData && data) {
+        data.AfD = data.AfD.concat(mecklenburgData.AfD);
+    }
 
     // Array to hold all candidates
     let allCandidates = [];
