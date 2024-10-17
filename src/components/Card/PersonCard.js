@@ -393,6 +393,7 @@ export default function PersonCard({ person, orgName }) {
 
   return (
     <div className={styles.personContainer}>
+      <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
       {imageAttribute && imageAttribute.value && (
         <img
           src={imageAttribute.value}
@@ -400,7 +401,6 @@ export default function PersonCard({ person, orgName }) {
           className={styles.personImage}
         />
       )}
-      <button onClick={() => setAdmin(!admin)}>{admin ? 'View' : 'Edit'}</button>
       <h2>{personData.name}</h2>
       <p>{orgName}</p>
       <ul className={styles.personEdit}>{renderPersonDetails()}</ul>

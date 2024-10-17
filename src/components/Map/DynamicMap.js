@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ReactDOMServer from 'react-dom/server';
 import { useState } from 'react';
 import Leaflet from 'leaflet';
 import * as ReactLeaflet from 'react-leaflet';
@@ -60,6 +61,7 @@ import schleswigHolsteinGeoData from '@data/schleswig-holstein/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2021 in Mecklenburg-Vorpommern
 // https://www.laiv-mv.de/
 import mecklenburgVorpommernGeoData from '@data/mecklenburg/geo.json';
+import DistrictCard from '@components/Card/DistrictCard';
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -87,6 +89,15 @@ const DynamicMap = ({ polygons = [],
 
   const handleSwitch = (event) => {
     setSelectedMap(event.target.value);
+  };
+
+  const onEachFeature = (feature, layer) => {
+    if (feature.properties) {
+      const popupContent = ReactDOMServer.renderToString(
+        <DistrictCard district={feature.properties} />
+      );
+      layer.bindPopup(popupContent);
+    }
   };
 
   return (
@@ -152,11 +163,7 @@ const DynamicMap = ({ polygons = [],
       {selectedMap === 'bundestag' && (
           <GeoJSON data={bundestagGeoData} 
             style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-            onEachFeature={(feature, layer) => {
-              if (feature.properties && feature.properties.WKR_NAME) {
-                layer.bindPopup(feature.properties.WKR_NAME);
-              }
-            }}
+            onEachFeature={onEachFeature}
           />
         )}
 
@@ -165,115 +172,59 @@ const DynamicMap = ({ polygons = [],
             {/* Render all Landtagswahlkreise GeoJSONs */}
             <GeoJSON data={geodata} 
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.name) {
-                  layer.bindPopup(feature.properties.name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={sachsenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.WahlkreisName) {
-                  layer.bindPopup(feature.properties.WahlkreisName);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={thuringiaGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.WK) {
-                  layer.bindPopup(feature.properties.WK);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={badenWuerttembergGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties['WK Name']) {
-                  layer.bindPopup(feature.properties['WK Name']);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={berlinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.name) {
-                  layer.bindPopup(feature.properties.name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={niedersachsenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.WKName) {
-                  layer.bindPopup(feature.properties.WKName);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={nrwGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.Name) {
-                  layer.bindPopup(feature.properties.Name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={bavariaGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.SKR_NAME) {
-                  layer.bindPopup(feature.properties.SKR_NAME);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={hamburgGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.WK_Name) {
-                  layer.bindPopup(feature.properties.WK_Name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={saarlandGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.name) {
-                  layer.bindPopup(feature.properties.name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={bremenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.name) {
-                  layer.bindPopup(feature.properties.name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={bremerhavenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.name) {
-                  layer.bindPopup(feature.properties.name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={schleswigHolsteinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.WKNAME) {
-                  layer.bindPopup(feature.properties.WKNAME);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
             <GeoJSON data={mecklenburgVorpommernGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={(feature, layer) => {
-                if (feature.properties && feature.properties.Wahl_name) {
-                  layer.bindPopup(feature.properties.Wahl_name);
-                }
-              }}
+              onEachFeature={onEachFeature}
             />
           </>
         )}

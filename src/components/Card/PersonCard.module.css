@@ -2,6 +2,21 @@
     width: 280px;
 }
 
+.personHeader{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; 
+    background-color: var(--secondary);
+    z-index: 10; /* Keeps the header above the scrolling content */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(var(--primary) 0.1); /* Optional: Adds a shadow for better visibility */
+}
+
+.personData{
+    overflow-y: auto;
+    padding-top: 20px; /* Optional: Add some padding so content doesn't stick to the header */
+}
+
 .personEdit li input {
     width: 100%;
     border-bottom: 1px solid var(--secondary);

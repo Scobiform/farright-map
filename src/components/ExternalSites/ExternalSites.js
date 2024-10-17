@@ -1,25 +1,12 @@
 export default function ExternalSites({ person, organization }) {
 
     const changeNameOrder = (name) => {
-        // Split the name by the comma
-        const nameArray = name.split(", ");
-        
-        // Reorder the name
-        const reorderedName = nameArray[1] + " " + nameArray[0];
-    
-        // Replace umlauts and join with hyphens
-        return reorderedName
-            .normalize("NFD") // Normalize to split diacritical marks
-            .replace(/[\u0308]/g, "e") // Replace umlaut by 'e'
-            .replace(/ä/g, "ae")
-            .replace(/ö/g, "oe")
-            .replace(/ü/g, "ue")
-            .replace(/ß/g, "ss")
-            .split(" ")
-            .join("-")
-            .toLowerCase();
+        if (name.includes(",")) {
+            const nameArray = name.split(", ");
+            return nameArray[1].toLowerCase() + "-" + nameArray[0].toLowerCase().replace(/ö/g, 'oe').replace(/ä/g, 'ae').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
+          } 
+          return name.toLowerCase().replace(/ /g, "-").replace(/ö/g, 'oe').replace(/ä/g, 'ae').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
     };
-    
     
     return (
       <div>
