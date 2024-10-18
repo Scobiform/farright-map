@@ -69,6 +69,10 @@ import sachsenAnhaltGeoData from '@data/saxony-anhalt/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2023 in Hessen
 // https://www.statistik-hessen.de
 import hessenGeoData from '@data/hesse/geo.json';
+// © Rheinland-Pfalz, Statistisches Landesamt
+// Wahlkreiseinteilung zur Landtagswahl 2021 in Rheinland-Pfalz
+// https://www.statistik.rlp.de
+import rheinlandPfalzGeoData from '@data/rhineland-palatinat/geo.json';
 
 // Other components
 import DistrictCard from '@components/Card/DistrictCard';
@@ -99,16 +103,55 @@ const DynamicMap = ({ polygons = [],
 
   const handleSwitch = (event) => {
     setSelectedMap(event.target.value);
+  }; 
+
+  const fetchDistrictData = async (code) => {
+    try {
+      const response = await fetch(`/api/district?code=${code}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Failed to fetch district data:', error);
+    }
   };
 
   const onEachFeature = (feature, layer) => {
-    if (feature.properties) {
-      const popupContent = ReactDOMServer.renderToString(
-        <DistrictCard district={feature.properties} />
-      );
-      layer.bindPopup(popupContent);
+    // Check if feature has a code (for fetching data) or use its properties directly
+    if (feature.properties.code) {
+        // Add a click event listener to the layer
+        layer.on('click', async (e) => {
+            try {
+                // Fetch district data asynchronously
+                const districtData = await fetchDistrictData(feature.properties.code);
+                
+                // Render the DistrictCard component with the fetched data
+                const popupContent = ReactDOMServer.renderToString(
+                    <DistrictCard district={districtData || feature.properties} />
+                );
+                
+                // Bind the popup to the layer after the data is fetched
+                layer.bindPopup(popupContent).openPopup();
+            } catch (error) {
+                console.error("Error fetching district data:", error);
+                // Fallback to rendering feature properties if fetching fails
+                const fallbackContent = ReactDOMServer.renderToString(
+                    <DistrictCard district={feature.properties} />
+                );
+                layer.bindPopup(fallbackContent).openPopup();
+            }
+        });
+    } else {
+        // If no code, use the feature's properties directly
+        const popupContent = ReactDOMServer.renderToString(
+            <DistrictCard district={feature.properties} />
+        );
+        layer.bindPopup(popupContent);
     }
-  };
+};
+
 
   return (
     <MapContainer 
@@ -241,6 +284,10 @@ const DynamicMap = ({ polygons = [],
               onEachFeature={onEachFeature}
             />
             <GeoJSON data={hessenGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={onEachFeature}
+            />
+            <GeoJSON data={rheinlandPfalzGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
               onEachFeature={onEachFeature}
             />
