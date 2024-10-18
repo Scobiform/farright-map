@@ -1,3 +1,5 @@
+import styles from './DistrictCard.module.css';
+
 const renderExternalDistrictData = (data) => {
     const renderValue = (key, value) => {
         // Handle null or undefined values
@@ -8,7 +10,7 @@ const renderExternalDistrictData = (data) => {
         // Handle arrays and objects separately
         if (Array.isArray(value)) {
             return (
-                <ul>
+                <ul className={styles.cardList}>
                     {value.map((item, index) => (
                         <li key={index}>
                             {typeof item === 'object' ? JSON.stringify(item) : item.toString()}
@@ -24,15 +26,15 @@ const renderExternalDistrictData = (data) => {
     };
 
     return (
-        <div>
+        <div className={styles.card}>
             {/* Check if data exists */}
             {data ? (
                 <>
                     {/* Display district name if available */}
-                    {data.name && <h3>{data.name}</h3>}
+                    {data.name && <h3 className={styles.cardHeader}>{data.name}</h3>}
 
                     {/* Display key-value pairs, handling objects with JSON.stringify */}
-                    <ul>
+                    <ul className={styles.cardList}>
                         {Object.entries(data).map(([key, value]) => (
                             <li key={key}>
                                 <strong>{key}:</strong> {renderValue(key, value)}
@@ -46,7 +48,6 @@ const renderExternalDistrictData = (data) => {
         </div>
     );
 };
-
 const DistrictCard = ({ district }) => {
     const renderValue = (key, value) => {
         // Handle null or undefined values
@@ -57,7 +58,7 @@ const DistrictCard = ({ district }) => {
         // Handle arrays and objects separately
         if (Array.isArray(value)) {
             return (
-                <ul>
+                <ul className={styles.cardList}>
                     {value.map((item, index) => (
                         <li key={index}>
                             {typeof item === 'object' ? JSON.stringify(item) : item.toString()}
@@ -79,16 +80,16 @@ const DistrictCard = ({ district }) => {
     // Default rendering for other district data
     else {
         return (
-            <div className="card">
+            <div className={styles.card}>
                 <div className="card-body">
                     {/* Check if district object exists */}
                     {district ? (
                         <>
                             {/* Display district name if available */}
-                            {district.name && <h3>{district.name}</h3>}
+                            {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
 
                             {/* Display key-value pairs, handling objects and arrays gracefully */}
-                            <ul>
+                            <ul className={styles.cardList}>
                                 {Object.entries(district).map(([key, value]) => (
                                     <li key={key}>
                                         <strong>{key}:</strong> {renderValue(key, value)}
@@ -106,3 +107,4 @@ const DistrictCard = ({ district }) => {
 };
 
 export default DistrictCard;
+

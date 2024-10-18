@@ -1,0 +1,83 @@
+.card {
+    background-color: var(--secondary);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.42rem;
+    max-width: 320px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+  
+  .card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .card-section {
+    margin-bottom: 20px;
+  }
+  
+  .card-section h4 {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .card-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card-list li {
+    margin-bottom: 8px;
+  }
+  
+  .card-list li strong {
+    color: #2980b9;
+  }
+  
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  .chart-section h5 {
+    font-size: 1.2rem;
+    color: #8e44ad;
+    margin-bottom: 10px;
+  }
+  
+  .chart-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .chart-item {
+    flex: 1;
+    min-width: 200px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-item strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #27ae60;
+  }
+  
+  .update-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 15px;
+    text-align: right;
+  }
+  
