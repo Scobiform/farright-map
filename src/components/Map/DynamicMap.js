@@ -61,6 +61,16 @@ import schleswigHolsteinGeoData from '@data/schleswig-holstein/geo.json';
 // Wahlkreiseinteilung zur Landtagswahl 2021 in Mecklenburg-Vorpommern
 // https://www.laiv-mv.de/
 import mecklenburgVorpommernGeoData from '@data/mecklenburg/geo.json';
+// © Statistisches Landesamt Sachsen-Anhalt, Magdeburg 2021
+// Wahlkreiseinteilung zur Landtagswahl 2021 in Sachsen-Anhalt
+// https://wahlergebnisse.sachsen-anhalt.de
+import sachsenAnhaltGeoData from '@data/saxony-anhalt/geo.json';
+// © Hessisches Statistisches Landesamts
+// Wahlkreiseinteilung zur Landtagswahl 2023 in Hessen
+// https://www.statistik-hessen.de
+import hessenGeoData from '@data/hesse/geo.json';
+
+// Other components
 import DistrictCard from '@components/Card/DistrictCard';
 
 // Import the required components from React-Leaflet
@@ -223,6 +233,14 @@ const DynamicMap = ({ polygons = [],
               onEachFeature={onEachFeature}
             />
             <GeoJSON data={mecklenburgVorpommernGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={onEachFeature}
+            />
+            <GeoJSON data={sachsenAnhaltGeoData}
+              style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
+              onEachFeature={onEachFeature}
+            />
+            <GeoJSON data={hessenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
               onEachFeature={onEachFeature}
             />
