@@ -4,7 +4,7 @@ from pyproj import CRS
 # Load shapefile
 shapefile = gpd.read_file('HSL_Landtagswahlkreise_2023.shp')
 
-# Define the source CRS (EPSG:25832 for ETRS_1989_UTM_Zone_32N) and target CRS (EPSG:4326 for WGS84)
+# EPSG:25832 for ETRS_1989_UTM_Zone_32N and EPSG:4326 for WGS84
 source_crs = CRS("EPSG:25832")
 target_crs = CRS("EPSG:4326")
 
