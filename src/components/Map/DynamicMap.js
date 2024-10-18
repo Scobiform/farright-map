@@ -105,9 +105,9 @@ const DynamicMap = ({ polygons = [],
     setSelectedMap(event.target.value);
   }; 
 
-  const fetchDistrictData = async (code) => {
+  const fetchDistrictData = async (code, state) => {
     try {
-      const response = await fetch(`/api/district?code=${code}`);
+      const response = await fetch(`/api/district?code=${code}&state=${state}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
@@ -118,14 +118,14 @@ const DynamicMap = ({ polygons = [],
     }
   };
 
-  const onEachFeature = (feature, layer) => {
+  const onEachFeature = (feature, layer, state) => {
     // Check if feature has a code (for fetching data) or use its properties directly
     if (feature.properties.code) {
         // Add a click event listener to the layer
         layer.on('click', async (e) => {
             try {
                 // Fetch district data asynchronously
-                const districtData = await fetchDistrictData(feature.properties.code);
+                const districtData = await fetchDistrictData(feature.properties.code, state);
                 
                 // Render the DistrictCard component with the fetched data
                 const popupContent = ReactDOMServer.renderToString(
@@ -285,11 +285,11 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={hessenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'hessen')}
             />
             <GeoJSON data={rheinlandPfalzGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'rlp')}
             />
           </>
         )}

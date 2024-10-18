@@ -1,5 +1,4 @@
 const renderExternalDistrictData = (data) => {
-    console.log(data);
     const renderValue = (key, value) => {
         // Handle null or undefined values
         if (value === null || value === undefined) {
