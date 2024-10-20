@@ -173,7 +173,7 @@ async function scrapeVoterTurnoutChart(page) {
 
 export default async function handler(req, res) {
     let browser;
-    const { electoralDistrict, state } = req.query;
+    const { electoralDistrict, state, stateNumber } = req.query;
     const cacheDir = path.join(process.cwd(), 'public', 'cache');
     const cacheFile = path.join(cacheDir, `${electoralDistrict}_${state}.json`);
 
@@ -211,7 +211,7 @@ export default async function handler(req, res) {
                 break;
             case 'bundestag':
                 console.log('Scraping data for Bundestag');
-                let url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-12/wahlkreis-${electoralDistrict}.html`;
+                let url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`;
                 console.log(url);
                 await page.goto(url, { waitUntil: 'domcontentloaded' });
                 break;            

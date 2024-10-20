@@ -130,6 +130,7 @@ const DynamicMap = ({ polygons = [],
     setLoading(true); 
     try {
       let electoralDistrict;
+      let stateNumber;
       switch (state.toLowerCase()) {
         case 'sh': // Schleswig-Holstein
           electoralDistrict = properties.WKNR_int;
@@ -143,16 +144,14 @@ const DynamicMap = ({ polygons = [],
           break;
         case 'bundestag':
           electoralDistrict = properties.WKR_NR;
+          stateNumber = parseInt(properties.LAND_NR, 10);
           break;
-        default:
-          console.warn(`State '${state}' not recognized.`);
-          electoralDistrict = null; // Fallback in case of an unrecognized state
-          break;
+
       }
 
       // API endpoint for fetching district data
       // api/download?electoralDistrict=1&state=sh
-      const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}`);
+      const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}&stateNumber=${stateNumber}`);
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
