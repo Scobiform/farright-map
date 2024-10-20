@@ -347,7 +347,7 @@ const DynamicMap = ({ polygons = [],
         {/* Add OpenStreetMap Layer */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
-            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"
+            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.de/">OpenStreetMap</a> | <a href="https://github.com/Scobiform/farright-map" target="_blank">farright-map @ github.com</a>'
           />
         </LayersControl.BaseLayer>
         {/* Add OpenTopoMap Layer */}

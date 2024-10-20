@@ -79,14 +79,13 @@ button {
   background-color: var(--tertiary);
   color: var(--secondary);
   border: none;
-  padding: 0.14rem 0.21rem;
+  padding: 0.14em 0.21em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 0.77em;
   cursor: pointer;
-  border-radius: 0.42rem !important;
+  border-radius: 0.42em !important;
   color: var(--primary);
 }
 
