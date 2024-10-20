@@ -191,7 +191,7 @@ export default async function handler(req, res) {
                 await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
                 break;
             case 'berlin':
-                url = 'https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_bezirk_'+electoralDistrict
+                url = 'https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_wahlkreis_'+electoralDistrict
                 await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
                 break;
             case 'brandenburg':
