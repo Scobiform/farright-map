@@ -90,7 +90,6 @@ const renderElect = ({ svgData,
                     <h3>Voter Turnout</h3>
                     <VoterTurnout voterTurnout={voterTurnout} />
                     <VoterTurnoutMap voterTurnoutChart={voterTurnoutChart} />
-                    
                     <h3>Elected Candidate</h3>
                     <div className={styles.electedCard}>
                         <p><strong>Name:</strong> {handleMissingData(electedData.electedPerson.name)}</p>
@@ -159,7 +158,6 @@ const VoterTurnoutMap = ({ voterTurnoutChart }) => {
         </div>
     );
 };
-
 
 const DistrictCard = ({ district, state }) => {
     if (!district) {

@@ -76,6 +76,7 @@ import rheinlandPfalzGeoData from '@data/rhineland-palatinat/geo.json';
 
 // Other components
 import DistrictCard from '@components/Card/DistrictCard';
+import LoadingSpinner from '@components/Visual/LoadingSpinner'; 
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -94,7 +95,9 @@ const DynamicMap = ({ polygons = [],
   className, width = "100vw", height = "98vh", ...rest }) => {
   
   // Default to Bundestagwahl data
-  const [selectedMap, setSelectedMap] = useState('bundestag'); 
+  const [selectedMap, setSelectedMap] = useState('bundestag');
+  // Loading state for fetching data
+  const [loading, setLoading] = useState(false);
   
   let mapClassName = styles.map;
 
@@ -105,6 +108,8 @@ const DynamicMap = ({ polygons = [],
   const handleSwitch = (event) => {
     setSelectedMap(event.target.value);
   }; 
+
+
 
   const fetchDistrictData = async (code, state) => {
     try {
@@ -122,8 +127,8 @@ const DynamicMap = ({ polygons = [],
   /* Function to fetch electoral district data from electIT */
   /* PLEASE PROVIDE OPEN API ENDPOINT */
   const fetchElectITData = async (properties, state) => {
+    setLoading(true); 
     try {
-      // property key WKNR
       let electoralDistrict;
       switch (state.toLowerCase()) {
         case 'sh': // Schleswig-Holstein
@@ -138,7 +143,6 @@ const DynamicMap = ({ polygons = [],
           break;
       }
 
-
       // API endpoint for fetching district data
       // api/download?electoralDistrict=1&state=sh
       const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}`);
@@ -150,6 +154,8 @@ const DynamicMap = ({ polygons = [],
     } catch (error) {
       console.error('Failed to fetch district data:', error);
       return null;
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -172,7 +178,6 @@ const DynamicMap = ({ polygons = [],
           );
           layer.bindPopup(fallbackContent).openPopup();
       }
-      return 
   });
   };
 
@@ -217,6 +222,9 @@ const DynamicMap = ({ polygons = [],
   };
   
   return (
+    <>
+    {/* Conditionally render LoadingSpinner */}
+    {loading && <LoadingSpinner />}
     <MapContainer 
       className={mapClassName + " invert"} 
       style={{ width, height }} 
@@ -235,6 +243,7 @@ const DynamicMap = ({ polygons = [],
         </label>
       </div>
 
+      {/* Add LayersControl to the Map */}
       <LayersControl position="topright">
         {/* Add OpenStreetMap Layer */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
@@ -357,6 +366,7 @@ const DynamicMap = ({ polygons = [],
           </>
         )}
       </MapContainer>
+    </>
   );
 };
 
