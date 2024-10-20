@@ -13,7 +13,7 @@ const KeyValueList = ({ data }) => {
         <ul className={styles.cardList}>
             {Object.entries(data).map(([key, value]) => (
                 <li key={key}>
-                    <strong>{key}:</strong> {handleMissingData(value)}
+                    <strong>{key}:</strong> {typeof value === 'object' ? JSON.stringify(value) : handleMissingData(value)}
                 </li>
             ))}
         </ul>
@@ -84,19 +84,13 @@ const renderElect = ({ svgData,
     tableData, 
     statisticsData, 
     electedData,
-    voterTurnout, 
-    voterTurnoutChart,
     state,
     name }) => {
     return (
         <div className={styles.card}>
-            {name && <h3 className={styles.cardHeader}>{name}</h3>}
             {/* Render elected data only for Brandenburg */}
-            {state === 'brandenburg' && electedData && (
+            {(state === 'brandenburg') && electedData && (
                 <>
-                    <h3>Voter Turnout</h3>
-                    <VoterTurnout voterTurnout={voterTurnout} />
-                    <VoterTurnoutMap voterTurnoutChart={voterTurnoutChart} />
                     <h3>Elected Candidate</h3>
                     <div className={styles.electedCard}>
                         <p><strong>Name:</strong> {handleMissingData(electedData.electedPerson.name)}</p>
@@ -111,6 +105,66 @@ const renderElect = ({ svgData,
                     </div>
                 </>
             )}
+            {/* Render elected data for Schleswig-Holstein */}
+            {(state === 'sh') && electedData && (
+                <>
+                <h3>Elected Candidate</h3>
+                <div className="gewaehlter__container">
+                    {/* Winner */}
+                    <div className="gewaehlter-direktbewerber">
+                    <p className="gewaehlter-direktbewerber__person">
+                        <i className="material-icons gewaehlter-direktbewerber__icon">account_circle</i>
+                        <strong className="gewaehlter-direktbewerber__name">
+                        {handleMissingData(electedData.electedPerson.name)}
+                        </strong>
+                    </p>
+                    <p className="gewaehlter-direktbewerber__details">
+                        <span className="partei gewaehlter-direktbewerber__partei">
+                        <span className="partei__farbe" style={{ color: '#000000' }}></span>
+                        <span className="partei__name">CDU</span>
+                        </span>
+                        <strong className="gewaehlter-direktbewerber__value">
+                        {handleMissingData(electedData.electedPerson.percentage)}&nbsp;%
+                        </strong>
+                    </p>
+                    </div>
+                    {/* Runner-up */}
+                    <div className="erstunterlegener">
+                    <h4 className="erstunterlegener__label">Zweitplatzierung</h4>
+                    <p className="erstunterlegener__content"></p>
+                    <div className="erstunterlegener__name">
+                        {handleMissingData(electedData.runnerUpPerson.name)}
+                    </div>
+                    <span className="partei erstunterlegener__partei">
+                        <span className="partei__farbe" style={{ color: '#e0001a' }}></span>
+                        <span className="partei__name">SPD</span>
+                    </span>
+                    <span className="erstunterlegener__value">
+                        {handleMissingData(electedData.runnerUpPerson.percentage)}&nbsp;%
+                    </span>
+                    <p></p>
+                    </div>
+                </div>
+                </>
+            )}
+            {/* Render elected data for Bremen */}
+            {(state === 'bremen') && electedData && (
+                <>
+                    <h3>Elected Candidate</h3>
+                    <div className={styles.electedCard}>
+                        <p><strong>Name:</strong> {handleMissingData(electedData.electedPerson.name)}</p>
+                        <p><strong>Party:</strong> {handleMissingData(electedData.electedPerson.party)}</p>
+                        <p><strong>Percentage:</strong> {handleMissingData(electedData.electedPerson.percentage)}</p>
+                    </div>
+                    <h4>Runner-up</h4>
+                    <div className={styles.electedCard}>
+                        <p><strong>Name:</strong> {handleMissingData(electedData.runnerUpPerson.name)}</p>
+                        <p><strong>Party:</strong> {handleMissingData(electedData.runnerUpPerson.party)}</p>
+                        <p><strong>Percentage:</strong> {handleMissingData(electedData.runnerUpPerson.percentage)}</p>
+                    </div>
+                </>
+            )}
+            {/* Render SVG data for all states */}
             {svgData && (
                 <>
                     <h3>Election Visualization</h3>
@@ -147,7 +201,6 @@ const renderElect = ({ svgData,
 
 // render ITNRW data
 const renderITnrw = (district, state) => {
-    console.log(district);
     return (
         <div className="district-card">
             <h3>{district.districtName}</h3>
@@ -184,46 +237,12 @@ const renderITnrw = (district, state) => {
     );      
 };
 
-// Voter Turnout component
-const VoterTurnout = ({ voterTurnout }) => {
-    if (!voterTurnout) return null;
-
-    return (
-        <div className={styles.turnoutCard}>
-            <strong>Voter Turnout:</strong> {voterTurnout}%
-        </div>
-    );
-};
-
-// Voter Turnout Map component
-const VoterTurnoutMap = ({ voterTurnoutChart }) => {
-    if (!voterTurnoutChart || !voterTurnoutChart.svg) return <p>No map data available</p>;
-
-    return (
-        <div className={styles.mapContainer}>
-            <h3>Voter Turnout Map</h3>
-            <div dangerouslySetInnerHTML={{ __html: voterTurnoutChart.svg }} />
-        </div>
-    );
-};
-
-// DistrictCard component
 const DistrictCard = ({ district, state }) => {
     if (!district) {
         return <p>No district data available</p>;
     }
 
-    // Check if voter turnout data exists
-    const { voterTurnout, voterTurnoutChart } = district;
-
-    if (district.tableData) {
-        return renderElect({ ...district, state });
-    }
-
-    if(district.firstVotes) {
-        return (renderITnrw(district, state));
-    }
-
+    // Render specific details when 'bezeichnung' exists
     if (district.bezeichnung) {
         return (
             <div className={styles.card}>
@@ -243,12 +262,27 @@ const DistrictCard = ({ district, state }) => {
         );
     }
 
-    return (
-        <div className={styles.card}>
-            {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
-            <KeyValueList data={district} />
-        </div>
-    );
+    // Handle different states
+    switch (state) {
+        case 'bundestag':
+        case 'brandenburg':
+        case 'berlin':
+        case 'bremen':
+        case 'sh':
+            // Render with 'renderElect' for specific states
+            return renderElect({ ...district, state });
+        case 'nrw':
+            // Render with 'renderITnrw' for NRW
+            return renderITnrw(district, state);
+        default:
+            // Default rendering for other states
+            return (
+                <div className={styles.card}>
+                    {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
+                    <KeyValueList data={district} />
+                </div>
+            );
+    }
 };
 
 export default DistrictCard;

@@ -2,167 +2,100 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 
+// Helper to scrape election statistics
 async function scrapeElectionStatistics(page) {
     try {
-        // Wait for the table to appear
         await page.waitForSelector('table.tablesaw', { timeout: 10000 });
-
-        // Scrape the election statistics table data
-        const statisticsData = await page.evaluate(() => {
+        return await page.evaluate(() => {
             const rows = Array.from(document.querySelectorAll('table.tablesaw tbody tr'));
-
-            return rows.map(row => {
-                const labelElement = row.querySelector('td:first-child');
-                const valueElement = row.querySelector('td:last-child');
-
-                // Add safety checks to ensure elements exist before accessing them
-                const label = labelElement ? labelElement.innerText.trim() : 'N/A';
-                const value = valueElement ? valueElement.innerText.trim() : 'N/A';
-
-                return {
-                    label,
-                    value,
-                };
-            });
+            return rows.map(row => ({
+                label: row.querySelector('td:first-child')?.innerText.trim() || 'N/A',
+                value: row.querySelector('td:last-child')?.innerText.trim() || 'N/A',
+            }));
         });
-
-        return statisticsData;
     } catch (error) {
         console.error('Error scraping election statistics:', error);
         return [];
     }
 }
 
+// Helper to scrape SVG charts
 async function scrapeSVGCharts(page) {
     try {
-        // Wait for any element with the class containing 'chart' to load
         await page.waitForSelector('[class*="chart"]', { timeout: 1000 });
-
-        // Scrape all SVG elements and their surrounding data attributes
-        const svgData = await page.evaluate(() => {
+        return await page.evaluate(() => {
             const chartElements = Array.from(document.querySelectorAll('[class*="chart"]'));
-
-            // Return the outer HTML of the SVG, the class name, and the data attributes
-            return chartElements.map(chartElement => {
-                const svg = chartElement.querySelector('svg') ? chartElement.querySelector('svg').outerHTML.trim() : null;
-                const chartData = chartElement.getAttribute('data-chartdata');
-                const chartOptions = chartElement.getAttribute('data-chartoptions');
-                const className = chartElement.getAttribute('class');
-
-                return {
-                    svg,
-                    className: className || 'No class name',
-                    chartData: chartData ? JSON.parse(chartData) : null,
-                    chartOptions: chartOptions ? JSON.parse(chartOptions) : null,
-                };
-            });
+            return chartElements.map(chartElement => ({
+                svg: chartElement.querySelector('svg')?.outerHTML.trim() || null,
+                chartData: chartElement.getAttribute('data-chartdata') ? JSON.parse(chartElement.getAttribute('data-chartdata')) : null,
+                chartOptions: chartElement.getAttribute('data-chartoptions') ? JSON.parse(chartElement.getAttribute('data-chartoptions')) : null,
+                className: chartElement.getAttribute('class') || 'No class name',
+            }));
         });
-
-        return svgData;
     } catch (error) {
-        console.error('Error scraping SVGs and data attributes:', error);
+        console.error('Error scraping SVG charts:', error);
         return [];
     }
 }
 
+// Helper to scrape elected and runner-up person
 async function scrapeElectedAndRunnerUp(page) {
     try {
-        // Wait for the "Gewählte Person" section to appear
         await page.waitForSelector('div.gewaehlter-direktbewerber', { timeout: 10000 });
-
-        // Scrape the "Gewählte Person" and "Erstunterlegene Person" information
-        const electionResult = await page.evaluate(() => {
+        return await page.evaluate(() => {
             const electedPersonElement = document.querySelector('div.gewaehlter-direktbewerber');
             const runnerUpPersonElement = document.querySelector('div.erstunterlegener');
 
-            // Safely extract data from the elements
-            const electedPerson = electedPersonElement
-                ? {
-                    name: electedPersonElement.querySelector('.gewaehlter-direktbewerber__name')?.innerText.trim() || 'N/A',
-                    party: electedPersonElement.querySelector('.gewaehlter-direktbewerber__partei abbr')?.getAttribute('title') || 'N/A',
-                    percentage: electedPersonElement.querySelector('.gewaehlter-direktbewerber__value')?.innerText.trim() || 'N/A',
-                    color: electedPersonElement.querySelector('.partei__farbe')?.getAttribute('style').match(/color:(.*)/)?.[1]?.trim() || 'N/A',
-                }
-                : null;
+            const electedPerson = electedPersonElement ? {
+                name: electedPersonElement.querySelector('.gewaehlter-direktbewerber__name')?.innerText.trim() || 'N/A',
+                party: electedPersonElement.querySelector('.gewaehlter-direktbewerber__partei abbr')?.getAttribute('title') || 'N/A',
+                percentage: electedPersonElement.querySelector('.gewaehlter-direktbewerber__value')?.innerText.trim() || 'N/A',
+                color: electedPersonElement.querySelector('.partei__farbe')?.getAttribute('style')?.match(/color:(.*)/)?.[1]?.trim() || 'N/A',
+            } : null;
 
-            const runnerUpPerson = runnerUpPersonElement
-                ? {
-                    name: runnerUpPersonElement.querySelector('.erstunterlegener__name')?.innerText.trim() || 'N/A',
-                    party: runnerUpPersonElement.querySelector('.erstunterlegener__partei abbr')?.getAttribute('title') || 'N/A',
-                    percentage: runnerUpPersonElement.querySelector('.erstunterlegener__value')?.innerText.trim() || 'N/A',
-                    color: runnerUpPersonElement.querySelector('.partei__farbe')?.getAttribute('style').match(/color:(.*)/)?.[1]?.trim() || 'N/A',
-                }
-                : null;
+            const runnerUpPerson = runnerUpPersonElement ? {
+                name: runnerUpPersonElement.querySelector('.erstunterlegener__name')?.innerText.trim() || 'N/A',
+                party: runnerUpPersonElement.querySelector('.erstunterlegener__partei abbr')?.getAttribute('title') || 'N/A',
+                percentage: runnerUpPersonElement.querySelector('.erstunterlegener__value')?.innerText.trim() || 'N/A',
+                color: runnerUpPersonElement.querySelector('.partei__farbe')?.getAttribute('style')?.match(/color:(.*)/)?.[1]?.trim() || 'N/A',
+            } : null;
 
-            return {
-                electedPerson,
-                runnerUpPerson,
-            };
+            return { electedPerson, runnerUpPerson };
         });
-
-        return electionResult;
     } catch (error) {
         console.error('Error scraping elected and runner-up person:', error);
         return null;
     }
 }
 
-async function scrapeVoterTurnout(page) {
-    try {
-        // Wait for the voter turnout element to appear
-        await page.waitForSelector('.wahlbeteiligung__wrapper', { timeout: 10000 });
-
-        // Scrape the voter turnout percentage
-        const voterTurnout = await page.evaluate(() => {
-            const turnoutElement = document.querySelector('.wahlbeteiligung__wrapper .js-wahlbeteiligung__number');
-            return turnoutElement ? turnoutElement.innerText.trim() : 'N/A';
-        });
-
-        return voterTurnout;
-    } catch (error) {
-        console.error('Error scraping voter turnout:', error);
-        return 'N/A';
-    }
-}
-
+// Helper to scrape voter turnout chart
 async function scrapeVoterTurnoutChart(page) {
     try {
-        // Wait for the SVG map chart to appear
-        await page.waitForSelector('div.js-d3chart', { timeout: 10000 });
-
-        // Scrape the map/chart SVG data
-        const chartData = await page.evaluate(() => {
+        await page.waitForSelector('div.js-d3chart', { timeout: 1000 });
+        return await page.evaluate(() => {
             const chartElement = document.querySelector('div.js-d3chart');
-            const svg = chartElement.querySelector('svg') ? chartElement.querySelector('svg').outerHTML.trim() : null;
-            const chartData = chartElement.getAttribute('data-chartdata');
-            const chartOptions = chartElement.getAttribute('data-chartoptions');
-
             return {
-                svg,
-                chartData: chartData ? JSON.parse(chartData) : null,
-                chartOptions: chartOptions ? JSON.parse(chartOptions) : null,
+                svg: chartElement.querySelector('svg')?.outerHTML.trim() || null,
+                chartData: chartElement.getAttribute('data-chartdata') ? JSON.parse(chartElement.getAttribute('data-chartdata')) : null,
+                chartOptions: chartElement.getAttribute('data-chartoptions') ? JSON.parse(chartElement.getAttribute('data-chartoptions')) : null,
             };
         });
-
-        return chartData;
     } catch (error) {
         console.error('Error scraping voter turnout chart:', error);
         return null;
     }
 }
 
+// Main handler function
 export default async function handler(req, res) {
     let browser;
-    let url = null;
     const { electoralDistrict, state, stateNumber, name } = req.query;
     const cacheDir = path.join(process.cwd(), 'public', 'cache');
     const cacheFile = path.join(cacheDir, `${electoralDistrict}_${state}.json`);
 
-
-    // Check if cache file exists
+    // Check for cached data
     if (fs.existsSync(cacheFile)) {
         try {
-            // Read and return cached data
             const cachedData = fs.readFileSync(cacheFile, 'utf8');
             return res.status(200).json(JSON.parse(cachedData));
         } catch (error) {
@@ -170,119 +103,75 @@ export default async function handler(req, res) {
             return res.status(500).json({ error: 'Failed to read cached data' });
         }
     }
-    
+
     try {
         // Launch Puppeteer
         browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
 
-        // Navigate to the appropriate URL for the state
-        switch (state) {
-            case 'sh':
-                console.log('Scraping data for Schleswig-Holstein');
-                url = `https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`;
-                await page.goto(`https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
-                break;
-            case 'bremen':
-                console.log('Scraping data for Bremen');
-                // https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_04011000-1.html
-                // https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_04012000-1.html
-                url = 'https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_'+electoralDistrict;
-                await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
-                break;
-            case 'berlin':
-                url = 'https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_wahlkreis_'+electoralDistrict
-                await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
-                break;
-            case 'brandenburg':
-                console.log('Scraping data for Brandenburg');
-                url = `https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`;
-                await page.goto(`https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
-                break;
-            case 'bundestag':
-                console.log('Scraping data for Bundestag');
-                url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`;
-                await page.goto(url, { waitUntil: 'domcontentloaded' });
-                break;            
-        }
+        // Define URLs for different states
+        const urlMapping = {
+            sh: `https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`,
+            bremen: `https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_${electoralDistrict}.html`,
+            berlin: `https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_wahlkreis_${electoralDistrict}.html`,
+            brandenburg: `https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`,
+            bundestag: `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`
+        };
 
-        console.log(url);
+        const url = urlMapping[state];
+        if (!url) throw new Error('No URL available for this state');
 
-        // Wait for the table to appear
-        await page.waitForSelector('table.tablesaw.table-stimmen', { timeout: 10000 });
+        await page.goto(url, { waitUntil: 'domcontentloaded' });
 
-        // Scrape the table data with safety checks
+        // Scrape table data
         const tableData = await page.evaluate(() => {
             const rows = Array.from(document.querySelectorAll('table.tablesaw.table-stimmen tbody tr'));
-
             return rows.map(row => {
                 const partyElement = row.querySelector('th');
                 const cells = row.querySelectorAll('td');
-                
-                // Add safety checks to ensure that elements exist before accessing them
-                const party = partyElement ? partyElement.innerText.trim() : 'N/A';
-                const candidate = cells[0] ? cells[0].innerText.trim() : 'N/A';
-                const firstVotes = cells[1] ? cells[1].innerText.trim() : 'N/A';
-                const firstVotePercentage = cells[2] ? cells[2].innerText.trim() : 'N/A';
-                const secondVotes = cells[5] ? cells[5].innerText.trim() : 'N/A';
-                const secondVotePercentage = cells[6] ? cells[6].innerText.trim() : 'N/A';
-
                 return {
-                    party,
-                    candidate,
-                    firstVotes,
-                    firstVotePercentage,
-                    secondVotes,
-                    secondVotePercentage,
+                    party: partyElement?.innerText.trim() || 'N/A',
+                    candidate: cells[0]?.innerText.trim() || 'N/A',
+                    firstVotes: cells[1]?.innerText.trim() || 'N/A',
+                    firstVotePercentage: cells[2]?.innerText.trim() || 'N/A',
+                    secondVotes: cells[5]?.innerText.trim() || 'N/A',
+                    secondVotePercentage: cells[6]?.innerText.trim() || 'N/A',
                 };
             });
         });
 
-        // Scrape the election statistics
-        const statisticsData = await scrapeElectionStatistics(page);
-
-        // Scrape SVG charts and their data attributes
+        // Scrape additional data based on state
         const svgChartsData = await scrapeSVGCharts(page);
-
-        // Additional scraping only for Brandenburg
         let electedData = null;
-        let voterTurnout = 'N/A';
         let voterTurnoutChart = null;
-        if (state === 'brandenburg') {
-            electedData = await scrapeElectedAndRunnerUp(page);
-            voterTurnout = await scrapeVoterTurnout(page);
+
+        if (['brandenburg', 'bremen', 'berlin', 'sh'].includes(state)) {
+            if (state !== 'bremen') {
+                electedData = await scrapeElectedAndRunnerUp(page);
+            }
             voterTurnoutChart = await scrapeVoterTurnoutChart(page);
         }
 
-        // Combine the table data and statistics data
+        // Combine scraped data
         const combinedData = {
             name,
             tableData,
-            statisticsData,
             svgChartsData,
             electedData,
-            voterTurnout,
             voterTurnoutChart,
         };
-        
-        if (!fs.existsSync(cacheDir)) {
-            fs.mkdirSync(cacheDir, { recursive: true });
-        }
 
-        // Cache the data by writing it to a file
+        // Cache the result
+        if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir, { recursive: true });
         fs.writeFileSync(cacheFile, JSON.stringify(combinedData, null, 2));
 
-        // Return the scraped data
+        // Return the response
         res.status(200).json(combinedData);
 
     } catch (error) {
-        console.error('Error scraping table:', error);
-        res.status(500).json({ error: 'Failed to scrape the table' });
+        console.error('Error during scraping:', error);
+        res.status(500).json({ error: 'Failed to scrape the data' });
     } finally {
-        if (browser) {
-            await browser.close();
-        }
+        if (browser) await browser.close();
     }
 }
-
-

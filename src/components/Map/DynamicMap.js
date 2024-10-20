@@ -101,6 +101,8 @@ const DynamicMap = ({ polygons = [],
   const [selectedMap, setSelectedMap] = useState('bundestag');
   // Loading state for fetching data
   const [loading, setLoading] = useState(false);
+  // District data state
+  const [districtData, setDistrictData] = useState(null);
   
   let mapClassName = styles.map;
 
@@ -128,61 +130,60 @@ const DynamicMap = ({ polygons = [],
   };
 
   /* Function to fetch electoral district data from electIT */
-  /* PLEASE PROVIDE OPEN API ENDPOINT */
   const fetchElectITData = async (properties, state) => {
     setLoading(true); 
     try {
-      let electoralDistrict;
-      let districtName;
-      let stateNumber;
-      switch (state.toLowerCase()) {
-        case 'sh': // Schleswig-Holstein
-          electoralDistrict = properties.WKNR_int;
-          districtName = properties.WKNAME;
-          break;
-        case 'brandenburg':
-          electoralDistrict = properties.gebietNr;
-          districtName = properties.name;
-          break;
-        case 'berlin':
-          // parentNr
-          electoralDistrict = properties.gebietNr;
-          districtName = properties.name;
-          break;
-        case 'bremen':
-          electoralDistrict = properties.gebietNr;
-          districtName = properties.name;
-          break;
-        case 'bundestag':
-          electoralDistrict = properties.WKR_NR;
-          stateNumber = parseInt(properties.LAND_NR, 10);
-          districtName = properties.WKR_NAME;
-          break;
-      }
-      console.log('District Name:', districtName); 
+        let electoralDistrict, districtName, stateNumber;
 
-      // API endpoint for fetching district data
-      // api/download?electoralDistrict=1&state=sh
-      const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}&stateNumber=${stateNumber}`);
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
+        switch (state.toLowerCase()) {
+            case 'sh':
+            case 'berlin':
+            case 'brandenburg':
+            case 'bremen':
+                electoralDistrict = properties.gebietNr || properties.WKNR_int;
 
-      const data = await response.json();
-      console.log('Data Before Adding Name:', data);
+                // Ensure that districtName is always a string, with fallback if name is undefined
+                districtName = properties.name
+                    ? `${state.toUpperCase()} ${properties.name}`.toUpperCase()
+                    : `${state.toUpperCase()} ${properties.WKNAME}`.toUpperCase();
 
-      // Add the district name to the data object
-      data.name = districtName || 'Unknown District';
-      console.log('Data After Adding Name:', data);
+                break;
 
-      return data;
+            case 'bundestag':
+                electoralDistrict = properties.WKR_NR;
+                stateNumber = parseInt(properties.LAND_NR, 10);
+                districtName = properties.WKR_NAME || 'Unknown Bundestag District';
+                break;
+
+            default:
+                districtName = 'Unknown District';
+                break;
+        }
+
+        console.log('District Name:', districtName); 
+
+        // API endpoint for fetching district data
+        const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}&stateNumber=${stateNumber}`);
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+
+        // Parse the JSON response
+        const data = await response.json();
+
+        // Add the district name to the data object
+        data.name = districtName;
+
+        return data;
     } catch (error) {
-      console.error('Failed to fetch district data:', error);
-      return null;
+        console.error('Failed to fetch district data:', error);
+        return null;
     } finally {
-      setLoading(false);
+        setLoading(false);
     }
   };
+
 
   // fetch IT.NRW data
   const fetchITNRWData = async (properties) => {
@@ -278,7 +279,24 @@ const DynamicMap = ({ polygons = [],
     });
   };
 
+  // Handle the click event on the layer
+  const handleLayerClick = async (feature, layer, state, fetchFn) => {
+    try {
+      const data = await fetchFn(feature.properties, state);
+      setDistrictData(data);
 
+      const popupContent = ReactDOMServer.renderToString(
+        <DistrictCard district={districtData || feature.properties} state={state} />
+      );
+      layer.bindPopup(popupContent).openPopup();
+    } catch (error) {
+      console.error('Error fetching district data:', error);
+      const fallbackContent = ReactDOMServer.renderToString(
+        <DistrictCard district={feature.properties} />
+      );
+      layer.bindPopup(fallbackContent).openPopup();
+    }
+  };
 
   const onEachFeature = (feature, layer, state) => {
     const stateHandlers = {
