@@ -5,6 +5,7 @@ import styles from './DistrictCard.module.css';
 // Helper function to handle missing data
 const handleMissingData = (value) => value ?? 'N/A';
 
+// Helper component to render key-value pairs
 const KeyValueList = ({ data }) => {
     if (!data) return null;
 
@@ -19,6 +20,7 @@ const KeyValueList = ({ data }) => {
     );
 };
 
+// Helper component to render the election table
 const ElectionTable = ({ tableData }) => {
     if (!tableData || tableData.length === 0) return <p>No table data available</p>;
 
@@ -50,6 +52,7 @@ const ElectionTable = ({ tableData }) => {
     );
 };
 
+// Helper component to render SVG charts
 const ChartContainer = ({ charts }) => {
     if (!charts || charts.length === 0) return <p>No chart data available</p>;
 
@@ -58,6 +61,7 @@ const ChartContainer = ({ charts }) => {
     ));
 };
 
+// Helper function to render SVG data
 const renderSvgData = (svgDataArray) => {
     if (!svgDataArray || svgDataArray.length === 0) return <p>No SVG data available</p>;
 
@@ -74,6 +78,7 @@ const renderSvgData = (svgDataArray) => {
     );
 };
 
+// render electIT data
 const renderElect = ({ svgData, 
     svgDataCharts, 
     tableData, 
@@ -140,47 +145,46 @@ const renderElect = ({ svgData,
     );
 };
 
+// render ITNRW data
 const renderITnrw = (district, state) => {
     console.log(district);
-    const { name, firstVotes, secondVotes } = district;
-    
     return (
-      <div className={styles.districtCard}>
-        <h3>{name || 'Unknown District'}</h3>
-  
-        {/* Render first votes */}
-        {firstVotes && (
-          <>
-            <h4>First Votes</h4>
-            <ul>
-              {Object.entries(firstVotes).map(([party, vote]) => (
-                <li key={party}>
-                  {party}: {vote}
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-  
-        {/* Render second votes */}
-        {secondVotes && (
-          <>
-            <h4>Second Votes</h4>
-            <ul>
-              {Object.entries(secondVotes).map(([party, vote]) => (
-                <li key={party}>
-                  {party}: {vote}
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-      </div>
-    );
+        <div className="district-card">
+            <h3>{district.districtName}</h3>
+            {district.firstVotes ? (
+            <>
+                <h4>First Votes</h4>
+                <ul>
+                {Object.entries(district.firstVotes).map(([party, percentage]) => (
+                    <li key={party}>
+                    <strong>{party}</strong>: {percentage}
+                    </li>
+                ))}
+                </ul>
+            </>
+            ) : (
+            <p>No data available for first votes</p>
+            )}
+
+            {district.secondVotes ? (
+            <>
+                <h4>Second Votes</h4>
+                <ul>
+                {Object.entries(district.secondVotes).map(([party, percentage]) => (
+                    <li key={party}>
+                    <strong>{party}</strong>: {percentage}
+                    </li>
+                ))}
+                </ul>
+            </>
+            ) : (
+            <p>No data available for second votes</p>
+            )}
+        </div>
+    );      
 };
 
-
-
+// Voter Turnout component
 const VoterTurnout = ({ voterTurnout }) => {
     if (!voterTurnout) return null;
 
@@ -191,6 +195,7 @@ const VoterTurnout = ({ voterTurnout }) => {
     );
 };
 
+// Voter Turnout Map component
 const VoterTurnoutMap = ({ voterTurnoutChart }) => {
     if (!voterTurnoutChart || !voterTurnoutChart.svg) return <p>No map data available</p>;
 
@@ -202,6 +207,7 @@ const VoterTurnoutMap = ({ voterTurnoutChart }) => {
     );
 };
 
+// DistrictCard component
 const DistrictCard = ({ district, state }) => {
     if (!district) {
         return <p>No district data available</p>;
