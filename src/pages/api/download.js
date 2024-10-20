@@ -171,10 +171,6 @@ async function scrapeVoterTurnoutChart(page) {
     }
 }
 
-
-
-
-
 export default async function handler(req, res) {
     let browser;
     const { electoralDistrict, state } = req.query;
@@ -212,7 +208,13 @@ export default async function handler(req, res) {
                 break;
             case 'brandenburg':
                 await page.goto(`https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
-                break;     
+                break;
+            case 'bundestag':
+                console.log('Scraping data for Bundestag');
+                let url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-12/wahlkreis-${electoralDistrict}.html`;
+                console.log(url);
+                await page.goto(url, { waitUntil: 'domcontentloaded' });
+                break;            
         }
 
         // Wait for the table to appear
@@ -250,7 +252,7 @@ export default async function handler(req, res) {
 
         // Scrape all SVG elements
         let svgData = null;
-        if(state !== 'berlin') {
+        if(state !== 'berlin' || state !== 'bundestag') {
             svgData = await scrapeAllSVGs(page);
         }
 

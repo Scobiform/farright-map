@@ -141,6 +141,9 @@ const DynamicMap = ({ polygons = [],
           // parentNr
           electoralDistrict = properties.parentNr;
           break;
+        case 'bundestag':
+          electoralDistrict = properties.WKR_NR;
+          break;
         default:
           console.warn(`State '${state}' not recognized.`);
           electoralDistrict = null; // Fallback in case of an unrecognized state
@@ -217,7 +220,8 @@ const DynamicMap = ({ polygons = [],
       berlin: electIT,
       brandenburg: electIT,
       hessen: rlphessen,
-      rlp: rlphessen
+      rlp: rlphessen,
+      bundestag: electIT,
     };
   
     const handler = stateHandlers[state] || ((feature, layer) => {
@@ -229,7 +233,6 @@ const DynamicMap = ({ polygons = [],
   
     handler(feature, layer, state);
   };
-  
   
   return (
     <>
@@ -298,7 +301,7 @@ const DynamicMap = ({ polygons = [],
       {selectedMap === 'bundestag' && (
           <GeoJSON data={bundestagGeoData} 
             style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-            onEachFeature={onEachFeature}
+            onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bundestag')}
           />
         )}
 
