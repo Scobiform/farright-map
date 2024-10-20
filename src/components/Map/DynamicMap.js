@@ -137,6 +137,10 @@ const DynamicMap = ({ polygons = [],
         case 'brandenburg':
           electoralDistrict = properties.gebietNr;
           break;
+        case 'berlin':
+          // parentNr
+          electoralDistrict = properties.parentNr;
+          break;
         default:
           console.warn(`State '${state}' not recognized.`);
           electoralDistrict = null; // Fallback in case of an unrecognized state
@@ -313,7 +317,7 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={berlinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'berlin')}
             />
             <GeoJSON data={niedersachsenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}

@@ -190,18 +190,15 @@ export default async function handler(req, res) {
                 console.log('Scraping data for Schleswig-Holstein');
                 await page.goto(`https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
                 break;
-            case 'hamburg':
-                await page.goto(`https://www.wahlen-hamburg.de/ltw2020/ergebnisse/wahlkreis/${electoralDistrict}/`, { waitUntil: 'domcontentloaded' });
-                break;
             case 'bremen':
                 await page.goto(`https://www.wahlen-bremen.de/Wahlen/2023_05_14/${electoralDistrict}/`, { waitUntil: 'domcontentloaded' });
                 break;
             case 'berlin':
-                await page.goto(`https://www.wahlen-berlin.de/ltw2021/ergebnisse/wahlkreis/${electoralDistrict}/`, { waitUntil: 'domcontentloaded' });
+                await page.goto(`https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_bezirk_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
                 break;
             case 'brandenburg':
                 await page.goto(`https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
-                break;          
+                break;     
         }
 
         // Wait for the table to appear
@@ -238,7 +235,10 @@ export default async function handler(req, res) {
         const statisticsData = await scrapeElectionStatistics(page);
 
         // Scrape all SVG elements
-        const svgData = await scrapeAllSVGs(page);
+        let svgData = null;
+        if(state === 'sh') {
+            svgData = await scrapeAllSVGs(page);
+        }
 
         // Scrape SVG charts and their data attributes
         const svgChartsData = await scrapeSVGCharts(page);
