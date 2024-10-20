@@ -14,4 +14,18 @@
   margin-top: 2.1rem;
   display: block;
   margin-left: 0.63rem;
+
+  &:focus, 
+  &:active {
+    background-color: var(--secondary); /* Background when focused or active */
+    border-color: var(--primary); /* Optional: change border color to match */
+  }
 }
+
+.electoralSwitch select option {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+
+

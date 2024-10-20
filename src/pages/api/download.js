@@ -33,47 +33,27 @@ async function scrapeElectionStatistics(page) {
     }
 }
 
-async function scrapeAllSVGs(page) {
-    try {
-        // Wait for a non-loading SVG or relevant chart to load
-        await page.waitForSelector('svg:not(.loading)', { timeout: 10000 });
-
-        // Scrape all non-loading SVG elements and return them as separate fields in a JSON array
-        const svgData = await page.evaluate(() => {
-            const svgElements = Array.from(document.querySelectorAll('svg:not(.loading)'));
-            return svgElements.map((svg, index) => {
-                return {
-                    [`svg_${index + 1}`]: svg.outerHTML.trim() // Save each SVG as a separate field
-                };
-            });
-        });
-
-        return svgData;
-    } catch (error) {
-        console.error('Error scraping SVGs:', error);
-        return [];
-    }
-}
-
 async function scrapeSVGCharts(page) {
     try {
-        // Wait for the container with the SVG to load
-        await page.waitForSelector('div.js-d3chart', { timeout: 10000 });
+        // Wait for any element with the class containing 'chart' to load
+        await page.waitForSelector('[class*="chart"]', { timeout: 1000 });
 
         // Scrape all SVG elements and their surrounding data attributes
         const svgData = await page.evaluate(() => {
-            const svgElements = Array.from(document.querySelectorAll('div.js-d3chart'));
+            const chartElements = Array.from(document.querySelectorAll('[class*="chart"]'));
 
-            // Return the outer HTML of the SVG and the data attributes
-            return svgElements.map(svgElement => {
-                const svg = svgElement.querySelector('svg') ? svgElement.querySelector('svg').outerHTML.trim() : null;
-                const chartData = svgElement.getAttribute('data-chartdata');
-                const chartOptions = svgElement.getAttribute('data-chartoptions');
+            // Return the outer HTML of the SVG, the class name, and the data attributes
+            return chartElements.map(chartElement => {
+                const svg = chartElement.querySelector('svg') ? chartElement.querySelector('svg').outerHTML.trim() : null;
+                const chartData = chartElement.getAttribute('data-chartdata');
+                const chartOptions = chartElement.getAttribute('data-chartoptions');
+                const className = chartElement.getAttribute('class');
 
                 return {
                     svg,
+                    className: className || 'No class name',
                     chartData: chartData ? JSON.parse(chartData) : null,
-                    chartOptions: chartOptions ? JSON.parse(chartOptions) : null
+                    chartOptions: chartOptions ? JSON.parse(chartOptions) : null,
                 };
             });
         });
@@ -205,8 +185,10 @@ export default async function handler(req, res) {
                 break;
             case 'bremen':
                 console.log('Scraping data for Bremen');
-                url = 'https://www.wahlen-bremen.de/Wahlen/2023_05_14/${electoralDistrict}/';
-                await page.goto(`https://www.wahlen-bremen.de/Wahlen/2023_05_14/${electoralDistrict}/`, { waitUntil: 'domcontentloaded' });
+                // https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_04011000-1.html
+                // https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_04012000-1.html
+                url = 'https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_'+electoralDistrict;
+                await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
                 break;
             case 'berlin':
                 url = 'https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_bezirk_'+electoralDistrict
@@ -259,12 +241,6 @@ export default async function handler(req, res) {
         // Scrape the election statistics
         const statisticsData = await scrapeElectionStatistics(page);
 
-        // Scrape all SVG elements
-        let svgData = null;
-        if(state !== 'berlin' || state !== 'bundestag') {
-            svgData = await scrapeAllSVGs(page);
-        }
-
         // Scrape SVG charts and their data attributes
         const svgChartsData = await scrapeSVGCharts(page);
 
@@ -283,7 +259,6 @@ export default async function handler(req, res) {
             name,
             tableData,
             statisticsData,
-            svgData,
             svgChartsData,
             electedData,
             voterTurnout,

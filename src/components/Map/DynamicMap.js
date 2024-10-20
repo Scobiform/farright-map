@@ -92,7 +92,10 @@ const { MapContainer,
 const DynamicMap = ({ polygons = [], 
   ToolTip = "", 
   children, 
-  className, width = "100vw", height = "98vh", ...rest }) => {
+  className, 
+  width = "100vw", 
+  height = "98vh", 
+  ...rest }) => {
   
   // Default to Bundestagwahl data
   const [selectedMap, setSelectedMap] = useState('bundestag');
@@ -143,7 +146,11 @@ const DynamicMap = ({ polygons = [],
           break;
         case 'berlin':
           // parentNr
-          electoralDistrict = properties.parentNr;
+          electoralDistrict = properties.gebietNr;
+          districtName = properties.name;
+          break;
+        case 'bremen':
+          electoralDistrict = properties.gebietNr;
           districtName = properties.name;
           break;
         case 'bundestag':
@@ -361,11 +368,11 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={bremenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bremen')}
             />
             <GeoJSON data={bremerhavenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bremen')}
             />
             <GeoJSON data={schleswigHolsteinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}

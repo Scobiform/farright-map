@@ -84,4 +84,17 @@
     margin-top: 15px;
     text-align: right;
   }
+
+  .svgItem {
+    margin: 20px 0;
+}
+
+.mapContainer {
+    margin-top: 20px;
+}
+
+.card svg {
+    height: fit-content !important;
+    width: 100% !important;
+}
   
