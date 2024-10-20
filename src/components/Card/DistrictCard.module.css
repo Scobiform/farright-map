@@ -3,7 +3,6 @@
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0.42rem;
-    max-width: 320px;
 }
 
 .card h3 {
@@ -11,6 +10,11 @@
     font-weight: bold;
     color: var(--primary);
     margin-bottom: 10px;
+}
+
+.card svg {
+    height: fit-content !important;
+    width: 100% !important;
 }
   
   .card-header {

@@ -1,110 +1,203 @@
+import React from 'react';
+import DistrictChart from '@components/Chart/DistrictChart';
 import styles from './DistrictCard.module.css';
 
-const renderExternalDistrictData = (data) => {
-    const renderValue = (key, value) => {
-        // Handle null or undefined values
-        if (value === null || value === undefined) {
-            return 'N/A'; // or any placeholder for missing data
-        }
+// Helper function to handle missing data
+const handleMissingData = (value) => value ?? 'N/A';
 
-        // Handle arrays and objects separately
-        if (Array.isArray(value)) {
-            return (
-                <ul className={styles.cardList}>
-                    {value.map((item, index) => (
-                        <li key={index}>
-                            {typeof item === 'object' ? JSON.stringify(item) : item.toString()}
-                        </li>
-                    ))}
-                </ul>
-            );
-        } else if (typeof value === 'object' && value !== null) {
-            return JSON.stringify(value);
-        }
-
-        return value.toString();
-    };
+const KeyValueList = ({ data }) => {
+    if (!data) return null;
 
     return (
-        <div className={styles.card}>
-            {/* Check if data exists */}
-            {data ? (
-                <>
-                    {/* Display district name if available */}
-                    {data.name && <h3 className={styles.cardHeader}>{data.name}</h3>}
+        <ul className={styles.cardList}>
+            {Object.entries(data).map(([key, value]) => (
+                <li key={key}>
+                    <strong>{key}:</strong> {handleMissingData(value)}
+                </li>
+            ))}
+        </ul>
+    );
+};
 
-                    {/* Display key-value pairs, handling objects with JSON.stringify */}
+const ElectionTable = ({ tableData }) => {
+    if (!tableData || tableData.length === 0) return <p>No table data available</p>;
+
+    return (
+        <table className={styles.table}>
+            <thead>
+                <tr>
+                    <th>Party</th>
+                    <th>Candidate</th>
+                    <th>First Votes</th>
+                    <th>First Vote %</th>
+                    <th>Second Votes</th>
+                    <th>Second Vote %</th>
+                </tr>
+            </thead>
+            <tbody>
+                {tableData.map((row, index) => (
+                    <tr key={index}>
+                        <td>{handleMissingData(row.party)}</td>
+                        <td>{handleMissingData(row.candidate)}</td>
+                        <td>{handleMissingData(row.firstVotes)}</td>
+                        <td>{handleMissingData(row.firstVotePercentage)}</td>
+                        <td>{handleMissingData(row.secondVotes)}</td>
+                        <td>{handleMissingData(row.secondVotePercentage)}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    );
+};
+
+const ChartContainer = ({ charts }) => {
+    if (!charts || charts.length === 0) return <p>No chart data available</p>;
+
+    return charts.map((chart, index) => (
+        <DistrictChart key={index} chart={chart} />
+    ));
+};
+
+const renderSvgData = (svgDataArray) => {
+    if (!svgDataArray || svgDataArray.length === 0) return <p>No SVG data available</p>;
+
+    return (
+        <div className={styles.svgContainer}>
+            {svgDataArray.map((svgObject, index) => (
+                <div
+                    key={index}
+                    className={styles.svgItem}
+                    dangerouslySetInnerHTML={{ __html: Object.values(svgObject)[0] }} // Render the SVG string
+                />
+            ))}
+        </div>
+    );
+};
+
+const renderElect = ({ svgData, 
+    svgDataCharts, 
+    tableData, 
+    statisticsData, 
+    electedData,
+    voterTurnout, 
+    voterTurnoutChart,
+    state, }) => {
+    return (
+        <div className={styles.card}>
+            {/* Render elected data only for Brandenburg */}
+            {state === 'brandenburg' && electedData && (
+                <>
+                    <h3>Voter Turnout</h3>
+                    <VoterTurnout voterTurnout={voterTurnout} />
+                    <VoterTurnoutMap voterTurnoutChart={voterTurnoutChart} />
+                    
+                    <h3>Elected Candidate</h3>
+                    <div className={styles.electedCard}>
+                        <p><strong>Name:</strong> {handleMissingData(electedData.electedPerson.name)}</p>
+                        <p><strong>Party:</strong> {handleMissingData(electedData.electedPerson.party)}</p>
+                        <p><strong>Percentage:</strong> {handleMissingData(electedData.electedPerson.percentage)}</p>
+                    </div>
+                    <h4>Runner-up</h4>
+                    <div className={styles.electedCard}>
+                        <p><strong>Name:</strong> {handleMissingData(electedData.runnerUpPerson.name)}</p>
+                        <p><strong>Party:</strong> {handleMissingData(electedData.runnerUpPerson.party)}</p>
+                        <p><strong>Percentage:</strong> {handleMissingData(electedData.runnerUpPerson.percentage)}</p>
+                    </div>
+                </>
+            )}
+            {svgData && (
+                <>
+                    <h3>Election Visualization</h3>
+                    {renderSvgData(svgData)}
+                </>
+            )}
+            {tableData && (
+                <>
+                    <h3>Election Results</h3>
+                    <ElectionTable tableData={tableData} />
+                </>
+            )}
+            {statisticsData && (
+                <>
+                    <h3>Election Statistics</h3>
                     <ul className={styles.cardList}>
-                        {Object.entries(data).map(([key, value]) => (
-                            <li key={key}>
-                                <strong>{key}:</strong> {renderValue(key, value)}
+                        {statisticsData.map((item, index) => (
+                            <li key={index}>
+                                <strong>{item.label}:</strong> {handleMissingData(item.value)}
                             </li>
                         ))}
                     </ul>
                 </>
-            ) : (
-                <p>No district data available</p>
+            )}
+            {svgDataCharts && (
+                <>
+                    <h3>SVG Charts</h3>
+                    <ChartContainer charts={svgDataCharts} />
+                </>
             )}
         </div>
     );
 };
-const DistrictCard = ({ district }) => {
-    const renderValue = (key, value) => {
-        // Handle null or undefined values
-        if (value === null || value === undefined) {
-            return 'N/A'; // or any placeholder for missing data
-        }
 
-        // Handle arrays and objects separately
-        if (Array.isArray(value)) {
-            return (
-                <ul className={styles.cardList}>
-                    {value.map((item, index) => (
-                        <li key={index}>
-                            {typeof item === 'object' ? JSON.stringify(item) : item.toString()}
-                        </li>
-                    ))}
-                </ul>
-            );
-        } else if (typeof value === 'object' && value !== null) {
-            return JSON.stringify(value);
-        }
+const VoterTurnout = ({ voterTurnout }) => {
+    if (!voterTurnout) return null;
 
-        return value.toString();
-    };
+    return (
+        <div className={styles.turnoutCard}>
+            <strong>Voter Turnout:</strong> {voterTurnout}%
+        </div>
+    );
+};
 
-    // Check if the district object has a "bezeichnung" (external district data)
-    if (district && district.bezeichnung) {
-        return renderExternalDistrictData(district);
+const VoterTurnoutMap = ({ voterTurnoutChart }) => {
+    if (!voterTurnoutChart || !voterTurnoutChart.svg) return <p>No map data available</p>;
+
+    return (
+        <div className={styles.mapContainer}>
+            <h3>Voter Turnout Map</h3>
+            <div dangerouslySetInnerHTML={{ __html: voterTurnoutChart.svg }} />
+        </div>
+    );
+};
+
+
+const DistrictCard = ({ district, state }) => {
+    if (!district) {
+        return <p>No district data available</p>;
     }
-    // Default rendering for other district data
-    else {
+
+    // Check if voter turnout data exists
+    const { voterTurnout, voterTurnoutChart } = district;
+
+    if (district.tableData) {
+        return renderElect({ ...district, state });
+    }
+
+    if (district.bezeichnung) {
         return (
             <div className={styles.card}>
-                <div className="card-body">
-                    {/* Check if district object exists */}
-                    {district ? (
-                        <>
-                            {/* Display district name if available */}
-                            {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
-
-                            {/* Display key-value pairs, handling objects and arrays gracefully */}
-                            <ul className={styles.cardList}>
-                                {Object.entries(district).map(([key, value]) => (
-                                    <li key={key}>
-                                        <strong>{key}:</strong> {renderValue(key, value)}
-                                    </li>
-                                ))}
-                            </ul>
-                        </>
-                    ) : (
-                        <p>No district data available</p>
-                    )}
-                </div>
+                {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
+                <KeyValueList data={{
+                    Name: district.name,
+                    Link: district.link,
+                    Candidate: district.candidate,
+                    'Link Reason': district.linkReason,
+                    Methodology: district.methodology,
+                    'Updated At': district.updatedAt,
+                    Counted: district.counted,
+                    'To Count': district.toCount,
+                }} />
+                {district.charts && <ChartContainer charts={district.charts} />}
             </div>
         );
     }
+
+    return (
+        <div className={styles.card}>
+            {district.name && <h3 className={styles.cardHeader}>{district.name}</h3>}
+            <KeyValueList data={district} />
+        </div>
+    );
 };
 
 export default DistrictCard;
-

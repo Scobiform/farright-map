@@ -1,7 +1,7 @@
 {
   "name": "farright-map",
   "homepage": "https://github.com/Scobiform/farright-map",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "AGPL-3.0-only",
   "author": "Scobiform <datenkrake@scobiform.com>",
   "scripts": {
@@ -26,10 +26,12 @@
     "leaflet": "^1.9.4",
     "next": "^14.2.15",
     "npm": "^10.8.3",
+    "puppeteer": "^23.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-leaflet": "^4.2.1",
+    "recharts": "^2.13.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {
