@@ -88,9 +88,11 @@ const renderElect = ({ svgData,
     name }) => {
     return (
         <div className={styles.card}>
+            {name && <h3 className={styles.cardHeader}>{name}</h3>}
             {/* Render elected data only for Brandenburg */}
             {(state === 'brandenburg') && electedData && (
                 <>
+                    
                     <h3>Elected Candidate</h3>
                     <div className={styles.electedCard}>
                         <p><strong>Name:</strong> {handleMissingData(electedData.electedPerson.name)}</p>
