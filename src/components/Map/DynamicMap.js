@@ -130,24 +130,29 @@ const DynamicMap = ({ polygons = [],
     setLoading(true); 
     try {
       let electoralDistrict;
+      let districtName;
       let stateNumber;
       switch (state.toLowerCase()) {
         case 'sh': // Schleswig-Holstein
           electoralDistrict = properties.WKNR_int;
+          districtName = properties.WKNAME;
           break;
         case 'brandenburg':
           electoralDistrict = properties.gebietNr;
+          districtName = properties.name;
           break;
         case 'berlin':
           // parentNr
           electoralDistrict = properties.parentNr;
+          districtName = properties.name;
           break;
         case 'bundestag':
           electoralDistrict = properties.WKR_NR;
           stateNumber = parseInt(properties.LAND_NR, 10);
+          districtName = properties.WKR_NAME;
           break;
-
       }
+      console.log('District Name:', districtName); 
 
       // API endpoint for fetching district data
       // api/download?electoralDistrict=1&state=sh
@@ -155,7 +160,14 @@ const DynamicMap = ({ polygons = [],
       if (!response.ok) {
         throw new Error('Failed to fetch data');
       }
+
       const data = await response.json();
+      console.log('Data Before Adding Name:', data);
+
+      // Add the district name to the data object
+      data.name = districtName || 'Unknown District';
+      console.log('Data After Adding Name:', data);
+
       return data;
     } catch (error) {
       console.error('Failed to fetch district data:', error);

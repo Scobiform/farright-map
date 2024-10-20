@@ -173,9 +173,11 @@ async function scrapeVoterTurnoutChart(page) {
 
 export default async function handler(req, res) {
     let browser;
-    const { electoralDistrict, state, stateNumber } = req.query;
+    let url = null;
+    const { electoralDistrict, state, stateNumber, name } = req.query;
     const cacheDir = path.join(process.cwd(), 'public', 'cache');
     const cacheFile = path.join(cacheDir, `${electoralDistrict}_${state}.json`);
+
 
     // Check if cache file exists
     if (fs.existsSync(cacheFile)) {
@@ -198,24 +200,31 @@ export default async function handler(req, res) {
         switch (state) {
             case 'sh':
                 console.log('Scraping data for Schleswig-Holstein');
+                url = `https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`;
                 await page.goto(`https://www.wahlen-sh.de/ltw_2022/ergebnispraesentation_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
                 break;
             case 'bremen':
+                console.log('Scraping data for Bremen');
+                url = 'https://www.wahlen-bremen.de/Wahlen/2023_05_14/${electoralDistrict}/';
                 await page.goto(`https://www.wahlen-bremen.de/Wahlen/2023_05_14/${electoralDistrict}/`, { waitUntil: 'domcontentloaded' });
                 break;
             case 'berlin':
-                await page.goto(`https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_bezirk_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
+                url = 'https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_bezirk_'+electoralDistrict
+                await page.goto(url+'.html', { waitUntil: 'domcontentloaded' });
                 break;
             case 'brandenburg':
+                console.log('Scraping data for Brandenburg');
+                url = `https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`;
                 await page.goto(`https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`, { waitUntil: 'domcontentloaded' });
                 break;
             case 'bundestag':
                 console.log('Scraping data for Bundestag');
-                let url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`;
-                console.log(url);
+                url = `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`;
                 await page.goto(url, { waitUntil: 'domcontentloaded' });
                 break;            
         }
+
+        console.log(url);
 
         // Wait for the table to appear
         await page.waitForSelector('table.tablesaw.table-stimmen', { timeout: 10000 });
@@ -271,6 +280,7 @@ export default async function handler(req, res) {
 
         // Combine the table data and statistics data
         const combinedData = {
+            name,
             tableData,
             statisticsData,
             svgData,

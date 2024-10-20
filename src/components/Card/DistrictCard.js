@@ -74,16 +74,22 @@ const renderSvgData = (svgDataArray) => {
     );
 };
 
-const renderElect = ({ svgData, 
+const renderElect = ({ 
+    svgData, 
     svgDataCharts, 
     tableData, 
     statisticsData, 
-    electedData,
+    electedData, 
     voterTurnout, 
-    voterTurnoutChart,
-    state, }) => {
+    voterTurnoutChart, 
+    state, 
+    name 
+}) => {
     return (
         <div className={styles.card}>
+            {/* Ensure the name is rendered at the top */}
+            {name && <h1>{name}</h1>}
+
             {/* Render elected data only for Brandenburg */}
             {state === 'brandenburg' && electedData && (
                 <>
@@ -104,30 +110,41 @@ const renderElect = ({ svgData,
                     </div>
                 </>
             )}
+
+            {/* Render SVG data if available */}
             {svgData && (
                 <>
                     <h3>Election Visualization</h3>
                     {renderSvgData(svgData)}
                 </>
             )}
+
+            {/* Render the election results table if available */}
             {tableData && (
                 <>
                     <h3>Election Results</h3>
                     <ElectionTable tableData={tableData} />
                 </>
             )}
+
+            {/* Render election statistics if available */}
             {statisticsData && (
                 <>
                     <h3>Election Statistics</h3>
                     <ul className={styles.cardList}>
-                        {statisticsData.map((item, index) => (
-                            <li key={index}>
-                                <strong>{item.label}:</strong> {handleMissingData(item.value)}
-                            </li>
-                        ))}
+                        {statisticsData
+                            .filter(item => item.label !== 'N/A')
+                            .map((item, index) => (
+                                <li key={index}>
+                                    <strong>{item.label}:</strong> {handleMissingData(item.value)}
+                                </li>
+                            ))}
                     </ul>
                 </>
             )}
+
+
+            {/* Render SVG charts if available */}
             {svgDataCharts && (
                 <>
                     <h3>SVG Charts</h3>
@@ -137,6 +154,7 @@ const renderElect = ({ svgData,
         </div>
     );
 };
+
 
 const VoterTurnout = ({ voterTurnout }) => {
     if (!voterTurnout) return null;
