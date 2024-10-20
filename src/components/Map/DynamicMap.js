@@ -184,6 +184,25 @@ const DynamicMap = ({ polygons = [],
     }
   };
 
+  // fetch IT.NRW data
+  const fetchITNRWData = async (properties) => {
+    setLoading(true);
+    //console.log('Properties:', properties);
+    try {
+      const response = await fetch(`/api/itnrw?LWKNR=${properties.LWKNR}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Failed to fetch district data:', error);
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const electIT = (feature, layer, state) => {
     layer.on('click', async (e) => {
       try {
@@ -231,6 +250,36 @@ const DynamicMap = ({ polygons = [],
     });
   };
 
+  const itnrw = (feature, layer, state) => {
+    // Add a click event listener to the layer
+    layer.on('click', async (e) => {
+      try {
+          // Fetch district data asynchronously
+          const districtData = await fetchITNRWData(feature.properties);
+
+          // Render the DistrictCard component with the fetched data
+          const popupContent = ReactDOMServer.renderToString(
+              <DistrictCard district={districtData || feature.properties} state={state}  />
+          );
+
+          // Bind the popup to the layer after the data is fetched
+          layer.bindPopup(popupContent).openPopup();
+      } catch (error) {
+
+          console.error("Error fetching district data:", error);
+
+          // Fallback to rendering feature properties if fetching fails
+          const fallbackContent = ReactDOMServer.renderToString(
+              <DistrictCard district={feature.properties} />
+          );
+
+          layer.bindPopup(fallbackContent).openPopup();
+      }
+    });
+  };
+
+
+
   const onEachFeature = (feature, layer, state) => {
     const stateHandlers = {
       sh: electIT,
@@ -239,6 +288,7 @@ const DynamicMap = ({ polygons = [],
       brandenburg: electIT,
       hessen: rlphessen,
       rlp: rlphessen,
+      nrw: itnrw,
       bundestag: electIT,
     };
   
@@ -352,7 +402,7 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={nrwGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'nrw')}
             />
             <GeoJSON data={bavariaGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}

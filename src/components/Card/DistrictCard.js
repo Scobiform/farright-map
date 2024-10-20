@@ -140,6 +140,47 @@ const renderElect = ({ svgData,
     );
 };
 
+const renderITnrw = (district, state) => {
+    console.log(district);
+    const { name, firstVotes, secondVotes } = district;
+    
+    return (
+      <div className={styles.districtCard}>
+        <h3>{name || 'Unknown District'}</h3>
+  
+        {/* Render first votes */}
+        {firstVotes && (
+          <>
+            <h4>First Votes</h4>
+            <ul>
+              {Object.entries(firstVotes).map(([party, vote]) => (
+                <li key={party}>
+                  {party}: {vote}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+  
+        {/* Render second votes */}
+        {secondVotes && (
+          <>
+            <h4>Second Votes</h4>
+            <ul>
+              {Object.entries(secondVotes).map(([party, vote]) => (
+                <li key={party}>
+                  {party}: {vote}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+      </div>
+    );
+};
+
+
+
 const VoterTurnout = ({ voterTurnout }) => {
     if (!voterTurnout) return null;
 
@@ -171,6 +212,10 @@ const DistrictCard = ({ district, state }) => {
 
     if (district.tableData) {
         return renderElect({ ...district, state });
+    }
+
+    if(district.firstVotes) {
+        return (renderITnrw(district, state));
     }
 
     if (district.bezeichnung) {
