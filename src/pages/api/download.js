@@ -1,5 +1,6 @@
 import puppeteer from 'puppeteer';
 import fs from 'fs';
+import path from 'path';
 
 async function scrapeElectionStatistics(page) {
     try {
@@ -177,8 +178,21 @@ async function scrapeVoterTurnoutChart(page) {
 export default async function handler(req, res) {
     let browser;
     const { electoralDistrict, state } = req.query;
-    const cacheDir = 'public/cache';
+    const cacheDir = path.join(process.cwd(), 'public', 'cache');
+    const cacheFile = path.join(cacheDir, `${electoralDistrict}_${state}.json`);
 
+    // Check if cache file exists
+    if (fs.existsSync(cacheFile)) {
+        try {
+            // Read and return cached data
+            const cachedData = fs.readFileSync(cacheFile, 'utf8');
+            return res.status(200).json(JSON.parse(cachedData));
+        } catch (error) {
+            console.error('Error reading cache file:', error);
+            return res.status(500).json({ error: 'Failed to read cached data' });
+        }
+    }
+    
     try {
         // Launch Puppeteer
         browser = await puppeteer.launch({ headless: true });
@@ -236,7 +250,7 @@ export default async function handler(req, res) {
 
         // Scrape all SVG elements
         let svgData = null;
-        if(state === 'sh') {
+        if(state !== 'berlin') {
             svgData = await scrapeAllSVGs(page);
         }
 
@@ -264,11 +278,15 @@ export default async function handler(req, res) {
             voterTurnoutChart,
         };
         
-        // Return the scraped data as JSON
-        res.status(200).json(combinedData);
+        if (!fs.existsSync(cacheDir)) {
+            fs.mkdirSync(cacheDir, { recursive: true });
+        }
 
-        // write the data to a file
-        fs.writeFileSync(cacheDir+'/'+electoralDistrict+state+'.json', JSON.stringify(combinedData, null, 2));
+        // Cache the data by writing it to a file
+        fs.writeFileSync(cacheFile, JSON.stringify(combinedData, null, 2));
+
+        // Return the scraped data
+        res.status(200).json(combinedData);
 
     } catch (error) {
         console.error('Error scraping table:', error);

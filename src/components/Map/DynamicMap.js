@@ -105,12 +105,12 @@ const DynamicMap = ({ polygons = [],
     mapClassName = `${mapClassName} ${className}`;
   }
 
+  // Event handler for the dropdown
   const handleSwitch = (event) => {
     setSelectedMap(event.target.value);
   }; 
 
-
-
+  // Function to fetch district data from the API
   const fetchDistrictData = async (code, state) => {
     try {
       const response = await fetch(`/api/district?code=${code}&state=${state}`);
@@ -211,19 +211,25 @@ const DynamicMap = ({ polygons = [],
   };
 
   const onEachFeature = (feature, layer, state) => {
-    if (state === 'sh' || state === 'hamburg' 
-      || state === 'bremen' || state === 'berlin' 
-      || state === 'brandenburg') {
-      electIT(feature, layer, state);
-    } else if (state === 'hessen' || state === 'rlp') {
-      rlphessen(feature, layer, state);
-    } else {
+    const stateHandlers = {
+      sh: electIT,
+      bremen: electIT,
+      berlin: electIT,
+      brandenburg: electIT,
+      hessen: rlphessen,
+      rlp: rlphessen
+    };
+  
+    const handler = stateHandlers[state] || ((feature, layer) => {
       const popupContent = ReactDOMServer.renderToString(
         <DistrictCard district={feature.properties} />
       );
       layer.bindPopup(popupContent);
-    }
+    });
+  
+    handler(feature, layer, state);
   };
+  
   
   return (
     <>
