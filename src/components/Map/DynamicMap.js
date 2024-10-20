@@ -76,6 +76,7 @@ import rheinlandPfalzGeoData from '@data/rhineland-palatinat/geo.json';
 
 // Other components
 import DistrictCard from '@components/Card/DistrictCard';
+import LoadingSpinner from '@components/Visual/LoadingSpinner'; 
 
 // Import the required components from React-Leaflet
 const { MapContainer, 
@@ -91,9 +92,17 @@ const { MapContainer,
 const DynamicMap = ({ polygons = [], 
   ToolTip = "", 
   children, 
-  className, width = "100vw", height = "98vh", ...rest }) => {
+  className, 
+  width = "100vw", 
+  height = "98vh", 
+  ...rest }) => {
   
-  const [selectedMap, setSelectedMap] = useState('bundestag'); // Default to Bundestagwahl data
+  // Default to Bundestagwahl data
+  const [selectedMap, setSelectedMap] = useState('bundestag');
+  // Loading state for fetching data
+  const [loading, setLoading] = useState(false);
+  // District data state
+  const [districtData, setDistrictData] = useState(null);
   
   let mapClassName = styles.map;
 
@@ -101,10 +110,12 @@ const DynamicMap = ({ polygons = [],
     mapClassName = `${mapClassName} ${className}`;
   }
 
+  // Event handler for the dropdown
   const handleSwitch = (event) => {
     setSelectedMap(event.target.value);
   }; 
 
+  // Function to fetch district data from the API
   const fetchDistrictData = async (code, state) => {
     try {
       const response = await fetch(`/api/district?code=${code}&state=${state}`);
@@ -118,42 +129,201 @@ const DynamicMap = ({ polygons = [],
     }
   };
 
-  const onEachFeature = (feature, layer, state) => {
-    // Check if feature has a code (for fetching data) or use its properties directly
-    if (feature.properties.code) {
-        // Add a click event listener to the layer
-        layer.on('click', async (e) => {
-            try {
-                // Fetch district data asynchronously
-                const districtData = await fetchDistrictData(feature.properties.code, state);
-                
-                // Render the DistrictCard component with the fetched data
-                const popupContent = ReactDOMServer.renderToString(
-                    <DistrictCard district={districtData || feature.properties} />
-                );
-                
-                // Bind the popup to the layer after the data is fetched
-                layer.bindPopup(popupContent).openPopup();
-            } catch (error) {
-                console.error("Error fetching district data:", error);
-                // Fallback to rendering feature properties if fetching fails
-                const fallbackContent = ReactDOMServer.renderToString(
-                    <DistrictCard district={feature.properties} />
-                );
-                layer.bindPopup(fallbackContent).openPopup();
-            }
-        });
-    } else {
-        // If no code, use the feature's properties directly
-        const popupContent = ReactDOMServer.renderToString(
-            <DistrictCard district={feature.properties} />
-        );
-        layer.bindPopup(popupContent);
+  /* Function to fetch electoral district data from electIT */
+  const fetchElectITData = async (properties, state) => {
+    setLoading(true); 
+    try {
+        let electoralDistrict, districtName, stateNumber;
+
+        switch (state.toLowerCase()) {
+            case 'sh':
+            case 'berlin':
+            case 'brandenburg':
+            case 'bremen':
+                electoralDistrict = properties.gebietNr || properties.WKNR_int;
+
+                // Ensure that districtName is always a string, with fallback if name is undefined
+                districtName = properties.name
+                    ? `${state.toUpperCase()} ${properties.name}`.toUpperCase()
+                    : `${properties.WKNAME}`.toUpperCase();
+
+                break;
+
+            case 'bundestag':
+                electoralDistrict = properties.WKR_NR;
+                stateNumber = parseInt(properties.LAND_NR, 10);
+                districtName = properties.WKR_NAME || 'Unknown Bundestag District';
+                break;
+
+            default:
+                districtName = 'Unknown District';
+                break;
+        }
+
+        console.log('District Name:', districtName); 
+
+        // API endpoint for fetching district data
+        const response = await fetch(`/api/download?electoralDistrict=${electoralDistrict}&state=${state}&stateNumber=${stateNumber}`);
+
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+
+        // Parse the JSON response
+        const data = await response.json();
+
+        // Add the district name to the data object
+        data.name = districtName;
+
+        return data;
+    } catch (error) {
+        console.error('Failed to fetch district data:', error);
+        return null;
+    } finally {
+        setLoading(false);
     }
-};
+  };
 
 
+  // fetch IT.NRW data
+  const fetchITNRWData = async (properties) => {
+    setLoading(true);
+    //console.log('Properties:', properties);
+    try {
+      const response = await fetch(`/api/itnrw?LWKNR=${properties.LWKNR}`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch data');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Failed to fetch district data:', error);
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const electIT = (feature, layer, state) => {
+    layer.on('click', async (e) => {
+      try {
+          // Fetch district data asynchronously
+          const districtData = await fetchElectITData(feature.properties, state);
+          // Render the DistrictCard component with the fetched data
+          const popupContent = ReactDOMServer.renderToString(
+              <DistrictCard district={districtData || feature.properties} state={state} />
+          );
+          // Bind the popup to the layer after the data is fetched
+          layer.bindPopup(popupContent).openPopup();
+      } catch (error) {
+          console.error("Error fetching district data:", error);
+          // Fallback to rendering feature properties if fetching fails
+          const fallbackContent = ReactDOMServer.renderToString(
+              <DistrictCard district={feature.properties} />
+          );
+          layer.bindPopup(fallbackContent).openPopup();
+      }
+  });
+  };
+
+  const rlphessen = (feature, layer, state) => {
+    // Add a click event listener to the layer
+    layer.on('click', async (e) => {
+      try {
+          // Fetch district data asynchronously
+          const districtData = await fetchDistrictData(feature.properties.code, state);
+          
+          // Render the DistrictCard component with the fetched data
+          const popupContent = ReactDOMServer.renderToString(
+              <DistrictCard district={districtData || feature.properties} />
+          );
+          
+          // Bind the popup to the layer after the data is fetched
+          layer.bindPopup(popupContent).openPopup();
+      } catch (error) {
+          console.error("Error fetching district data:", error);
+          // Fallback to rendering feature properties if fetching fails
+          const fallbackContent = ReactDOMServer.renderToString(
+              <DistrictCard district={feature.properties} />
+          );
+          layer.bindPopup(fallbackContent).openPopup();
+      }
+    });
+  };
+
+  const itnrw = (feature, layer, state) => {
+    // Add a click event listener to the layer
+    layer.on('click', async (e) => {
+      try {
+          // Fetch district data asynchronously
+          const districtData = await fetchITNRWData(feature.properties);
+
+          // Render the DistrictCard component with the fetched data
+          const popupContent = ReactDOMServer.renderToString(
+              <DistrictCard district={districtData || feature.properties} state={state}  />
+          );
+
+          // Bind the popup to the layer after the data is fetched
+          layer.bindPopup(popupContent).openPopup();
+      } catch (error) {
+
+          console.error("Error fetching district data:", error);
+
+          // Fallback to rendering feature properties if fetching fails
+          const fallbackContent = ReactDOMServer.renderToString(
+              <DistrictCard district={feature.properties} />
+          );
+
+          layer.bindPopup(fallbackContent).openPopup();
+      }
+    });
+  };
+
+  // Handle the click event on the layer
+  const handleLayerClick = async (feature, layer, state, fetchFn) => {
+    try {
+      const data = await fetchFn(feature.properties, state);
+      setDistrictData(data);
+
+      const popupContent = ReactDOMServer.renderToString(
+        <DistrictCard district={districtData || feature.properties} state={state} />
+      );
+      layer.bindPopup(popupContent).openPopup();
+    } catch (error) {
+      console.error('Error fetching district data:', error);
+      const fallbackContent = ReactDOMServer.renderToString(
+        <DistrictCard district={feature.properties} />
+      );
+      layer.bindPopup(fallbackContent).openPopup();
+    }
+  };
+
+  const onEachFeature = (feature, layer, state) => {
+    const stateHandlers = {
+      sh: electIT,
+      bremen: electIT,
+      berlin: electIT,
+      brandenburg: electIT,
+      hessen: rlphessen,
+      rlp: rlphessen,
+      nrw: itnrw,
+      bundestag: electIT,
+    };
+  
+    const handler = stateHandlers[state] || ((feature, layer) => {
+      const popupContent = ReactDOMServer.renderToString(
+        <DistrictCard district={feature.properties} />
+      );
+      layer.bindPopup(popupContent);
+    });
+  
+    handler(feature, layer, state);
+  };
+  
   return (
+    <>
+    {/* Conditionally render LoadingSpinner */}
+    {loading && <LoadingSpinner />}
     <MapContainer 
       className={mapClassName + " invert"} 
       style={{ width, height }} 
@@ -172,6 +342,7 @@ const DynamicMap = ({ polygons = [],
         </label>
       </div>
 
+      {/* Add LayersControl to the Map */}
       <LayersControl position="topright">
         {/* Add OpenStreetMap Layer */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
@@ -216,7 +387,7 @@ const DynamicMap = ({ polygons = [],
       {selectedMap === 'bundestag' && (
           <GeoJSON data={bundestagGeoData} 
             style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-            onEachFeature={onEachFeature}
+            onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bundestag')}
           />
         )}
 
@@ -225,7 +396,7 @@ const DynamicMap = ({ polygons = [],
             {/* Render all Landtagswahlkreise GeoJSONs */}
             <GeoJSON data={geodata} 
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'brandenburg')}
             />
             <GeoJSON data={sachsenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
@@ -241,7 +412,7 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={berlinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'berlin')}
             />
             <GeoJSON data={niedersachsenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
@@ -249,7 +420,7 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={nrwGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'nrw')}
             />
             <GeoJSON data={bavariaGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
@@ -265,15 +436,15 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={bremenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bremen')}
             />
             <GeoJSON data={bremerhavenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'bremen')}
             />
             <GeoJSON data={schleswigHolsteinGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'sh')}
             />
             <GeoJSON data={mecklenburgVorpommernGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
@@ -294,6 +465,7 @@ const DynamicMap = ({ polygons = [],
           </>
         )}
       </MapContainer>
+    </>
   );
 };
 
