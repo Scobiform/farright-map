@@ -145,7 +145,7 @@ const DynamicMap = ({ polygons = [],
                 // Ensure that districtName is always a string, with fallback if name is undefined
                 districtName = properties.name
                     ? `${state.toUpperCase()} ${properties.name}`.toUpperCase()
-                    : `${state.toUpperCase()} ${properties.WKNAME}`.toUpperCase();
+                    : `${properties.WKNAME}`.toUpperCase();
 
                 break;
 
