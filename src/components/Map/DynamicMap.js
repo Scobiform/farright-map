@@ -139,6 +139,7 @@ const DynamicMap = ({ polygons = [],
             case 'sh':
             case 'berlin':
             case 'brandenburg':
+            case 'saarland':
             case 'bremen':
                 electoralDistrict = properties.gebietNr || properties.WKNR_int;
 
@@ -307,6 +308,7 @@ const DynamicMap = ({ polygons = [],
       hessen: rlphessen,
       rlp: rlphessen,
       nrw: itnrw,
+      saarland: electIT,
       bundestag: electIT,
     };
   
@@ -432,7 +434,7 @@ const DynamicMap = ({ polygons = [],
             />
             <GeoJSON data={saarlandGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}
-              onEachFeature={onEachFeature}
+              onEachFeature={(feature, layer) => onEachFeature(feature, layer, 'saarland')}
             />
             <GeoJSON data={bremenGeoData}
               style={() => ({ color: 'green', weight: 1, fillColor: 'green', fillOpacity: 0.1 })}

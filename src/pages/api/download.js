@@ -115,6 +115,7 @@ export default async function handler(req, res) {
             bremen: `https://www.wahlen-bremen.de/Wahlen/2023_05_14/ergebnisse_stadtbezirk_${electoralDistrict}.html`,
             berlin: `https://www.wahlen-berlin.de/wahlen/BE2023/AFSPRAES/agh/ergebnisse_wahlkreis_${electoralDistrict}.html`,
             brandenburg: `https://wahlergebnisse.brandenburg.de/12/500/20240922/landtagswahl_land/ergebnisse_wahlkreis_${electoralDistrict}.html`,
+            saarland: `https://wahlergebnis.saarland.de/LTW/ergebnisse_wahlkreis_${electoralDistrict}.html`,
             bundestag: `https://www.bundeswahlleiter.de/bundestagswahlen/2021/ergebnisse/bund-99/land-${stateNumber}/wahlkreis-${electoralDistrict}.html`
         };
 

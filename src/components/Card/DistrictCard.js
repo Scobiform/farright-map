@@ -89,7 +89,7 @@ const renderElect = ({ svgData,
     return (
         <div className={styles.card}>
             {name && <h3 className={styles.cardHeader}>{name}</h3>}
-            {/* Render elected data only for Brandenburg */}
+            {/* Render elected data for Brandenburg */}
             {(state === 'brandenburg') && electedData && (
                 <>
                     
@@ -165,7 +165,7 @@ const renderElect = ({ svgData,
                         <p><strong>Percentage:</strong> {handleMissingData(electedData.runnerUpPerson.percentage)}</p>
                     </div>
                 </>
-            )}
+            )}   
             {/* Render SVG data for all states */}
             {svgData && (
                 <>
@@ -270,6 +270,7 @@ const DistrictCard = ({ district, state }) => {
         case 'brandenburg':
         case 'berlin':
         case 'bremen':
+        case 'saarland':
         case 'sh':
             // Render with 'renderElect' for specific states
             return renderElect({ ...district, state });
