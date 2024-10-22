@@ -349,7 +349,7 @@ const DynamicMap = ({ polygons = [],
         {/* Add OpenStreetMap Layer */}
         <LayersControl.BaseLayer checked name="OpenStreetMap">
           <TileLayer
-            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.de/">OpenStreetMap</a> | <a href="https://github.com/Scobiform/farright-map" target="_blank">farright-map @ github.com</a>'
+            url="https://tile.openstreetmap.de/{z}/{x}/{y}.png" attribution='&copy; <a href="https://www.openstreetmap.de/">OpenStreetMap</a>'
           />
         </LayersControl.BaseLayer>
         {/* Add OpenTopoMap Layer */}
@@ -363,13 +363,15 @@ const DynamicMap = ({ polygons = [],
         <LayersControl.BaseLayer name="cyclosm">
           <TileLayer
             url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
-            attribution='&copy; <a href="https://cyclosm.openstreetmap.fr">cyclosm</a>'
+            attribution='&copy; <a href="https://cyclosm.openstreetmap.fr">cyclosm</a> |
+             <a href="https://www.openstreetmap.de/">OpenStreetMap</a> |
+              <a href="https://github.com/Scobiform/farright-map" target="_blank">farright-map @ github.com</a>'
           />
         </LayersControl.BaseLayer>
         {/* Add Satellite Layer */}
         <LayersControl.BaseLayer name="Esri World Imagery">
           <TileLayer
-            url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" 
             attribution='&copy; <a href="https://www.esri.com/en-us/home">Esri</a>, USGS, NOAA'
           />
         </LayersControl.BaseLayer>
@@ -377,7 +379,7 @@ const DynamicMap = ({ polygons = [],
         <LayersControl.BaseLayer name="Esri World Terrain">
           <TileLayer
             url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer/tile/{z}/{y}/{x}"
-            attribution='&copy; Esri, USGS, NOAA'
+            attribution='&copy; Esri, USGS, NOAA  | <a href="https://github.com/Scobiform/farright-map" target="_blank">farright-map @ github.com</a>'
           />
         </LayersControl.BaseLayer>
       </LayersControl>
